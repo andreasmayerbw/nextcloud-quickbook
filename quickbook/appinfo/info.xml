@@ -14,7 +14,7 @@ Visitors pick a date and time, enter their details, review and confirm on the sa
 * Share the usual Calendar booking link ("Copy link" in the Calendar app): it opens Quick Booking.
 * Built-in rate limiting of bookings per visitor and per email address.
 * Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks.]]></description>
-	<version>0.5.0</version>
+	<version>0.5.1</version>
 	<licence>AGPL-3.0-or-later</licence>
 	<author>jurien</author>
 	<namespace>QuickBook</namespace>
@@ -25,7 +25,7 @@ Visitors pick a date and time, enter their details, review and confirm on the sa
 	<screenshot>https://raw.githubusercontent.com/jurjurijur/nextcloud-quickbook/main/docs/screenshots/1-date-time.png</screenshot>
 	<screenshot>https://raw.githubusercontent.com/jurjurijur/nextcloud-quickbook/main/docs/screenshots/3-review.png</screenshot>
 	<screenshot>https://raw.githubusercontent.com/jurjurijur/nextcloud-quickbook/main/docs/screenshots/4-booked.png</screenshot>
-	<screenshot>https://raw.githubusercontent.com/jurjurijur/nextcloud-quickbook/main/docs/screenshots/5-phone.png</screenshot>
+	<screenshot>https://raw.githubusercontent.com/jurjurijur/nextcloud-quickbook/main/docs/screenshots/5-phone-store.png</screenshot>
 	<dependencies>
 		<php min-version="8.2" />
 		<!-- max-version is required by the App Store. Within this range the self-check still decides whether Quick Booking is used -->

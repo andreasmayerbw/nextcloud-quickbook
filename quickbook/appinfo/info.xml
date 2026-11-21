@@ -15,7 +15,7 @@ Visitors pick a date and time, enter their details, review and confirm on the sa
 * One-time appointment schedules: offer appointments on one or more chosen dates (e.g. parent-teacher conferences) instead of weekly. Create them in the Calendar app under "One-time appointment schedules".
 * Built-in rate limiting of bookings per visitor and per email address.
 * Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks.]]></description>
-	<version>0.6.0</version>
+	<version>0.6.1</version>
 	<licence>AGPL-3.0-or-later</licence>
 	<author>jurien</author>
 	<namespace>QuickBook</namespace>

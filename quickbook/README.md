@@ -167,7 +167,8 @@ make lint    # PHP syntax check
 ### Release to the App Store
 
 1. Bump `<version>` in `appinfo/info.xml` (and `max-version` when a new Nextcloud
-   major is out and `occ quickbook:check` passes on it), commit.
+   major is out and `occ quickbook:check` passes on it), describe the changes
+   under that version in `CHANGELOG.md` (the App Store shows it), commit.
 2. `make release` (dev environment running): builds `dist/quickbook-<version>.tar.gz`
    from the committed code, code-signed with `occ integrity:sign-app`, plus
    `.sha256` and the archive signature `.sig`. Key and certificate are read from

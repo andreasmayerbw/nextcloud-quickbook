@@ -22,6 +22,10 @@ class ContractCheck {
 	public const INTERVAL = 'OCA\Calendar\Service\Appointments\Interval';
 	public const CLIENT_EXCEPTION = 'OCA\Calendar\Exception\ClientException';
 	public const NO_SLOT_EXCEPTION = 'OCA\Calendar\Exception\NoSlotFoundException';
+	public const BOOKED_EVENT = 'OCA\Calendar\Events\BeforeAppointmentBookedEvent';
+	/** AppointmentConfig::VISIBILITY_*: listed on the organizer's profile page, or only reachable by link */
+	public const VISIBILITY_PUBLIC = 'PUBLIC';
+	public const VISIBILITY_PRIVATE = 'PRIVATE';
 
 	/** Route of the Calendar's own booking page, used as fallback */
 	public const FALLBACK_ROUTE = 'calendar.appointment.show';
@@ -41,7 +45,28 @@ class ContractCheck {
 	/** Entity fields accessed through the magic getters and setters */
 	private const FIELDS = [
 		self::BOOKING => ['apptConfigId', 'createdAt', 'token', 'displayName', 'description', 'email', 'start', 'end', 'timezone', 'confirmed'],
-		self::CONFIG => ['id', 'name', 'description', 'location', 'userId', 'length', 'availability', 'start', 'end', 'futureLimit', 'timeBeforeNextSlot'],
+		self::CONFIG => ['id', 'token', 'name', 'description', 'location', 'userId', 'targetCalendarUri', 'length', 'availability', 'start', 'end', 'futureLimit', 'timeBeforeNextSlot'],
+	];
+
+	/**
+	 * Only needed to create and edit one-time schedules. When these change, that feature
+	 * switches off on its own and bookings keep working.
+	 *
+	 * @var list<array{string, string, list<string>}>
+	 */
+	private const ONE_TIME_METHODS = [
+		[self::CONFIG_SERVICE, 'create', ['string', 'string', 'string', 'string', 'string', 'string', 'array', 'int', 'int', 'int', 'int', 'int', 'int', 'array', 'int', 'int', 'int', 'bool']],
+		[self::CONFIG_SERVICE, 'update', [self::CONFIG]],
+		[self::CONFIG_SERVICE, 'findByIdAndUser', ['int', 'string']],
+		[self::CONFIG_SERVICE, 'getAllAppointmentConfigurations', ['string']],
+		[self::CONFIG_SERVICE, 'delete', ['int', 'string']],
+		[self::CONFIG, 'setAvailabilityAsArray', ['array']],
+		[self::CONFIG, 'getCalendarFreebusyUrisAsArray', []],
+		[self::CONFIG, 'setCalendarFreeBusyUrisAsArray', ['array']],
+	];
+
+	private const ONE_TIME_FIELDS = [
+		self::CONFIG => ['increment', 'createTalkRoom', 'visibility', 'calendarFreebusyUris', 'preparationDuration', 'followupDuration', 'dailyMax'],
 	];
 
 	private const CLASSES = [
@@ -53,15 +78,34 @@ class ContractCheck {
 	 * @return list<string> problems found, empty when the contract holds
 	 */
 	public function run(): array {
+		return $this->check(self::CLASSES, self::FIELDS, self::METHODS);
+	}
+
+	/**
+	 * The extra parts used by one-time schedules (on top of {@see self::run()}).
+	 *
+	 * @return list<string> problems found, empty when the contract holds
+	 */
+	public function runOneTime(): array {
+		return $this->check([], self::ONE_TIME_FIELDS, self::ONE_TIME_METHODS);
+	}
+
+	/**
+	 * @param list<string> $classes
+	 * @param array<string, list<string>> $fieldsByClass
+	 * @param list<array{string, string, list<string>}> $methods
+	 * @return list<string>
+	 */
+	private function check(array $classes, array $fieldsByClass, array $methods): array {
 		$problems = [];
 
-		foreach (self::CLASSES as $class) {
+		foreach ($classes as $class) {
 			if (!class_exists($class)) {
 				$problems[] = "class $class is missing";
 			}
 		}
 
-		foreach (self::FIELDS as $class => $fields) {
+		foreach ($fieldsByClass as $class => $fields) {
 			if (!class_exists($class)) {
 				$problems[] = "class $class is missing";
 				continue;
@@ -77,14 +121,14 @@ class ContractCheck {
 			}
 		}
 
-		foreach (self::METHODS as [$class, $method, $types]) {
+		foreach ($methods as [$class, $method, $types]) {
 			$problem = $this->checkMethod($class, $method, $types);
 			if ($problem !== null) {
 				$problems[] = $problem;
 			}
 		}
 
-		if (class_exists(self::NO_SLOT_EXCEPTION) && !is_subclass_of(self::NO_SLOT_EXCEPTION, \Throwable::class)) {
+		if (in_array(self::NO_SLOT_EXCEPTION, $classes, true) && class_exists(self::NO_SLOT_EXCEPTION) && !is_subclass_of(self::NO_SLOT_EXCEPTION, \Throwable::class)) {
 			$problems[] = self::NO_SLOT_EXCEPTION . ' is not an exception';
 		}
 

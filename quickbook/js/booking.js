@@ -102,7 +102,10 @@
 		if (date < earliestDate || (latestDate && date > latestDate)) {
 			return false
 		}
-		// Weekday rules are in the organizer's timezone; only trust them when it matches the visitor's
+		// Weekday rules and dates are in the organizer's timezone; only trust them when it matches the visitor's
+		if (sameTimezone && config.dates) {
+			return config.dates.includes(isoDate(date))
+		}
 		if (sameTimezone && config.weekdays.length > 0) {
 			return config.weekdays.includes(WEEKDAY_CODES[date.getDay()])
 		}
@@ -260,6 +263,10 @@
 	}
 
 	function viewDate() {
+		// One-time schedule whose dates are all over
+		if (config.dates && config.dates.length === 0) {
+			return h('p', { class: 'quickbook__hint' }, t('This appointment has no upcoming dates any more.'))
+		}
 		const month = state.month
 		const firstOfMonth = new Date(month.getFullYear(), month.getMonth(), 1)
 		const daysInMonth = new Date(month.getFullYear(), month.getMonth() + 1, 0).getDate()

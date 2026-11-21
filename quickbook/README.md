@@ -34,6 +34,33 @@ Nextcloud and the Calendar app are not modified.
   confirmation), add `?qb=fallback` to the link.
   The Quick Booking page itself is `https://<cloud>/apps/quickbook/book/<token>`;
   don't share that one, it gives a 404 when the app is not installed.
+- **One-time appointment schedules**: appointments on one or more chosen dates
+  instead of every week, e.g. parent-teacher conferences. In the Calendar app they
+  have their own section, **One-time appointment schedules**, below "Appointment
+  schedules", with the same **+** and the same actions per schedule (Preview, Copy
+  link, Duplicate, Edit, Delete). The form follows the Calendar's own appointment
+  form: name, location, Talk room, description, duration and increments, booking
+  calendar, calendars to check for conflicts, visibility and the planning
+  restrictions. In place of weekly availability it takes **booking dates**, each with
+  its own times. Each slot can be booked once. Share the link it shows, which is a
+  normal Calendar booking link.
+  - It is a normal Calendar schedule underneath. Quick Booking stores the exact
+    dates (table `quickbook_onetime`) and gives the Calendar schedule the closest
+    weekly rules plus a start and end date. If the dates are more than a week apart,
+    the weekly rules also cover the days in between. Quick Booking never offers
+    those days and refuses bookings on them. The Calendar's own booking page (the
+    fallback) can still show them; such a booking is refused when the visitor
+    confirms it by email, so it never reaches the calendar.
+  - One-time schedules are hidden from the Calendar's own list (matched by name: if a
+    weekly schedule has the same name, both stay visible there, and Edit or
+    Duplicate still opens the one-time form).
+  - If the schedule is saved in the Calendar's own editor anyway (which clears the
+    start and end date), the next time it is opened Quick Booking puts the dates back.
+  - Talk rooms: offered under the same conditions as in the Calendar's own form.
+  - "Limit how far in the future" is left out: the dates are fixed.
+  - Past dates stay in the schedule; nothing is deleted automatically.
+  - If a Calendar update changes the code this feature uses, only the one-time
+    section disappears from the Calendar (see the self-check). Bookings keep working.
 - **Minimum notice**: use the Calendar's own "Minimum time before next slot"
   setting of the schedule; Quick Booking follows it.
 - **Rate limit**: 5 bookings per visitor per hour (Nextcloud's built-in rate
@@ -82,6 +109,11 @@ When something breaks:
   If it was switched off because bookings from several networks failed (while the
   check passed), it waits for an update or for an admin to run the check
   manually (button in the admin settings, or `occ quickbook:check`).
+
+One-time appointment schedules use a few more Calendar methods (creating and
+changing a schedule). Those are checked separately ("One-time schedules" in the
+check). When only they fail, the one-time option disappears from the Calendar
+app and bookings keep going through Quick Booking.
 
 Ordinary failures (slot just taken, a database hiccup) never switch anything off.
 Requests are validated before they reach the Calendar code (exact appointment
@@ -156,4 +188,7 @@ The frontend is plain JavaScript and CSS (`js/`, `css/`), so there is no build s
 - `lib/Health/`: on/off state, full self-check, admin notifications
 - `lib/Middleware/CalendarLinkMiddleware.php`: Calendar booking link → Quick Booking
 - `lib/Service/BookingFlowService.php`: validation, limit per email address, per-schedule lock
+- `lib/OneTime/`: one-time schedules (exact dates, Calendar settings derived from them, repair)
+- `lib/Listener/`: the one-time section on the Calendar page, the booking guard for one-time dates, user removal
 - `js/booking.js`, `css/booking.css`: the public booking page
+- `js/calendar-onetime.js`, `css/calendar-onetime.css`: the one-time section and form in the Calendar app

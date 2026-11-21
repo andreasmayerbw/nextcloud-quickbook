@@ -2,7 +2,6 @@
 /** @var \OCP\IL10N $l */
 /** @var array $_ */
 $status = $_['status'];
-$formatTime = static fn (int $ts): string => $ts > 0 ? (new DateTimeImmutable('@' . $ts))->setTimezone(new DateTimeZone(date_default_timezone_get()))->format('Y-m-d H:i') : '–';
 ?>
 <div id="quickbook-admin" class="section quickbook-settings">
 	<h2><?php p($l->t('Quick Booking self-check')); ?></h2>
@@ -25,7 +24,7 @@ $formatTime = static fn (int $ts): string => $ts > 0 ? (new DateTimeImmutable('@
 	<dl class="quickbook-settings__facts">
 		<dt><?php p($l->t('Calendar version')); ?></dt><dd><?php p($status['calendarVersion']); ?></dd>
 		<dt><?php p($l->t('Nextcloud version')); ?></dt><dd><?php p($status['nextcloudVersion']); ?></dd>
-		<dt><?php p($l->t('Last full check')); ?></dt><dd><?php p($formatTime($status['lastFullCheck'])); ?></dd>
+		<dt><?php p($l->t('Last full check')); ?></dt><dd><?php p($_['lastFullCheck']); ?></dd>
 	</dl>
 
 	<?php if (!empty($status['report'])): ?>

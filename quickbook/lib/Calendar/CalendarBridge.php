@@ -144,6 +144,183 @@ class CalendarBridge {
 	}
 
 	/**
+	 * Whether one-time schedules can be created and edited. Bookings do not depend on this.
+	 */
+	public function isOneTimeUsable(): bool {
+		if (!$this->isUsable()) {
+			return false;
+		}
+		try {
+			$problems = $this->contract->runOneTime();
+		} catch (\Throwable $e) {
+			$problems = [get_class($e) . ': ' . $e->getMessage()];
+		}
+		if ($problems !== []) {
+			$this->logger->warning('Quick Booking one-time schedules are switched off, the Calendar code changed: ' . implode('; ', $problems), ['app' => Application::APP_ID]);
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * A schedule of this user, by id.
+	 *
+	 * @throws ScheduleNotFoundException|CalendarUnavailableException|TemporaryFailureException
+	 */
+	public function findScheduleForUser(int $id, string $userId): Schedule {
+		return $this->callOneTime('find schedule', function () use ($id, $userId): Schedule {
+			try {
+				$config = $this->get(ContractCheck::CONFIG_SERVICE)->findByIdAndUser($id, $userId);
+			} catch (\Exception $e) {
+				if (is_a($e, ContractCheck::CLIENT_EXCEPTION)) {
+					throw new ScheduleNotFoundException('No schedule with this id for this user', 0, $e);
+				}
+				throw $e;
+			}
+			return $this->toSchedule($config);
+		});
+	}
+
+	/**
+	 * All schedules of this user (weekly and one-time).
+	 *
+	 * @return list<Schedule>
+	 * @throws CalendarUnavailableException|TemporaryFailureException
+	 */
+	public function findSchedulesForUser(string $userId): array {
+		return $this->callOneTime('list schedules', function () use ($userId): array {
+			$configs = $this->get(ContractCheck::CONFIG_SERVICE)->getAllAppointmentConfigurations($userId);
+			if (!is_array($configs)) {
+				throw new IncompatibleCalendarException('getAllAppointmentConfigurations() returned ' . get_debug_type($configs));
+			}
+			return array_values(array_map(fn ($config) => $this->toSchedule($config), $configs));
+		});
+	}
+
+	/**
+	 * @throws CalendarUnavailableException|TemporaryFailureException
+	 */
+	public function deleteSchedule(Schedule $schedule): void {
+		$this->callOneTime('delete schedule', function () use ($schedule): void {
+			$this->get(ContractCheck::CONFIG_SERVICE)->delete($schedule->id, $schedule->userId);
+		});
+	}
+
+	/**
+	 * New schedule with the Calendar's defaults for everything the draft does not set.
+	 *
+	 * @throws CalendarUnavailableException|TemporaryFailureException
+	 */
+	public function createSchedule(string $userId, ScheduleDraft $draft): Schedule {
+		return $this->callOneTime('create schedule', function () use ($userId, $draft): Schedule {
+			$config = $this->get(ContractCheck::CONFIG_SERVICE)->create(
+				$draft->name,
+				$draft->description,
+				$draft->location === '' ? null : $draft->location,
+				$draft->visibility,
+				$userId,
+				$draft->targetCalendarUri,
+				$draft->availability,
+				$draft->lengthSeconds,
+				$draft->incrementSeconds,
+				$draft->preparationSeconds,
+				$draft->followupSeconds,
+				$draft->timeBeforeNextSlotSeconds,
+				$draft->dailyMax,
+				$draft->conflictCalendarUris, // the target calendar is always checked too
+				$draft->start,
+				$draft->end,
+				null, // no limit how far ahead
+				$draft->createTalkRoom,
+			);
+			return $this->toSchedule($config);
+		});
+	}
+
+	/**
+	 * Writes the draft into an existing schedule. Settings the draft does not cover stay as they are.
+	 *
+	 * @throws CalendarUnavailableException|TemporaryFailureException
+	 */
+	public function updateSchedule(Schedule $schedule, ScheduleDraft $draft): Schedule {
+		return $this->callOneTime('update schedule', function () use ($schedule, $draft): Schedule {
+			$config = clone $schedule->config;
+			$config->setName($draft->name);
+			$config->setDescription($draft->description);
+			$config->setLocation($draft->location === '' ? null : $draft->location);
+			$config->setLength($draft->lengthSeconds);
+			$config->setIncrement($draft->incrementSeconds);
+			$config->setPreparationDuration($draft->preparationSeconds);
+			$config->setFollowupDuration($draft->followupSeconds);
+			$config->setTimeBeforeNextSlot($draft->timeBeforeNextSlotSeconds);
+			$config->setDailyMax($draft->dailyMax);
+			$config->setTargetCalendarUri($draft->targetCalendarUri);
+			$config->setAvailabilityAsArray($draft->availability);
+			$config->setStart($draft->start);
+			$config->setEnd($draft->end);
+			$config->setCreateTalkRoom($draft->createTalkRoom);
+			$config->setVisibility($draft->visibility);
+			$config->setCalendarFreeBusyUrisAsArray($draft->conflictCalendarUris);
+			return $this->toSchedule($this->get(ContractCheck::CONFIG_SERVICE)->update($config));
+		});
+	}
+
+	/**
+	 * Puts back the weekly rules and date window of a one-time schedule, e.g. after it was
+	 * saved in the Calendar's own editor (which does not know the date window and clears it).
+	 *
+	 * @param array{timezoneId: string, slots: array<string, list<array{start: int, end: int}>>} $availability
+	 * @throws CalendarUnavailableException|TemporaryFailureException
+	 */
+	public function setDateWindow(Schedule $schedule, array $availability, int $start, int $end): Schedule {
+		return $this->callOneTime('restore date window', function () use ($schedule, $availability, $start, $end): Schedule {
+			$config = clone $schedule->config;
+			$config->setAvailabilityAsArray($availability);
+			$config->setStart($start);
+			$config->setEnd($end);
+			return $this->toSchedule($this->get(ContractCheck::CONFIG_SERVICE)->update($config));
+		});
+	}
+
+	/**
+	 * Schedule token and times of a booking from the Calendar's "before appointment booked" event.
+	 * Works while the integration is switched off, so the Calendar's own page is covered too.
+	 *
+	 * @return array{token: string, start: int, end: int}|null null when it is not that event or it looks different
+	 */
+	public function bookingFromEvent(object $event): ?array {
+		try {
+			if (!is_a($event, ContractCheck::BOOKED_EVENT)) {
+				return null;
+			}
+			$booking = $event->getBooking();
+			$token = $event->getConfig()->getToken();
+			$start = $booking->getStart();
+			$end = $booking->getEnd();
+			if (!is_string($token) || !is_numeric($start) || !is_numeric($end)) {
+				return null;
+			}
+			return ['token' => $token, 'start' => (int)$start, 'end' => (int)$end];
+		} catch (\Throwable) {
+			return null;
+		}
+	}
+
+	/**
+	 * The error that makes the Calendar answer "this slot is not available any more".
+	 */
+	public function slotUnavailableError(string $message): \Throwable {
+		$class = ContractCheck::NO_SLOT_EXCEPTION;
+		try {
+			if (class_exists($class) && is_subclass_of($class, \Throwable::class)) {
+				return new $class($message);
+			}
+		} catch (\Throwable) {
+		}
+		return new SlotUnavailableException($message);
+	}
+
+	/**
 	 * URL that always shows the Calendar's own booking page (with email confirmation).
 	 * The marker stops {@see CalendarLinkMiddleware} from redirecting it back to Quick Booking.
 	 */
@@ -187,6 +364,14 @@ class CalendarBridge {
 			return $results;
 		}
 		$add('Calendar code contract', 'pass', 'all classes, methods and fields found');
+
+		try {
+			$oneTimeProblems = $this->contract->runOneTime();
+		} catch (\Throwable $e) {
+			$oneTimeProblems = [$describe($e)];
+		}
+		// Not fatal: bookings work without it, only creating and editing one-time schedules is off
+		$add('One-time schedules', $oneTimeProblems === [] ? 'pass' : 'warn', $oneTimeProblems === [] ? 'can be created and edited' : implode('; ', $oneTimeProblems));
 
 		try {
 			$bookingService = $this->get(ContractCheck::BOOKING_SERVICE);
@@ -281,6 +466,18 @@ class CalendarBridge {
 	}
 
 	/**
+	 * @template T
+	 * @param callable(): T $operation
+	 * @return T
+	 */
+	private function callOneTime(string $name, callable $operation): mixed {
+		if (!$this->isOneTimeUsable()) {
+			throw new CalendarUnavailableException('One-time schedules are switched off');
+		}
+		return $this->call($name, $operation);
+	}
+
+	/**
 	 * Visitor's network (IPv4 /24, IPv6 /64) as a short hash, so failures from one
 	 * attacker count once without storing IP addresses.
 	 */
@@ -328,6 +525,7 @@ class CalendarBridge {
 		}
 		return new Schedule(
 			id: (int)$config->getId(),
+			token: (string)$config->getToken(),
 			userId: (string)$config->getUserId(),
 			name: (string)$config->getName(),
 			description: (string)($config->getDescription() ?? ''),
@@ -337,9 +535,35 @@ class CalendarBridge {
 			end: $config->getEnd() === null ? null : (int)$config->getEnd(),
 			futureLimit: $config->getFutureLimit() === null ? null : (int)$config->getFutureLimit(),
 			timeBeforeNextSlot: (int)($config->getTimeBeforeNextSlot() ?? 0),
+			targetCalendarUri: (string)$config->getTargetCalendarUri(),
+			createTalkRoom: (bool)$this->optional(static fn () => $config->getCreateTalkRoom(), false),
+			visibility: (string)$this->optional(static fn () => $config->getVisibility(), ContractCheck::VISIBILITY_PUBLIC),
+			conflictCalendarUris: array_values(array_filter(
+				(array)$this->optional(static fn () => $config->getCalendarFreebusyUrisAsArray(), []),
+				'is_string',
+			)),
+			incrementSeconds: (int)$this->optional(static fn () => $config->getIncrement(), (int)$config->getLength()),
+			preparationSeconds: (int)$this->optional(static fn () => $config->getPreparationDuration(), 0),
+			followupSeconds: (int)$this->optional(static fn () => $config->getFollowupDuration(), 0),
+			dailyMax: self::intOrNull($this->optional(static fn () => $config->getDailyMax(), null)),
 			availability: is_array($availability) ? $availability : [],
 			config: $config,
 		);
+	}
+
+	private static function intOrNull(mixed $value): ?int {
+		return is_numeric($value) ? (int)$value : null;
+	}
+
+	/**
+	 * Settings only one-time schedules need: when the Calendar drops one, bookings must still work.
+	 */
+	private function optional(callable $read, mixed $default): mixed {
+		try {
+			return $read() ?? $default;
+		} catch (\Throwable) {
+			return $default;
+		}
 	}
 
 	/**

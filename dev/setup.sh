@@ -33,5 +33,5 @@ echo
 echo "Ready:"
 echo "  Nextcloud  http://localhost:8080  (admin / $QB_ADMIN_PASSWORD)"
 echo "  Mailpit    http://localhost:8025"
-echo "Create an appointment schedule in Calendar, then open"
-echo "  Settings > Personal > Quick Booking  for the booking links."
+echo "Create an appointment schedule in Calendar and open its booking link (Copy link):"
+echo "it shows the Quick Booking page."

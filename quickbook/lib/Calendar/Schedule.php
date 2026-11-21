@@ -17,6 +17,7 @@ final class Schedule {
 	 */
 	public function __construct(
 		public readonly int $id,
+		public readonly string $token,
 		public readonly string $userId,
 		public readonly string $name,
 		public readonly string $description,
@@ -26,6 +27,20 @@ final class Schedule {
 		public readonly ?int $end,
 		public readonly ?int $futureLimit,
 		public readonly int $timeBeforeNextSlot,
+		public readonly string $targetCalendarUri,
+		/** "Create a Talk room" for each booking; false when the Calendar has no such setting */
+		public readonly bool $createTalkRoom,
+		/** ContractCheck::VISIBILITY_* */
+		public readonly string $visibility,
+		/** @var list<string> extra calendars checked for conflicts (the target calendar always is) */
+		public readonly array $conflictCalendarUris,
+		/** Time between possible slot starts */
+		public readonly int $incrementSeconds,
+		/** Buffers before and after each appointment, kept free of other events */
+		public readonly int $preparationSeconds,
+		public readonly int $followupSeconds,
+		/** Maximum bookings per day, null for no limit */
+		public readonly ?int $dailyMax,
 		public readonly array $availability,
 		public readonly object $config,
 	) {

@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace OCA\QuickBook\Service;
 
 use DateTimeImmutable;
-use DateTimeZone;
 use OCA\QuickBook\AppInfo\Application;
 use OCA\QuickBook\Calendar\CalendarBridge;
 use OCA\QuickBook\Calendar\Schedule;
@@ -15,6 +14,7 @@ use OCA\QuickBook\Exception\ScheduleNotFoundException;
 use OCA\QuickBook\Exception\SlotUnavailableException;
 use OCA\QuickBook\Exception\TemporaryFailureException;
 use OCA\QuickBook\Exception\ValidationException;
+use OCA\QuickBook\OneTime\OneTimeService;
 use OCP\AppFramework\Utility\ITimeFactory;
 use OCP\IAppConfig;
 use OCP\Lock\ILockingProvider;
@@ -28,18 +28,14 @@ use OCP\Security\RateLimiting\IRateLimitExceededException;
  */
 class BookingFlowService {
 	private const MAX_NAME_LENGTH = 128;
+	/** Size of the Calendar's column for it */
+	private const MAX_EMAIL_LENGTH = 128;
 	private const MAX_DESCRIPTION_LENGTH = 2000;
 	/** How far ahead bookings are possible when the schedule sets no limit */
 	private const DEFAULT_HORIZON = 2 * 365 * 86400;
 	/** Bookings per email address, changeable with occ config:app:set quickbook email_limit / email_period */
 	private const EMAIL_LIMIT = 3;
 	private const EMAIL_PERIOD = 86400;
-	/** Control and invisible formatting characters (incl. bidi overrides, zero-width) */
-	private const INVISIBLE = '/[\p{Cc}\p{Cf}\p{Zl}\p{Zp}]/u';
-	private const INVISIBLE_KEEP_LINES = '/(?![\n\t])[\p{Cc}\p{Cf}\p{Zl}\p{Zp}]/u';
-
-	/** @var array<string, true>|null */
-	private static ?array $timezones = null;
 
 	public function __construct(
 		private CalendarBridge $calendar,
@@ -48,6 +44,7 @@ class BookingFlowService {
 		private ITimeFactory $timeFactory,
 		private ILimiter $limiter,
 		private IAppConfig $appConfig,
+		private OneTimeService $oneTime,
 	) {
 	}
 
@@ -58,7 +55,7 @@ class BookingFlowService {
 	 * @throws ValidationException|ScheduleNotFoundException|CalendarUnavailableException|TemporaryFailureException
 	 */
 	public function getSlotsForDay(string $token, string $date, string $timeZone): array {
-		$tz = $this->parseTimezone($timeZone);
+		$tz = Input::timezone($timeZone);
 		if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $date) !== 1) {
 			throw new ValidationException('date', 'Invalid date');
 		}
@@ -77,7 +74,9 @@ class BookingFlowService {
 		if ($from > $now + $this->horizon($schedule)) {
 			return [];
 		}
-		return $this->calendar->getAvailableSlots($schedule, $from, $until);
+		$slots = $this->calendar->getAvailableSlots($schedule, $from, $until);
+		// One-time schedules: the Calendar's weekly rules can cover more days than the chosen dates
+		return $this->oneTime->datesForToken($schedule->token)?->filter($slots) ?? $slots;
 	}
 
 	/**
@@ -86,12 +85,9 @@ class BookingFlowService {
 	 * @throws ValidationException|EmailLimitException|ScheduleNotFoundException|SlotUnavailableException|CalendarUnavailableException|TemporaryFailureException
 	 */
 	public function book(string $token, int $start, int $end, string $timeZone, string $displayName, string $email, string $description): void {
-		// Invisible characters could make the name or comment look different in the email
-		// and the calendar event than what was typed
-		$displayName = trim((string)preg_replace('/\s+/u', ' ', (string)preg_replace(self::INVISIBLE, '', $displayName)));
+		$displayName = Input::singleLine($displayName);
 		$email = trim($email);
-		$description = trim(str_replace("\r\n", "\n", $description));
-		$description = trim((string)preg_replace(self::INVISIBLE_KEEP_LINES, '', $description));
+		$description = Input::multiLine($description);
 
 		if ($displayName === '' || mb_strlen($displayName) > self::MAX_NAME_LENGTH) {
 			throw new ValidationException('displayName', 'Please enter your name');
@@ -100,13 +96,13 @@ class BookingFlowService {
 		if (preg_match('/[@<>]/', $displayName) === 1) {
 			throw new ValidationException('displayName', 'Please enter your name without @, < or >');
 		}
-		if (!$this->mailer->validateMailAddress($email)) {
+		if (strlen($email) > self::MAX_EMAIL_LENGTH || !$this->mailer->validateMailAddress($email)) {
 			throw new ValidationException('email', 'Please enter a valid email address');
 		}
 		if (mb_strlen($description) > self::MAX_DESCRIPTION_LENGTH) {
 			throw new ValidationException('description', 'The comment is too long');
 		}
-		$tz = $this->parseTimezone($timeZone);
+		$tz = Input::timezone($timeZone);
 
 		$schedule = $this->calendar->findSchedule($token);
 
@@ -118,6 +114,9 @@ class BookingFlowService {
 		}
 		if ($end - $start !== $schedule->lengthSeconds) {
 			throw new ValidationException('start', 'Invalid time range');
+		}
+		if (!$this->oneTime->allowsBooking($schedule->token, $start, $end)) {
+			throw new SlotUnavailableException('Slot is not on one of the dates');
 		}
 
 		$this->registerEmailBooking($email);
@@ -176,16 +175,5 @@ class BookingFlowService {
 		return $schedule->futureLimit !== null && $schedule->futureLimit > 0
 			? min($schedule->futureLimit, self::DEFAULT_HORIZON)
 			: self::DEFAULT_HORIZON;
-	}
-
-	/**
-	 * Only named (IANA) timezones, as sent by browsers. Offsets like "+05:00" are refused.
-	 */
-	private function parseTimezone(string $timeZone): DateTimeZone {
-		self::$timezones ??= array_fill_keys(DateTimeZone::listIdentifiers(DateTimeZone::ALL_WITH_BC), true);
-		if (!isset(self::$timezones[$timeZone])) {
-			throw new ValidationException('timeZone', 'Invalid timezone');
-		}
-		return new DateTimeZone($timeZone);
 	}
 }

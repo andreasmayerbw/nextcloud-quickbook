@@ -46,6 +46,7 @@ class BookingApiController extends Controller {
 	#[PublicPage]
 	#[NoCSRFRequired]
 	#[AnonRateLimit(limit: 300, period: 600)]
+	#[UserRateLimit(limit: 300, period: 600)]
 	#[FrontpageRoute(verb: 'GET', url: '/api/v1/schedules/{token}/slots')]
 	public function slots(string $token, string $date = '', string $timeZone = 'UTC'): JSONResponse {
 		try {

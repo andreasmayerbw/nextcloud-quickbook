@@ -1,0 +1,519 @@
+/*
+ * Quick Booking: one-time appointment schedules in the Calendar app.
+ * Layout comes from the Calendar's own appointment form classes (appointment-config-modal__*);
+ * these rules give the controls the look of the Nextcloud components the Calendar uses.
+ * Nextcloud theme variables only.
+ */
+
+/* ---------------------------------------------------------------- navigation */
+
+.qb-entry {
+	display: flex;
+	align-items: center;
+	gap: 0;
+	min-height: var(--default-clickable-area, 34px);
+	margin: 2px 0;
+	padding-inline-start: 0;
+	border-radius: var(--border-radius-element, 8px);
+}
+
+.qb-entry:hover {
+	background-color: var(--color-background-hover);
+}
+
+.qb-entry > .material-design-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--default-clickable-area, 34px);
+	flex: none;
+}
+
+.qb-entry__name {
+	flex: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.qb-menu {
+	position: fixed;
+	z-index: 10000;
+	min-width: 160px;
+	margin: 0;
+	padding: 4px;
+	list-style: none;
+	background: var(--color-main-background);
+	color: var(--color-main-text);
+	border-radius: var(--border-radius-large, 8px);
+	filter: drop-shadow(0 1px 10px var(--color-box-shadow));
+}
+
+.qb-menu .qb-menu__action {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: var(--default-clickable-area, 34px);
+	margin: 0;
+	padding: 0 9px 0 0;
+	border: none;
+	border-radius: var(--border-radius-element, 8px);
+	background: transparent;
+	color: inherit;
+	font-size: inherit;
+	font-weight: normal;
+	text-align: start;
+	text-decoration: none;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.qb-menu .qb-menu__action:hover,
+.qb-menu .qb-menu__action:focus-visible {
+	background-color: var(--color-background-hover);
+}
+
+.qb-menu .qb-menu__action:focus-visible {
+	outline: 2px solid var(--color-main-text);
+	outline-offset: -2px;
+}
+
+.qb-menu .material-design-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--default-clickable-area, 34px);
+	height: var(--default-clickable-area, 34px);
+	flex: none;
+}
+
+/* ---------------------------------------------------------------- modal */
+
+.qb-modal {
+	position: fixed;
+	inset: 0;
+	box-sizing: border-box;
+	width: 600px;
+	max-width: 90%;
+	height: fit-content;
+	max-height: calc(100vh - 32px);
+	margin: auto;
+	padding: 0;
+	overflow-y: auto;
+	border: none;
+	border-radius: var(--border-radius-container-large, 12px);
+	background: var(--color-main-background);
+	color: var(--color-main-text);
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.qb-modal::backdrop {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.qb-modal *,
+.qb-modal *::before,
+.qb-modal *::after {
+	box-sizing: border-box;
+}
+
+/* Nextcloud's button styles set their own position: be more specific */
+dialog.qb-modal > .qb-modal__close {
+	position: absolute;
+	top: 4px;
+	inset-inline-end: 4px;
+}
+
+.qb-modal fieldset {
+	min-width: 0;
+	margin: 0;
+	border: none;
+}
+
+.qb-modal .appointment-config-modal__form__title {
+	padding-inline-end: var(--default-clickable-area, 34px);
+}
+
+.qb-modal label {
+	font-size: inherit;
+}
+
+.qb-hint,
+.qb-talk-description {
+	display: block;
+	margin: 0;
+	color: var(--color-text-maxcontrast);
+}
+
+.qb-hint {
+	margin-bottom: 8px;
+}
+
+.qb-note {
+	margin: 8px 0;
+	padding: 8px 12px;
+	border-inline-start: 4px solid var(--color-error);
+	border-radius: var(--border-radius-element, 8px);
+	background: color-mix(in srgb, var(--color-error) 10%, var(--color-main-background));
+}
+
+.qb-note--warning {
+	border-inline-start-color: var(--color-warning);
+	background: color-mix(in srgb, var(--color-warning) 10%, var(--color-main-background));
+}
+
+/* Inputs: a 1px ring, 2px with a gap when focused, like Nextcloud's text fields and selects */
+.qb-modal .qb-text-field input,
+.qb-modal .qb-input,
+.qb-modal .qb-select,
+.qb-modal .qb-textarea,
+.qb-modal .qb-picker {
+	width: 100%;
+	min-height: var(--default-clickable-area, 34px);
+	margin: 1px 0;
+	padding: 0 8px;
+	border: none;
+	border-radius: var(--border-radius-element, 8px);
+	box-shadow: 0 0 0 1px var(--color-border-maxcontrast);
+	background-color: var(--color-main-background);
+	color: var(--color-main-text);
+	font-size: inherit;
+	outline: none;
+}
+
+.qb-modal .qb-text-field input:focus,
+.qb-modal .qb-input:focus,
+.qb-modal .qb-select:focus,
+.qb-modal .qb-textarea:focus,
+.qb-modal .qb-picker:focus,
+.qb-modal .qb-picker[aria-expanded="true"] {
+	box-shadow: 0 0 0 2px var(--color-main-text), 0 0 0 4px var(--color-main-background);
+}
+
+.qb-modal .qb-input:disabled,
+.qb-modal .qb-select:disabled,
+.qb-text-field--disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.qb-modal .qb-textarea {
+	min-height: 68px;
+	padding: 5px 12px;
+	resize: vertical;
+}
+
+.qb-modal .qb-select {
+	padding-inline-end: 28px;
+	cursor: pointer;
+}
+
+/* Text field with the label on its border once it has a value or focus */
+.qb-text-field {
+	position: relative;
+	padding-top: 2px;
+}
+
+.qb-text-field label {
+	position: absolute;
+	top: calc(2px + var(--default-clickable-area, 34px) / 2);
+	inset-inline-start: 6px;
+	padding: 0 4px;
+	transform: translateY(-50%);
+	color: var(--color-text-maxcontrast);
+	line-height: 1.5;
+	pointer-events: none;
+	transition: top 0.1s, font-size 0.1s;
+}
+
+.qb-text-field input:focus + label,
+.qb-text-field input:not(:placeholder-shown) + label {
+	top: 2px;
+	font-size: 13px;
+	color: var(--color-main-text);
+	background-color: var(--color-main-background);
+}
+
+.qb-text-field input::placeholder {
+	color: transparent;
+}
+
+/* Labels above their control, like the Calendar's selects */
+.qb-duration,
+.qb-number,
+.qb-checked-duration {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Checkbox like Nextcloud's: icon in the primary colour */
+.qb-checkbox {
+	position: relative;
+	display: flex;
+}
+
+.qb-checkbox__input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: 0;
+	opacity: 0;
+}
+
+.qb-checkbox__label {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	min-height: var(--default-clickable-area, 34px);
+	padding: 0 8px 0 4px;
+	border-radius: var(--border-radius-element, 8px);
+	cursor: pointer;
+}
+
+.qb-checkbox__label:hover {
+	background-color: var(--color-background-hover);
+}
+
+.qb-checkbox__input:focus-visible + .qb-checkbox__label {
+	outline: 2px solid var(--color-main-text);
+}
+
+.qb-checkbox__icon {
+	display: flex;
+	color: var(--color-primary-element);
+}
+
+.qb-checkbox__icon--on,
+.qb-checkbox__input:checked + .qb-checkbox__label .qb-checkbox__icon--off {
+	display: none;
+}
+
+.qb-checkbox__input:checked + .qb-checkbox__label .qb-checkbox__icon--on {
+	display: flex;
+}
+
+/* Calendar picker like the Calendar's (a select with the calendars' colours) */
+.qb-modal .qb-picker {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 2px 4px 2px 8px;
+	cursor: pointer;
+}
+
+.qb-picker__values {
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	gap: 4px;
+	min-width: 0;
+}
+
+.qb-picker__single {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.qb-picker__chevron {
+	display: flex;
+	flex: none;
+}
+
+.qb-dot {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	flex: none;
+	border-radius: 50%;
+}
+
+.qb-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	max-width: 100%;
+	height: 26px;
+	padding: 0 2px 0 8px;
+	border-radius: var(--border-radius-pill, 13px);
+	background-color: var(--color-background-dark);
+}
+
+.qb-chip__name {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.qb-modal .qb-chip__remove {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 22px;
+	height: 22px;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	background: transparent;
+	color: inherit;
+	cursor: pointer;
+}
+
+.qb-modal .qb-chip__remove:hover {
+	background-color: var(--color-background-hover);
+}
+
+.qb-picker__popup {
+	position: fixed;
+	z-index: 10001;
+	max-height: 240px;
+	margin: 0;
+	padding: 4px;
+	overflow-y: auto;
+	list-style: none;
+	border-radius: var(--border-radius-large, 8px);
+	background: var(--color-main-background);
+	color: var(--color-main-text);
+	box-shadow: 0 1px 10px var(--color-box-shadow);
+}
+
+.qb-picker__option {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	min-height: var(--default-clickable-area, 34px);
+	padding: 0 8px;
+	border-radius: var(--border-radius-element, 8px);
+	cursor: pointer;
+}
+
+.qb-picker__option--active,
+.qb-picker__option:hover {
+	background-color: var(--color-background-hover);
+}
+
+.qb-picker__option-name {
+	flex: 1;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/* Booking dates */
+.qb-date-list {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.qb-date-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 4px 12px;
+}
+
+.qb-modal .qb-date-row [name="date"] {
+	width: 170px;
+}
+
+.qb-date-row__times {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.qb-modal .qb-date-row [type="time"] {
+	width: 130px;
+}
+
+.qb-date-row__count {
+	color: var(--color-text-maxcontrast);
+}
+
+.qb-add-date {
+	margin-top: 12px;
+}
+
+/* Saved: like the Calendar's confirmation */
+.qb-confirmation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 32px 0 8px;
+	text-align: center;
+}
+
+.qb-confirmation__icon {
+	display: flex;
+	color: var(--color-text-maxcontrast);
+	opacity: 0.6;
+}
+
+.qb-modal .qb-confirmation__title {
+	margin: 12px 0 20px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.qb-confirmation__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px;
+}
+
+/* Only when the page has no Nextcloud button to copy the look from */
+.qb-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: var(--default-clickable-area, 34px);
+	min-width: var(--default-clickable-area, 34px);
+	margin: 0;
+	padding: 0 12px;
+	border: none;
+	border-radius: var(--border-radius-element, 8px);
+	background-color: var(--color-primary-element-light);
+	color: var(--color-primary-element-light-text);
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.qb-button--primary {
+	background-color: var(--color-primary-element);
+	color: var(--color-primary-element-text);
+}
+
+.qb-button--tertiary {
+	background-color: transparent;
+	color: var(--color-main-text);
+}
+
+.qb-button--icon-only {
+	padding: 0;
+}
+
+.qb-button .button-vue__wrapper {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+}
+
+@media (max-width: 600px) {
+	.qb-modal {
+		max-width: calc(100% - 16px);
+	}
+
+	.qb-modal .qb-date-row [name="date"] {
+		width: 100%;
+	}
+}

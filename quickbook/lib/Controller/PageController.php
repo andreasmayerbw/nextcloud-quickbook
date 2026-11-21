@@ -9,6 +9,7 @@ use OCA\QuickBook\Calendar\CalendarBridge;
 use OCA\QuickBook\Exception\CalendarUnavailableException;
 use OCA\QuickBook\Exception\ScheduleNotFoundException;
 use OCA\QuickBook\Exception\TemporaryFailureException;
+use OCA\QuickBook\OneTime\OneTimeService;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http;
 use OCP\AppFramework\Http\Attribute\FrontpageRoute;
@@ -36,6 +37,7 @@ class PageController extends Controller {
 		private IUserSession $userSession,
 		private IURLGenerator $urlGenerator,
 		private ITimeFactory $timeFactory,
+		private OneTimeService $oneTime,
 		private LoggerInterface $logger,
 	) {
 		parent::__construct(Application::APP_ID, $request);
@@ -72,12 +74,17 @@ class PageController extends Controller {
 		}
 
 		$now = $this->timeFactory->getTime();
+		$dates = $this->oneTime->datesForToken($token);
+		if ($dates !== null) {
+			$schedule = $this->oneTime->ensureDateWindow($schedule, $dates);
+		}
 		$organizer = $this->userManager->getDisplayName($schedule->userId) ?? $schedule->userId;
 		// Same rule as the Calendar: "Minimum time before next slot" counts from now (and from the schedule start)
-		$earliest = max($now, $schedule->start ?? 0) + $schedule->timeBeforeNextSlot;
+		$earliest = max($now, $schedule->start ?? 0, $dates?->windowStart() ?? 0) + $schedule->timeBeforeNextSlot;
 		$latestCandidates = array_filter([
 			$schedule->futureLimit !== null ? $now + $schedule->futureLimit : null,
 			$schedule->end,
+			$dates?->windowEnd(),
 		], static fn ($v) => $v !== null);
 
 		$visitor = null;
@@ -94,6 +101,8 @@ class PageController extends Controller {
 			'lengthSeconds' => $schedule->lengthSeconds,
 			'organizerTimezone' => $schedule->availabilityTimezone(),
 			'weekdays' => $schedule->availableWeekdays(),
+			// One-time schedules: the dates (organizer's timezone) that still have times ahead
+			'dates' => $dates?->upcomingDates($now),
 			'earliestStart' => $earliest,
 			'latestEnd' => $latestCandidates === [] ? null : min($latestCandidates),
 			'slotsUrl' => $this->urlGenerator->linkToRoute('quickbook.bookingApi.slots', ['token' => $token]),

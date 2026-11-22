@@ -8,6 +8,7 @@ use DateTimeImmutable;
 use DateTimeZone;
 use OCA\QuickBook\Exception\ValidationException;
 use OCA\QuickBook\Service\Input;
+use OCP\IL10N;
 
 /**
  * The exact dates and times of a one-time appointment schedule, in the organizer's timezone.
@@ -34,13 +35,13 @@ final class OneTimeDates {
 	 * @param mixed $days list of {date: 'YYYY-MM-DD', from: 'HH:MM', to: 'HH:MM'}
 	 * @throws ValidationException
 	 */
-	public static function fromInput(string $timezone, mixed $days): self {
-		$tz = Input::timezone($timezone, 'timezone');
+	public static function fromInput(IL10N $l, string $timezone, mixed $days): self {
+		$tz = Input::timezone($timezone, $l, 'timezone');
 		if (!is_array($days) || !array_is_list($days) || $days === []) {
-			throw new ValidationException('days', 'Please add at least one date');
+			throw new ValidationException('days', $l->t('Please add at least one date'));
 		}
 		if (count($days) > self::MAX_DAYS) {
-			throw new ValidationException('days', 'Too many dates');
+			throw new ValidationException('days', $l->t('Too many dates'));
 		}
 
 		$clean = [];
@@ -51,13 +52,13 @@ final class OneTimeDates {
 			if (!is_string($date) || preg_match('/^(\d{4})-\d{2}-\d{2}$/', $date, $m) !== 1
 				|| (int)$m[1] < 2000 || (int)$m[1] > 2100
 				|| DateTimeImmutable::createFromFormat('!Y-m-d', $date)?->format('Y-m-d') !== $date) {
-				throw new ValidationException('days', 'Please enter a valid date');
+				throw new ValidationException('days', $l->t('Please enter a valid date'));
 			}
 			if (!is_string($from) || !is_string($to) || preg_match(self::TIME, $from) !== 1 || preg_match(self::TIME, $to) !== 1) {
-				throw new ValidationException('days', 'Please enter valid times');
+				throw new ValidationException('days', $l->t('Please enter valid times'));
 			}
 			if ($from >= $to) {
-				throw new ValidationException('days', 'The end time must be after the start time');
+				throw new ValidationException('days', $l->t('The end time must be after the start time'));
 			}
 			$clean["$date $from $to"] = ['date' => $date, 'from' => $from, 'to' => $to];
 		}
@@ -68,9 +69,9 @@ final class OneTimeDates {
 	/**
 	 * @throws \UnexpectedValueException when the stored value is damaged
 	 */
-	public static function fromStored(string $timezone, string $json): self {
+	public static function fromStored(IL10N $l, string $timezone, string $json): self {
 		try {
-			return self::fromInput($timezone, json_decode($json, true, 4, JSON_THROW_ON_ERROR));
+			return self::fromInput($l, $timezone, json_decode($json, true, 4, JSON_THROW_ON_ERROR));
 		} catch (ValidationException|\JsonException $e) {
 			throw new \UnexpectedValueException('Stored one-time dates are invalid', 0, $e);
 		}

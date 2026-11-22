@@ -1,0 +1,747 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Booking\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: quickbook/js/booking.js:126
+msgid "{minutes} min"
+msgstr "{minutes} perc"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h"
+msgstr "{hours} óra"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h {minutes} min"
+msgstr "{hours} óra {minutes} perc"
+
+#: quickbook/js/booking.js:153
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "Túl sok kérés. Várjon egy kicsit, majd próbálja újra."
+
+#: quickbook/js/booking.js:153 /work/quickbook/js/booking.js:157
+msgid "Could not load the free times."
+msgstr "Nem sikerült betölteni a szabad időpontokat."
+
+#: quickbook/js/booking.js:196
+msgid "Sorry, this time was just taken. Please choose another time."
+msgstr "Sajnos ezt az időpontot épp most foglalták le. Válasszon másik időpontot."
+
+#: quickbook/js/booking.js:202 /work/quickbook/js/calendar-onetime.js:755
+msgid "Please check your input."
+msgstr "Ellenőrizze a megadott adatokat."
+
+#: quickbook/js/booking.js:207
+msgid "This email address already has several bookings. Please try again tomorrow or contact the organizer."
+msgstr "Ehhez az e-mail-címhez már több foglalás tartozik. Próbálja újra holnap, vagy lépjen kapcsolatba a szervezővel."
+
+#: quickbook/js/booking.js:208
+msgid "You made too many bookings in a short time. Please try again later."
+msgstr "Rövid időn belül túl sok foglalást adott le. Próbálja újra később."
+
+#: quickbook/js/booking.js:215
+msgid "Something went wrong while booking. Please try again."
+msgstr "Hiba történt a foglalás során. Próbálja újra."
+
+#: quickbook/js/booking.js:217 /work/quickbook/js/calendar-onetime.js:764
+msgid "Could not reach the server. Please check your connection and try again."
+msgstr "Nem sikerült elérni a kiszolgálót. Ellenőrizze a kapcsolatot, és próbálja újra."
+
+#: quickbook/js/booking.js:247
+msgid "with {name}"
+msgstr "vele: {name}"
+
+#: quickbook/js/booking.js:254
+msgid "Date & time"
+msgstr "Dátum és idő"
+
+#: quickbook/js/booking.js:254
+msgid "Your details"
+msgstr "Az Ön adatai"
+
+#: quickbook/js/booking.js:254
+msgid "Confirm"
+msgstr "Megerősítés"
+
+#: quickbook/js/booking.js:257
+msgid "Booking steps"
+msgstr "A foglalás lépései"
+
+#: quickbook/js/booking.js:272
+msgid "This appointment has no upcoming dates any more."
+msgstr "Ennek a találkozónak már nincsenek közelgő időpontjai."
+
+#: quickbook/js/booking.js:310
+msgid "Choose a date"
+msgstr "Válasszon dátumot"
+
+#: quickbook/js/booking.js:312
+msgid "Previous month"
+msgstr "Előző hónap"
+
+#: quickbook/js/booking.js:314
+msgid "Next month"
+msgstr "Következő hónap"
+
+#: quickbook/js/booking.js:321
+msgid "Choose a date to see the free times."
+msgstr "Válasszon dátumot a szabad időpontok megtekintéséhez."
+
+#: quickbook/js/booking.js:323
+msgid "Loading free times…"
+msgstr "Szabad időpontok betöltése…"
+
+#: quickbook/js/booking.js:327
+msgid "No free times on this day. Please choose another date."
+msgstr "Ezen a napon nincs szabad időpont. Válasszon másik dátumot."
+
+#: quickbook/js/booking.js:329 /work/quickbook/js/booking.js:344
+msgid "Free times"
+msgstr "Szabad időpontok"
+
+#: quickbook/js/booking.js:343
+msgid "Choose a time"
+msgstr "Válasszon időpontot"
+
+#: quickbook/js/booking.js:345
+msgid "Times are shown in {timezone}"
+msgstr "Az időpontok a következő időzóna szerint jelennek meg: {timezone}"
+
+#: quickbook/js/booking.js:353
+msgid "Continue"
+msgstr "Folytatás"
+
+#: quickbook/js/booking.js:361
+msgid "Change"
+msgstr "Módosítás"
+
+#: quickbook/js/booking.js:382 /work/quickbook/js/booking.js:405
+msgid "Name"
+msgstr "Név"
+
+#: quickbook/js/booking.js:383 /work/quickbook/js/booking.js:406
+msgid "Email"
+msgstr "E-mail"
+
+#: quickbook/js/booking.js:383
+msgid "Your booking confirmation is sent to this address."
+msgstr "A foglalás visszaigazolását erre a címre küldjük."
+
+#: quickbook/js/booking.js:384
+msgid "Comment (optional)"
+msgstr "Megjegyzés (nem kötelező)"
+
+#: quickbook/js/booking.js:390 /work/quickbook/js/booking.js:418
+msgid "Back"
+msgstr "Vissza"
+
+#: quickbook/js/booking.js:391
+msgid "Review booking"
+msgstr "Foglalás áttekintése"
+
+#: quickbook/js/booking.js:400
+msgid "Appointment"
+msgstr "Találkozó"
+
+#: quickbook/js/booking.js:401
+msgid "With"
+msgstr "Kivel"
+
+#: quickbook/js/booking.js:402
+msgid "Date"
+msgstr "Dátum"
+
+#: quickbook/js/booking.js:403
+msgid "Time"
+msgstr "Idő"
+
+#: quickbook/js/booking.js:404 /work/quickbook/js/calendar-onetime.js:900
+msgid "Location"
+msgstr "Hely"
+
+#: quickbook/js/booking.js:407
+msgid "Comment"
+msgstr "Megjegyzés"
+
+#: quickbook/js/booking.js:415
+msgid "Please check your booking."
+msgstr "Ellenőrizze a foglalását."
+
+#: quickbook/js/booking.js:424
+msgid "Booking…"
+msgstr "Foglalás…"
+
+#: quickbook/js/booking.js:424
+msgid "Confirm booking"
+msgstr "Foglalás megerősítése"
+
+#: quickbook/js/booking.js:433
+msgid "Your appointment is booked"
+msgstr "A találkozóját lefoglaltuk"
+
+#: quickbook/js/booking.js:434
+msgid "A confirmation email is on its way to {email}."
+msgstr "A visszaigazoló e-mailt elküldtük a következő címre: {email}."
+
+#: quickbook/js/booking.js:438
+msgid "Book another appointment"
+msgstr "Másik találkozó lefoglalása"
+
+#: quickbook/js/booking.js:445
+msgid "Online booking on this page is temporarily unavailable."
+msgstr "Az online foglalás ezen az oldalon átmenetileg nem érhető el."
+
+#: quickbook/js/booking.js:447
+msgid "Continue on the standard booking page"
+msgstr "Folytatás a szokásos foglalási oldalon"
+
+#: quickbook/js/booking.js:448
+msgid "Please try again later."
+msgstr "Próbálja újra később."
+
+#: quickbook/js/calendar-onetime.js:148 quickbook/js/calendar-onetime.js:162
+msgid "{duration} minute"
+msgid_plural "{duration} minutes"
+msgstr[0] "{duration} perc"
+msgstr[1] "{duration} perc"
+
+#: quickbook/js/calendar-onetime.js:152
+msgid "{duration} week"
+msgid_plural "{duration} weeks"
+msgstr[0] "{duration} hét"
+msgstr[1] "{duration} hét"
+
+#: quickbook/js/calendar-onetime.js:156
+msgid "{duration} day"
+msgid_plural "{duration} days"
+msgstr[0] "{duration} nap"
+msgstr[1] "{duration} nap"
+
+#: quickbook/js/calendar-onetime.js:160
+msgid "{duration} hour"
+msgid_plural "{duration} hours"
+msgstr[0] "{duration} óra"
+msgstr[1] "{duration} óra"
+
+#: quickbook/js/calendar-onetime.js:262 quickbook/lib/Health/HealthText.php:25
+msgid "One-time appointment schedules"
+msgstr "Egyszeri találkozóütemezések"
+
+#: quickbook/js/calendar-onetime.js:305
+msgid "Actions"
+msgstr "Műveletek"
+
+#: quickbook/js/calendar-onetime.js:364 quickbook/js/calendar-onetime.js:985
+msgid "Preview"
+msgstr "Előnézet"
+
+#: quickbook/js/calendar-onetime.js:365 quickbook/js/calendar-onetime.js:986
+msgid "Copy link"
+msgstr "Hivatkozás másolása"
+
+#: quickbook/js/calendar-onetime.js:366
+msgid "Duplicate"
+msgstr "Kettőzés"
+
+#: quickbook/js/calendar-onetime.js:367
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: quickbook/js/calendar-onetime.js:368
+msgid "Delete"
+msgstr "Törlés"
+
+#: quickbook/js/calendar-onetime.js:412
+msgid "Appointment link was copied to clipboard"
+msgstr "Találkozóhivatkozás vágólapra másolva"
+
+#: quickbook/js/calendar-onetime.js:414
+msgid "Appointment link could not be copied to clipboard"
+msgstr "A találkozóhivatkozást nem sikerült a vágólapra másolni"
+
+#: quickbook/js/calendar-onetime.js:427
+msgid "Could not delete the appointment schedule"
+msgstr "Nem sikerült törölni a találkozóütemezést"
+
+#: quickbook/js/calendar-onetime.js:533
+msgid "Remove {calendar}"
+msgstr "{calendar} eltávolítása"
+
+#: quickbook/js/calendar-onetime.js:662
+msgid "One-time appointment schedules could not be loaded. Please try again later."
+msgstr "Az egyszeri találkozóütemezéseket nem sikerült betölteni. Próbálja újra később."
+
+#: quickbook/js/calendar-onetime.js:759
+msgid "One-time appointment schedules are temporarily unavailable."
+msgstr "Az egyszeri találkozóütemezések átmenetileg nem érhetők el."
+
+#: quickbook/js/calendar-onetime.js:761
+msgid "Could not save. Please try again."
+msgstr "Nem sikerült menteni. Próbálja újra."
+
+#: quickbook/js/calendar-onetime.js:783
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} idősáv"
+msgstr[1] "{count} idősáv"
+
+#: quickbook/js/calendar-onetime.js:794
+msgid "Date {number}"
+msgstr "{number}. dátum"
+
+#: quickbook/js/calendar-onetime.js:798
+msgid "{date}: from"
+msgstr "{date}: kezdete"
+
+#: quickbook/js/calendar-onetime.js:799
+msgid "to"
+msgstr "–"
+
+#: quickbook/js/calendar-onetime.js:800
+msgid "{date}: to"
+msgstr "{date}: vége"
+
+#: quickbook/js/calendar-onetime.js:804
+msgid "Delete {date}"
+msgstr "{date} törlése"
+
+#: quickbook/js/calendar-onetime.js:823
+msgid "Calendars to check for conflicts"
+msgstr "Naptárak az ütközés-ellenőrzéshez"
+
+#: quickbook/js/calendar-onetime.js:838
+msgid "Booking calendar"
+msgstr "Foglalási naptár"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Create one-time appointment schedule"
+msgstr "Egyszeri találkozóütemezés létrehozása"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Edit one-time appointment schedule"
+msgstr "Egyszeri találkozóütemezés szerkesztése"
+
+#: quickbook/js/calendar-onetime.js:896
+msgid "You need a calendar you can write to, to take appointments."
+msgstr "Találkozók fogadásához olyan naptárra van szüksége, amelybe írhat."
+
+#: quickbook/js/calendar-onetime.js:899
+msgid "Appointment name"
+msgstr "Találkozó neve"
+
+#: quickbook/js/calendar-onetime.js:905
+msgid "Create a Talk room"
+msgstr "Beszélgetés szoba létrehozása"
+
+#: quickbook/js/calendar-onetime.js:914
+msgid "A unique link will be generated for every booked appointment and sent via the confirmation email"
+msgstr "Egy egyéni hivatkozás lesz előállítva minden egyes lefoglalt találkozóhoz, és el lesz küldve a megerősítő e-mailben"
+
+#: quickbook/js/calendar-onetime.js:918
+msgid "Description"
+msgstr "Leírás"
+
+#: quickbook/js/calendar-onetime.js:922
+msgid "Duration (minutes)"
+msgstr "Időtartam (perc)"
+
+#: quickbook/js/calendar-onetime.js:923
+msgid "Increments"
+msgstr "Lépésköz"
+
+#: quickbook/js/calendar-onetime.js:927
+msgid "Visibility"
+msgstr "Láthatóság"
+
+#: quickbook/js/calendar-onetime.js:928
+msgid "Public – shown on profile page"
+msgstr "Nyilvános – megjelenik a profiloldalán"
+
+#: quickbook/js/calendar-onetime.js:929
+msgid "Private – only accessible via link"
+msgstr "Privát – csak hivatkozáson keresztül érhető el"
+
+#: quickbook/js/calendar-onetime.js:934
+msgid "Booking dates"
+msgstr "Foglalható dátumok"
+
+#: quickbook/js/calendar-onetime.js:935
+msgid "Times are in {timezone}."
+msgstr "Az időpontok a következő időzóna szerint értendők: {timezone}."
+
+#: quickbook/js/calendar-onetime.js:941
+msgid "Add date"
+msgstr "Dátum hozzáadása"
+
+#: quickbook/js/calendar-onetime.js:956
+msgid "Planning restrictions"
+msgstr "Tervezési korlátozások"
+
+#: quickbook/js/calendar-onetime.js:958
+msgid "Buffer before the event"
+msgstr "Esemény előtti pufferidő"
+
+#: quickbook/js/calendar-onetime.js:959
+msgid "Buffer after the event"
+msgstr "Esemény utáni pufferidő"
+
+#: quickbook/js/calendar-onetime.js:962
+msgid "Minimum time before next slot"
+msgstr "Következő időpont előtti minimális idő"
+
+#: quickbook/js/calendar-onetime.js:963
+msgid "Max slots per day"
+msgstr "Napi idősávok legnagyobb száma"
+
+#: quickbook/js/calendar-onetime.js:967
+msgid "It seems a rate limit has been reached. Please try again later."
+msgstr "Úgy néz ki, hogy elérte a forgalomkorlátot. Próbálja újra később."
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Save"
+msgstr "Mentés"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Update"
+msgstr "Frissítés"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully created"
+msgstr "Egyszeri találkozóütemezés sikeresen létrehozva"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully updated"
+msgstr "Egyszeri találkozóütemezés sikeresen frissítve"
+
+#: quickbook/js/calendar-onetime.js:995
+msgid "Close"
+msgstr "Bezárás"
+
+#: quickbook/js/settings.js:15
+msgid "Checking…"
+msgstr "Ellenőrzés…"
+
+#: quickbook/js/settings.js:23
+msgid "The self-check could not run."
+msgstr "Az önellenőrzést nem sikerült lefuttatni."
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "Appointment not found"
+msgstr "A találkozó nem található"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "This booking link does not exist (any more)."
+msgstr "Ez a foglalási hivatkozás (már) nem létezik."
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Booking unavailable"
+msgstr "A foglalás nem érhető el"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Online booking is temporarily unavailable. Please try again later."
+msgstr "Az online foglalás átmenetileg nem érhető el. Próbálja újra később."
+
+#: quickbook/lib/Health/HealthText.php:22
+msgid "Quick Booking components"
+msgstr "A Quick Booking összetevői"
+
+#: quickbook/lib/Health/HealthText.php:23
+msgid "Calendar app enabled"
+msgstr "A Naptár alkalmazás engedélyezve van"
+
+#: quickbook/lib/Health/HealthText.php:24
+msgid "Calendar code contract"
+msgstr "A Naptár kódszerződése"
+
+#: quickbook/lib/Health/HealthText.php:26
+msgid "Calendar services"
+msgstr "A Naptár szolgáltatásai"
+
+#: quickbook/lib/Health/HealthText.php:27
+msgid "Standard booking page (fallback)"
+msgstr "Szokásos foglalási oldal (tartalék megoldás)"
+
+#: quickbook/lib/Health/HealthText.php:28
+msgid "Slot lookup"
+msgstr "Szabad időpontok lekérdezése"
+
+#: quickbook/lib/Health/HealthText.php:29
+msgid "Booking storage"
+msgstr "Foglalások tárolása"
+
+#: quickbook/lib/Health/HealthText.php:36
+msgid "Passed"
+msgstr "Sikeres"
+
+#: quickbook/lib/Health/HealthText.php:37
+msgid "Failed"
+msgstr "Sikertelen"
+
+#: quickbook/lib/Health/HealthText.php:38
+msgid "Warning"
+msgstr "Figyelmeztetés"
+
+#: quickbook/lib/Health/HealthText.php:39
+msgid "Skipped"
+msgstr "Kihagyva"
+
+#: quickbook/lib/Health/HealthText.php:50
+msgid "Booking page, booking API and Calendar link redirect load"
+msgstr "A foglalási oldal, a foglalási API és a Naptár hivatkozásának átirányítása betöltődik"
+
+#: quickbook/lib/Health/HealthText.php:51
+msgid "The Calendar app is not enabled"
+msgstr "A Naptár alkalmazás nincs engedélyezve"
+
+#: quickbook/lib/Health/HealthText.php:52
+msgid "All classes, methods and fields found"
+msgstr "Minden osztály, metódus és mező megtalálható"
+
+#: quickbook/lib/Health/HealthText.php:53
+msgid "Can be created and edited"
+msgstr "Létrehozhatók és szerkeszthetők"
+
+#: quickbook/lib/Health/HealthText.php:54
+msgid "Booking service, schedule service and booking storage load"
+msgstr "A foglalási szolgáltatás, az ütemezési szolgáltatás és a foglalások tárolója betöltődik"
+
+#: quickbook/lib/Health/HealthText.php:55
+msgid "No appointment schedule exists yet"
+msgstr "Még nincs egyetlen találkozóütemezés sem"
+
+#: quickbook/lib/Health/HealthText.php:56
+#, php-format
+msgid "Schedule \"%1$s\", free slots in the next 7 days: %2$s"
+msgstr "Ütemezés: „%1$s”, szabad időpontok a következő 7 napban: %2$s"
+
+#: quickbook/lib/Health/HealthText.php:57
+msgid "Test booking stored and removed"
+msgstr "A tesztfoglalás elmentve és eltávolítva"
+
+#: quickbook/lib/Notification/Notifier.php:29
+#: quickbook/lib/Settings/AdminSection.php:24
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Quick Booking"
+msgstr "Quick Booking"
+
+#: quickbook/lib/Notification/Notifier.php:41
+msgid "Quick Booking switched visitors to the standard Calendar booking page"
+msgstr "A Quick Booking a Naptár szokásos foglalási oldalára irányította át a látogatókat"
+
+#: quickbook/lib/Notification/Notifier.php:42
+#, php-format
+msgid "Something in the Calendar app or Nextcloud no longer works as Quick Booking expects: %s"
+msgstr "A Naptár alkalmazásban vagy a Nextcloudban valami már nem úgy működik, ahogy a Quick Booking elvárja: %s"
+
+#: quickbook/lib/Notification/Notifier.php:45
+#, php-format
+msgid "Quick Booking works again (%s)"
+msgstr "A Quick Booking újra működik (%s)"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:41
+msgid "Please add at least one date"
+msgstr "Adjon hozzá legalább egy dátumot"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:44
+msgid "Too many dates"
+msgstr "Túl sok dátum"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:55
+msgid "Please enter a valid date"
+msgstr "Adjon meg egy érvényes dátumot"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:58
+msgid "Please enter valid times"
+msgstr "Adjon meg érvényes időpontokat"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:61
+msgid "The end time must be after the start time"
+msgstr "A befejezési időnek a kezdési idő után kell lennie"
+
+#: quickbook/lib/OneTime/OneTimeService.php:252
+msgid "Please enter a name of at most 128 characters"
+msgstr "Adjon meg egy legfeljebb 128 karakteres nevet"
+
+#: quickbook/lib/OneTime/OneTimeService.php:256
+msgid "The location is too long"
+msgstr "A hely túl hosszú"
+
+#: quickbook/lib/OneTime/OneTimeService.php:260
+msgid "The description is too long"
+msgstr "A leírás túl hosszú"
+
+#: quickbook/lib/OneTime/OneTimeService.php:265
+msgid "Please enter the duration in minutes"
+msgstr "Adja meg az időtartamot percben"
+
+#: quickbook/lib/OneTime/OneTimeService.php:267
+msgid "Please choose the increments"
+msgstr "Válassza ki a lépésközt"
+
+#: quickbook/lib/OneTime/OneTimeService.php:268
+msgid "Please choose the buffer before the event"
+msgstr "Válassza ki az esemény előtti pufferidőt"
+
+#: quickbook/lib/OneTime/OneTimeService.php:269
+msgid "Please choose the buffer after the event"
+msgstr "Válassza ki az esemény utáni pufferidőt"
+
+#: quickbook/lib/OneTime/OneTimeService.php:270
+msgid "Please choose the minimum time before the next slot"
+msgstr "Válassza ki a következő időpont előtti minimális időt"
+
+#: quickbook/lib/OneTime/OneTimeService.php:273
+msgid "Please enter the maximum number of slots per day, or leave it empty"
+msgstr "Adja meg a napi idősávok legnagyobb számát, vagy hagyja üresen"
+
+#: quickbook/lib/OneTime/OneTimeService.php:278
+msgid "Please choose the visibility"
+msgstr "Válassza ki a láthatóságot"
+
+#: quickbook/lib/OneTime/OneTimeService.php:284
+msgid "Please choose a booking calendar"
+msgstr "Válasszon foglalási naptárat"
+
+#: quickbook/lib/OneTime/OneTimeService.php:288
+#: quickbook/lib/OneTime/OneTimeService.php:293
+msgid "Please choose the calendars to check for conflicts"
+msgstr "Válassza ki a naptárakat az ütközés-ellenőrzéshez"
+
+#: quickbook/lib/OneTime/OneTimeService.php:302
+msgid "Each time range must fit at least one appointment"
+msgstr "Minden időtartományba bele kell férnie legalább egy találkozónak"
+
+#: quickbook/lib/Service/BookingFlowService.php:62
+#: quickbook/lib/Service/BookingFlowService.php:66
+msgid "Invalid date"
+msgstr "Érvénytelen dátum"
+
+#: quickbook/lib/Service/BookingFlowService.php:95
+msgid "Please enter your name"
+msgstr "Adja meg a nevét"
+
+#: quickbook/lib/Service/BookingFlowService.php:99
+msgid "Please enter your name without @, < or >"
+msgstr "Adja meg a nevét @, < vagy > nélkül"
+
+#: quickbook/lib/Service/BookingFlowService.php:102
+msgid "Please enter a valid email address"
+msgstr "Adjon meg egy érvényes e-mail-címet"
+
+#: quickbook/lib/Service/BookingFlowService.php:105
+msgid "The comment is too long"
+msgstr "A megjegyzés túl hosszú"
+
+#: quickbook/lib/Service/BookingFlowService.php:118
+msgid "Invalid time range"
+msgstr "Érvénytelen időtartomány"
+
+#: quickbook/lib/Service/Input.php:46
+msgid "Invalid timezone"
+msgstr "Érvénytelen időzóna"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "One-page appointment booking for Calendar schedules, without the email confirmation step."
+msgstr "Egyoldalas találkozófoglalás a Naptár ütemezéseihez, az e-mailes megerősítési lépés nélkül."
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:4
+msgid ""
+"Quick Booking adds a public booking page for the appointment schedules you already have in the Calendar app. Requires the Calendar app.\n"
+"\n"
+"Visitors pick a date and time, enter their details, review and confirm on the same page. The appointment is booked immediately and the usual booking confirmation email (with .ics) is sent.\n"
+"\n"
+"* Share the usual Calendar booking link (\"Copy link\" in the Calendar app): it opens Quick Booking.\n"
+"* One-time appointment schedules: offer appointments on one or more chosen dates (e.g. parent-teacher conferences) instead of weekly. Create them in the Calendar app under \"One-time appointment schedules\".\n"
+"* Built-in rate limiting of bookings per visitor and per email address.\n"
+"* Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks."
+msgstr ""
+"A Quick Booking nyilvános foglalási oldalt ad a Naptár alkalmazásban már meglévő találkozóütemezéseihez. A Naptár alkalmazás szükséges hozzá.\n"
+"\n"
+"A látogatók ugyanazon az oldalon választanak dátumot és időpontot, adják meg az adataikat, tekintik át és erősítik meg a foglalást. A találkozó azonnal lefoglalásra kerül, és a rendszer elküldi a szokásos foglalási visszaigazoló e-mailt (.ics-fájllal).\n"
+"\n"
+"* Ossza meg a Naptár szokásos foglalási hivatkozását („Hivatkozás másolása” a Naptár alkalmazásban): ez a Quick Bookingot nyitja meg.\n"
+"* Egyszeri találkozóütemezések: heti rendszeresség helyett egy vagy több kiválasztott napon kínálhat találkozókat (például szülői fogadóórák). Ezeket a Naptár alkalmazásban, az „Egyszeri találkozóütemezések” alatt hozhatja létre.\n"
+"* Beépített korlátozás a látogatónkénti és e-mail-címenkénti foglalások számára.\n"
+"* Önellenőrzés: minden Naptár- vagy Nextcloud-frissítés után ellenőrzi, hogy az alkalmazás továbbra is működik-e, és ha valami elromlik, a foglalási hivatkozás a Naptár szokásos foglalási oldalát jeleníti meg."
+
+#: quickbook/templates/booking.php:5
+msgid "Please enable JavaScript to book an appointment."
+msgstr "Találkozó foglalásához engedélyezze a JavaScriptet."
+
+#: quickbook/templates/settings-admin.php:10
+msgid "Quick Booking self-check"
+msgstr "Quick Booking önellenőrzés"
+
+#: quickbook/templates/settings-admin.php:12
+msgid "Quick Booking uses internal code of the Calendar app. It checks after every Calendar or Nextcloud update and once a day that this still works. If something breaks, visitors are sent to the standard Calendar booking page and admins get a notification. While switched off, the check repeats every 15 minutes and switches back on when it passes."
+msgstr "A Quick Booking a Naptár alkalmazás belső kódját használja. Minden Naptár- vagy Nextcloud-frissítés után, valamint naponta egyszer ellenőrzi, hogy ez továbbra is működik-e. Ha valami elromlik, a látogatók a Naptár szokásos foglalási oldalára kerülnek, a rendszergazdák pedig értesítést kapnak. Kikapcsolt állapotban az ellenőrzés 15 percenként megismétlődik, és ha sikeres, a Quick Booking visszakapcsol."
+
+#: quickbook/templates/settings-admin.php:17
+msgid "Off: visitors use the standard Calendar booking page."
+msgstr "Kikapcsolva: a látogatók a Naptár szokásos foglalási oldalát használják."
+
+#: quickbook/templates/settings-admin.php:21
+msgid "Bookings from several different networks failed while the self-check passed. Quick Booking switches back on after a Calendar update, or when you run the check below and it passes."
+msgstr "Több különböző hálózatból érkező foglalás meghiúsult, miközben az önellenőrzés sikeres volt. A Quick Booking a Naptár frissítése után kapcsol vissza, vagy akkor, ha lefuttatja az alábbi ellenőrzést, és az sikeres."
+
+#: quickbook/templates/settings-admin.php:24
+msgid "On: visitors book through Quick Booking."
+msgstr "Bekapcsolva: a látogatók a Quick Bookingon keresztül foglalnak."
+
+#: quickbook/templates/settings-admin.php:28
+msgid "Calendar version"
+msgstr "A Naptár verziója"
+
+#: quickbook/templates/settings-admin.php:29
+msgid "Nextcloud version"
+msgstr "A Nextcloud verziója"
+
+#: quickbook/templates/settings-admin.php:30
+msgid "Last full check"
+msgstr "Utolsó teljes ellenőrzés"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Check"
+msgstr "Ellenőrzés"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Result"
+msgstr "Eredmény"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Detail"
+msgstr "Részletek"
+
+#: quickbook/templates/settings-admin.php:49
+msgid "Run self-check now"
+msgstr "Önellenőrzés futtatása most"
+
+#: quickbook/templates/settings-admin.php:52
+msgid "Also available as: occ quickbook:check"
+msgstr "Így is elérhető: occ quickbook:check"
+
+#: quickbook/templates/settings-admin.php:53
+msgid "Visitor addresses (rate limit)"
+msgstr "Látogatók címei (forgalomkorlát)"
+
+#: quickbook/templates/settings-admin.php:55
+#, php-format
+msgid "Nextcloud sees your address as: %s"
+msgstr "A Nextcloud ezt látja az Ön címeként: %s"
+
+#: quickbook/templates/settings-admin.php:59
+msgid "This is a private address. That is fine if you are on the same network as the server. If you opened this page from outside (for example a phone on mobile data), Nextcloud does not know your reverse proxy: all visitors then share one address, and the booking limit applies to all of them together. Add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Ez egy privát cím. Ez rendben van, ha Ön ugyanazon a hálózaton van, mint a kiszolgáló. Ha kívülről nyitotta meg ezt az oldalt (például mobilinternetet használó telefonról), akkor a Nextcloud nem ismeri a fordított proxyját: ilyenkor minden látogató ugyanazon a címen osztozik, és a foglalási korlát mindannyiukra együttesen vonatkozik. Adja hozzá a proxyt a config.php „trusted_proxies” beállításához."
+
+#: quickbook/templates/settings-admin.php:62
+msgid "This should be the public address of the device you are using right now. If it is the address of your server or proxy instead, add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Ennek a jelenleg használt eszköze nyilvános címének kell lennie. Ha ehelyett a kiszolgálója vagy a proxyja címe, akkor adja hozzá a proxyt a config.php „trusted_proxies” beállításához."
+
+#: quickbook/templates/settings-admin.php:65
+msgid "Share the Calendar's own booking links (\"Copy link\" in the Calendar app). They open Quick Booking while it is on, and the Calendar booking page while it is off, disabled or removed. Links to /apps/quickbook/book/… only work while the app is installed."
+msgstr "A Naptár saját foglalási hivatkozásait ossza meg („Hivatkozás másolása” a Naptár alkalmazásban). Ezek a Quick Bookingot nyitják meg, amíg az be van kapcsolva, és a Naptár foglalási oldalát, ha ki van kapcsolva, le van tiltva vagy el lett távolítva. A /apps/quickbook/book/… hivatkozások csak addig működnek, amíg az alkalmazás telepítve van."

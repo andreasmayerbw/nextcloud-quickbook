@@ -1,0 +1,742 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Booking\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: quickbook/js/booking.js:126
+msgid "{minutes} min"
+msgstr "{minutes}分"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h"
+msgstr "{hours}時間"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h {minutes} min"
+msgstr "{hours}時間{minutes}分"
+
+#: quickbook/js/booking.js:153
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "リクエストが多すぎます。しばらく待ってから、もう一度お試しください。"
+
+#: quickbook/js/booking.js:153 /work/quickbook/js/booking.js:157
+msgid "Could not load the free times."
+msgstr "空き時間を読み込めませんでした。"
+
+#: quickbook/js/booking.js:196
+msgid "Sorry, this time was just taken. Please choose another time."
+msgstr "申し訳ありません。この時間はたった今予約されました。別の時間を選択してください。"
+
+#: quickbook/js/booking.js:202 /work/quickbook/js/calendar-onetime.js:755
+msgid "Please check your input."
+msgstr "入力内容を確認してください。"
+
+#: quickbook/js/booking.js:207
+msgid "This email address already has several bookings. Please try again tomorrow or contact the organizer."
+msgstr "このメールアドレスにはすでに複数の予約があります。明日もう一度試してみるか、主催者に連絡してください。"
+
+#: quickbook/js/booking.js:208
+msgid "You made too many bookings in a short time. Please try again later."
+msgstr "短時間に行われた予約が多すぎます。後でもう一度お試しください。"
+
+#: quickbook/js/booking.js:215
+msgid "Something went wrong while booking. Please try again."
+msgstr "予約中に問題が発生しました。もう一度お試しください。"
+
+#: quickbook/js/booking.js:217 /work/quickbook/js/calendar-onetime.js:764
+msgid "Could not reach the server. Please check your connection and try again."
+msgstr "サーバーに接続できませんでした。接続を確認して、もう一度お試しください。"
+
+#: quickbook/js/booking.js:247
+msgid "with {name}"
+msgstr "{name} との予約"
+
+#: quickbook/js/booking.js:254
+msgid "Date & time"
+msgstr "日時"
+
+#: quickbook/js/booking.js:254
+msgid "Your details"
+msgstr "お客様情報"
+
+#: quickbook/js/booking.js:254
+msgid "Confirm"
+msgstr "確認"
+
+#: quickbook/js/booking.js:257
+msgid "Booking steps"
+msgstr "予約の手順"
+
+#: quickbook/js/booking.js:272
+msgid "This appointment has no upcoming dates any more."
+msgstr "この予約には、今後の日程がもうありません。"
+
+#: quickbook/js/booking.js:310
+msgid "Choose a date"
+msgstr "日付を選択"
+
+#: quickbook/js/booking.js:312
+msgid "Previous month"
+msgstr "前月"
+
+#: quickbook/js/booking.js:314
+msgid "Next month"
+msgstr "翌月"
+
+#: quickbook/js/booking.js:321
+msgid "Choose a date to see the free times."
+msgstr "日付を選択すると、空き時間が表示されます。"
+
+#: quickbook/js/booking.js:323
+msgid "Loading free times…"
+msgstr "空き時間を読み込み中…"
+
+#: quickbook/js/booking.js:327
+msgid "No free times on this day. Please choose another date."
+msgstr "この日は空き時間がありません。別の日付を選択してください。"
+
+#: quickbook/js/booking.js:329 /work/quickbook/js/booking.js:344
+msgid "Free times"
+msgstr "空き時間"
+
+#: quickbook/js/booking.js:343
+msgid "Choose a time"
+msgstr "時間を選択"
+
+#: quickbook/js/booking.js:345
+msgid "Times are shown in {timezone}"
+msgstr "時間は {timezone} で表示されています"
+
+#: quickbook/js/booking.js:353
+msgid "Continue"
+msgstr "続ける"
+
+#: quickbook/js/booking.js:361
+msgid "Change"
+msgstr "変更"
+
+#: quickbook/js/booking.js:382 /work/quickbook/js/booking.js:405
+msgid "Name"
+msgstr "名前"
+
+#: quickbook/js/booking.js:383 /work/quickbook/js/booking.js:406
+msgid "Email"
+msgstr "メール"
+
+#: quickbook/js/booking.js:383
+msgid "Your booking confirmation is sent to this address."
+msgstr "予約の確認メールはこのアドレスに送信されます。"
+
+#: quickbook/js/booking.js:384
+msgid "Comment (optional)"
+msgstr "コメント（任意）"
+
+#: quickbook/js/booking.js:390 /work/quickbook/js/booking.js:418
+msgid "Back"
+msgstr "戻る"
+
+#: quickbook/js/booking.js:391
+msgid "Review booking"
+msgstr "予約内容を確認"
+
+#: quickbook/js/booking.js:400
+msgid "Appointment"
+msgstr "アポイントメント"
+
+#: quickbook/js/booking.js:401
+msgid "With"
+msgstr "主催者"
+
+#: quickbook/js/booking.js:402
+msgid "Date"
+msgstr "日付"
+
+#: quickbook/js/booking.js:403
+msgid "Time"
+msgstr "時間"
+
+#: quickbook/js/booking.js:404 /work/quickbook/js/calendar-onetime.js:900
+msgid "Location"
+msgstr "場所"
+
+#: quickbook/js/booking.js:407
+msgid "Comment"
+msgstr "コメント"
+
+#: quickbook/js/booking.js:415
+msgid "Please check your booking."
+msgstr "予約内容を確認してください。"
+
+#: quickbook/js/booking.js:424
+msgid "Booking…"
+msgstr "予約中…"
+
+#: quickbook/js/booking.js:424
+msgid "Confirm booking"
+msgstr "予約を確定"
+
+#: quickbook/js/booking.js:433
+msgid "Your appointment is booked"
+msgstr "予約が完了しました"
+
+#: quickbook/js/booking.js:434
+msgid "A confirmation email is on its way to {email}."
+msgstr "確認メールを {email} に送信しています。"
+
+#: quickbook/js/booking.js:438
+msgid "Book another appointment"
+msgstr "別の予約をする"
+
+#: quickbook/js/booking.js:445
+msgid "Online booking on this page is temporarily unavailable."
+msgstr "このページでのオンライン予約は一時的にご利用いただけません。"
+
+#: quickbook/js/booking.js:447
+msgid "Continue on the standard booking page"
+msgstr "標準の予約ページで続ける"
+
+#: quickbook/js/booking.js:448
+msgid "Please try again later."
+msgstr "後でもう一度お試しください。"
+
+#: quickbook/js/calendar-onetime.js:148 quickbook/js/calendar-onetime.js:162
+msgid "{duration} minute"
+msgid_plural "{duration} minutes"
+msgstr[0] "{duration}分"
+
+#: quickbook/js/calendar-onetime.js:152
+msgid "{duration} week"
+msgid_plural "{duration} weeks"
+msgstr[0] "{duration}週間"
+
+#: quickbook/js/calendar-onetime.js:156
+msgid "{duration} day"
+msgid_plural "{duration} days"
+msgstr[0] "{duration}日"
+
+#: quickbook/js/calendar-onetime.js:160
+msgid "{duration} hour"
+msgid_plural "{duration} hours"
+msgstr[0] "{duration}時間"
+
+#: quickbook/js/calendar-onetime.js:262 quickbook/lib/Health/HealthText.php:25
+msgid "One-time appointment schedules"
+msgstr "単発の予約スケジュール"
+
+#: quickbook/js/calendar-onetime.js:305
+msgid "Actions"
+msgstr "アクション"
+
+#: quickbook/js/calendar-onetime.js:364 quickbook/js/calendar-onetime.js:985
+msgid "Preview"
+msgstr "プレビュー"
+
+#: quickbook/js/calendar-onetime.js:365 quickbook/js/calendar-onetime.js:986
+msgid "Copy link"
+msgstr "リンクをコピー"
+
+#: quickbook/js/calendar-onetime.js:366
+msgid "Duplicate"
+msgstr "複製"
+
+#: quickbook/js/calendar-onetime.js:367
+msgid "Edit"
+msgstr "編集"
+
+#: quickbook/js/calendar-onetime.js:368
+msgid "Delete"
+msgstr "削除"
+
+#: quickbook/js/calendar-onetime.js:412
+msgid "Appointment link was copied to clipboard"
+msgstr "予定リンクがクリップボードにコピーされました"
+
+#: quickbook/js/calendar-onetime.js:414
+msgid "Appointment link could not be copied to clipboard"
+msgstr "予定リンクをクリップボードにコピーできませんでした"
+
+#: quickbook/js/calendar-onetime.js:427
+msgid "Could not delete the appointment schedule"
+msgstr "予約スケジュールを削除できませんでした"
+
+#: quickbook/js/calendar-onetime.js:533
+msgid "Remove {calendar}"
+msgstr "{calendar} を外す"
+
+#: quickbook/js/calendar-onetime.js:662
+msgid "One-time appointment schedules could not be loaded. Please try again later."
+msgstr "単発の予約スケジュールを読み込めませんでした。後でもう一度お試しください。"
+
+#: quickbook/js/calendar-onetime.js:759
+msgid "One-time appointment schedules are temporarily unavailable."
+msgstr "単発の予約スケジュールは一時的に利用できません。"
+
+#: quickbook/js/calendar-onetime.js:761
+msgid "Could not save. Please try again."
+msgstr "保存できませんでした。もう一度お試しください。"
+
+#: quickbook/js/calendar-onetime.js:783
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count}枠"
+
+#: quickbook/js/calendar-onetime.js:794
+msgid "Date {number}"
+msgstr "日付 {number}"
+
+#: quickbook/js/calendar-onetime.js:798
+msgid "{date}: from"
+msgstr "{date}: 開始"
+
+#: quickbook/js/calendar-onetime.js:799
+msgid "to"
+msgstr "～"
+
+#: quickbook/js/calendar-onetime.js:800
+msgid "{date}: to"
+msgstr "{date}: 終了"
+
+#: quickbook/js/calendar-onetime.js:804
+msgid "Delete {date}"
+msgstr "{date} を削除"
+
+#: quickbook/js/calendar-onetime.js:823
+msgid "Calendars to check for conflicts"
+msgstr "競合を確認するカレンダー"
+
+#: quickbook/js/calendar-onetime.js:838
+msgid "Booking calendar"
+msgstr "予約カレンダー"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Create one-time appointment schedule"
+msgstr "単発の予約スケジュールを作成"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Edit one-time appointment schedule"
+msgstr "単発の予約スケジュールを編集"
+
+#: quickbook/js/calendar-onetime.js:896
+msgid "You need a calendar you can write to, to take appointments."
+msgstr "予約を受け付けるには、書き込み可能なカレンダーが必要です。"
+
+#: quickbook/js/calendar-onetime.js:899
+msgid "Appointment name"
+msgstr "予定名"
+
+#: quickbook/js/calendar-onetime.js:905
+msgid "Create a Talk room"
+msgstr "通話ルームを作成"
+
+#: quickbook/js/calendar-onetime.js:914
+msgid "A unique link will be generated for every booked appointment and sent via the confirmation email"
+msgstr "予約ごとにユニークなリンクが作成され、確認メールで送信されます"
+
+#: quickbook/js/calendar-onetime.js:918
+msgid "Description"
+msgstr "説明"
+
+#: quickbook/js/calendar-onetime.js:922
+msgid "Duration (minutes)"
+msgstr "期間（分）"
+
+#: quickbook/js/calendar-onetime.js:923
+msgid "Increments"
+msgstr "インクリメント"
+
+#: quickbook/js/calendar-onetime.js:927
+msgid "Visibility"
+msgstr "公開レベル"
+
+#: quickbook/js/calendar-onetime.js:928
+msgid "Public – shown on profile page"
+msgstr "公開 - プロフィールページに表示"
+
+#: quickbook/js/calendar-onetime.js:929
+msgid "Private – only accessible via link"
+msgstr "非公開 - リンクからのみアクセス可能"
+
+#: quickbook/js/calendar-onetime.js:934
+msgid "Booking dates"
+msgstr "予約可能日"
+
+#: quickbook/js/calendar-onetime.js:935
+msgid "Times are in {timezone}."
+msgstr "時間のタイムゾーンは {timezone} です。"
+
+#: quickbook/js/calendar-onetime.js:941
+msgid "Add date"
+msgstr "日付を追加"
+
+#: quickbook/js/calendar-onetime.js:956
+msgid "Planning restrictions"
+msgstr "プランニングの制限"
+
+#: quickbook/js/calendar-onetime.js:958
+msgid "Buffer before the event"
+msgstr "イベント前のバッファー"
+
+#: quickbook/js/calendar-onetime.js:959
+msgid "Buffer after the event"
+msgstr "イベント後のバッファー"
+
+#: quickbook/js/calendar-onetime.js:962
+msgid "Minimum time before next slot"
+msgstr "次のスロットまでの最小時間"
+
+#: quickbook/js/calendar-onetime.js:963
+msgid "Max slots per day"
+msgstr "1日あたりの最大スロット数"
+
+#: quickbook/js/calendar-onetime.js:967
+msgid "It seems a rate limit has been reached. Please try again later."
+msgstr "レート制限に達したようです。後でもう一度お試しください。"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Save"
+msgstr "保存"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Update"
+msgstr "更新"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully created"
+msgstr "単発の予約スケジュールの作成に成功しました"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully updated"
+msgstr "単発の予約スケジュールの更新に成功しました"
+
+#: quickbook/js/calendar-onetime.js:995
+msgid "Close"
+msgstr "閉じる"
+
+#: quickbook/js/settings.js:15
+msgid "Checking…"
+msgstr "チェック中…"
+
+#: quickbook/js/settings.js:23
+msgid "The self-check could not run."
+msgstr "セルフチェックを実行できませんでした。"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "Appointment not found"
+msgstr "予定が見つかりません"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "This booking link does not exist (any more)."
+msgstr "この予約リンクは存在しません（または無効になりました）。"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Booking unavailable"
+msgstr "予約できません"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Online booking is temporarily unavailable. Please try again later."
+msgstr "オンライン予約は一時的にご利用いただけません。後でもう一度お試しください。"
+
+#: quickbook/lib/Health/HealthText.php:22
+msgid "Quick Booking components"
+msgstr "Quick Booking のコンポーネント"
+
+#: quickbook/lib/Health/HealthText.php:23
+msgid "Calendar app enabled"
+msgstr "カレンダーアプリが有効"
+
+#: quickbook/lib/Health/HealthText.php:24
+msgid "Calendar code contract"
+msgstr "カレンダーのコード契約"
+
+#: quickbook/lib/Health/HealthText.php:26
+msgid "Calendar services"
+msgstr "カレンダーのサービス"
+
+#: quickbook/lib/Health/HealthText.php:27
+msgid "Standard booking page (fallback)"
+msgstr "標準の予約ページ（フォールバック）"
+
+#: quickbook/lib/Health/HealthText.php:28
+msgid "Slot lookup"
+msgstr "空き時間の検索"
+
+#: quickbook/lib/Health/HealthText.php:29
+msgid "Booking storage"
+msgstr "予約の保存"
+
+#: quickbook/lib/Health/HealthText.php:36
+msgid "Passed"
+msgstr "合格"
+
+#: quickbook/lib/Health/HealthText.php:37
+msgid "Failed"
+msgstr "失敗"
+
+#: quickbook/lib/Health/HealthText.php:38
+msgid "Warning"
+msgstr "警告"
+
+#: quickbook/lib/Health/HealthText.php:39
+msgid "Skipped"
+msgstr "スキップ"
+
+#: quickbook/lib/Health/HealthText.php:50
+msgid "Booking page, booking API and Calendar link redirect load"
+msgstr "予約ページ、予約 API、カレンダーリンクのリダイレクトを読み込めます"
+
+#: quickbook/lib/Health/HealthText.php:51
+msgid "The Calendar app is not enabled"
+msgstr "カレンダーアプリが有効になっていません"
+
+#: quickbook/lib/Health/HealthText.php:52
+msgid "All classes, methods and fields found"
+msgstr "すべてのクラス、メソッド、フィールドが見つかりました"
+
+#: quickbook/lib/Health/HealthText.php:53
+msgid "Can be created and edited"
+msgstr "作成と編集が可能です"
+
+#: quickbook/lib/Health/HealthText.php:54
+msgid "Booking service, schedule service and booking storage load"
+msgstr "予約サービス、スケジュールサービス、予約ストレージを読み込めます"
+
+#: quickbook/lib/Health/HealthText.php:55
+msgid "No appointment schedule exists yet"
+msgstr "予約スケジュールがまだありません"
+
+#: quickbook/lib/Health/HealthText.php:56
+#, php-format
+msgid "Schedule \"%1$s\", free slots in the next 7 days: %2$s"
+msgstr "スケジュール「%1$s」、今後7日間の空き時間: %2$s"
+
+#: quickbook/lib/Health/HealthText.php:57
+msgid "Test booking stored and removed"
+msgstr "テスト予約を保存して削除しました"
+
+#: quickbook/lib/Notification/Notifier.php:29
+#: quickbook/lib/Settings/AdminSection.php:24
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Quick Booking"
+msgstr "Quick Booking"
+
+#: quickbook/lib/Notification/Notifier.php:41
+msgid "Quick Booking switched visitors to the standard Calendar booking page"
+msgstr "Quick Booking は訪問者を標準のカレンダー予約ページに切り替えました"
+
+#: quickbook/lib/Notification/Notifier.php:42
+#, php-format
+msgid "Something in the Calendar app or Nextcloud no longer works as Quick Booking expects: %s"
+msgstr "カレンダーアプリまたは Nextcloud の一部が、Quick Booking の想定どおりに動作しなくなりました: %s"
+
+#: quickbook/lib/Notification/Notifier.php:45
+#, php-format
+msgid "Quick Booking works again (%s)"
+msgstr "Quick Booking は再び動作しています (%s)"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:41
+msgid "Please add at least one date"
+msgstr "日付を1つ以上追加してください"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:44
+msgid "Too many dates"
+msgstr "日付が多すぎます"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:55
+msgid "Please enter a valid date"
+msgstr "有効な日付を入力してください"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:58
+msgid "Please enter valid times"
+msgstr "有効な時間を入力してください"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:61
+msgid "The end time must be after the start time"
+msgstr "終了時間は開始時間より後にしてください"
+
+#: quickbook/lib/OneTime/OneTimeService.php:252
+msgid "Please enter a name of at most 128 characters"
+msgstr "名前は128文字以内で入力してください"
+
+#: quickbook/lib/OneTime/OneTimeService.php:256
+msgid "The location is too long"
+msgstr "場所が長すぎます"
+
+#: quickbook/lib/OneTime/OneTimeService.php:260
+msgid "The description is too long"
+msgstr "説明が長すぎます"
+
+#: quickbook/lib/OneTime/OneTimeService.php:265
+msgid "Please enter the duration in minutes"
+msgstr "期間を分単位で入力してください"
+
+#: quickbook/lib/OneTime/OneTimeService.php:267
+msgid "Please choose the increments"
+msgstr "インクリメントを選択してください"
+
+#: quickbook/lib/OneTime/OneTimeService.php:268
+msgid "Please choose the buffer before the event"
+msgstr "イベント前のバッファーを選択してください"
+
+#: quickbook/lib/OneTime/OneTimeService.php:269
+msgid "Please choose the buffer after the event"
+msgstr "イベント後のバッファーを選択してください"
+
+#: quickbook/lib/OneTime/OneTimeService.php:270
+msgid "Please choose the minimum time before the next slot"
+msgstr "次のスロットまでの最小時間を選択してください"
+
+#: quickbook/lib/OneTime/OneTimeService.php:273
+msgid "Please enter the maximum number of slots per day, or leave it empty"
+msgstr "1日あたりの最大スロット数を入力するか、空欄のままにしてください"
+
+#: quickbook/lib/OneTime/OneTimeService.php:278
+msgid "Please choose the visibility"
+msgstr "公開レベルを選択してください"
+
+#: quickbook/lib/OneTime/OneTimeService.php:284
+msgid "Please choose a booking calendar"
+msgstr "予約カレンダーを選択してください"
+
+#: quickbook/lib/OneTime/OneTimeService.php:288
+#: quickbook/lib/OneTime/OneTimeService.php:293
+msgid "Please choose the calendars to check for conflicts"
+msgstr "競合を確認するカレンダーを選択してください"
+
+#: quickbook/lib/OneTime/OneTimeService.php:302
+msgid "Each time range must fit at least one appointment"
+msgstr "各時間帯には、少なくとも1件の予約が収まる必要があります"
+
+#: quickbook/lib/Service/BookingFlowService.php:62
+#: quickbook/lib/Service/BookingFlowService.php:66
+msgid "Invalid date"
+msgstr "無効な日付"
+
+#: quickbook/lib/Service/BookingFlowService.php:95
+msgid "Please enter your name"
+msgstr "お名前を入力してください"
+
+#: quickbook/lib/Service/BookingFlowService.php:99
+msgid "Please enter your name without @, < or >"
+msgstr "お名前は @、<、> を使わずに入力してください"
+
+#: quickbook/lib/Service/BookingFlowService.php:102
+msgid "Please enter a valid email address"
+msgstr "有効なメールアドレスを入力してください"
+
+#: quickbook/lib/Service/BookingFlowService.php:105
+msgid "The comment is too long"
+msgstr "コメントが長すぎます"
+
+#: quickbook/lib/Service/BookingFlowService.php:118
+msgid "Invalid time range"
+msgstr "無効な時間帯"
+
+#: quickbook/lib/Service/Input.php:46
+msgid "Invalid timezone"
+msgstr "無効なタイムゾーン"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "One-page appointment booking for Calendar schedules, without the email confirmation step."
+msgstr "カレンダーの予約スケジュールを1ページで予約。メールでの確認手順は不要です。"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:4
+msgid ""
+"Quick Booking adds a public booking page for the appointment schedules you already have in the Calendar app. Requires the Calendar app.\n"
+"\n"
+"Visitors pick a date and time, enter their details, review and confirm on the same page. The appointment is booked immediately and the usual booking confirmation email (with .ics) is sent.\n"
+"\n"
+"* Share the usual Calendar booking link (\"Copy link\" in the Calendar app): it opens Quick Booking.\n"
+"* One-time appointment schedules: offer appointments on one or more chosen dates (e.g. parent-teacher conferences) instead of weekly. Create them in the Calendar app under \"One-time appointment schedules\".\n"
+"* Built-in rate limiting of bookings per visitor and per email address.\n"
+"* Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks."
+msgstr ""
+"Quick Booking は、カレンダーアプリにすでにある予約スケジュール用の公開予約ページを追加します。カレンダーアプリが必要です。\n"
+"\n"
+"訪問者は、日時の選択、情報の入力、内容の確認、確定までを同じページで行えます。予約はすぐに確定し、通常の予約確認メール（.ics 付き）が送信されます。\n"
+"\n"
+"* カレンダーの通常の予約リンク（カレンダーアプリの「リンクをコピー」）を共有すると、Quick Booking が開きます。\n"
+"* 単発の予約スケジュール: 毎週ではなく、選択した1日または複数の日付（保護者面談など）に予約を受け付けます。カレンダーアプリの「単発の予約スケジュール」で作成します。\n"
+"* 訪問者ごと、メールアドレスごとの予約数のレート制限を内蔵しています。\n"
+"* セルフチェック: カレンダーや Nextcloud の更新のたびに正常に動作するかを確認し、問題が発生した場合は予約リンクで標準のカレンダー予約ページを表示します。"
+
+#: quickbook/templates/booking.php:5
+msgid "Please enable JavaScript to book an appointment."
+msgstr "予約するには JavaScript を有効にしてください。"
+
+#: quickbook/templates/settings-admin.php:10
+msgid "Quick Booking self-check"
+msgstr "Quick Booking セルフチェック"
+
+#: quickbook/templates/settings-admin.php:12
+msgid "Quick Booking uses internal code of the Calendar app. It checks after every Calendar or Nextcloud update and once a day that this still works. If something breaks, visitors are sent to the standard Calendar booking page and admins get a notification. While switched off, the check repeats every 15 minutes and switches back on when it passes."
+msgstr "Quick Booking はカレンダーアプリの内部コードを使用しています。カレンダーや Nextcloud の更新のたびに、また1日1回、正常に動作するかを確認します。問題が発生した場合、訪問者は標準のカレンダー予約ページに案内され、管理者に通知が届きます。オフの間は15分ごとにチェックを繰り返し、合格するとオンに戻ります。"
+
+#: quickbook/templates/settings-admin.php:17
+msgid "Off: visitors use the standard Calendar booking page."
+msgstr "オフ: 訪問者は標準のカレンダー予約ページを使用します。"
+
+#: quickbook/templates/settings-admin.php:21
+msgid "Bookings from several different networks failed while the self-check passed. Quick Booking switches back on after a Calendar update, or when you run the check below and it passes."
+msgstr "セルフチェックには合格しましたが、複数の異なるネットワークからの予約が失敗しました。Quick Booking は、カレンダーの更新後、または下のチェックを実行して合格したときにオンに戻ります。"
+
+#: quickbook/templates/settings-admin.php:24
+msgid "On: visitors book through Quick Booking."
+msgstr "オン: 訪問者は Quick Booking で予約します。"
+
+#: quickbook/templates/settings-admin.php:28
+msgid "Calendar version"
+msgstr "カレンダーのバージョン"
+
+#: quickbook/templates/settings-admin.php:29
+msgid "Nextcloud version"
+msgstr "Nextcloud のバージョン"
+
+#: quickbook/templates/settings-admin.php:30
+msgid "Last full check"
+msgstr "前回の完全チェック"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Check"
+msgstr "チェック項目"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Result"
+msgstr "結果"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Detail"
+msgstr "詳細"
+
+#: quickbook/templates/settings-admin.php:49
+msgid "Run self-check now"
+msgstr "今すぐセルフチェックを実行"
+
+#: quickbook/templates/settings-admin.php:52
+msgid "Also available as: occ quickbook:check"
+msgstr "次のコマンドでも実行できます: occ quickbook:check"
+
+#: quickbook/templates/settings-admin.php:53
+msgid "Visitor addresses (rate limit)"
+msgstr "訪問者のアドレス（レート制限）"
+
+#: quickbook/templates/settings-admin.php:55
+#, php-format
+msgid "Nextcloud sees your address as: %s"
+msgstr "Nextcloud はあなたのアドレスを次のように認識しています: %s"
+
+#: quickbook/templates/settings-admin.php:59
+msgid "This is a private address. That is fine if you are on the same network as the server. If you opened this page from outside (for example a phone on mobile data), Nextcloud does not know your reverse proxy: all visitors then share one address, and the booking limit applies to all of them together. Add the proxy to \"trusted_proxies\" in config.php."
+msgstr "これはプライベートアドレスです。サーバーと同じネットワーク上にいる場合は問題ありません。外部から（たとえばモバイルデータ通信中のスマートフォンで）このページを開いた場合は、Nextcloud がリバースプロキシを認識していません。その場合、すべての訪問者が1つのアドレスを共有し、予約の上限が全員にまとめて適用されます。config.php の \"trusted_proxies\" にプロキシを追加してください。"
+
+#: quickbook/templates/settings-admin.php:62
+msgid "This should be the public address of the device you are using right now. If it is the address of your server or proxy instead, add the proxy to \"trusted_proxies\" in config.php."
+msgstr "これは、今お使いのデバイスのパブリックアドレスであるはずです。サーバーまたはプロキシのアドレスになっている場合は、config.php の \"trusted_proxies\" にプロキシを追加してください。"
+
+#: quickbook/templates/settings-admin.php:65
+msgid "Share the Calendar's own booking links (\"Copy link\" in the Calendar app). They open Quick Booking while it is on, and the Calendar booking page while it is off, disabled or removed. Links to /apps/quickbook/book/… only work while the app is installed."
+msgstr "カレンダー自体の予約リンク（カレンダーアプリの「リンクをコピー」）を共有してください。Quick Booking がオンの間は Quick Booking が開き、オフ、無効、または削除されている間はカレンダーの予約ページが開きます。/apps/quickbook/book/… へのリンクは、アプリがインストールされている間のみ機能します。"

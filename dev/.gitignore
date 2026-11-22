@@ -1,1 +1,3 @@
 .env
+# Downloaded translationtool (dev/l10n.sh)
+.cache/

@@ -1,0 +1,747 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Booking\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: quickbook/js/booking.js:126
+msgid "{minutes} min"
+msgstr "{minutes} مىنۇت"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h"
+msgstr "{hours} سائەت"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h {minutes} min"
+msgstr "{hours} سائەت {minutes} مىنۇت"
+
+#: quickbook/js/booking.js:153
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "ئىلتىماس بەك كۆپ. بىر ئاز ساقلاپ قايتا سىناڭ."
+
+#: quickbook/js/booking.js:153 /work/quickbook/js/booking.js:157
+msgid "Could not load the free times."
+msgstr "بوش ۋاقىتلارنى يۈكلىگىلى بولمىدى."
+
+#: quickbook/js/booking.js:196
+msgid "Sorry, this time was just taken. Please choose another time."
+msgstr "كەچۈرۈڭ، بۇ ۋاقىت ھازىرلا زاكاز قىلىندى. باشقا ۋاقىتنى تاللاڭ."
+
+#: quickbook/js/booking.js:202 /work/quickbook/js/calendar-onetime.js:755
+msgid "Please check your input."
+msgstr "كىرگۈزگەن ئۇچۇرلىرىڭىزنى تەكشۈرۈڭ."
+
+#: quickbook/js/booking.js:207
+msgid "This email address already has several bookings. Please try again tomorrow or contact the organizer."
+msgstr "بۇ تورخەت ئادرېسى بىلەن ئاللىقاچان بىر قانچە زاكاز قىلىنغان. ئەتە قايتا سىناڭ ياكى تەشكىللىگۈچى بىلەن ئالاقىلىشىڭ."
+
+#: quickbook/js/booking.js:208
+msgid "You made too many bookings in a short time. Please try again later."
+msgstr "قىسقا ۋاقىت ئىچىدە بەك كۆپ زاكاز قىلدىڭىز. كېيىن قايتا سىناڭ."
+
+#: quickbook/js/booking.js:215
+msgid "Something went wrong while booking. Please try again."
+msgstr "زاكاز قىلىش جەريانىدا خاتالىق كۆرۈلدى. قايتا سىناڭ."
+
+#: quickbook/js/booking.js:217 /work/quickbook/js/calendar-onetime.js:764
+msgid "Could not reach the server. Please check your connection and try again."
+msgstr "مۇلازىمېتىرغا ئۇلىنالمىدى. تور ئۇلىنىشىڭىزنى تەكشۈرۈپ قايتا سىناڭ."
+
+#: quickbook/js/booking.js:247
+msgid "with {name}"
+msgstr "{name} بىلەن"
+
+#: quickbook/js/booking.js:254
+msgid "Date & time"
+msgstr "چېسلا ۋە ۋاقىت"
+
+#: quickbook/js/booking.js:254
+msgid "Your details"
+msgstr "ئۇچۇرلىرىڭىز"
+
+#: quickbook/js/booking.js:254
+msgid "Confirm"
+msgstr "جەزملەشتۈرۈش"
+
+#: quickbook/js/booking.js:257
+msgid "Booking steps"
+msgstr "زاكاز قىلىش باسقۇچلىرى"
+
+#: quickbook/js/booking.js:272
+msgid "This appointment has no upcoming dates any more."
+msgstr "بۇ ئۇچرىشىشنىڭ ئەمدى كەلگۈسى چېسلاسى يوق."
+
+#: quickbook/js/booking.js:310
+msgid "Choose a date"
+msgstr "چېسلا تاللاڭ"
+
+#: quickbook/js/booking.js:312
+msgid "Previous month"
+msgstr "ئالدىنقى ئاي"
+
+#: quickbook/js/booking.js:314
+msgid "Next month"
+msgstr "كېلەر ئاي"
+
+#: quickbook/js/booking.js:321
+msgid "Choose a date to see the free times."
+msgstr "بوش ۋاقىتلارنى كۆرۈش ئۈچۈن چېسلا تاللاڭ."
+
+#: quickbook/js/booking.js:323
+msgid "Loading free times…"
+msgstr "بوش ۋاقىتلار يۈكلىنىۋاتىدۇ…"
+
+#: quickbook/js/booking.js:327
+msgid "No free times on this day. Please choose another date."
+msgstr "بۇ كۈندە بوش ۋاقىت يوق. باشقا چېسلانى تاللاڭ."
+
+#: quickbook/js/booking.js:329 /work/quickbook/js/booking.js:344
+msgid "Free times"
+msgstr "بوش ۋاقىتلار"
+
+#: quickbook/js/booking.js:343
+msgid "Choose a time"
+msgstr "ۋاقىت تاللاڭ"
+
+#: quickbook/js/booking.js:345
+msgid "Times are shown in {timezone}"
+msgstr "ۋاقىتلار {timezone} ۋاقىت رايونى بويىچە كۆرسىتىلدى"
+
+#: quickbook/js/booking.js:353
+msgid "Continue"
+msgstr "داۋاملاشتۇر"
+
+#: quickbook/js/booking.js:361
+msgid "Change"
+msgstr "ئۆزگەرتىش"
+
+#: quickbook/js/booking.js:382 /work/quickbook/js/booking.js:405
+msgid "Name"
+msgstr "ئىسىم"
+
+#: quickbook/js/booking.js:383 /work/quickbook/js/booking.js:406
+msgid "Email"
+msgstr "تورخەت"
+
+#: quickbook/js/booking.js:383
+msgid "Your booking confirmation is sent to this address."
+msgstr "زاكازىڭىزنىڭ جەزملەشتۈرۈش ئۇچۇرى بۇ ئادرېسقا ئەۋەتىلىدۇ."
+
+#: quickbook/js/booking.js:384
+msgid "Comment (optional)"
+msgstr "ئىزاھات (ئىختىيارىي)"
+
+#: quickbook/js/booking.js:390 /work/quickbook/js/booking.js:418
+msgid "Back"
+msgstr "قايتىش"
+
+#: quickbook/js/booking.js:391
+msgid "Review booking"
+msgstr "زاكازنى تەكشۈرۈش"
+
+#: quickbook/js/booking.js:400
+msgid "Appointment"
+msgstr "ئۇچرىشىش"
+
+#: quickbook/js/booking.js:401
+msgid "With"
+msgstr "كىم بىلەن"
+
+#: quickbook/js/booking.js:402
+msgid "Date"
+msgstr "چېسلا"
+
+#: quickbook/js/booking.js:403
+msgid "Time"
+msgstr "ۋاقىت"
+
+#: quickbook/js/booking.js:404 /work/quickbook/js/calendar-onetime.js:900
+msgid "Location"
+msgstr "ئورنى"
+
+#: quickbook/js/booking.js:407
+msgid "Comment"
+msgstr "ئىزاھات"
+
+#: quickbook/js/booking.js:415
+msgid "Please check your booking."
+msgstr "زاكازىڭىزنى تەكشۈرۈڭ."
+
+#: quickbook/js/booking.js:424
+msgid "Booking…"
+msgstr "زاكاز قىلىنىۋاتىدۇ…"
+
+#: quickbook/js/booking.js:424
+msgid "Confirm booking"
+msgstr "زاكازنى جەزملەشتۈرۈش"
+
+#: quickbook/js/booking.js:433
+msgid "Your appointment is booked"
+msgstr "ئۇچرىشىشىڭىز زاكاز قىلىندى"
+
+#: quickbook/js/booking.js:434
+msgid "A confirmation email is on its way to {email}."
+msgstr "جەزملەشتۈرۈش تورخېتى {email} غا ئەۋەتىلىۋاتىدۇ."
+
+#: quickbook/js/booking.js:438
+msgid "Book another appointment"
+msgstr "باشقا ئۇچرىشىش زاكاز قىلىش"
+
+#: quickbook/js/booking.js:445
+msgid "Online booking on this page is temporarily unavailable."
+msgstr "بۇ بەتتە توردا زاكاز قىلىشنى ۋاقىتلىق ئىشلەتكىلى بولمايدۇ."
+
+#: quickbook/js/booking.js:447
+msgid "Continue on the standard booking page"
+msgstr "ئۆلچەملىك زاكاز بېتىدە داۋاملاشتۇرۇش"
+
+#: quickbook/js/booking.js:448
+msgid "Please try again later."
+msgstr "كېيىن قايتا سىناڭ."
+
+#: quickbook/js/calendar-onetime.js:148 quickbook/js/calendar-onetime.js:162
+msgid "{duration} minute"
+msgid_plural "{duration} minutes"
+msgstr[0] "{duration} مىنۇت"
+msgstr[1] "{duration} مىنۇت"
+
+#: quickbook/js/calendar-onetime.js:152
+msgid "{duration} week"
+msgid_plural "{duration} weeks"
+msgstr[0] "{duration} ھەپتە"
+msgstr[1] "{duration} ھەپتە"
+
+#: quickbook/js/calendar-onetime.js:156
+msgid "{duration} day"
+msgid_plural "{duration} days"
+msgstr[0] "{duration} كۈن"
+msgstr[1] "{duration} كۈن"
+
+#: quickbook/js/calendar-onetime.js:160
+msgid "{duration} hour"
+msgid_plural "{duration} hours"
+msgstr[0] "{duration} سائەت"
+msgstr[1] "{duration} سائەت"
+
+#: quickbook/js/calendar-onetime.js:262 quickbook/lib/Health/HealthText.php:25
+msgid "One-time appointment schedules"
+msgstr "بىر قېتىملىق ئۇچرىشىش جەدۋەللىرى"
+
+#: quickbook/js/calendar-onetime.js:305
+msgid "Actions"
+msgstr "مەشغۇلاتلار"
+
+#: quickbook/js/calendar-onetime.js:364 quickbook/js/calendar-onetime.js:985
+msgid "Preview"
+msgstr "ئالدىن كۆرۈش"
+
+#: quickbook/js/calendar-onetime.js:365 quickbook/js/calendar-onetime.js:986
+msgid "Copy link"
+msgstr "ئۇلانمىنى كۆچۈرۈڭ"
+
+#: quickbook/js/calendar-onetime.js:366
+msgid "Duplicate"
+msgstr "نۇسخىلاش"
+
+#: quickbook/js/calendar-onetime.js:367
+msgid "Edit"
+msgstr "تەھرىرلەش"
+
+#: quickbook/js/calendar-onetime.js:368
+msgid "Delete"
+msgstr "ئۆچۈر"
+
+#: quickbook/js/calendar-onetime.js:412
+msgid "Appointment link was copied to clipboard"
+msgstr "ئۇچرىشىش ئۇلانمىسى چاپلاش تاختىسىغا كۆچۈرۈلدى"
+
+#: quickbook/js/calendar-onetime.js:414
+msgid "Appointment link could not be copied to clipboard"
+msgstr "ئۇچرىشىش ئۇلانمىسىنى چاپلاش تاختىسىغا كۆچۈرگىلى بولمىدى"
+
+#: quickbook/js/calendar-onetime.js:427
+msgid "Could not delete the appointment schedule"
+msgstr "ئۇچرىشىش جەدۋىلىنى ئۆچۈرگىلى بولمىدى"
+
+#: quickbook/js/calendar-onetime.js:533
+msgid "Remove {calendar}"
+msgstr "{calendar} نى چىقىرىۋېتىش"
+
+#: quickbook/js/calendar-onetime.js:662
+msgid "One-time appointment schedules could not be loaded. Please try again later."
+msgstr "بىر قېتىملىق ئۇچرىشىش جەدۋەللىرىنى يۈكلىگىلى بولمىدى. كېيىن قايتا سىناڭ."
+
+#: quickbook/js/calendar-onetime.js:759
+msgid "One-time appointment schedules are temporarily unavailable."
+msgstr "بىر قېتىملىق ئۇچرىشىش جەدۋەللىرىنى ۋاقىتلىق ئىشلەتكىلى بولمايدۇ."
+
+#: quickbook/js/calendar-onetime.js:761
+msgid "Could not save. Please try again."
+msgstr "ساقلىغىلى بولمىدى. قايتا سىناڭ."
+
+#: quickbook/js/calendar-onetime.js:783
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} ئورۇن"
+msgstr[1] "{count} ئورۇن"
+
+#: quickbook/js/calendar-onetime.js:794
+msgid "Date {number}"
+msgstr "{number}-چېسلا"
+
+#: quickbook/js/calendar-onetime.js:798
+msgid "{date}: from"
+msgstr "{date}: باشلىنىش ۋاقتى"
+
+#: quickbook/js/calendar-onetime.js:799
+msgid "to"
+msgstr "–"
+
+#: quickbook/js/calendar-onetime.js:800
+msgid "{date}: to"
+msgstr "{date}: ئاخىرلىشىش ۋاقتى"
+
+#: quickbook/js/calendar-onetime.js:804
+msgid "Delete {date}"
+msgstr "{date} نى ئۆچۈرۈش"
+
+#: quickbook/js/calendar-onetime.js:823
+msgid "Calendars to check for conflicts"
+msgstr "توقۇنۇش تەكشۈرۈلىدىغان يىلنامىلەر"
+
+#: quickbook/js/calendar-onetime.js:838
+msgid "Booking calendar"
+msgstr "زاكاز يىلنامىسى"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Create one-time appointment schedule"
+msgstr "بىر قېتىملىق ئۇچرىشىش جەدۋىلى قۇرۇش"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Edit one-time appointment schedule"
+msgstr "بىر قېتىملىق ئۇچرىشىش جەدۋىلىنى تەھرىرلەش"
+
+#: quickbook/js/calendar-onetime.js:896
+msgid "You need a calendar you can write to, to take appointments."
+msgstr "ئۇچرىشىش قوبۇل قىلىش ئۈچۈن يېزىش ھوقۇقىڭىز بار بىر يىلنامە كېرەك."
+
+#: quickbook/js/calendar-onetime.js:899
+msgid "Appointment name"
+msgstr "ئۇچرىشىش نامى"
+
+#: quickbook/js/calendar-onetime.js:905
+msgid "Create a Talk room"
+msgstr "پاراڭلىشىش ئۆيى قۇرۇش"
+
+#: quickbook/js/calendar-onetime.js:914
+msgid "A unique link will be generated for every booked appointment and sent via the confirmation email"
+msgstr "ھەر بىر زاكاز قىلىنغان ئۇچرىشىش ئۈچۈن ئۆزگىچە ئۇلانما ھاسىل قىلىنىدۇ ۋە جەزملەشتۈرۈش تورخېتى ئارقىلىق ئەۋەتىلىدۇ"
+
+#: quickbook/js/calendar-onetime.js:918
+msgid "Description"
+msgstr "چۈشەندۈرۈش"
+
+#: quickbook/js/calendar-onetime.js:922
+msgid "Duration (minutes)"
+msgstr "داۋاملىشىش ۋاقتى (مىنۇت)"
+
+#: quickbook/js/calendar-onetime.js:923
+msgid "Increments"
+msgstr "ۋاقىت ئارىلىقى"
+
+#: quickbook/js/calendar-onetime.js:927
+msgid "Visibility"
+msgstr "كۆرۈنۈشچانلىقى"
+
+#: quickbook/js/calendar-onetime.js:928
+msgid "Public – shown on profile page"
+msgstr "ئاممىۋى – شەخسىي ئۇچۇر بېتىدە كۆرسىتىلىدۇ"
+
+#: quickbook/js/calendar-onetime.js:929
+msgid "Private – only accessible via link"
+msgstr "شەخسىي – پەقەت ئۇلانما ئارقىلىقلا زىيارەت قىلغىلى بولىدۇ"
+
+#: quickbook/js/calendar-onetime.js:934
+msgid "Booking dates"
+msgstr "زاكاز چېسلالىرى"
+
+#: quickbook/js/calendar-onetime.js:935
+msgid "Times are in {timezone}."
+msgstr "ۋاقىتلار {timezone} ۋاقىت رايونى بويىچە."
+
+#: quickbook/js/calendar-onetime.js:941
+msgid "Add date"
+msgstr "چېسلا قوشۇش"
+
+#: quickbook/js/calendar-onetime.js:956
+msgid "Planning restrictions"
+msgstr "پىلان چەكلىمىسى"
+
+#: quickbook/js/calendar-onetime.js:958
+msgid "Buffer before the event"
+msgstr "پائالىيەتتىن بۇرۇنقى ئارىلىق ۋاقىت"
+
+#: quickbook/js/calendar-onetime.js:959
+msgid "Buffer after the event"
+msgstr "پائالىيەتتىن كېيىنكى ئارىلىق ۋاقىت"
+
+#: quickbook/js/calendar-onetime.js:962
+msgid "Minimum time before next slot"
+msgstr "كېيىنكى ئورۇندىن بۇرۇنقى ئەڭ قىسقا ۋاقىت"
+
+#: quickbook/js/calendar-onetime.js:963
+msgid "Max slots per day"
+msgstr "كۈنىگە ئەڭ كۆپ ئورۇن"
+
+#: quickbook/js/calendar-onetime.js:967
+msgid "It seems a rate limit has been reached. Please try again later."
+msgstr "قارىماققا چەككە يەتكەندەك قىلىدۇ. كېيىن قايتا سىناڭ."
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Save"
+msgstr "ساقلا"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Update"
+msgstr "يېڭىلا"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully created"
+msgstr "بىر قېتىملىق ئۇچرىشىش جەدۋىلى مۇۋەپپەقىيەتلىك قۇرۇلدى"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully updated"
+msgstr "بىر قېتىملىق ئۇچرىشىش جەدۋىلى مۇۋەپپەقىيەتلىك يېڭىلاندى"
+
+#: quickbook/js/calendar-onetime.js:995
+msgid "Close"
+msgstr "ياپ"
+
+#: quickbook/js/settings.js:15
+msgid "Checking…"
+msgstr "تەكشۈرۈۋاتىدۇ…"
+
+#: quickbook/js/settings.js:23
+msgid "The self-check could not run."
+msgstr "ئۆزىنى تەكشۈرۈشنى ئىجرا قىلغىلى بولمىدى."
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "Appointment not found"
+msgstr "ئۇچرىشىش تېپىلمىدى"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "This booking link does not exist (any more)."
+msgstr "بۇ زاكاز ئۇلانمىسى (ئەمدى) مەۋجۇت ئەمەس."
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Booking unavailable"
+msgstr "زاكاز قىلغىلى بولمايدۇ"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Online booking is temporarily unavailable. Please try again later."
+msgstr "توردا زاكاز قىلىشنى ۋاقىتلىق ئىشلەتكىلى بولمايدۇ. كېيىن قايتا سىناڭ."
+
+#: quickbook/lib/Health/HealthText.php:22
+msgid "Quick Booking components"
+msgstr "Quick Booking زاپچاسلىرى"
+
+#: quickbook/lib/Health/HealthText.php:23
+msgid "Calendar app enabled"
+msgstr "يىلنامە ئەپى قوزغىتىلغان"
+
+#: quickbook/lib/Health/HealthText.php:24
+msgid "Calendar code contract"
+msgstr "يىلنامە كود توختامى"
+
+#: quickbook/lib/Health/HealthText.php:26
+msgid "Calendar services"
+msgstr "يىلنامە مۇلازىمەتلىرى"
+
+#: quickbook/lib/Health/HealthText.php:27
+msgid "Standard booking page (fallback)"
+msgstr "ئۆلچەملىك زاكاز بېتى (زاپاس)"
+
+#: quickbook/lib/Health/HealthText.php:28
+msgid "Slot lookup"
+msgstr "بوش ۋاقىتلارنى ئىزدەش"
+
+#: quickbook/lib/Health/HealthText.php:29
+msgid "Booking storage"
+msgstr "زاكازلارنى ساقلاش"
+
+#: quickbook/lib/Health/HealthText.php:36
+msgid "Passed"
+msgstr "ئۆتتى"
+
+#: quickbook/lib/Health/HealthText.php:37
+msgid "Failed"
+msgstr "مەغلۇپ بولدى"
+
+#: quickbook/lib/Health/HealthText.php:38
+msgid "Warning"
+msgstr "ئاگاھلاندۇرۇش"
+
+#: quickbook/lib/Health/HealthText.php:39
+msgid "Skipped"
+msgstr "ئاتلاپ ئۆتۈلدى"
+
+#: quickbook/lib/Health/HealthText.php:50
+msgid "Booking page, booking API and Calendar link redirect load"
+msgstr "زاكاز بېتى، زاكاز API ۋە يىلنامە ئۇلانمىسىنى قايتا نىشانلاش يۈكلىنىدۇ"
+
+#: quickbook/lib/Health/HealthText.php:51
+msgid "The Calendar app is not enabled"
+msgstr "يىلنامە ئەپى قوزغىتىلمىغان"
+
+#: quickbook/lib/Health/HealthText.php:52
+msgid "All classes, methods and fields found"
+msgstr "بارلىق تۈر، ئۇسۇل ۋە بۆلەكلەر تېپىلدى"
+
+#: quickbook/lib/Health/HealthText.php:53
+msgid "Can be created and edited"
+msgstr "قۇرغىلى ۋە تەھرىرلىگىلى بولىدۇ"
+
+#: quickbook/lib/Health/HealthText.php:54
+msgid "Booking service, schedule service and booking storage load"
+msgstr "زاكاز مۇلازىمىتى، جەدۋەل مۇلازىمىتى ۋە زاكاز ساقلىغۇچى يۈكلىنىدۇ"
+
+#: quickbook/lib/Health/HealthText.php:55
+msgid "No appointment schedule exists yet"
+msgstr "تېخى ئۇچرىشىش جەدۋىلى يوق"
+
+#: quickbook/lib/Health/HealthText.php:56
+#, php-format
+msgid "Schedule \"%1$s\", free slots in the next 7 days: %2$s"
+msgstr "جەدۋەل «%1$s»، كېيىنكى 7 كۈندىكى بوش ۋاقىتلار: %2$s"
+
+#: quickbook/lib/Health/HealthText.php:57
+msgid "Test booking stored and removed"
+msgstr "سىناق زاكاز ساقلاندى ۋە ئۆچۈرۈلدى"
+
+#: quickbook/lib/Notification/Notifier.php:29
+#: quickbook/lib/Settings/AdminSection.php:24
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Quick Booking"
+msgstr "Quick Booking"
+
+#: quickbook/lib/Notification/Notifier.php:41
+msgid "Quick Booking switched visitors to the standard Calendar booking page"
+msgstr "Quick Booking زىيارەتچىلەرنى يىلنامىنىڭ ئۆلچەملىك زاكاز بېتىگە يۆتكىدى"
+
+#: quickbook/lib/Notification/Notifier.php:42
+#, php-format
+msgid "Something in the Calendar app or Nextcloud no longer works as Quick Booking expects: %s"
+msgstr "يىلنامە ئەپى ياكى Nextcloud دىكى بىر نەرسە ئەمدى Quick Booking كۈتكەندەك ئىشلىمەيدۇ: %s"
+
+#: quickbook/lib/Notification/Notifier.php:45
+#, php-format
+msgid "Quick Booking works again (%s)"
+msgstr "Quick Booking يەنە ئىشلەۋاتىدۇ (%s)"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:41
+msgid "Please add at least one date"
+msgstr "كەم دېگەندە بىر چېسلا قوشۇڭ"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:44
+msgid "Too many dates"
+msgstr "چېسلا بەك كۆپ"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:55
+msgid "Please enter a valid date"
+msgstr "ئىناۋەتلىك چېسلا كىرگۈزۈڭ"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:58
+msgid "Please enter valid times"
+msgstr "ئىناۋەتلىك ۋاقىت كىرگۈزۈڭ"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:61
+msgid "The end time must be after the start time"
+msgstr "ئاخىرلىشىش ۋاقتى باشلىنىش ۋاقتىدىن كېيىن بولۇشى كېرەك"
+
+#: quickbook/lib/OneTime/OneTimeService.php:252
+msgid "Please enter a name of at most 128 characters"
+msgstr "128 ھەرپتىن ئاشمايدىغان نام كىرگۈزۈڭ"
+
+#: quickbook/lib/OneTime/OneTimeService.php:256
+msgid "The location is too long"
+msgstr "ئورنى بەك ئۇزۇن"
+
+#: quickbook/lib/OneTime/OneTimeService.php:260
+msgid "The description is too long"
+msgstr "چۈشەندۈرۈش بەك ئۇزۇن"
+
+#: quickbook/lib/OneTime/OneTimeService.php:265
+msgid "Please enter the duration in minutes"
+msgstr "داۋاملىشىش ۋاقتىنى مىنۇت بويىچە كىرگۈزۈڭ"
+
+#: quickbook/lib/OneTime/OneTimeService.php:267
+msgid "Please choose the increments"
+msgstr "ۋاقىت ئارىلىقىنى تاللاڭ"
+
+#: quickbook/lib/OneTime/OneTimeService.php:268
+msgid "Please choose the buffer before the event"
+msgstr "پائالىيەتتىن بۇرۇنقى ئارىلىق ۋاقىتنى تاللاڭ"
+
+#: quickbook/lib/OneTime/OneTimeService.php:269
+msgid "Please choose the buffer after the event"
+msgstr "پائالىيەتتىن كېيىنكى ئارىلىق ۋاقىتنى تاللاڭ"
+
+#: quickbook/lib/OneTime/OneTimeService.php:270
+msgid "Please choose the minimum time before the next slot"
+msgstr "كېيىنكى ئورۇندىن بۇرۇنقى ئەڭ قىسقا ۋاقىتنى تاللاڭ"
+
+#: quickbook/lib/OneTime/OneTimeService.php:273
+msgid "Please enter the maximum number of slots per day, or leave it empty"
+msgstr "كۈنىگە ئەڭ كۆپ ئورۇن سانىنى كىرگۈزۈڭ ياكى بوش قالدۇرۇڭ"
+
+#: quickbook/lib/OneTime/OneTimeService.php:278
+msgid "Please choose the visibility"
+msgstr "كۆرۈنۈشچانلىقىنى تاللاڭ"
+
+#: quickbook/lib/OneTime/OneTimeService.php:284
+msgid "Please choose a booking calendar"
+msgstr "زاكاز يىلنامىسىنى تاللاڭ"
+
+#: quickbook/lib/OneTime/OneTimeService.php:288
+#: quickbook/lib/OneTime/OneTimeService.php:293
+msgid "Please choose the calendars to check for conflicts"
+msgstr "توقۇنۇش تەكشۈرۈلىدىغان يىلنامىلەرنى تاللاڭ"
+
+#: quickbook/lib/OneTime/OneTimeService.php:302
+msgid "Each time range must fit at least one appointment"
+msgstr "ھەر بىر ۋاقىت دائىرىسىگە كەم دېگەندە بىر ئۇچرىشىش سىغىشى كېرەك"
+
+#: quickbook/lib/Service/BookingFlowService.php:62
+#: quickbook/lib/Service/BookingFlowService.php:66
+msgid "Invalid date"
+msgstr "ئىناۋەتسىز چېسلا"
+
+#: quickbook/lib/Service/BookingFlowService.php:95
+msgid "Please enter your name"
+msgstr "ئىسمىڭىزنى كىرگۈزۈڭ"
+
+#: quickbook/lib/Service/BookingFlowService.php:99
+msgid "Please enter your name without @, < or >"
+msgstr "ئىسمىڭىزنى @، < ياكى > ئىشلەتمەي كىرگۈزۈڭ"
+
+#: quickbook/lib/Service/BookingFlowService.php:102
+msgid "Please enter a valid email address"
+msgstr "ئىناۋەتلىك تورخەت ئادرېسى كىرگۈزۈڭ"
+
+#: quickbook/lib/Service/BookingFlowService.php:105
+msgid "The comment is too long"
+msgstr "ئىزاھات بەك ئۇزۇن"
+
+#: quickbook/lib/Service/BookingFlowService.php:118
+msgid "Invalid time range"
+msgstr "ئىناۋەتسىز ۋاقىت دائىرىسى"
+
+#: quickbook/lib/Service/Input.php:46
+msgid "Invalid timezone"
+msgstr "ئىناۋەتسىز ۋاقىت رايونى"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "One-page appointment booking for Calendar schedules, without the email confirmation step."
+msgstr "يىلنامە جەدۋەللىرى ئۈچۈن تورخەت ئارقىلىق جەزملەشتۈرۈش باسقۇچى بولمىغان، بىر بەتلىك ئۇچرىشىش زاكاز قىلىش."
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:4
+msgid ""
+"Quick Booking adds a public booking page for the appointment schedules you already have in the Calendar app. Requires the Calendar app.\n"
+"\n"
+"Visitors pick a date and time, enter their details, review and confirm on the same page. The appointment is booked immediately and the usual booking confirmation email (with .ics) is sent.\n"
+"\n"
+"* Share the usual Calendar booking link (\"Copy link\" in the Calendar app): it opens Quick Booking.\n"
+"* One-time appointment schedules: offer appointments on one or more chosen dates (e.g. parent-teacher conferences) instead of weekly. Create them in the Calendar app under \"One-time appointment schedules\".\n"
+"* Built-in rate limiting of bookings per visitor and per email address.\n"
+"* Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks."
+msgstr ""
+"Quick Booking يىلنامە ئەپىدە ئاللىقاچان بار بولغان ئۇچرىشىش جەدۋەللىرىڭىز ئۈچۈن ئاممىۋى زاكاز بېتى قوشىدۇ. يىلنامە ئەپى تەلەپ قىلىنىدۇ.\n"
+"\n"
+"زىيارەتچىلەر بىر بەتنىڭ ئۆزىدىلا چېسلا ۋە ۋاقىتنى تاللايدۇ، ئۇچۇرلىرىنى كىرگۈزىدۇ، زاكازنى تەكشۈرۈپ جەزملەشتۈرىدۇ. ئۇچرىشىش دەرھال زاكاز قىلىنىدۇ ۋە ئادەتتىكى زاكاز جەزملەشتۈرۈش تورخېتى (.ics بىلەن) ئەۋەتىلىدۇ.\n"
+"\n"
+"* يىلنامىنىڭ ئادەتتىكى زاكاز ئۇلانمىسىنى ھەمبەھىرلەڭ (يىلنامە ئەپىدىكى \"ئۇلانمىنى كۆچۈرۈڭ\"): ئۇ Quick Booking نى ئاچىدۇ.\n"
+"* بىر قېتىملىق ئۇچرىشىش جەدۋەللىرى: ئۇچرىشىشلارنى ھەر ھەپتە ئەمەس، بەلكى تاللانغان بىر ياكى بىر قانچە چېسلادا تەمىنلەڭ (مەسىلەن، ئاتا-ئانىلار ۋە ئوقۇتقۇچىلار ئۇچرىشىشى). ئۇلارنى يىلنامە ئەپىدىكى \"بىر قېتىملىق ئۇچرىشىش جەدۋەللىرى\" ئاستىدا قۇرۇڭ.\n"
+"* ھەر بىر زىيارەتچى ۋە ھەر بىر تورخەت ئادرېسى ئۈچۈن زاكاز سانىنى چەكلەيدىغان ئىچكى چەكلىمە.\n"
+"* ئۆزىنى تەكشۈرۈش: يىلنامە ياكى Nextcloud ھەر قېتىم يېڭىلانغاندىن كېيىن ئەپنىڭ يەنىلا ئىشلەۋاتقانلىقىنى تەكشۈرىدۇ، بىرەر نەرسە بۇزۇلغاندا زاكاز ئۇلانمىسى يىلنامىنىڭ ئۆلچەملىك زاكاز بېتىنى كۆرسىتىدۇ."
+
+#: quickbook/templates/booking.php:5
+msgid "Please enable JavaScript to book an appointment."
+msgstr "ئۇچرىشىش زاكاز قىلىش ئۈچۈن JavaScript نى قوزغىتىڭ."
+
+#: quickbook/templates/settings-admin.php:10
+msgid "Quick Booking self-check"
+msgstr "Quick Booking ئۆزىنى تەكشۈرۈش"
+
+#: quickbook/templates/settings-admin.php:12
+msgid "Quick Booking uses internal code of the Calendar app. It checks after every Calendar or Nextcloud update and once a day that this still works. If something breaks, visitors are sent to the standard Calendar booking page and admins get a notification. While switched off, the check repeats every 15 minutes and switches back on when it passes."
+msgstr "Quick Booking يىلنامە ئەپىنىڭ ئىچكى كودىنى ئىشلىتىدۇ. ئۇ يىلنامە ياكى Nextcloud ھەر قېتىم يېڭىلانغاندىن كېيىن ۋە كۈنىگە بىر قېتىم بۇنىڭ يەنىلا ئىشلەۋاتقانلىقىنى تەكشۈرىدۇ. بىرەر نەرسە بۇزۇلسا، زىيارەتچىلەر يىلنامىنىڭ ئۆلچەملىك زاكاز بېتىگە يوللىنىدۇ ۋە باشقۇرغۇچىلار ئۇقتۇرۇش تاپشۇرۇۋالىدۇ. تاقاق ۋاقىتتا تەكشۈرۈش ھەر 15 مىنۇتتا تەكرارلىنىدۇ ۋە تەكشۈرۈشتىن ئۆتكەندە Quick Booking قايتا ئېچىلىدۇ."
+
+#: quickbook/templates/settings-admin.php:17
+msgid "Off: visitors use the standard Calendar booking page."
+msgstr "تاقاق: زىيارەتچىلەر يىلنامىنىڭ ئۆلچەملىك زاكاز بېتىنى ئىشلىتىدۇ."
+
+#: quickbook/templates/settings-admin.php:21
+msgid "Bookings from several different networks failed while the self-check passed. Quick Booking switches back on after a Calendar update, or when you run the check below and it passes."
+msgstr "ئۆزىنى تەكشۈرۈشتىن ئۆتكەن بولسىمۇ، بىر قانچە ئوخشىمىغان توردىن قىلىنغان زاكازلار مەغلۇپ بولدى. Quick Booking يىلنامە يېڭىلانغاندىن كېيىن ياكى تۆۋەندىكى تەكشۈرۈشنى ئىجرا قىلىپ ئۇنىڭدىن ئۆتكەندە قايتا ئېچىلىدۇ."
+
+#: quickbook/templates/settings-admin.php:24
+msgid "On: visitors book through Quick Booking."
+msgstr "ئوچۇق: زىيارەتچىلەر Quick Booking ئارقىلىق زاكاز قىلىدۇ."
+
+#: quickbook/templates/settings-admin.php:28
+msgid "Calendar version"
+msgstr "يىلنامە نەشرى"
+
+#: quickbook/templates/settings-admin.php:29
+msgid "Nextcloud version"
+msgstr "Nextcloud نەشرى"
+
+#: quickbook/templates/settings-admin.php:30
+msgid "Last full check"
+msgstr "ئاخىرقى تولۇق تەكشۈرۈش"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Check"
+msgstr "تەكشۈرۈش"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Result"
+msgstr "نەتىجە"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Detail"
+msgstr "تەپسىلات"
+
+#: quickbook/templates/settings-admin.php:49
+msgid "Run self-check now"
+msgstr "ئۆزىنى تەكشۈرۈشنى ھازىر ئىجرا قىلىش"
+
+#: quickbook/templates/settings-admin.php:52
+msgid "Also available as: occ quickbook:check"
+msgstr "بۇيرۇق ئارقىلىقمۇ ئىجرا قىلغىلى بولىدۇ: occ quickbook:check"
+
+#: quickbook/templates/settings-admin.php:53
+msgid "Visitor addresses (rate limit)"
+msgstr "زىيارەتچى ئادرېسلىرى (زاكاز سانى چەكلىمىسى)"
+
+#: quickbook/templates/settings-admin.php:55
+#, php-format
+msgid "Nextcloud sees your address as: %s"
+msgstr "Nextcloud ئادرېسىڭىزنى مۇنداق كۆرىدۇ: %s"
+
+#: quickbook/templates/settings-admin.php:59
+msgid "This is a private address. That is fine if you are on the same network as the server. If you opened this page from outside (for example a phone on mobile data), Nextcloud does not know your reverse proxy: all visitors then share one address, and the booking limit applies to all of them together. Add the proxy to \"trusted_proxies\" in config.php."
+msgstr "بۇ بىر ئىچكى (private) ئادرېس. مۇلازىمېتىر بىلەن ئوخشاش توردا بولسىڭىز بۇ نورمال. ئەگەر بۇ بەتنى سىرتتىن ئاچقان بولسىڭىز (مەسىلەن، كۆچمە تور ئىشلىتىۋاتقان تېلېفوندىن)، Nextcloud سىزنىڭ تەتۈر ۋاكالەتچىڭىزنى (reverse proxy) تونۇمايدۇ: بۇ چاغدا بارلىق زىيارەتچىلەر بىر ئادرېسنى ئورتاق ئىشلىتىدۇ ۋە زاكاز چەكلىمىسى ئۇلارنىڭ ھەممىسىگە بىرلىكتە قوللىنىلىدۇ. ۋاكالەتچىنى config.php دىكى \"trusted_proxies\" غا قوشۇڭ."
+
+#: quickbook/templates/settings-admin.php:62
+msgid "This should be the public address of the device you are using right now. If it is the address of your server or proxy instead, add the proxy to \"trusted_proxies\" in config.php."
+msgstr "بۇ سىز ھازىر ئىشلىتىۋاتقان ئۈسكۈنىنىڭ ئاممىۋى ئادرېسى بولۇشى كېرەك. ئەگەر ئۇنىڭ ئورنىغا مۇلازىمېتىرىڭىز ياكى ۋاكالەتچىڭىزنىڭ ئادرېسى كۆرۈنسە، ۋاكالەتچىنى config.php دىكى \"trusted_proxies\" غا قوشۇڭ."
+
+#: quickbook/templates/settings-admin.php:65
+msgid "Share the Calendar's own booking links (\"Copy link\" in the Calendar app). They open Quick Booking while it is on, and the Calendar booking page while it is off, disabled or removed. Links to /apps/quickbook/book/… only work while the app is installed."
+msgstr "يىلنامىنىڭ ئۆز زاكاز ئۇلانمىلىرىنى ھەمبەھىرلەڭ (يىلنامە ئەپىدىكى \"ئۇلانمىنى كۆچۈرۈڭ\"). ئۇلار Quick Booking ئوچۇق ۋاقىتتا ئۇنى، تاقاق، چەكلەنگەن ياكى ئۆچۈرۈلگەن ۋاقىتتا يىلنامىنىڭ زاكاز بېتىنى ئاچىدۇ. /apps/quickbook/book/… ئۇلانمىلىرى پەقەت ئەپ ئورنىتىلغان ۋاقىتتىلا ئىشلەيدۇ."

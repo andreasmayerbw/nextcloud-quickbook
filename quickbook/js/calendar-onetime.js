@@ -14,10 +14,19 @@
 (function () {
 	'use strict'
 
-	const APP = 'quickbook'
-	const t = (text, vars) => window.t(APP, text, vars, undefined, { escape: false })
-	const n = (singular, plural, count, vars) => window.n(APP, singular, plural, count, vars, { escape: false })
+	// Called as t('quickbook', 'Text', vars): the form Nextcloud's translation tooling looks for.
+	// Values are put into the page as text, so they must not be HTML-escaped.
+	const t = (app, text, vars) => window.t(app, text, vars, undefined, { escape: false })
+	const n = (app, singular, plural, count, vars) => window.n(app, singular, plural, count, vars, { escape: false })
 	const apiUrl = window.OC.generateUrl('/apps/quickbook/api/v1/one-time')
+	// Talk publishes whether this user may start conversations; without it there is no Talk option
+	const talkCanCreate = (() => {
+		try {
+			return window.OC.getCapabilities?.()?.spreed?.config?.conversations?.['can-create'] === true
+		} catch (e) {
+			return false
+		}
+	})()
 	const browserTz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC'
 
 	const CALENDAR_LIST = '.appointment-config-list:not(.qb-onetime)'
@@ -136,21 +145,21 @@
 
 	function formatMinutes(minutes) {
 		if (minutes === 0) {
-			return n('{duration} minute', '{duration} minutes', 0, { duration: 0 })
+			return n('quickbook', '{duration} minute', '{duration} minutes', 0, { duration: 0 })
 		}
 		if (minutes % (7 * 24 * 60) === 0) {
 			const weeks = minutes / (7 * 24 * 60)
-			return n('{duration} week', '{duration} weeks', weeks, { duration: weeks })
+			return n('quickbook', '{duration} week', '{duration} weeks', weeks, { duration: weeks })
 		}
 		if (minutes % (24 * 60) === 0) {
 			const days = minutes / (24 * 60)
-			return n('{duration} day', '{duration} days', days, { duration: days })
+			return n('quickbook', '{duration} day', '{duration} days', days, { duration: days })
 		}
 		if (minutes % 60 === 0) {
 			const hours = minutes / 60
-			return n('{duration} hour', '{duration} hours', hours, { duration: hours })
+			return n('quickbook', '{duration} hour', '{duration} hours', hours, { duration: hours })
 		}
-		return n('{duration} minute', '{duration} minutes', minutes, { duration: minutes })
+		return n('quickbook', '{duration} minute', '{duration} minutes', minutes, { duration: minutes })
 	}
 
 	// ---------------------------------------------------------------- data
@@ -182,6 +191,7 @@
 					throw new Error(String(response.status))
 				}
 				data = body
+				data.talk = Boolean(body.talk) && talkCanCreate
 				body.schedules.forEach((schedule) => oneTimeNames.add(schedule.name))
 				sync()
 				return body
@@ -249,7 +259,7 @@
 		ownCaption.classList.add('qb-onetime__caption')
 		const name = ownCaption.querySelector('.app-navigation-caption__name')
 		if (name) {
-			name.textContent = t('One-time appointment schedules')
+			name.textContent = t('quickbook', 'One-time appointment schedules')
 		}
 		// The Calendar shows "Create new" only when appointments are possible (user has an email address)
 		const create = ownCaption.querySelector('.app-navigation-caption__actions button')
@@ -292,7 +302,7 @@
 			toggle = node.querySelector('.action-item__menutoggle')
 		}
 		if (!node || !toggle) {
-			toggle = button({ variant: 'tertiary', iconPath: ICONS.dots, label: t('Actions'), extraClass: 'qb-entry__toggle' })
+			toggle = button({ variant: 'tertiary', iconPath: ICONS.dots, label: t('quickbook', 'Actions'), extraClass: 'qb-entry__toggle' })
 			node = h('li', { class: 'qb-entry' },
 				icon(ICONS.calendarCheck),
 				h('span', { class: 'qb-entry__name', title: schedule.name }, schedule.name),
@@ -351,11 +361,11 @@
 			}, icon(iconPath), h('span', { class: 'qb-menu__text' }, text)),
 		)
 		const node = h('ul', { class: 'qb-menu', role: 'menu', 'aria-label': schedule.name },
-			item(ICONS.openInNew, t('Preview'), null, schedule.bookingUrl),
-			navigator.clipboard ? item(ICONS.link, t('Copy link'), () => copyLink(schedule.bookingUrl)) : null,
-			item(ICONS.duplicate, t('Duplicate'), () => openEditor(schedule, true)),
-			item(ICONS.pencil, t('Edit'), () => openEditor(schedule, false)),
-			item(ICONS.trash, t('Delete'), () => deleteSchedule(schedule)),
+			item(ICONS.openInNew, t('quickbook', 'Preview'), null, schedule.bookingUrl),
+			navigator.clipboard ? item(ICONS.link, t('quickbook', 'Copy link'), () => copyLink(schedule.bookingUrl)) : null,
+			item(ICONS.duplicate, t('quickbook', 'Duplicate'), () => openEditor(schedule, true)),
+			item(ICONS.pencil, t('quickbook', 'Edit'), () => openEditor(schedule, false)),
+			item(ICONS.trash, t('quickbook', 'Delete'), () => deleteSchedule(schedule)),
 		)
 		document.body.append(node)
 		const rect = toggle.getBoundingClientRect()
@@ -399,9 +409,9 @@
 	async function copyLink(url) {
 		try {
 			await navigator.clipboard.writeText(url)
-			toast('success', t('Appointment link was copied to clipboard'))
+			toast('success', t('quickbook', 'Appointment link was copied to clipboard'))
 		} catch (e) {
-			toast('error', t('Appointment link could not be copied to clipboard'))
+			toast('error', t('quickbook', 'Appointment link could not be copied to clipboard'))
 		}
 	}
 
@@ -414,7 +424,7 @@
 			data.schedules = data.schedules.filter((s) => s.id !== schedule.id)
 			sync()
 		} catch (e) {
-			toast('error', t('Could not delete the appointment schedule'))
+			toast('error', t('quickbook', 'Could not delete the appointment schedule'))
 		}
 	}
 
@@ -520,7 +530,7 @@
 							h('button', {
 								type: 'button',
 								class: 'qb-chip__remove',
-								'aria-label': t('Remove {calendar}', { calendar: calendar.name }),
+								'aria-label': t('quickbook', 'Remove {calendar}', { calendar: calendar.name }),
 								onclick: (event) => {
 									event.stopPropagation()
 									toggleValue(calendar.uri)
@@ -649,7 +659,7 @@
 		try {
 			info = data || await load()
 		} catch (e) {
-			toast('error', t('One-time appointment schedules could not be loaded. Please try again later.'))
+			toast('error', t('quickbook', 'One-time appointment schedules could not be loaded. Please try again later.'))
 			return
 		}
 
@@ -708,7 +718,11 @@
 			form.lengthMinutes = number('lengthMinutes') ?? 0
 			form.incrementMinutes = Number(value('incrementMinutes'))
 			form.visibility = value('visibility')
-			form.createTalkRoom = Boolean(dialog.querySelector('[name="createTalkRoom"]')?.checked)
+			// Without the option in the form, the schedule keeps what it had
+			const talkRoom = dialog.querySelector('[name="createTalkRoom"]')
+			if (talkRoom) {
+				form.createTalkRoom = talkRoom.checked
+			}
 			form.days = [...dialog.querySelectorAll('.qb-date-row')].map((row) => ({
 				date: row.querySelector('[name="date"]').value,
 				from: row.querySelector('[name="from"]').value,
@@ -738,16 +752,16 @@
 				if (response.ok) {
 					saved = body.schedule
 				} else if (response.status === 422) {
-					error = body.message || t('Please check your input.')
+					error = body.message || t('quickbook', 'Please check your input.')
 				} else if (response.status === 429) {
 					rateLimited = true
 				} else if (response.status === 503) {
-					error = t('One-time appointment schedules are temporarily unavailable.')
+					error = t('quickbook', 'One-time appointment schedules are temporarily unavailable.')
 				} else {
-					error = t('Could not save. Please try again.')
+					error = t('quickbook', 'Could not save. Please try again.')
 				}
 			} catch (e) {
-				error = t('Could not reach the server. Please check your connection and try again.')
+				error = t('quickbook', 'Could not reach the server. Please check your connection and try again.')
 			} finally {
 				saving = false
 				render()
@@ -766,7 +780,7 @@
 
 		function countText(day) {
 			const count = slotCount(day)
-			return count > 0 ? n('{count} slot', '{count} slots', count, { count }) : ''
+			return count > 0 ? n('quickbook', '{count} slot', '{count} slots', count, { count }) : ''
 		}
 
 		function updateCounts() {
@@ -777,17 +791,17 @@
 		}
 
 		function dateRow(day, index) {
-			const label = t('Date {number}', { number: index + 1 })
+			const label = t('quickbook', 'Date {number}', { number: index + 1 })
 			return h('li', { class: 'qb-date-row' },
 				h('input', { type: 'date', name: 'date', class: 'qb-input', required: true, value: day.date, 'aria-label': label, min: '2000-01-01', max: '2100-12-31' }),
 				h('span', { class: 'qb-date-row__times' },
-					h('input', { type: 'time', name: 'from', class: 'qb-input', required: true, step: 300, value: day.from, 'aria-label': t('{date}: from', { date: label }) }),
-					h('span', { class: 'qb-date-row__to' }, t('to')),
-					h('input', { type: 'time', name: 'to', class: 'qb-input', required: true, step: 300, value: day.to, 'aria-label': t('{date}: to', { date: label }) }),
+					h('input', { type: 'time', name: 'from', class: 'qb-input', required: true, step: 300, value: day.from, 'aria-label': t('quickbook', '{date}: from', { date: label }) }),
+					h('span', { class: 'qb-date-row__to' }, t('quickbook', 'to')),
+					h('input', { type: 'time', name: 'to', class: 'qb-input', required: true, step: 300, value: day.to, 'aria-label': t('quickbook', '{date}: to', { date: label }) }),
 					button({
 						variant: 'tertiary',
 						iconPath: ICONS.trash,
-						label: t('Delete {date}', { date: label }),
+						label: t('quickbook', 'Delete {date}', { date: label }),
 						disabled: form.days.length === 1,
 						onclick: () => {
 							readFields()
@@ -806,7 +820,7 @@
 			const conflictBox = h('div', { class: 'calendar-select' })
 			const renderConflicts = () => {
 				conflictBox.replaceChildren(
-					h('label', { id: conflictLabel }, t('Calendars to check for conflicts')),
+					h('label', { id: conflictLabel }, t('quickbook', 'Calendars to check for conflicts')),
 					calendarPicker({
 						calendars: info.calendars.filter((calendar) => calendar.uri !== form.calendarUri),
 						selected: form.conflictCalendarUris.filter((uri) => uri !== form.calendarUri),
@@ -821,7 +835,7 @@
 			renderConflicts()
 			return h('div', { class: 'appointment-config-modal__form__row appointment-config-modal__form__row--wrapped' },
 				h('div', { class: 'calendar-select' },
-					h('label', { id: bookingLabel }, t('Booking calendar')),
+					h('label', { id: bookingLabel }, t('quickbook', 'Booking calendar')),
 					calendarPicker({
 						calendars: writable,
 						selected: [form.calendarUri],
@@ -877,18 +891,18 @@
 				},
 			},
 			h('div', { class: 'appointment-config-modal__form__title' },
-				h('h2', { id: 'qb-modal-title' }, isNew ? t('Create one-time appointment schedule') : t('Edit one-time appointment schedule'))),
+				h('h2', { id: 'qb-modal-title' }, isNew ? t('quickbook', 'Create one-time appointment schedule') : t('quickbook', 'Edit one-time appointment schedule'))),
 			error ? h('p', { class: 'qb-note qb-note--error', role: 'alert' }, error) : null,
-			writable.length === 0 ? h('p', { class: 'qb-note qb-note--error', role: 'alert' }, t('You need a calendar you can write to, to take appointments.')) : null,
+			writable.length === 0 ? h('p', { class: 'qb-note qb-note--error', role: 'alert' }, t('quickbook', 'You need a calendar you can write to, to take appointments.')) : null,
 
 			h('fieldset', {},
-				textField({ name: 'name', label: t('Appointment name'), value: form.name, maxlength: 128, required: true }),
-				textField({ name: 'location', label: t('Location'), value: form.location, maxlength: 255, disabled: info.talk && form.createTalkRoom }),
+				textField({ name: 'name', label: t('quickbook', 'Appointment name'), value: form.name, maxlength: 128, required: true }),
+				textField({ name: 'location', label: t('quickbook', 'Location'), value: form.location, maxlength: 255, disabled: info.talk && form.createTalkRoom }),
 				info.talk
 					? row(
 						checkbox({
 							name: 'createTalkRoom',
-							label: t('Create a Talk room'),
+							label: t('quickbook', 'Create a Talk room'),
 							checked: form.createTalkRoom,
 							// Like the Calendar: the Talk link takes the place of the location
 							onchange: (event) => {
@@ -897,34 +911,34 @@
 								location.parentElement.classList.toggle('qb-text-field--disabled', event.target.checked)
 							},
 						}),
-						h('span', { class: 'qb-talk-description' }, t('A unique link will be generated for every booked appointment and sent via the confirmation email')),
+						h('span', { class: 'qb-talk-description' }, t('quickbook', 'A unique link will be generated for every booked appointment and sent via the confirmation email')),
 					)
 					: null,
 				row(
-					h('label', { for: descriptionId }, t('Description')),
+					h('label', { for: descriptionId }, t('quickbook', 'Description')),
 					h('textarea', { id: descriptionId, name: 'description', class: 'qb-textarea', rows: 2, maxlength: 2000, value: form.description }),
 				),
 				wrapped(
-					labelled('qb-duration', t('Duration (minutes)'), h('input', { name: 'lengthMinutes', class: 'qb-input', type: 'number', min: 1, max: 1440, required: true, value: form.lengthMinutes })),
-					labelled('duration-select', t('Increments'), select('incrementMinutes', info.choices.increments.map((m) => ({ value: m, label: formatMinutes(m) })), form.incrementMinutes)),
+					labelled('qb-duration', t('quickbook', 'Duration (minutes)'), h('input', { name: 'lengthMinutes', class: 'qb-input', type: 'number', min: 1, max: 1440, required: true, value: form.lengthMinutes })),
+					labelled('duration-select', t('quickbook', 'Increments'), select('incrementMinutes', info.choices.increments.map((m) => ({ value: m, label: formatMinutes(m) })), form.incrementMinutes)),
 				),
 				pickers(),
 				h('div', { class: 'appointment-config-modal__form__row appointment-config-modal__form__row--local' },
-					labelled('visibility-select', t('Visibility'), select('visibility', [
-						{ value: 'PUBLIC', label: t('Public – shown on profile page') },
-						{ value: 'PRIVATE', label: t('Private – only accessible via link') },
+					labelled('visibility-select', t('quickbook', 'Visibility'), select('visibility', [
+						{ value: 'PUBLIC', label: t('quickbook', 'Public – shown on profile page') },
+						{ value: 'PRIVATE', label: t('quickbook', 'Private – only accessible via link') },
 					], form.visibility))),
 			),
 
 			h('fieldset', {},
-				h('header', {}, h('h3', {}, t('Booking dates'))),
-				h('p', { class: 'qb-hint' }, t('Times are in {timezone}.', { timezone: form.timezone })),
+				h('header', {}, h('h3', {}, t('quickbook', 'Booking dates'))),
+				h('p', { class: 'qb-hint' }, t('quickbook', 'Times are in {timezone}.', { timezone: form.timezone })),
 				h('ul', { class: 'qb-date-list' }, form.days.map(dateRow)),
 				h('div', { class: 'qb-add-date' },
 					button({
 						variant: 'secondary',
 						iconPath: ICONS.plus,
-						text: t('Add date'),
+						text: t('quickbook', 'Add date'),
 						disabled: form.days.length >= 100,
 						onclick: () => {
 							readFields()
@@ -939,23 +953,23 @@
 			),
 
 			h('fieldset', {},
-				h('header', {}, h('h3', {}, t('Planning restrictions'))),
+				h('header', {}, h('h3', {}, t('quickbook', 'Planning restrictions'))),
 				wrapped(
-					checkedDuration('preparationMinutes', 'enablePreparation', t('Buffer before the event'), enablePreparation, form.preparationMinutes),
-					checkedDuration('followupMinutes', 'enableFollowup', t('Buffer after the event'), enableFollowup, form.followupMinutes),
+					checkedDuration('preparationMinutes', 'enablePreparation', t('quickbook', 'Buffer before the event'), enablePreparation, form.preparationMinutes),
+					checkedDuration('followupMinutes', 'enableFollowup', t('quickbook', 'Buffer after the event'), enableFollowup, form.followupMinutes),
 				),
 				wrapped(
-					labelled('duration-select', t('Minimum time before next slot'), select('timeBeforeNextSlotMinutes', info.choices.notice.map((m) => ({ value: m, label: formatMinutes(m) })), form.timeBeforeNextSlotMinutes)),
-					labelled('qb-number', t('Max slots per day'), h('input', { name: 'dailyMax', class: 'qb-input', type: 'number', min: 1, max: 1000, value: form.dailyMax ?? '' })),
+					labelled('duration-select', t('quickbook', 'Minimum time before next slot'), select('timeBeforeNextSlotMinutes', info.choices.notice.map((m) => ({ value: m, label: formatMinutes(m) })), form.timeBeforeNextSlotMinutes)),
+					labelled('qb-number', t('quickbook', 'Max slots per day'), h('input', { name: 'dailyMax', class: 'qb-input', type: 'number', min: 1, max: 1000, value: form.dailyMax ?? '' })),
 				),
 			),
 
-			rateLimited ? h('p', { class: 'qb-note qb-note--warning', role: 'alert' }, t('It seems a rate limit has been reached. Please try again later.')) : null,
+			rateLimited ? h('p', { class: 'qb-note qb-note--warning', role: 'alert' }, t('quickbook', 'It seems a rate limit has been reached. Please try again later.')) : null,
 			button({
 				variant: 'primary',
 				type: 'submit',
 				iconPath: ICONS.check,
-				text: isNew ? t('Save') : t('Update'),
+				text: isNew ? t('quickbook', 'Save') : t('quickbook', 'Update'),
 				disabled: saving || writable.length === 0,
 				extraClass: 'appointment-config-modal__submit-button',
 			}),
@@ -966,10 +980,10 @@
 			return h('div', { class: 'qb-confirmation' },
 				h('div', { class: 'qb-confirmation__icon' }, icon(ICONS.check, 64)),
 				h('h2', { id: 'qb-modal-title', class: 'qb-confirmation__title' },
-					isNew ? t('One-time appointment schedule successfully created') : t('One-time appointment schedule successfully updated')),
+					isNew ? t('quickbook', 'One-time appointment schedule successfully created') : t('quickbook', 'One-time appointment schedule successfully updated')),
 				h('div', { class: 'qb-confirmation__buttons' },
-					button({ variant: 'secondary', text: t('Preview'), href: saved.bookingUrl }),
-					navigator.clipboard ? button({ variant: 'secondary', text: t('Copy link'), onclick: () => copyLink(saved.bookingUrl) }) : null,
+					button({ variant: 'secondary', text: t('quickbook', 'Preview'), href: saved.bookingUrl }),
+					navigator.clipboard ? button({ variant: 'secondary', text: t('quickbook', 'Copy link'), onclick: () => copyLink(saved.bookingUrl) }) : null,
 				),
 			)
 		}
@@ -978,7 +992,7 @@
 			dialog.querySelectorAll('.qb-picker').forEach((picker) => picker.closePopup?.())
 			dialog.replaceChildren(
 				h('div', { class: 'appointment-config-modal qb-modal__content' }, saved ? viewConfirmation() : viewForm()),
-				button({ variant: 'tertiary', iconPath: ICONS.close, label: t('Close'), extraClass: 'qb-modal__close', onclick: () => dialog.close() }),
+				button({ variant: 'tertiary', iconPath: ICONS.close, label: t('quickbook', 'Close'), extraClass: 'qb-modal__close', onclick: () => dialog.close() }),
 			)
 			if (saved) {
 				dialog.querySelector('.qb-confirmation__buttons a, .qb-confirmation__buttons button')?.focus()

@@ -1,0 +1,742 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Booking\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: quickbook/js/booking.js:126
+msgid "{minutes} min"
+msgstr "{minutes} phút"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h"
+msgstr "{hours} giờ"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h {minutes} min"
+msgstr "{hours} giờ {minutes} phút"
+
+#: quickbook/js/booking.js:153
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "Quá nhiều yêu cầu. Vui lòng đợi một lát rồi thử lại."
+
+#: quickbook/js/booking.js:153 /work/quickbook/js/booking.js:157
+msgid "Could not load the free times."
+msgstr "Không thể tải các giờ trống."
+
+#: quickbook/js/booking.js:196
+msgid "Sorry, this time was just taken. Please choose another time."
+msgstr "Rất tiếc, giờ này vừa có người đặt. Vui lòng chọn giờ khác."
+
+#: quickbook/js/booking.js:202 /work/quickbook/js/calendar-onetime.js:755
+msgid "Please check your input."
+msgstr "Vui lòng kiểm tra lại thông tin bạn đã nhập."
+
+#: quickbook/js/booking.js:207
+msgid "This email address already has several bookings. Please try again tomorrow or contact the organizer."
+msgstr "Địa chỉ thư điện tử này đã có nhiều lượt đặt hẹn. Vui lòng thử lại vào ngày mai hoặc liên hệ với người tổ chức."
+
+#: quickbook/js/booking.js:208
+msgid "You made too many bookings in a short time. Please try again later."
+msgstr "Bạn đã đặt quá nhiều cuộc hẹn trong một thời gian ngắn. Vui lòng thử lại sau."
+
+#: quickbook/js/booking.js:215
+msgid "Something went wrong while booking. Please try again."
+msgstr "Đã xảy ra lỗi khi đặt hẹn. Vui lòng thử lại."
+
+#: quickbook/js/booking.js:217 /work/quickbook/js/calendar-onetime.js:764
+msgid "Could not reach the server. Please check your connection and try again."
+msgstr "Không thể kết nối tới máy chủ. Vui lòng kiểm tra kết nối của bạn rồi thử lại."
+
+#: quickbook/js/booking.js:247
+msgid "with {name}"
+msgstr "với {name}"
+
+#: quickbook/js/booking.js:254
+msgid "Date & time"
+msgstr "Ngày và giờ"
+
+#: quickbook/js/booking.js:254
+msgid "Your details"
+msgstr "Thông tin của bạn"
+
+#: quickbook/js/booking.js:254
+msgid "Confirm"
+msgstr "Xác nhận"
+
+#: quickbook/js/booking.js:257
+msgid "Booking steps"
+msgstr "Các bước đặt hẹn"
+
+#: quickbook/js/booking.js:272
+msgid "This appointment has no upcoming dates any more."
+msgstr "Cuộc hẹn này không còn ngày nào sắp tới."
+
+#: quickbook/js/booking.js:310
+msgid "Choose a date"
+msgstr "Chọn ngày"
+
+#: quickbook/js/booking.js:312
+msgid "Previous month"
+msgstr "Tháng trước"
+
+#: quickbook/js/booking.js:314
+msgid "Next month"
+msgstr "Tháng sau"
+
+#: quickbook/js/booking.js:321
+msgid "Choose a date to see the free times."
+msgstr "Chọn một ngày để xem các giờ trống."
+
+#: quickbook/js/booking.js:323
+msgid "Loading free times…"
+msgstr "Đang tải các giờ trống…"
+
+#: quickbook/js/booking.js:327
+msgid "No free times on this day. Please choose another date."
+msgstr "Không có giờ trống trong ngày này. Vui lòng chọn ngày khác."
+
+#: quickbook/js/booking.js:329 /work/quickbook/js/booking.js:344
+msgid "Free times"
+msgstr "Giờ trống"
+
+#: quickbook/js/booking.js:343
+msgid "Choose a time"
+msgstr "Chọn giờ"
+
+#: quickbook/js/booking.js:345
+msgid "Times are shown in {timezone}"
+msgstr "Giờ được hiển thị theo {timezone}"
+
+#: quickbook/js/booking.js:353
+msgid "Continue"
+msgstr "Tiếp tục"
+
+#: quickbook/js/booking.js:361
+msgid "Change"
+msgstr "Thay đổi"
+
+#: quickbook/js/booking.js:382 /work/quickbook/js/booking.js:405
+msgid "Name"
+msgstr "Tên"
+
+#: quickbook/js/booking.js:383 /work/quickbook/js/booking.js:406
+msgid "Email"
+msgstr "Thư điện tử"
+
+#: quickbook/js/booking.js:383
+msgid "Your booking confirmation is sent to this address."
+msgstr "Xác nhận đặt hẹn sẽ được gửi đến địa chỉ này."
+
+#: quickbook/js/booking.js:384
+msgid "Comment (optional)"
+msgstr "Ghi chú (không bắt buộc)"
+
+#: quickbook/js/booking.js:390 /work/quickbook/js/booking.js:418
+msgid "Back"
+msgstr "Trở lại"
+
+#: quickbook/js/booking.js:391
+msgid "Review booking"
+msgstr "Xem lại thông tin đặt hẹn"
+
+#: quickbook/js/booking.js:400
+msgid "Appointment"
+msgstr "Cuộc hẹn"
+
+#: quickbook/js/booking.js:401
+msgid "With"
+msgstr "Với"
+
+#: quickbook/js/booking.js:402
+msgid "Date"
+msgstr "Ngày"
+
+#: quickbook/js/booking.js:403
+msgid "Time"
+msgstr "Thời gian"
+
+#: quickbook/js/booking.js:404 /work/quickbook/js/calendar-onetime.js:900
+msgid "Location"
+msgstr "Vị trí"
+
+#: quickbook/js/booking.js:407
+msgid "Comment"
+msgstr "Ghi chú"
+
+#: quickbook/js/booking.js:415
+msgid "Please check your booking."
+msgstr "Vui lòng kiểm tra lại thông tin đặt hẹn của bạn."
+
+#: quickbook/js/booking.js:424
+msgid "Booking…"
+msgstr "Đang đặt hẹn…"
+
+#: quickbook/js/booking.js:424
+msgid "Confirm booking"
+msgstr "Xác nhận đặt hẹn"
+
+#: quickbook/js/booking.js:433
+msgid "Your appointment is booked"
+msgstr "Cuộc hẹn của bạn đã được đặt"
+
+#: quickbook/js/booking.js:434
+msgid "A confirmation email is on its way to {email}."
+msgstr "Thư xác nhận đang được gửi đến {email}."
+
+#: quickbook/js/booking.js:438
+msgid "Book another appointment"
+msgstr "Đặt một cuộc hẹn khác"
+
+#: quickbook/js/booking.js:445
+msgid "Online booking on this page is temporarily unavailable."
+msgstr "Tính năng đặt hẹn trực tuyến trên trang này tạm thời không khả dụng."
+
+#: quickbook/js/booking.js:447
+msgid "Continue on the standard booking page"
+msgstr "Tiếp tục trên trang đặt hẹn tiêu chuẩn"
+
+#: quickbook/js/booking.js:448
+msgid "Please try again later."
+msgstr "Vui lòng thử lại sau."
+
+#: quickbook/js/calendar-onetime.js:148 quickbook/js/calendar-onetime.js:162
+msgid "{duration} minute"
+msgid_plural "{duration} minutes"
+msgstr[0] "{duration} phút"
+
+#: quickbook/js/calendar-onetime.js:152
+msgid "{duration} week"
+msgid_plural "{duration} weeks"
+msgstr[0] "{duration} tuần"
+
+#: quickbook/js/calendar-onetime.js:156
+msgid "{duration} day"
+msgid_plural "{duration} days"
+msgstr[0] "{duration} ngày"
+
+#: quickbook/js/calendar-onetime.js:160
+msgid "{duration} hour"
+msgid_plural "{duration} hours"
+msgstr[0] "{duration} giờ"
+
+#: quickbook/js/calendar-onetime.js:262 quickbook/lib/Health/HealthText.php:25
+msgid "One-time appointment schedules"
+msgstr "Lịch trình cuộc hẹn một lần"
+
+#: quickbook/js/calendar-onetime.js:305
+msgid "Actions"
+msgstr "Hành động"
+
+#: quickbook/js/calendar-onetime.js:364 quickbook/js/calendar-onetime.js:985
+msgid "Preview"
+msgstr "Xem trước"
+
+#: quickbook/js/calendar-onetime.js:365 quickbook/js/calendar-onetime.js:986
+msgid "Copy link"
+msgstr "Sao chép liên kết"
+
+#: quickbook/js/calendar-onetime.js:366
+msgid "Duplicate"
+msgstr "Nhân bản"
+
+#: quickbook/js/calendar-onetime.js:367
+msgid "Edit"
+msgstr "Chỉnh sửa"
+
+#: quickbook/js/calendar-onetime.js:368
+msgid "Delete"
+msgstr "Xóa"
+
+#: quickbook/js/calendar-onetime.js:412
+msgid "Appointment link was copied to clipboard"
+msgstr "Liên kết cuộc hẹn đã được sao chép vào bảng tạm"
+
+#: quickbook/js/calendar-onetime.js:414
+msgid "Appointment link could not be copied to clipboard"
+msgstr "Liên kết cuộc hẹn không thể được sao chép vào bảng tạm"
+
+#: quickbook/js/calendar-onetime.js:427
+msgid "Could not delete the appointment schedule"
+msgstr "Không thể xóa lịch trình cuộc hẹn"
+
+#: quickbook/js/calendar-onetime.js:533
+msgid "Remove {calendar}"
+msgstr "Gỡ bỏ {calendar}"
+
+#: quickbook/js/calendar-onetime.js:662
+msgid "One-time appointment schedules could not be loaded. Please try again later."
+msgstr "Không thể tải các lịch trình cuộc hẹn một lần. Vui lòng thử lại sau."
+
+#: quickbook/js/calendar-onetime.js:759
+msgid "One-time appointment schedules are temporarily unavailable."
+msgstr "Lịch trình cuộc hẹn một lần tạm thời không khả dụng."
+
+#: quickbook/js/calendar-onetime.js:761
+msgid "Could not save. Please try again."
+msgstr "Không thể lưu. Vui lòng thử lại."
+
+#: quickbook/js/calendar-onetime.js:783
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} suất"
+
+#: quickbook/js/calendar-onetime.js:794
+msgid "Date {number}"
+msgstr "Ngày {number}"
+
+#: quickbook/js/calendar-onetime.js:798
+msgid "{date}: from"
+msgstr "{date}: từ"
+
+#: quickbook/js/calendar-onetime.js:799
+msgid "to"
+msgstr "đến"
+
+#: quickbook/js/calendar-onetime.js:800
+msgid "{date}: to"
+msgstr "{date}: đến"
+
+#: quickbook/js/calendar-onetime.js:804
+msgid "Delete {date}"
+msgstr "Xóa {date}"
+
+#: quickbook/js/calendar-onetime.js:823
+msgid "Calendars to check for conflicts"
+msgstr "Các lịch cần kiểm tra xung đột"
+
+#: quickbook/js/calendar-onetime.js:838
+msgid "Booking calendar"
+msgstr "Lịch dùng để đặt hẹn"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Create one-time appointment schedule"
+msgstr "Tạo lịch trình cuộc hẹn một lần"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Edit one-time appointment schedule"
+msgstr "Chỉnh sửa lịch trình cuộc hẹn một lần"
+
+#: quickbook/js/calendar-onetime.js:896
+msgid "You need a calendar you can write to, to take appointments."
+msgstr "Bạn cần có một lịch mà bạn có quyền ghi để nhận cuộc hẹn."
+
+#: quickbook/js/calendar-onetime.js:899
+msgid "Appointment name"
+msgstr "Tên cuộc hẹn"
+
+#: quickbook/js/calendar-onetime.js:905
+msgid "Create a Talk room"
+msgstr "Tạo phòng Talk"
+
+#: quickbook/js/calendar-onetime.js:914
+msgid "A unique link will be generated for every booked appointment and sent via the confirmation email"
+msgstr "Một liên kết riêng sẽ được tạo cho mỗi cuộc hẹn đã đặt và được gửi qua thư điện tử xác nhận"
+
+#: quickbook/js/calendar-onetime.js:918
+msgid "Description"
+msgstr "Mô tả"
+
+#: quickbook/js/calendar-onetime.js:922
+msgid "Duration (minutes)"
+msgstr "Thời lượng (phút)"
+
+#: quickbook/js/calendar-onetime.js:923
+msgid "Increments"
+msgstr "Tăng thêm"
+
+#: quickbook/js/calendar-onetime.js:927
+msgid "Visibility"
+msgstr "Hiển thị"
+
+#: quickbook/js/calendar-onetime.js:928
+msgid "Public – shown on profile page"
+msgstr "Công khai – hiển thị trên trang hồ sơ"
+
+#: quickbook/js/calendar-onetime.js:929
+msgid "Private – only accessible via link"
+msgstr "Riêng tư – chỉ truy cập được qua liên kết"
+
+#: quickbook/js/calendar-onetime.js:934
+msgid "Booking dates"
+msgstr "Các ngày nhận đặt hẹn"
+
+#: quickbook/js/calendar-onetime.js:935
+msgid "Times are in {timezone}."
+msgstr "Giờ được tính theo {timezone}."
+
+#: quickbook/js/calendar-onetime.js:941
+msgid "Add date"
+msgstr "Thêm ngày"
+
+#: quickbook/js/calendar-onetime.js:956
+msgid "Planning restrictions"
+msgstr "Các loại trừ cho kế hoạch"
+
+#: quickbook/js/calendar-onetime.js:958
+msgid "Buffer before the event"
+msgstr "Khoảng đệm trước sự kiện"
+
+#: quickbook/js/calendar-onetime.js:959
+msgid "Buffer after the event"
+msgstr "Khoảng đệm sau sự kiện"
+
+#: quickbook/js/calendar-onetime.js:962
+msgid "Minimum time before next slot"
+msgstr "Thời gian tối thiểu trước suất tiếp theo"
+
+#: quickbook/js/calendar-onetime.js:963
+msgid "Max slots per day"
+msgstr "Số suất tối đa trong ngày"
+
+#: quickbook/js/calendar-onetime.js:967
+msgid "It seems a rate limit has been reached. Please try again later."
+msgstr "Có vẻ như đã đạt đến giới hạn số lượt yêu cầu. Vui lòng thử lại sau."
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Save"
+msgstr "Lưu"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Update"
+msgstr "Cập nhật"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully created"
+msgstr "Đã tạo thành công lịch trình cuộc hẹn một lần"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully updated"
+msgstr "Đã cập nhật thành công lịch trình cuộc hẹn một lần"
+
+#: quickbook/js/calendar-onetime.js:995
+msgid "Close"
+msgstr "Đóng"
+
+#: quickbook/js/settings.js:15
+msgid "Checking…"
+msgstr "Đang kiểm tra…"
+
+#: quickbook/js/settings.js:23
+msgid "The self-check could not run."
+msgstr "Không thể chạy tự kiểm tra."
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "Appointment not found"
+msgstr "Không tìm thấy cuộc hẹn"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "This booking link does not exist (any more)."
+msgstr "Liên kết đặt hẹn này không (còn) tồn tại."
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Booking unavailable"
+msgstr "Không thể đặt hẹn"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Online booking is temporarily unavailable. Please try again later."
+msgstr "Tính năng đặt hẹn trực tuyến tạm thời không khả dụng. Vui lòng thử lại sau."
+
+#: quickbook/lib/Health/HealthText.php:22
+msgid "Quick Booking components"
+msgstr "Các thành phần của Quick Booking"
+
+#: quickbook/lib/Health/HealthText.php:23
+msgid "Calendar app enabled"
+msgstr "Ứng dụng Lịch đã được bật"
+
+#: quickbook/lib/Health/HealthText.php:24
+msgid "Calendar code contract"
+msgstr "Hợp đồng mã của ứng dụng Lịch"
+
+#: quickbook/lib/Health/HealthText.php:26
+msgid "Calendar services"
+msgstr "Các dịch vụ của ứng dụng Lịch"
+
+#: quickbook/lib/Health/HealthText.php:27
+msgid "Standard booking page (fallback)"
+msgstr "Trang đặt hẹn tiêu chuẩn (dự phòng)"
+
+#: quickbook/lib/Health/HealthText.php:28
+msgid "Slot lookup"
+msgstr "Tra cứu giờ trống"
+
+#: quickbook/lib/Health/HealthText.php:29
+msgid "Booking storage"
+msgstr "Lưu trữ lượt đặt hẹn"
+
+#: quickbook/lib/Health/HealthText.php:36
+msgid "Passed"
+msgstr "Đạt"
+
+#: quickbook/lib/Health/HealthText.php:37
+msgid "Failed"
+msgstr "Không đạt"
+
+#: quickbook/lib/Health/HealthText.php:38
+msgid "Warning"
+msgstr "Cảnh báo"
+
+#: quickbook/lib/Health/HealthText.php:39
+msgid "Skipped"
+msgstr "Đã bỏ qua"
+
+#: quickbook/lib/Health/HealthText.php:50
+msgid "Booking page, booking API and Calendar link redirect load"
+msgstr "Trang đặt hẹn, API đặt hẹn và chuyển hướng liên kết của ứng dụng Lịch tải được"
+
+#: quickbook/lib/Health/HealthText.php:51
+msgid "The Calendar app is not enabled"
+msgstr "Ứng dụng Lịch chưa được bật"
+
+#: quickbook/lib/Health/HealthText.php:52
+msgid "All classes, methods and fields found"
+msgstr "Đã tìm thấy tất cả lớp, phương thức và trường"
+
+#: quickbook/lib/Health/HealthText.php:53
+msgid "Can be created and edited"
+msgstr "Có thể tạo và chỉnh sửa"
+
+#: quickbook/lib/Health/HealthText.php:54
+msgid "Booking service, schedule service and booking storage load"
+msgstr "Dịch vụ đặt hẹn, dịch vụ lịch trình và kho lưu lượt đặt hẹn tải được"
+
+#: quickbook/lib/Health/HealthText.php:55
+msgid "No appointment schedule exists yet"
+msgstr "Chưa có lịch trình cuộc hẹn nào"
+
+#: quickbook/lib/Health/HealthText.php:56
+#, php-format
+msgid "Schedule \"%1$s\", free slots in the next 7 days: %2$s"
+msgstr "Lịch trình \"%1$s\", giờ trống trong 7 ngày tới: %2$s"
+
+#: quickbook/lib/Health/HealthText.php:57
+msgid "Test booking stored and removed"
+msgstr "Lượt đặt hẹn thử đã được lưu và xóa"
+
+#: quickbook/lib/Notification/Notifier.php:29
+#: quickbook/lib/Settings/AdminSection.php:24
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Quick Booking"
+msgstr "Quick Booking"
+
+#: quickbook/lib/Notification/Notifier.php:41
+msgid "Quick Booking switched visitors to the standard Calendar booking page"
+msgstr "Quick Booking đã chuyển khách sang trang đặt hẹn tiêu chuẩn của ứng dụng Lịch"
+
+#: quickbook/lib/Notification/Notifier.php:42
+#, php-format
+msgid "Something in the Calendar app or Nextcloud no longer works as Quick Booking expects: %s"
+msgstr "Có thành phần trong ứng dụng Lịch hoặc Nextcloud không còn hoạt động như Quick Booking mong đợi: %s"
+
+#: quickbook/lib/Notification/Notifier.php:45
+#, php-format
+msgid "Quick Booking works again (%s)"
+msgstr "Quick Booking đã hoạt động trở lại (%s)"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:41
+msgid "Please add at least one date"
+msgstr "Vui lòng thêm ít nhất một ngày"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:44
+msgid "Too many dates"
+msgstr "Quá nhiều ngày"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:55
+msgid "Please enter a valid date"
+msgstr "Vui lòng nhập ngày hợp lệ"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:58
+msgid "Please enter valid times"
+msgstr "Vui lòng nhập giờ hợp lệ"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:61
+msgid "The end time must be after the start time"
+msgstr "Giờ kết thúc phải sau giờ bắt đầu"
+
+#: quickbook/lib/OneTime/OneTimeService.php:252
+msgid "Please enter a name of at most 128 characters"
+msgstr "Vui lòng nhập tên dài tối đa 128 ký tự"
+
+#: quickbook/lib/OneTime/OneTimeService.php:256
+msgid "The location is too long"
+msgstr "Vị trí quá dài"
+
+#: quickbook/lib/OneTime/OneTimeService.php:260
+msgid "The description is too long"
+msgstr "Mô tả quá dài"
+
+#: quickbook/lib/OneTime/OneTimeService.php:265
+msgid "Please enter the duration in minutes"
+msgstr "Vui lòng nhập thời lượng tính bằng phút"
+
+#: quickbook/lib/OneTime/OneTimeService.php:267
+msgid "Please choose the increments"
+msgstr "Vui lòng chọn mức tăng thêm"
+
+#: quickbook/lib/OneTime/OneTimeService.php:268
+msgid "Please choose the buffer before the event"
+msgstr "Vui lòng chọn khoảng đệm trước sự kiện"
+
+#: quickbook/lib/OneTime/OneTimeService.php:269
+msgid "Please choose the buffer after the event"
+msgstr "Vui lòng chọn khoảng đệm sau sự kiện"
+
+#: quickbook/lib/OneTime/OneTimeService.php:270
+msgid "Please choose the minimum time before the next slot"
+msgstr "Vui lòng chọn thời gian tối thiểu trước suất tiếp theo"
+
+#: quickbook/lib/OneTime/OneTimeService.php:273
+msgid "Please enter the maximum number of slots per day, or leave it empty"
+msgstr "Vui lòng nhập số suất tối đa trong ngày, hoặc để trống"
+
+#: quickbook/lib/OneTime/OneTimeService.php:278
+msgid "Please choose the visibility"
+msgstr "Vui lòng chọn chế độ hiển thị"
+
+#: quickbook/lib/OneTime/OneTimeService.php:284
+msgid "Please choose a booking calendar"
+msgstr "Vui lòng chọn lịch dùng để đặt hẹn"
+
+#: quickbook/lib/OneTime/OneTimeService.php:288
+#: quickbook/lib/OneTime/OneTimeService.php:293
+msgid "Please choose the calendars to check for conflicts"
+msgstr "Vui lòng chọn các lịch cần kiểm tra xung đột"
+
+#: quickbook/lib/OneTime/OneTimeService.php:302
+msgid "Each time range must fit at least one appointment"
+msgstr "Mỗi khoảng thời gian phải đủ cho ít nhất một cuộc hẹn"
+
+#: quickbook/lib/Service/BookingFlowService.php:62
+#: quickbook/lib/Service/BookingFlowService.php:66
+msgid "Invalid date"
+msgstr "Ngày không hợp lệ"
+
+#: quickbook/lib/Service/BookingFlowService.php:95
+msgid "Please enter your name"
+msgstr "Vui lòng nhập tên của bạn"
+
+#: quickbook/lib/Service/BookingFlowService.php:99
+msgid "Please enter your name without @, < or >"
+msgstr "Vui lòng nhập tên của bạn, không chứa @, < hoặc >"
+
+#: quickbook/lib/Service/BookingFlowService.php:102
+msgid "Please enter a valid email address"
+msgstr "Vui lòng nhập địa chỉ thư điện tử hợp lệ"
+
+#: quickbook/lib/Service/BookingFlowService.php:105
+msgid "The comment is too long"
+msgstr "Ghi chú quá dài"
+
+#: quickbook/lib/Service/BookingFlowService.php:118
+msgid "Invalid time range"
+msgstr "Khoảng thời gian không hợp lệ"
+
+#: quickbook/lib/Service/Input.php:46
+msgid "Invalid timezone"
+msgstr "Múi giờ không hợp lệ"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "One-page appointment booking for Calendar schedules, without the email confirmation step."
+msgstr "Đặt hẹn trên một trang duy nhất cho các lịch trình cuộc hẹn của ứng dụng Lịch, không cần bước xác nhận qua thư điện tử."
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:4
+msgid ""
+"Quick Booking adds a public booking page for the appointment schedules you already have in the Calendar app. Requires the Calendar app.\n"
+"\n"
+"Visitors pick a date and time, enter their details, review and confirm on the same page. The appointment is booked immediately and the usual booking confirmation email (with .ics) is sent.\n"
+"\n"
+"* Share the usual Calendar booking link (\"Copy link\" in the Calendar app): it opens Quick Booking.\n"
+"* One-time appointment schedules: offer appointments on one or more chosen dates (e.g. parent-teacher conferences) instead of weekly. Create them in the Calendar app under \"One-time appointment schedules\".\n"
+"* Built-in rate limiting of bookings per visitor and per email address.\n"
+"* Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks."
+msgstr ""
+"Quick Booking thêm một trang đặt hẹn công khai cho các lịch trình cuộc hẹn bạn đã có trong ứng dụng Lịch. Yêu cầu có ứng dụng Lịch.\n"
+"\n"
+"Khách chọn ngày và giờ, nhập thông tin, xem lại và xác nhận ngay trên cùng một trang. Cuộc hẹn được đặt ngay lập tức và thư xác nhận đặt hẹn thông thường (kèm tệp .ics) sẽ được gửi đi.\n"
+"\n"
+"* Chia sẻ liên kết đặt hẹn thông thường của ứng dụng Lịch (\"Sao chép liên kết\" trong ứng dụng Lịch): liên kết sẽ mở Quick Booking.\n"
+"* Lịch trình cuộc hẹn một lần: nhận cuộc hẹn vào một hoặc nhiều ngày được chọn (ví dụ: họp phụ huynh) thay vì hằng tuần. Tạo chúng trong ứng dụng Lịch, tại mục \"Lịch trình cuộc hẹn một lần\".\n"
+"* Tích hợp sẵn giới hạn số lượt đặt hẹn theo từng khách và từng địa chỉ thư điện tử.\n"
+"* Tự kiểm tra: sau mỗi lần cập nhật ứng dụng Lịch hoặc Nextcloud, ứng dụng xác minh rằng mình vẫn hoạt động, và để liên kết đặt hẹn hiển thị trang đặt hẹn tiêu chuẩn của ứng dụng Lịch khi có sự cố."
+
+#: quickbook/templates/booking.php:5
+msgid "Please enable JavaScript to book an appointment."
+msgstr "Vui lòng bật JavaScript để đặt cuộc hẹn."
+
+#: quickbook/templates/settings-admin.php:10
+msgid "Quick Booking self-check"
+msgstr "Tự kiểm tra của Quick Booking"
+
+#: quickbook/templates/settings-admin.php:12
+msgid "Quick Booking uses internal code of the Calendar app. It checks after every Calendar or Nextcloud update and once a day that this still works. If something breaks, visitors are sent to the standard Calendar booking page and admins get a notification. While switched off, the check repeats every 15 minutes and switches back on when it passes."
+msgstr "Quick Booking sử dụng mã nội bộ của ứng dụng Lịch. Sau mỗi lần cập nhật ứng dụng Lịch hoặc Nextcloud và mỗi ngày một lần, ứng dụng kiểm tra xem mã đó có còn hoạt động hay không. Nếu có sự cố, khách sẽ được chuyển đến trang đặt hẹn tiêu chuẩn của ứng dụng Lịch và quản trị viên sẽ nhận được thông báo. Trong khi đang tắt, việc kiểm tra lặp lại sau mỗi 15 phút và Quick Booking sẽ bật lại khi kiểm tra đạt."
+
+#: quickbook/templates/settings-admin.php:17
+msgid "Off: visitors use the standard Calendar booking page."
+msgstr "Đang tắt: khách sử dụng trang đặt hẹn tiêu chuẩn của ứng dụng Lịch."
+
+#: quickbook/templates/settings-admin.php:21
+msgid "Bookings from several different networks failed while the self-check passed. Quick Booking switches back on after a Calendar update, or when you run the check below and it passes."
+msgstr "Các lượt đặt hẹn từ nhiều mạng khác nhau đã thất bại trong khi tự kiểm tra vẫn đạt. Quick Booking sẽ bật lại sau khi ứng dụng Lịch được cập nhật, hoặc khi bạn chạy kiểm tra bên dưới và kiểm tra đạt."
+
+#: quickbook/templates/settings-admin.php:24
+msgid "On: visitors book through Quick Booking."
+msgstr "Đang bật: khách đặt hẹn qua Quick Booking."
+
+#: quickbook/templates/settings-admin.php:28
+msgid "Calendar version"
+msgstr "Phiên bản ứng dụng Lịch"
+
+#: quickbook/templates/settings-admin.php:29
+msgid "Nextcloud version"
+msgstr "Phiên bản Nextcloud"
+
+#: quickbook/templates/settings-admin.php:30
+msgid "Last full check"
+msgstr "Lần kiểm tra đầy đủ gần nhất"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Check"
+msgstr "Mục kiểm tra"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Result"
+msgstr "Kết quả"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Detail"
+msgstr "Chi tiết"
+
+#: quickbook/templates/settings-admin.php:49
+msgid "Run self-check now"
+msgstr "Chạy tự kiểm tra ngay"
+
+#: quickbook/templates/settings-admin.php:52
+msgid "Also available as: occ quickbook:check"
+msgstr "Cũng có thể chạy bằng lệnh: occ quickbook:check"
+
+#: quickbook/templates/settings-admin.php:53
+msgid "Visitor addresses (rate limit)"
+msgstr "Địa chỉ của khách (giới hạn số lượt)"
+
+#: quickbook/templates/settings-admin.php:55
+#, php-format
+msgid "Nextcloud sees your address as: %s"
+msgstr "Nextcloud nhận diện địa chỉ của bạn là: %s"
+
+#: quickbook/templates/settings-admin.php:59
+msgid "This is a private address. That is fine if you are on the same network as the server. If you opened this page from outside (for example a phone on mobile data), Nextcloud does not know your reverse proxy: all visitors then share one address, and the booking limit applies to all of them together. Add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Đây là một địa chỉ riêng. Điều đó không sao nếu bạn đang ở cùng mạng với máy chủ. Nếu bạn mở trang này từ bên ngoài (ví dụ từ điện thoại dùng dữ liệu di động) thì Nextcloud chưa biết reverse proxy của bạn: khi đó mọi khách dùng chung một địa chỉ, và giới hạn đặt hẹn được áp dụng chung cho tất cả họ. Hãy thêm proxy vào \"trusted_proxies\" trong config.php."
+
+#: quickbook/templates/settings-admin.php:62
+msgid "This should be the public address of the device you are using right now. If it is the address of your server or proxy instead, add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Đây phải là địa chỉ công khai của thiết bị bạn đang dùng lúc này. Nếu đó lại là địa chỉ của máy chủ hoặc proxy của bạn, hãy thêm proxy vào \"trusted_proxies\" trong config.php."
+
+#: quickbook/templates/settings-admin.php:65
+msgid "Share the Calendar's own booking links (\"Copy link\" in the Calendar app). They open Quick Booking while it is on, and the Calendar booking page while it is off, disabled or removed. Links to /apps/quickbook/book/… only work while the app is installed."
+msgstr "Hãy chia sẻ các liên kết đặt hẹn của chính ứng dụng Lịch (\"Sao chép liên kết\" trong ứng dụng Lịch). Chúng mở Quick Booking khi ứng dụng đang bật, và mở trang đặt hẹn của ứng dụng Lịch khi Quick Booking đang tắt, bị vô hiệu hóa hoặc đã bị gỡ bỏ. Các liên kết tới /apps/quickbook/book/… chỉ hoạt động khi ứng dụng còn được cài đặt."

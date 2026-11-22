@@ -342,16 +342,17 @@ class CalendarBridge {
 	 */
 	public function selfTest(): array {
 		$results = [];
-		$add = static function (string $name, string $status, string $detail = '') use (&$results): void {
-			$results[] = ['name' => $name, 'status' => $status, 'detail' => $detail];
+		// The id and detail id are for the report in the reader's language, see HealthText
+		$add = static function (string $id, string $name, string $status, string $detail = '', string $detailId = '', array $detailArgs = []) use (&$results): void {
+			$results[] = ['id' => $id, 'name' => $name, 'status' => $status, 'detail' => $detail, 'detailId' => $detailId, 'detailArgs' => $detailArgs];
 		};
 		$describe = static fn (\Throwable $e): string => get_class($e) . ': ' . $e->getMessage();
 
 		if (!$this->appManager->isEnabledForAnyone('calendar')) {
-			$add('Calendar app enabled', 'fail', 'The Calendar app is not enabled');
+			$add('calendar_enabled', 'Calendar app enabled', 'fail', 'The Calendar app is not enabled', 'calendar_disabled');
 			return $results;
 		}
-		$add('Calendar app enabled', 'pass', 'version ' . $this->health->currentCalendarVersion());
+		$add('calendar_enabled', 'Calendar app enabled', 'pass', $this->health->currentCalendarVersion());
 
 		try {
 			$this->appManager->loadApp('calendar');
@@ -360,10 +361,10 @@ class CalendarBridge {
 			$problems = [$describe($e)];
 		}
 		if ($problems !== []) {
-			$add('Calendar code contract', 'fail', implode('; ', $problems));
+			$add('contract', 'Calendar code contract', 'fail', implode('; ', $problems));
 			return $results;
 		}
-		$add('Calendar code contract', 'pass', 'all classes, methods and fields found');
+		$add('contract', 'Calendar code contract', 'pass', 'all classes, methods and fields found', 'contract_holds');
 
 		try {
 			$oneTimeProblems = $this->contract->runOneTime();
@@ -371,15 +372,19 @@ class CalendarBridge {
 			$oneTimeProblems = [$describe($e)];
 		}
 		// Not fatal: bookings work without it, only creating and editing one-time schedules is off
-		$add('One-time schedules', $oneTimeProblems === [] ? 'pass' : 'warn', $oneTimeProblems === [] ? 'can be created and edited' : implode('; ', $oneTimeProblems));
+		if ($oneTimeProblems === []) {
+			$add('one_time', 'One-time schedules', 'pass', 'can be created and edited', 'one_time_usable');
+		} else {
+			$add('one_time', 'One-time schedules', 'warn', implode('; ', $oneTimeProblems));
+		}
 
 		try {
 			$bookingService = $this->get(ContractCheck::BOOKING_SERVICE);
 			$configService = $this->get(ContractCheck::CONFIG_SERVICE);
 			$mapper = $this->get(ContractCheck::BOOKING_MAPPER);
-			$add('Calendar services', 'pass', 'booking service, schedule service and booking storage load');
+			$add('services', 'Calendar services', 'pass', 'booking service, schedule service and booking storage load', 'services_load');
 		} catch (\Throwable $e) {
-			$add('Calendar services', 'fail', $describe($e));
+			$add('services', 'Calendar services', 'fail', $describe($e));
 			return $results;
 		}
 
@@ -389,12 +394,12 @@ class CalendarBridge {
 		} catch (\Throwable $e) {
 		}
 		// Not fatal: only the fallback for visitors is affected
-		$add('Standard booking page (fallback)', $fallback !== null ? 'pass' : 'warn', $fallback ?? 'route ' . ContractCheck::FALLBACK_ROUTE . ' not found');
+		$add('fallback', 'Standard booking page (fallback)', $fallback !== null ? 'pass' : 'warn', $fallback ?? 'route ' . ContractCheck::FALLBACK_ROUTE . ' not found');
 
 		$token = $this->findAnyScheduleToken();
 		if ($token === null) {
-			$add('Slot lookup', 'skip', 'no appointment schedule exists yet');
-			$add('Booking storage', 'skip', 'no appointment schedule exists yet');
+			$add('slots', 'Slot lookup', 'skip', 'no appointment schedule exists yet', 'no_schedule');
+			$add('storage', 'Booking storage', 'skip', 'no appointment schedule exists yet', 'no_schedule');
 			return $results;
 		}
 
@@ -402,9 +407,9 @@ class CalendarBridge {
 			$schedule = $this->toSchedule($configService->findByToken($token));
 			$now = $this->timeFactory->getTime();
 			$slots = $this->intervalsToArray($bookingService->getAvailableSlots($schedule->config, $now, $now + 7 * 86400));
-			$add('Slot lookup', 'pass', sprintf('schedule "%s": %d free slots in the next 7 days', $schedule->name, count($slots)));
+			$add('slots', 'Slot lookup', 'pass', sprintf('schedule "%s", free slots in the next 7 days: %d', $schedule->name, count($slots)), 'free_slots', [$schedule->name, (string)count($slots)]);
 		} catch (\Throwable $e) {
-			$add('Slot lookup', 'fail', $describe($e));
+			$add('slots', 'Slot lookup', 'fail', $describe($e));
 			return $results;
 		}
 
@@ -414,9 +419,9 @@ class CalendarBridge {
 			$booking->setCreatedAt(0);
 			$mapper->insert($booking);
 			$mapper->delete($booking);
-			$add('Booking storage', 'pass', 'test booking stored and removed');
+			$add('storage', 'Booking storage', 'pass', 'test booking stored and removed', 'storage_works');
 		} catch (\Throwable $e) {
-			$add('Booking storage', 'fail', $describe($e));
+			$add('storage', 'Booking storage', 'fail', $describe($e));
 		}
 
 		return $results;

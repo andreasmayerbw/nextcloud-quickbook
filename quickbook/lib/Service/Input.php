@@ -6,6 +6,7 @@ namespace OCA\QuickBook\Service;
 
 use DateTimeZone;
 use OCA\QuickBook\Exception\ValidationException;
+use OCP\IL10N;
 
 /**
  * Cleanup rules for text and timezones sent by browsers.
@@ -39,10 +40,10 @@ final class Input {
 	 *
 	 * @throws ValidationException
 	 */
-	public static function timezone(string $timeZone, string $field = 'timeZone'): DateTimeZone {
+	public static function timezone(string $timeZone, IL10N $l, string $field = 'timeZone'): DateTimeZone {
 		self::$timezones ??= array_fill_keys(DateTimeZone::listIdentifiers(DateTimeZone::ALL_WITH_BC), true);
 		if (!isset(self::$timezones[$timeZone])) {
-			throw new ValidationException($field, 'Invalid timezone');
+			throw new ValidationException($field, $l->t('Invalid timezone'));
 		}
 		return new DateTimeZone($timeZone);
 	}

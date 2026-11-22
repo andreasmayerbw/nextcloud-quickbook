@@ -9,6 +9,7 @@ use OCA\QuickBook\Exception\CalendarUnavailableException;
 use OCA\QuickBook\Exception\ScheduleNotFoundException;
 use OCA\QuickBook\Exception\ValidationException;
 use OCA\QuickBook\OneTime\OneTimeService;
+use OCP\App\IAppManager;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http;
 use OCP\AppFramework\Http\Attribute\FrontpageRoute;
@@ -28,6 +29,7 @@ class OneTimeController extends Controller {
 		IRequest $request,
 		private OneTimeService $oneTime,
 		private IUserSession $userSession,
+		private IAppManager $appManager,
 		private LoggerInterface $logger,
 	) {
 		parent::__construct(Application::APP_ID, $request);
@@ -89,6 +91,10 @@ class OneTimeController extends Controller {
 		$user = $this->userSession->getUser();
 		if ($user === null) {
 			return new JSONResponse(['error' => 'not_logged_in'], Http::STATUS_UNAUTHORIZED);
+		}
+		// The Calendar app can be limited to groups: its schedules are not for users outside them
+		if (!$this->appManager->isEnabledForUser('calendar', $user)) {
+			return new JSONResponse(['error' => 'unavailable'], Http::STATUS_FORBIDDEN);
 		}
 		try {
 			return new JSONResponse($action($user->getUID()), $status);

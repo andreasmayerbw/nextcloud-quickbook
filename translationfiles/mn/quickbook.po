@@ -1,0 +1,747 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Booking\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"Language: mn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: quickbook/js/booking.js:126
+msgid "{minutes} min"
+msgstr "{minutes} мин"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h"
+msgstr "{hours} ц"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h {minutes} min"
+msgstr "{hours} ц {minutes} мин"
+
+#: quickbook/js/booking.js:153
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "Хэт олон хүсэлт илгээгдлээ. Түр хүлээгээд дахин оролдоно уу."
+
+#: quickbook/js/booking.js:153 /work/quickbook/js/booking.js:157
+msgid "Could not load the free times."
+msgstr "Сул цагуудыг ачаалж чадсангүй."
+
+#: quickbook/js/booking.js:196
+msgid "Sorry, this time was just taken. Please choose another time."
+msgstr "Уучлаарай, энэ цагийг дөнгөж сая өөр хүн захиаллаа. Өөр цаг сонгоно уу."
+
+#: quickbook/js/booking.js:202 /work/quickbook/js/calendar-onetime.js:755
+msgid "Please check your input."
+msgstr "Оруулсан мэдээллээ шалгана уу."
+
+#: quickbook/js/booking.js:207
+msgid "This email address already has several bookings. Please try again tomorrow or contact the organizer."
+msgstr "Энэ имэйл хаягаар аль хэдийн хэд хэдэн захиалга хийгдсэн байна. Маргааш дахин оролдоно уу эсвэл зохион байгуулагчтай холбогдоно уу."
+
+#: quickbook/js/booking.js:208
+msgid "You made too many bookings in a short time. Please try again later."
+msgstr "Та богино хугацаанд хэт олон захиалга хийлээ. Дараа дахин оролдоно уу."
+
+#: quickbook/js/booking.js:215
+msgid "Something went wrong while booking. Please try again."
+msgstr "Захиалах үед алдаа гарлаа. Дахин оролдоно уу."
+
+#: quickbook/js/booking.js:217 /work/quickbook/js/calendar-onetime.js:764
+msgid "Could not reach the server. Please check your connection and try again."
+msgstr "Сервертэй холбогдож чадсангүй. Холболтоо шалгаад дахин оролдоно уу."
+
+#: quickbook/js/booking.js:247
+msgid "with {name}"
+msgstr "{name}-тай"
+
+#: quickbook/js/booking.js:254
+msgid "Date & time"
+msgstr "Огноо ба цаг"
+
+#: quickbook/js/booking.js:254
+msgid "Your details"
+msgstr "Таны мэдээлэл"
+
+#: quickbook/js/booking.js:254
+msgid "Confirm"
+msgstr "Баталгаажуулах"
+
+#: quickbook/js/booking.js:257
+msgid "Booking steps"
+msgstr "Захиалгын алхмууд"
+
+#: quickbook/js/booking.js:272
+msgid "This appointment has no upcoming dates any more."
+msgstr "Энэ уулзалтад захиалах боломжтой огноо үлдээгүй байна."
+
+#: quickbook/js/booking.js:310
+msgid "Choose a date"
+msgstr "Огноо сонгоно уу"
+
+#: quickbook/js/booking.js:312
+msgid "Previous month"
+msgstr "Өмнөх сар"
+
+#: quickbook/js/booking.js:314
+msgid "Next month"
+msgstr "Дараа сар"
+
+#: quickbook/js/booking.js:321
+msgid "Choose a date to see the free times."
+msgstr "Сул цагуудыг харахын тулд огноо сонгоно уу."
+
+#: quickbook/js/booking.js:323
+msgid "Loading free times…"
+msgstr "Сул цагуудыг ачаалж байна…"
+
+#: quickbook/js/booking.js:327
+msgid "No free times on this day. Please choose another date."
+msgstr "Энэ өдөр сул цаг алга. Өөр огноо сонгоно уу."
+
+#: quickbook/js/booking.js:329 /work/quickbook/js/booking.js:344
+msgid "Free times"
+msgstr "Сул цагууд"
+
+#: quickbook/js/booking.js:343
+msgid "Choose a time"
+msgstr "Цаг сонгоно уу"
+
+#: quickbook/js/booking.js:345
+msgid "Times are shown in {timezone}"
+msgstr "Цагийг {timezone} цагийн бүсээр харуулж байна"
+
+#: quickbook/js/booking.js:353
+msgid "Continue"
+msgstr "Үргэлжлүүлэх"
+
+#: quickbook/js/booking.js:361
+msgid "Change"
+msgstr "Өөрчлөх"
+
+#: quickbook/js/booking.js:382 /work/quickbook/js/booking.js:405
+msgid "Name"
+msgstr "Нэр"
+
+#: quickbook/js/booking.js:383 /work/quickbook/js/booking.js:406
+msgid "Email"
+msgstr "Цахим шуудан"
+
+#: quickbook/js/booking.js:383
+msgid "Your booking confirmation is sent to this address."
+msgstr "Захиалгын баталгаажуулалтыг энэ хаяг руу илгээнэ."
+
+#: quickbook/js/booking.js:384
+msgid "Comment (optional)"
+msgstr "Тайлбар (заавал биш)"
+
+#: quickbook/js/booking.js:390 /work/quickbook/js/booking.js:418
+msgid "Back"
+msgstr "Буцах"
+
+#: quickbook/js/booking.js:391
+msgid "Review booking"
+msgstr "Захиалгыг хянах"
+
+#: quickbook/js/booking.js:400
+msgid "Appointment"
+msgstr "Уулзалт"
+
+#: quickbook/js/booking.js:401
+msgid "With"
+msgstr "Хэнтэй"
+
+#: quickbook/js/booking.js:402
+msgid "Date"
+msgstr "Огноо"
+
+#: quickbook/js/booking.js:403
+msgid "Time"
+msgstr "Цаг"
+
+#: quickbook/js/booking.js:404 /work/quickbook/js/calendar-onetime.js:900
+msgid "Location"
+msgstr "Байршил"
+
+#: quickbook/js/booking.js:407
+msgid "Comment"
+msgstr "Тайлбар"
+
+#: quickbook/js/booking.js:415
+msgid "Please check your booking."
+msgstr "Захиалгаа шалгана уу."
+
+#: quickbook/js/booking.js:424
+msgid "Booking…"
+msgstr "Захиалж байна…"
+
+#: quickbook/js/booking.js:424
+msgid "Confirm booking"
+msgstr "Захиалгыг баталгаажуулах"
+
+#: quickbook/js/booking.js:433
+msgid "Your appointment is booked"
+msgstr "Таны уулзалт захиалагдлаа"
+
+#: quickbook/js/booking.js:434
+msgid "A confirmation email is on its way to {email}."
+msgstr "Баталгаажуулах имэйлийг {email} хаяг руу илгээж байна."
+
+#: quickbook/js/booking.js:438
+msgid "Book another appointment"
+msgstr "Өөр уулзалт захиалах"
+
+#: quickbook/js/booking.js:445
+msgid "Online booking on this page is temporarily unavailable."
+msgstr "Энэ хуудсан дээрх онлайн захиалга түр хугацаанд боломжгүй байна."
+
+#: quickbook/js/booking.js:447
+msgid "Continue on the standard booking page"
+msgstr "Стандарт захиалгын хуудсаар үргэлжлүүлэх"
+
+#: quickbook/js/booking.js:448
+msgid "Please try again later."
+msgstr "Дараа дахин оролдоно уу."
+
+#: quickbook/js/calendar-onetime.js:148 quickbook/js/calendar-onetime.js:162
+msgid "{duration} minute"
+msgid_plural "{duration} minutes"
+msgstr[0] "{duration} минут"
+msgstr[1] "{duration} минут"
+
+#: quickbook/js/calendar-onetime.js:152
+msgid "{duration} week"
+msgid_plural "{duration} weeks"
+msgstr[0] "{duration} долоо хоног"
+msgstr[1] "{duration} долоо хоног"
+
+#: quickbook/js/calendar-onetime.js:156
+msgid "{duration} day"
+msgid_plural "{duration} days"
+msgstr[0] "{duration} өдөр"
+msgstr[1] "{duration} өдөр"
+
+#: quickbook/js/calendar-onetime.js:160
+msgid "{duration} hour"
+msgid_plural "{duration} hours"
+msgstr[0] "{duration} цаг"
+msgstr[1] "{duration} цаг"
+
+#: quickbook/js/calendar-onetime.js:262 quickbook/lib/Health/HealthText.php:25
+msgid "One-time appointment schedules"
+msgstr "Нэг удаагийн уулзалтын хуваарь"
+
+#: quickbook/js/calendar-onetime.js:305
+msgid "Actions"
+msgstr "Үйлдлүүд"
+
+#: quickbook/js/calendar-onetime.js:364 quickbook/js/calendar-onetime.js:985
+msgid "Preview"
+msgstr "Урьдчилан харах"
+
+#: quickbook/js/calendar-onetime.js:365 quickbook/js/calendar-onetime.js:986
+msgid "Copy link"
+msgstr "Холбоос хуулах"
+
+#: quickbook/js/calendar-onetime.js:366
+msgid "Duplicate"
+msgstr "Хуулбарлах"
+
+#: quickbook/js/calendar-onetime.js:367
+msgid "Edit"
+msgstr "Засах"
+
+#: quickbook/js/calendar-onetime.js:368
+msgid "Delete"
+msgstr "Устгах"
+
+#: quickbook/js/calendar-onetime.js:412
+msgid "Appointment link was copied to clipboard"
+msgstr "Уулзалтын холбоос түр санах ойд хуулагдлаа"
+
+#: quickbook/js/calendar-onetime.js:414
+msgid "Appointment link could not be copied to clipboard"
+msgstr "Уулзалтын холбоосыг түр санах ойд хуулж чадсангүй"
+
+#: quickbook/js/calendar-onetime.js:427
+msgid "Could not delete the appointment schedule"
+msgstr "Уулзалтын хуваарийг устгаж чадсангүй"
+
+#: quickbook/js/calendar-onetime.js:533
+msgid "Remove {calendar}"
+msgstr "{calendar} календарийг хасах"
+
+#: quickbook/js/calendar-onetime.js:662
+msgid "One-time appointment schedules could not be loaded. Please try again later."
+msgstr "Нэг удаагийн уулзалтын хуваарийг ачаалж чадсангүй. Дараа дахин оролдоно уу."
+
+#: quickbook/js/calendar-onetime.js:759
+msgid "One-time appointment schedules are temporarily unavailable."
+msgstr "Нэг удаагийн уулзалтын хуваарь түр хугацаанд боломжгүй байна."
+
+#: quickbook/js/calendar-onetime.js:761
+msgid "Could not save. Please try again."
+msgstr "Хадгалж чадсангүй. Дахин оролдоно уу."
+
+#: quickbook/js/calendar-onetime.js:783
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} слот"
+msgstr[1] "{count} слот"
+
+#: quickbook/js/calendar-onetime.js:794
+msgid "Date {number}"
+msgstr "Огноо {number}"
+
+#: quickbook/js/calendar-onetime.js:798
+msgid "{date}: from"
+msgstr "{date}: эхлэх цаг"
+
+#: quickbook/js/calendar-onetime.js:799
+msgid "to"
+msgstr "–"
+
+#: quickbook/js/calendar-onetime.js:800
+msgid "{date}: to"
+msgstr "{date}: дуусах цаг"
+
+#: quickbook/js/calendar-onetime.js:804
+msgid "Delete {date}"
+msgstr "{date}-г устгах"
+
+#: quickbook/js/calendar-onetime.js:823
+msgid "Calendars to check for conflicts"
+msgstr "Давхцал шалгах календарууд"
+
+#: quickbook/js/calendar-onetime.js:838
+msgid "Booking calendar"
+msgstr "Захиалгын календарь"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Create one-time appointment schedule"
+msgstr "Нэг удаагийн уулзалтын хуваарь үүсгэх"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Edit one-time appointment schedule"
+msgstr "Нэг удаагийн уулзалтын хуваарь засах"
+
+#: quickbook/js/calendar-onetime.js:896
+msgid "You need a calendar you can write to, to take appointments."
+msgstr "Уулзалт хүлээн авахын тулд танд бичих эрхтэй календарь хэрэгтэй."
+
+#: quickbook/js/calendar-onetime.js:899
+msgid "Appointment name"
+msgstr "Уулзалтын нэр"
+
+#: quickbook/js/calendar-onetime.js:905
+msgid "Create a Talk room"
+msgstr "Talk өрөө үүсгэх"
+
+#: quickbook/js/calendar-onetime.js:914
+msgid "A unique link will be generated for every booked appointment and sent via the confirmation email"
+msgstr "Захиалсан уулзалт бүрт өвөрмөц холбоос үүсгэгдэж, баталгаажуулах имэйлээр илгээгдэнэ"
+
+#: quickbook/js/calendar-onetime.js:918
+msgid "Description"
+msgstr "Тодорхойлолт"
+
+#: quickbook/js/calendar-onetime.js:922
+msgid "Duration (minutes)"
+msgstr "Үргэлжлэх хугацаа (минут)"
+
+#: quickbook/js/calendar-onetime.js:923
+msgid "Increments"
+msgstr "Нэмэгдэл"
+
+#: quickbook/js/calendar-onetime.js:927
+msgid "Visibility"
+msgstr "Харагдац"
+
+#: quickbook/js/calendar-onetime.js:928
+msgid "Public – shown on profile page"
+msgstr "Нийтийн – профайл хуудсанд харагдана"
+
+#: quickbook/js/calendar-onetime.js:929
+msgid "Private – only accessible via link"
+msgstr "Хувийн – зөвхөн холбоосоор хандах боломжтой"
+
+#: quickbook/js/calendar-onetime.js:934
+msgid "Booking dates"
+msgstr "Захиалгын огноонууд"
+
+#: quickbook/js/calendar-onetime.js:935
+msgid "Times are in {timezone}."
+msgstr "Цагийг {timezone} цагийн бүсээр тооцно."
+
+#: quickbook/js/calendar-onetime.js:941
+msgid "Add date"
+msgstr "Огноо нэмэх"
+
+#: quickbook/js/calendar-onetime.js:956
+msgid "Planning restrictions"
+msgstr "Төлөвлөлтийн хязгаарлалт"
+
+#: quickbook/js/calendar-onetime.js:958
+msgid "Buffer before the event"
+msgstr "Үйл явдлын өмнөх завсар"
+
+#: quickbook/js/calendar-onetime.js:959
+msgid "Buffer after the event"
+msgstr "Үйл явдлын дараах завсар"
+
+#: quickbook/js/calendar-onetime.js:962
+msgid "Minimum time before next slot"
+msgstr "Дараагийн слотын өмнөх хамгийн бага хугацаа"
+
+#: quickbook/js/calendar-onetime.js:963
+msgid "Max slots per day"
+msgstr "Өдөрт хамгийн их слот"
+
+#: quickbook/js/calendar-onetime.js:967
+msgid "It seems a rate limit has been reached. Please try again later."
+msgstr "Хязгаарт хүрсэн бололтой. Дараа дахин оролдоно уу."
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Save"
+msgstr "Хадгалах"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Update"
+msgstr "Шинэчлэх"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully created"
+msgstr "Нэг удаагийн уулзалтын хуваарь амжилттай үүсгэгдлээ"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully updated"
+msgstr "Нэг удаагийн уулзалтын хуваарь амжилттай шинэчлэгдлээ"
+
+#: quickbook/js/calendar-onetime.js:995
+msgid "Close"
+msgstr "Хаах"
+
+#: quickbook/js/settings.js:15
+msgid "Checking…"
+msgstr "Шалгаж байна…"
+
+#: quickbook/js/settings.js:23
+msgid "The self-check could not run."
+msgstr "Өөрийн шалгалтыг ажиллуулж чадсангүй."
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "Appointment not found"
+msgstr "Уулзалт олдсонгүй"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "This booking link does not exist (any more)."
+msgstr "Энэ захиалгын холбоос байхгүй (болсон) байна."
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Booking unavailable"
+msgstr "Захиалга боломжгүй"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Online booking is temporarily unavailable. Please try again later."
+msgstr "Онлайн захиалга түр хугацаанд боломжгүй байна. Дараа дахин оролдоно уу."
+
+#: quickbook/lib/Health/HealthText.php:22
+msgid "Quick Booking components"
+msgstr "Quick Booking-ийн бүрэлдэхүүн хэсгүүд"
+
+#: quickbook/lib/Health/HealthText.php:23
+msgid "Calendar app enabled"
+msgstr "Календарь апп идэвхтэй"
+
+#: quickbook/lib/Health/HealthText.php:24
+msgid "Calendar code contract"
+msgstr "Календарийн кодын гэрээ"
+
+#: quickbook/lib/Health/HealthText.php:26
+msgid "Calendar services"
+msgstr "Календарийн үйлчилгээнүүд"
+
+#: quickbook/lib/Health/HealthText.php:27
+msgid "Standard booking page (fallback)"
+msgstr "Стандарт захиалгын хуудас (нөөц)"
+
+#: quickbook/lib/Health/HealthText.php:28
+msgid "Slot lookup"
+msgstr "Сул цаг хайх"
+
+#: quickbook/lib/Health/HealthText.php:29
+msgid "Booking storage"
+msgstr "Захиалга хадгалах"
+
+#: quickbook/lib/Health/HealthText.php:36
+msgid "Passed"
+msgstr "Тэнцсэн"
+
+#: quickbook/lib/Health/HealthText.php:37
+msgid "Failed"
+msgstr "Амжилтгүй"
+
+#: quickbook/lib/Health/HealthText.php:38
+msgid "Warning"
+msgstr "Анхааруулга"
+
+#: quickbook/lib/Health/HealthText.php:39
+msgid "Skipped"
+msgstr "Алгассан"
+
+#: quickbook/lib/Health/HealthText.php:50
+msgid "Booking page, booking API and Calendar link redirect load"
+msgstr "Захиалгын хуудас, захиалгын API болон Календарийн холбоосын чиглүүлэлт ачаалагдаж байна"
+
+#: quickbook/lib/Health/HealthText.php:51
+msgid "The Calendar app is not enabled"
+msgstr "Календарь апп идэвхгүй байна"
+
+#: quickbook/lib/Health/HealthText.php:52
+msgid "All classes, methods and fields found"
+msgstr "Бүх класс, метод, талбар олдлоо"
+
+#: quickbook/lib/Health/HealthText.php:53
+msgid "Can be created and edited"
+msgstr "Үүсгэх, засах боломжтой"
+
+#: quickbook/lib/Health/HealthText.php:54
+msgid "Booking service, schedule service and booking storage load"
+msgstr "Захиалгын үйлчилгээ, хуваарийн үйлчилгээ болон захиалгын сан ачаалагдаж байна"
+
+#: quickbook/lib/Health/HealthText.php:55
+msgid "No appointment schedule exists yet"
+msgstr "Уулзалтын хуваарь хараахан алга"
+
+#: quickbook/lib/Health/HealthText.php:56
+#, php-format
+msgid "Schedule \"%1$s\", free slots in the next 7 days: %2$s"
+msgstr "Хуваарь \"%1$s\", дараагийн 7 хоногийн сул цагууд: %2$s"
+
+#: quickbook/lib/Health/HealthText.php:57
+msgid "Test booking stored and removed"
+msgstr "Туршилтын захиалгыг хадгалаад устгалаа"
+
+#: quickbook/lib/Notification/Notifier.php:29
+#: quickbook/lib/Settings/AdminSection.php:24
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Quick Booking"
+msgstr "Quick Booking"
+
+#: quickbook/lib/Notification/Notifier.php:41
+msgid "Quick Booking switched visitors to the standard Calendar booking page"
+msgstr "Quick Booking зочдыг Календарийн стандарт захиалгын хуудас руу шилжүүллээ"
+
+#: quickbook/lib/Notification/Notifier.php:42
+#, php-format
+msgid "Something in the Calendar app or Nextcloud no longer works as Quick Booking expects: %s"
+msgstr "Календарь апп эсвэл Nextcloud доторх ямар нэг зүйл Quick Booking-ийн хүлээж байгаагаар ажиллахаа больсон: %s"
+
+#: quickbook/lib/Notification/Notifier.php:45
+#, php-format
+msgid "Quick Booking works again (%s)"
+msgstr "Quick Booking дахин ажиллаж байна (%s)"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:41
+msgid "Please add at least one date"
+msgstr "Дор хаяж нэг огноо нэмнэ үү"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:44
+msgid "Too many dates"
+msgstr "Огноо хэт олон байна"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:55
+msgid "Please enter a valid date"
+msgstr "Зөв огноо оруулна уу"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:58
+msgid "Please enter valid times"
+msgstr "Зөв цаг оруулна уу"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:61
+msgid "The end time must be after the start time"
+msgstr "Дуусах цаг эхлэх цагаас хойш байх ёстой"
+
+#: quickbook/lib/OneTime/OneTimeService.php:252
+msgid "Please enter a name of at most 128 characters"
+msgstr "128 тэмдэгтээс ихгүй нэр оруулна уу"
+
+#: quickbook/lib/OneTime/OneTimeService.php:256
+msgid "The location is too long"
+msgstr "Байршил хэт урт байна"
+
+#: quickbook/lib/OneTime/OneTimeService.php:260
+msgid "The description is too long"
+msgstr "Тодорхойлолт хэт урт байна"
+
+#: quickbook/lib/OneTime/OneTimeService.php:265
+msgid "Please enter the duration in minutes"
+msgstr "Үргэлжлэх хугацааг минутаар оруулна уу"
+
+#: quickbook/lib/OneTime/OneTimeService.php:267
+msgid "Please choose the increments"
+msgstr "Нэмэгдлийг сонгоно уу"
+
+#: quickbook/lib/OneTime/OneTimeService.php:268
+msgid "Please choose the buffer before the event"
+msgstr "Үйл явдлын өмнөх завсрыг сонгоно уу"
+
+#: quickbook/lib/OneTime/OneTimeService.php:269
+msgid "Please choose the buffer after the event"
+msgstr "Үйл явдлын дараах завсрыг сонгоно уу"
+
+#: quickbook/lib/OneTime/OneTimeService.php:270
+msgid "Please choose the minimum time before the next slot"
+msgstr "Дараагийн слотын өмнөх хамгийн бага хугацааг сонгоно уу"
+
+#: quickbook/lib/OneTime/OneTimeService.php:273
+msgid "Please enter the maximum number of slots per day, or leave it empty"
+msgstr "Өдөрт хамгийн их слотын тоог оруулна уу, эсвэл хоосон орхино уу"
+
+#: quickbook/lib/OneTime/OneTimeService.php:278
+msgid "Please choose the visibility"
+msgstr "Харагдацыг сонгоно уу"
+
+#: quickbook/lib/OneTime/OneTimeService.php:284
+msgid "Please choose a booking calendar"
+msgstr "Захиалгын календарь сонгоно уу"
+
+#: quickbook/lib/OneTime/OneTimeService.php:288
+#: quickbook/lib/OneTime/OneTimeService.php:293
+msgid "Please choose the calendars to check for conflicts"
+msgstr "Давхцал шалгах календаруудыг сонгоно уу"
+
+#: quickbook/lib/OneTime/OneTimeService.php:302
+msgid "Each time range must fit at least one appointment"
+msgstr "Цагийн хүрээ бүрт дор хаяж нэг уулзалт багтах ёстой"
+
+#: quickbook/lib/Service/BookingFlowService.php:62
+#: quickbook/lib/Service/BookingFlowService.php:66
+msgid "Invalid date"
+msgstr "Огноо буруу байна"
+
+#: quickbook/lib/Service/BookingFlowService.php:95
+msgid "Please enter your name"
+msgstr "Нэрээ оруулна уу"
+
+#: quickbook/lib/Service/BookingFlowService.php:99
+msgid "Please enter your name without @, < or >"
+msgstr "Нэрээ @, < эсвэл > тэмдэггүйгээр оруулна уу"
+
+#: quickbook/lib/Service/BookingFlowService.php:102
+msgid "Please enter a valid email address"
+msgstr "Зөв имэйл хаяг оруулна уу"
+
+#: quickbook/lib/Service/BookingFlowService.php:105
+msgid "The comment is too long"
+msgstr "Тайлбар хэт урт байна"
+
+#: quickbook/lib/Service/BookingFlowService.php:118
+msgid "Invalid time range"
+msgstr "Цагийн хүрээ буруу байна"
+
+#: quickbook/lib/Service/Input.php:46
+msgid "Invalid timezone"
+msgstr "Цагийн бүс буруу байна"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "One-page appointment booking for Calendar schedules, without the email confirmation step."
+msgstr "Календарийн хуваарьт зориулсан, имэйлээр баталгаажуулах алхамгүй, нэг хуудсанд багтсан уулзалт захиалга."
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:4
+msgid ""
+"Quick Booking adds a public booking page for the appointment schedules you already have in the Calendar app. Requires the Calendar app.\n"
+"\n"
+"Visitors pick a date and time, enter their details, review and confirm on the same page. The appointment is booked immediately and the usual booking confirmation email (with .ics) is sent.\n"
+"\n"
+"* Share the usual Calendar booking link (\"Copy link\" in the Calendar app): it opens Quick Booking.\n"
+"* One-time appointment schedules: offer appointments on one or more chosen dates (e.g. parent-teacher conferences) instead of weekly. Create them in the Calendar app under \"One-time appointment schedules\".\n"
+"* Built-in rate limiting of bookings per visitor and per email address.\n"
+"* Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks."
+msgstr ""
+"Quick Booking нь Календарь апп дахь таны одоо байгаа уулзалтын хуваариудад зориулсан нийтийн захиалгын хуудас нэмдэг. Календарь апп шаардлагатай.\n"
+"\n"
+"Зочид нэг хуудсан дээр огноо, цагаа сонгож, мэдээллээ оруулж, захиалгаа хянаад баталгаажуулна. Уулзалт тэр даруй захиалагдаж, захиалгыг баталгаажуулах ердийн имэйл (.ics-тэй) илгээгдэнэ.\n"
+"\n"
+"* Календарийн ердийн захиалгын холбоосыг хуваалцаарай (Календарь апп дахь \"Холбоос хуулах\"): тэр нь Quick Booking-ийг нээнэ.\n"
+"* Нэг удаагийн уулзалтын хуваарь: долоо хоног бүр биш, сонгосон нэг эсвэл хэд хэдэн огноонд уулзалт санал болгоно (жишээ нь эцэг эх, багш нарын уулзалт). Тэдгээрийг Календарь апп дахь \"Нэг удаагийн уулзалтын хуваарь\" хэсэгт үүсгэнэ.\n"
+"* Зочин бүрийн болон имэйл хаяг бүрийн захиалгын тоог хязгаарлах суурилагдсан хамгаалалт.\n"
+"* Өөрийн шалгалт: Календарь эсвэл Nextcloud шинэчлэгдэх бүрийн дараа апп ажиллаж байгаа эсэхийг шалгаж, ямар нэг зүйл эвдэрвэл захиалгын холбоосоор Календарийн стандарт захиалгын хуудсыг харуулна."
+
+#: quickbook/templates/booking.php:5
+msgid "Please enable JavaScript to book an appointment."
+msgstr "Уулзалт захиалахын тулд JavaScript-ийг идэвхжүүлнэ үү."
+
+#: quickbook/templates/settings-admin.php:10
+msgid "Quick Booking self-check"
+msgstr "Quick Booking-ийн өөрийн шалгалт"
+
+#: quickbook/templates/settings-admin.php:12
+msgid "Quick Booking uses internal code of the Calendar app. It checks after every Calendar or Nextcloud update and once a day that this still works. If something breaks, visitors are sent to the standard Calendar booking page and admins get a notification. While switched off, the check repeats every 15 minutes and switches back on when it passes."
+msgstr "Quick Booking нь Календарь аппын дотоод кодыг ашигладаг. Энэ нь ажиллаж байгаа эсэхийг Календарь эсвэл Nextcloud шинэчлэгдэх бүрийн дараа болон өдөрт нэг удаа шалгана. Ямар нэг зүйл эвдэрвэл зочдыг Календарийн стандарт захиалгын хуудас руу чиглүүлж, админуудад мэдэгдэл илгээнэ. Унтраалттай үед шалгалт 15 минут тутамд давтагдаж, амжилттай болмогц Quick Booking дахин асна."
+
+#: quickbook/templates/settings-admin.php:17
+msgid "Off: visitors use the standard Calendar booking page."
+msgstr "Унтраалттай: зочид Календарийн стандарт захиалгын хуудсыг ашиглаж байна."
+
+#: quickbook/templates/settings-admin.php:21
+msgid "Bookings from several different networks failed while the self-check passed. Quick Booking switches back on after a Calendar update, or when you run the check below and it passes."
+msgstr "Өөрийн шалгалт амжилттай байсан ч хэд хэдэн өөр сүлжээнээс хийсэн захиалга амжилтгүй боллоо. Календарь шинэчлэгдсэний дараа, эсвэл та доорх шалгалтыг ажиллуулж, тэр нь амжилттай болоход Quick Booking дахин асна."
+
+#: quickbook/templates/settings-admin.php:24
+msgid "On: visitors book through Quick Booking."
+msgstr "Асаалттай: зочид Quick Booking-оор захиалж байна."
+
+#: quickbook/templates/settings-admin.php:28
+msgid "Calendar version"
+msgstr "Календарийн хувилбар"
+
+#: quickbook/templates/settings-admin.php:29
+msgid "Nextcloud version"
+msgstr "Nextcloud-ийн хувилбар"
+
+#: quickbook/templates/settings-admin.php:30
+msgid "Last full check"
+msgstr "Сүүлийн бүрэн шалгалт"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Check"
+msgstr "Шалгалт"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Result"
+msgstr "Үр дүн"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Detail"
+msgstr "Дэлгэрэнгүй"
+
+#: quickbook/templates/settings-admin.php:49
+msgid "Run self-check now"
+msgstr "Өөрийн шалгалтыг одоо ажиллуулах"
+
+#: quickbook/templates/settings-admin.php:52
+msgid "Also available as: occ quickbook:check"
+msgstr "Мөн дараах командаар ажиллуулж болно: occ quickbook:check"
+
+#: quickbook/templates/settings-admin.php:53
+msgid "Visitor addresses (rate limit)"
+msgstr "Зочдын хаягууд (захиалгын тооны хязгаар)"
+
+#: quickbook/templates/settings-admin.php:55
+#, php-format
+msgid "Nextcloud sees your address as: %s"
+msgstr "Nextcloud таны хаягийг ингэж харж байна: %s"
+
+#: quickbook/templates/settings-admin.php:59
+msgid "This is a private address. That is fine if you are on the same network as the server. If you opened this page from outside (for example a phone on mobile data), Nextcloud does not know your reverse proxy: all visitors then share one address, and the booking limit applies to all of them together. Add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Энэ бол дотоод (private) хаяг. Хэрэв та сервертэй нэг сүлжээнд байгаа бол зүгээр. Харин энэ хуудсыг гаднаас (жишээ нь мобайл дата ашиглаж буй утаснаас) нээсэн бол Nextcloud таны урвуу проксиг (reverse proxy) танихгүй байна гэсэн үг: энэ тохиолдолд бүх зочин нэг хаягийг хуваалцаж, захиалгын хязгаар тэдэнд бүгдэд нь хамтад нь үйлчилнэ. Проксиг config.php доторх \"trusted_proxies\"-д нэмнэ үү."
+
+#: quickbook/templates/settings-admin.php:62
+msgid "This should be the public address of the device you are using right now. If it is the address of your server or proxy instead, add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Энэ нь таны яг одоо ашиглаж буй төхөөрөмжийн нийтийн хаяг байх ёстой. Хэрэв оронд нь таны серверийн эсвэл проксины хаяг байвал проксиг config.php доторх \"trusted_proxies\"-д нэмнэ үү."
+
+#: quickbook/templates/settings-admin.php:65
+msgid "Share the Calendar's own booking links (\"Copy link\" in the Calendar app). They open Quick Booking while it is on, and the Calendar booking page while it is off, disabled or removed. Links to /apps/quickbook/book/… only work while the app is installed."
+msgstr "Календарийн өөрийн захиалгын холбоосуудыг хуваалцаарай (Календарь апп дахь \"Холбоос хуулах\"). Тэдгээр нь Quick Booking асаалттай үед түүнийг, харин унтраалттай, идэвхгүй болгосон эсвэл устгасан үед Календарийн захиалгын хуудсыг нээнэ. /apps/quickbook/book/… холбоосууд зөвхөн апп суулгаатай үед ажиллана."

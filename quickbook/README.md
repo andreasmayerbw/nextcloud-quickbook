@@ -162,6 +162,7 @@ Requires Docker. Everything runs in containers; no PHP or Node on the host.
 ```sh
 make dev     # Nextcloud 34.0.5 + Calendar + Mailpit, app mounted from ./quickbook
 make lint    # PHP syntax check
+make l10n    # update the translations (see below)
 ```
 
 ### Release to the App Store
@@ -182,6 +183,43 @@ make lint    # PHP syntax check
 
 The frontend is plain JavaScript and CSS (`js/`, `css/`), so there is no build step.
 
+### Translations
+
+Quick Booking is translated the way Nextcloud apps are: the code uses English
+texts through `t()`/`n()` (PHP: `$l->t()`, JS: `t('quickbook', '…')`), and
+Nextcloud shows each user, and each visitor of the public page (browser language),
+the translation from `l10n/<language>.json` and `.js`. English is the fallback.
+
+- `translationfiles/<language>/quickbook.po` (repository root): the translations.
+  Edit these, by hand or with a PO editor such as Poedit.
+- `translationfiles/templates/quickbook.pot`: all texts found in the code (generated).
+- `quickbook/l10n/`: what Nextcloud loads (generated; commit it, it is part of the release).
+
+`make l10n` runs Nextcloud's own
+[translationtool](https://github.com/nextcloud/docker-ci/tree/master/translations/translationtool)
+in a container: it collects the texts from the code, adds new ones to every
+`.po` file (and reports how many are still untranslated), and writes `l10n/`.
+Run it after changing texts in the code or in a `.po` file.
+
+Included are the 57 languages that Nextcloud 34 offers in its language setting
+(the ones Nextcloud's own core is translated into). Apart from Dutch they were
+translated with AI and not reviewed by native speakers; they use the wording of
+Nextcloud's Calendar app where that has the same text or term. Corrections are
+welcome: change the `.po` file of the language and run `make l10n`.
+
+Add a language with its Nextcloud code, e.g. Welsh: `make l10n LANGS="cy_GB"`, then
+translate `translationfiles/cy_GB/quickbook.po` and run `make l10n` again.
+
+The summary and description on the Apps page and in the App Store are read from
+`<summary lang="…">` and `<description lang="…">` in `appinfo/info.xml`. `make l10n`
+writes those from the `.po` files too: change the English ones in `info.xml`, and
+the translations in the `.po` files. The App Store has its own language codes
+(`pt-br`, `zh-hans`, …) and allows 128 characters for a summary; `make l10n` maps the
+codes, leaves out languages the store does not know and stops when a summary is too long.
+
+Not translated on purpose: log entries, `occ quickbook:check` and the details of
+the self-check report (the same texts go to the log and into bug reports).
+
 ### Code map
 
 - `lib/Calendar/CalendarBridge.php`: the **only** code that touches the Calendar app
@@ -193,3 +231,4 @@ The frontend is plain JavaScript and CSS (`js/`, `css/`), so there is no build s
 - `lib/Listener/`: the one-time section on the Calendar page, the booking guard for one-time dates, user removal
 - `js/booking.js`, `css/booking.css`: the public booking page
 - `js/calendar-onetime.js`, `css/calendar-onetime.css`: the one-time section and form in the Calendar app
+- `l10n/`: translations (generated from `../translationfiles/`, see Translations)

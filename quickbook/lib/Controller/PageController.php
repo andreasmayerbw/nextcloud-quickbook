@@ -21,6 +21,7 @@ use OCP\AppFramework\Http\Template\PublicTemplateResponse;
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\AppFramework\Services\IInitialState;
 use OCP\AppFramework\Utility\ITimeFactory;
+use OCP\IL10N;
 use OCP\IRequest;
 use OCP\IURLGenerator;
 use OCP\IUserManager;
@@ -39,6 +40,7 @@ class PageController extends Controller {
 		private ITimeFactory $timeFactory,
 		private OneTimeService $oneTime,
 		private LoggerInterface $logger,
+		private IL10N $l,
 	) {
 		parent::__construct(Application::APP_ID, $request);
 	}
@@ -64,13 +66,13 @@ class PageController extends Controller {
 		try {
 			$schedule = $this->calendar->findSchedule($token);
 		} catch (ScheduleNotFoundException) {
-			return $this->message('Appointment not found', 'This booking link does not exist (any more).', Http::STATUS_NOT_FOUND);
+			return $this->message($this->l->t('Appointment not found'), $this->l->t('This booking link does not exist (any more).'), Http::STATUS_NOT_FOUND);
 		} catch (CalendarUnavailableException|TemporaryFailureException) {
 			$fallback = $this->calendar->fallbackUrl($token);
 			if ($fallback !== null) {
 				return new RedirectResponse($fallback);
 			}
-			return $this->message('Booking unavailable', 'Online booking is temporarily unavailable. Please try again later.', Http::STATUS_SERVICE_UNAVAILABLE);
+			return $this->message($this->l->t('Booking unavailable'), $this->l->t('Online booking is temporarily unavailable. Please try again later.'), Http::STATUS_SERVICE_UNAVAILABLE);
 		}
 
 		$now = $this->timeFactory->getTime();

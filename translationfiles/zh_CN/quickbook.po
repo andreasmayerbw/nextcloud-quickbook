@@ -1,0 +1,742 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Booking\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: quickbook/js/booking.js:126
+msgid "{minutes} min"
+msgstr "{minutes} 分钟"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h"
+msgstr "{hours} 小时"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h {minutes} min"
+msgstr "{hours} 小时 {minutes} 分钟"
+
+#: quickbook/js/booking.js:153
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "请求过多。请稍等片刻后重试。"
+
+#: quickbook/js/booking.js:153 /work/quickbook/js/booking.js:157
+msgid "Could not load the free times."
+msgstr "无法加载空闲时间。"
+
+#: quickbook/js/booking.js:196
+msgid "Sorry, this time was just taken. Please choose another time."
+msgstr "抱歉，该时间刚刚被预约。请选择其他时间。"
+
+#: quickbook/js/booking.js:202 /work/quickbook/js/calendar-onetime.js:755
+msgid "Please check your input."
+msgstr "请检查您输入的内容。"
+
+#: quickbook/js/booking.js:207
+msgid "This email address already has several bookings. Please try again tomorrow or contact the organizer."
+msgstr "此电子邮件地址已有多个预约。请明天再试或联系组织者。"
+
+#: quickbook/js/booking.js:208
+msgid "You made too many bookings in a short time. Please try again later."
+msgstr "您在短时间内预约的次数过多。请稍后重试。"
+
+#: quickbook/js/booking.js:215
+msgid "Something went wrong while booking. Please try again."
+msgstr "预约时出现问题。请重试。"
+
+#: quickbook/js/booking.js:217 /work/quickbook/js/calendar-onetime.js:764
+msgid "Could not reach the server. Please check your connection and try again."
+msgstr "无法连接到服务器。请检查您的网络连接后重试。"
+
+#: quickbook/js/booking.js:247
+msgid "with {name}"
+msgstr "与 {name} 的预约"
+
+#: quickbook/js/booking.js:254
+msgid "Date & time"
+msgstr "日期和时间"
+
+#: quickbook/js/booking.js:254
+msgid "Your details"
+msgstr "您的信息"
+
+#: quickbook/js/booking.js:254
+msgid "Confirm"
+msgstr "确认"
+
+#: quickbook/js/booking.js:257
+msgid "Booking steps"
+msgstr "预约步骤"
+
+#: quickbook/js/booking.js:272
+msgid "This appointment has no upcoming dates any more."
+msgstr "此预约已没有可预约的后续日期。"
+
+#: quickbook/js/booking.js:310
+msgid "Choose a date"
+msgstr "选择日期"
+
+#: quickbook/js/booking.js:312
+msgid "Previous month"
+msgstr "上个月"
+
+#: quickbook/js/booking.js:314
+msgid "Next month"
+msgstr "下个月"
+
+#: quickbook/js/booking.js:321
+msgid "Choose a date to see the free times."
+msgstr "选择日期以查看空闲时间。"
+
+#: quickbook/js/booking.js:323
+msgid "Loading free times…"
+msgstr "正在加载空闲时间…"
+
+#: quickbook/js/booking.js:327
+msgid "No free times on this day. Please choose another date."
+msgstr "这一天没有空闲时间。请选择其他日期。"
+
+#: quickbook/js/booking.js:329 /work/quickbook/js/booking.js:344
+msgid "Free times"
+msgstr "空闲时间"
+
+#: quickbook/js/booking.js:343
+msgid "Choose a time"
+msgstr "选择时间"
+
+#: quickbook/js/booking.js:345
+msgid "Times are shown in {timezone}"
+msgstr "时间按 {timezone} 显示"
+
+#: quickbook/js/booking.js:353
+msgid "Continue"
+msgstr "继续"
+
+#: quickbook/js/booking.js:361
+msgid "Change"
+msgstr "修改"
+
+#: quickbook/js/booking.js:382 /work/quickbook/js/booking.js:405
+msgid "Name"
+msgstr "姓名"
+
+#: quickbook/js/booking.js:383 /work/quickbook/js/booking.js:406
+msgid "Email"
+msgstr "电子邮件"
+
+#: quickbook/js/booking.js:383
+msgid "Your booking confirmation is sent to this address."
+msgstr "预约确认邮件将发送到此地址。"
+
+#: quickbook/js/booking.js:384
+msgid "Comment (optional)"
+msgstr "备注（可选）"
+
+#: quickbook/js/booking.js:390 /work/quickbook/js/booking.js:418
+msgid "Back"
+msgstr "返回"
+
+#: quickbook/js/booking.js:391
+msgid "Review booking"
+msgstr "核对预约"
+
+#: quickbook/js/booking.js:400
+msgid "Appointment"
+msgstr "预约"
+
+#: quickbook/js/booking.js:401
+msgid "With"
+msgstr "预约对象"
+
+#: quickbook/js/booking.js:402
+msgid "Date"
+msgstr "日期"
+
+#: quickbook/js/booking.js:403
+msgid "Time"
+msgstr "时间"
+
+#: quickbook/js/booking.js:404 /work/quickbook/js/calendar-onetime.js:900
+msgid "Location"
+msgstr "地点"
+
+#: quickbook/js/booking.js:407
+msgid "Comment"
+msgstr "备注"
+
+#: quickbook/js/booking.js:415
+msgid "Please check your booking."
+msgstr "请核对您的预约。"
+
+#: quickbook/js/booking.js:424
+msgid "Booking…"
+msgstr "正在预约…"
+
+#: quickbook/js/booking.js:424
+msgid "Confirm booking"
+msgstr "确认预约"
+
+#: quickbook/js/booking.js:433
+msgid "Your appointment is booked"
+msgstr "您的预约已成功"
+
+#: quickbook/js/booking.js:434
+msgid "A confirmation email is on its way to {email}."
+msgstr "确认电子邮件正在发送至 {email}。"
+
+#: quickbook/js/booking.js:438
+msgid "Book another appointment"
+msgstr "登记另一个预约"
+
+#: quickbook/js/booking.js:445
+msgid "Online booking on this page is temporarily unavailable."
+msgstr "此页面的在线预约暂时不可用。"
+
+#: quickbook/js/booking.js:447
+msgid "Continue on the standard booking page"
+msgstr "在标准预约页面上继续"
+
+#: quickbook/js/booking.js:448
+msgid "Please try again later."
+msgstr "请稍后重试。"
+
+#: quickbook/js/calendar-onetime.js:148 quickbook/js/calendar-onetime.js:162
+msgid "{duration} minute"
+msgid_plural "{duration} minutes"
+msgstr[0] "{duration}分钟"
+
+#: quickbook/js/calendar-onetime.js:152
+msgid "{duration} week"
+msgid_plural "{duration} weeks"
+msgstr[0] "{duration} 周"
+
+#: quickbook/js/calendar-onetime.js:156
+msgid "{duration} day"
+msgid_plural "{duration} days"
+msgstr[0] "{duration} 天"
+
+#: quickbook/js/calendar-onetime.js:160
+msgid "{duration} hour"
+msgid_plural "{duration} hours"
+msgstr[0] "{duration} 小时"
+
+#: quickbook/js/calendar-onetime.js:262 quickbook/lib/Health/HealthText.php:25
+msgid "One-time appointment schedules"
+msgstr "一次性预约时间表"
+
+#: quickbook/js/calendar-onetime.js:305
+msgid "Actions"
+msgstr "操作"
+
+#: quickbook/js/calendar-onetime.js:364 quickbook/js/calendar-onetime.js:985
+msgid "Preview"
+msgstr "预览"
+
+#: quickbook/js/calendar-onetime.js:365 quickbook/js/calendar-onetime.js:986
+msgid "Copy link"
+msgstr "复制链接"
+
+#: quickbook/js/calendar-onetime.js:366
+msgid "Duplicate"
+msgstr "创建副本"
+
+#: quickbook/js/calendar-onetime.js:367
+msgid "Edit"
+msgstr "编辑"
+
+#: quickbook/js/calendar-onetime.js:368
+msgid "Delete"
+msgstr "删除"
+
+#: quickbook/js/calendar-onetime.js:412
+msgid "Appointment link was copied to clipboard"
+msgstr "预约链接已复制到剪贴板"
+
+#: quickbook/js/calendar-onetime.js:414
+msgid "Appointment link could not be copied to clipboard"
+msgstr "无法将预约链接复制到剪贴板"
+
+#: quickbook/js/calendar-onetime.js:427
+msgid "Could not delete the appointment schedule"
+msgstr "无法删除预约时间表"
+
+#: quickbook/js/calendar-onetime.js:533
+msgid "Remove {calendar}"
+msgstr "移除 {calendar}"
+
+#: quickbook/js/calendar-onetime.js:662
+msgid "One-time appointment schedules could not be loaded. Please try again later."
+msgstr "无法加载一次性预约时间表。请稍后重试。"
+
+#: quickbook/js/calendar-onetime.js:759
+msgid "One-time appointment schedules are temporarily unavailable."
+msgstr "一次性预约时间表暂时不可用。"
+
+#: quickbook/js/calendar-onetime.js:761
+msgid "Could not save. Please try again."
+msgstr "无法保存。请重试。"
+
+#: quickbook/js/calendar-onetime.js:783
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} 个时段"
+
+#: quickbook/js/calendar-onetime.js:794
+msgid "Date {number}"
+msgstr "日期 {number}"
+
+#: quickbook/js/calendar-onetime.js:798
+msgid "{date}: from"
+msgstr "{date}：开始时间"
+
+#: quickbook/js/calendar-onetime.js:799
+msgid "to"
+msgstr "至"
+
+#: quickbook/js/calendar-onetime.js:800
+msgid "{date}: to"
+msgstr "{date}：结束时间"
+
+#: quickbook/js/calendar-onetime.js:804
+msgid "Delete {date}"
+msgstr "删除 {date}"
+
+#: quickbook/js/calendar-onetime.js:823
+msgid "Calendars to check for conflicts"
+msgstr "用于检查冲突的日历"
+
+#: quickbook/js/calendar-onetime.js:838
+msgid "Booking calendar"
+msgstr "预约日历"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Create one-time appointment schedule"
+msgstr "创建一次性预约时间表"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Edit one-time appointment schedule"
+msgstr "编辑一次性预约时间表"
+
+#: quickbook/js/calendar-onetime.js:896
+msgid "You need a calendar you can write to, to take appointments."
+msgstr "您需要一个可写入的日历才能接受预约。"
+
+#: quickbook/js/calendar-onetime.js:899
+msgid "Appointment name"
+msgstr "预约名称"
+
+#: quickbook/js/calendar-onetime.js:905
+msgid "Create a Talk room"
+msgstr "创建聊天室"
+
+#: quickbook/js/calendar-onetime.js:914
+msgid "A unique link will be generated for every booked appointment and sent via the confirmation email"
+msgstr "将为每个预订的预约生成一个唯一的链接，并通过确认电子邮件发送"
+
+#: quickbook/js/calendar-onetime.js:918
+msgid "Description"
+msgstr "描述"
+
+#: quickbook/js/calendar-onetime.js:922
+msgid "Duration (minutes)"
+msgstr "时长（分钟）"
+
+#: quickbook/js/calendar-onetime.js:923
+msgid "Increments"
+msgstr "增量"
+
+#: quickbook/js/calendar-onetime.js:927
+msgid "Visibility"
+msgstr "可见性"
+
+#: quickbook/js/calendar-onetime.js:928
+msgid "Public – shown on profile page"
+msgstr "公开 – 显示在个人资料页面上"
+
+#: quickbook/js/calendar-onetime.js:929
+msgid "Private – only accessible via link"
+msgstr "私人 – 只能通过链接访问"
+
+#: quickbook/js/calendar-onetime.js:934
+msgid "Booking dates"
+msgstr "预约日期"
+
+#: quickbook/js/calendar-onetime.js:935
+msgid "Times are in {timezone}."
+msgstr "时间以 {timezone} 为准。"
+
+#: quickbook/js/calendar-onetime.js:941
+msgid "Add date"
+msgstr "添加日期"
+
+#: quickbook/js/calendar-onetime.js:956
+msgid "Planning restrictions"
+msgstr "规划限制"
+
+#: quickbook/js/calendar-onetime.js:958
+msgid "Buffer before the event"
+msgstr "活动前的缓冲时间"
+
+#: quickbook/js/calendar-onetime.js:959
+msgid "Buffer after the event"
+msgstr "活动后的缓冲时间"
+
+#: quickbook/js/calendar-onetime.js:962
+msgid "Minimum time before next slot"
+msgstr "下一个时段前的最短时间"
+
+#: quickbook/js/calendar-onetime.js:963
+msgid "Max slots per day"
+msgstr "每日最多时段数"
+
+#: quickbook/js/calendar-onetime.js:967
+msgid "It seems a rate limit has been reached. Please try again later."
+msgstr "似乎已达到速度限制。请稍后重试。"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Save"
+msgstr "保存"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Update"
+msgstr "更新"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully created"
+msgstr "一次性预约时间表已成功创建"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully updated"
+msgstr "一次性预约时间表已成功更新"
+
+#: quickbook/js/calendar-onetime.js:995
+msgid "Close"
+msgstr "关闭"
+
+#: quickbook/js/settings.js:15
+msgid "Checking…"
+msgstr "正在检查…"
+
+#: quickbook/js/settings.js:23
+msgid "The self-check could not run."
+msgstr "无法运行自检。"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "Appointment not found"
+msgstr "未找到预约"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "This booking link does not exist (any more)."
+msgstr "此预约链接不存在（或已不再存在）。"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Booking unavailable"
+msgstr "无法预约"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Online booking is temporarily unavailable. Please try again later."
+msgstr "在线预约暂时不可用。请稍后重试。"
+
+#: quickbook/lib/Health/HealthText.php:22
+msgid "Quick Booking components"
+msgstr "Quick Booking 组件"
+
+#: quickbook/lib/Health/HealthText.php:23
+msgid "Calendar app enabled"
+msgstr "日历应用已启用"
+
+#: quickbook/lib/Health/HealthText.php:24
+msgid "Calendar code contract"
+msgstr "日历代码契约"
+
+#: quickbook/lib/Health/HealthText.php:26
+msgid "Calendar services"
+msgstr "日历服务"
+
+#: quickbook/lib/Health/HealthText.php:27
+msgid "Standard booking page (fallback)"
+msgstr "标准预约页面（回退）"
+
+#: quickbook/lib/Health/HealthText.php:28
+msgid "Slot lookup"
+msgstr "空闲时间查询"
+
+#: quickbook/lib/Health/HealthText.php:29
+msgid "Booking storage"
+msgstr "预约存储"
+
+#: quickbook/lib/Health/HealthText.php:36
+msgid "Passed"
+msgstr "通过"
+
+#: quickbook/lib/Health/HealthText.php:37
+msgid "Failed"
+msgstr "失败"
+
+#: quickbook/lib/Health/HealthText.php:38
+msgid "Warning"
+msgstr "警告"
+
+#: quickbook/lib/Health/HealthText.php:39
+msgid "Skipped"
+msgstr "已跳过"
+
+#: quickbook/lib/Health/HealthText.php:50
+msgid "Booking page, booking API and Calendar link redirect load"
+msgstr "预约页面、预约 API 和日历链接重定向可以加载"
+
+#: quickbook/lib/Health/HealthText.php:51
+msgid "The Calendar app is not enabled"
+msgstr "日历应用未启用"
+
+#: quickbook/lib/Health/HealthText.php:52
+msgid "All classes, methods and fields found"
+msgstr "已找到所有类、方法和字段"
+
+#: quickbook/lib/Health/HealthText.php:53
+msgid "Can be created and edited"
+msgstr "可以创建和编辑"
+
+#: quickbook/lib/Health/HealthText.php:54
+msgid "Booking service, schedule service and booking storage load"
+msgstr "预约服务、时间表服务和预约存储可以加载"
+
+#: quickbook/lib/Health/HealthText.php:55
+msgid "No appointment schedule exists yet"
+msgstr "尚无预约时间表"
+
+#: quickbook/lib/Health/HealthText.php:56
+#, php-format
+msgid "Schedule \"%1$s\", free slots in the next 7 days: %2$s"
+msgstr "时间表“%1$s”，未来 7 天的空闲时间：%2$s"
+
+#: quickbook/lib/Health/HealthText.php:57
+msgid "Test booking stored and removed"
+msgstr "测试预约已保存并删除"
+
+#: quickbook/lib/Notification/Notifier.php:29
+#: quickbook/lib/Settings/AdminSection.php:24
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Quick Booking"
+msgstr "Quick Booking"
+
+#: quickbook/lib/Notification/Notifier.php:41
+msgid "Quick Booking switched visitors to the standard Calendar booking page"
+msgstr "Quick Booking 已将访客切换到标准的日历预约页面"
+
+#: quickbook/lib/Notification/Notifier.php:42
+#, php-format
+msgid "Something in the Calendar app or Nextcloud no longer works as Quick Booking expects: %s"
+msgstr "日历应用或 Nextcloud 中的某些部分不再按 Quick Booking 预期的方式工作：%s"
+
+#: quickbook/lib/Notification/Notifier.php:45
+#, php-format
+msgid "Quick Booking works again (%s)"
+msgstr "Quick Booking 已恢复正常工作（%s）"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:41
+msgid "Please add at least one date"
+msgstr "请至少添加一个日期"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:44
+msgid "Too many dates"
+msgstr "日期过多"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:55
+msgid "Please enter a valid date"
+msgstr "请输入有效的日期"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:58
+msgid "Please enter valid times"
+msgstr "请输入有效的时间"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:61
+msgid "The end time must be after the start time"
+msgstr "结束时间必须晚于开始时间"
+
+#: quickbook/lib/OneTime/OneTimeService.php:252
+msgid "Please enter a name of at most 128 characters"
+msgstr "请输入不超过 128 个字符的名称"
+
+#: quickbook/lib/OneTime/OneTimeService.php:256
+msgid "The location is too long"
+msgstr "地点过长"
+
+#: quickbook/lib/OneTime/OneTimeService.php:260
+msgid "The description is too long"
+msgstr "描述过长"
+
+#: quickbook/lib/OneTime/OneTimeService.php:265
+msgid "Please enter the duration in minutes"
+msgstr "请输入以分钟为单位的时长"
+
+#: quickbook/lib/OneTime/OneTimeService.php:267
+msgid "Please choose the increments"
+msgstr "请选择增量"
+
+#: quickbook/lib/OneTime/OneTimeService.php:268
+msgid "Please choose the buffer before the event"
+msgstr "请选择活动前的缓冲时间"
+
+#: quickbook/lib/OneTime/OneTimeService.php:269
+msgid "Please choose the buffer after the event"
+msgstr "请选择活动后的缓冲时间"
+
+#: quickbook/lib/OneTime/OneTimeService.php:270
+msgid "Please choose the minimum time before the next slot"
+msgstr "请选择下一个时段前的最短时间"
+
+#: quickbook/lib/OneTime/OneTimeService.php:273
+msgid "Please enter the maximum number of slots per day, or leave it empty"
+msgstr "请输入每日最多时段数，或留空"
+
+#: quickbook/lib/OneTime/OneTimeService.php:278
+msgid "Please choose the visibility"
+msgstr "请选择可见性"
+
+#: quickbook/lib/OneTime/OneTimeService.php:284
+msgid "Please choose a booking calendar"
+msgstr "请选择预约日历"
+
+#: quickbook/lib/OneTime/OneTimeService.php:288
+#: quickbook/lib/OneTime/OneTimeService.php:293
+msgid "Please choose the calendars to check for conflicts"
+msgstr "请选择用于检查冲突的日历"
+
+#: quickbook/lib/OneTime/OneTimeService.php:302
+msgid "Each time range must fit at least one appointment"
+msgstr "每个时间范围必须至少能容纳一个预约"
+
+#: quickbook/lib/Service/BookingFlowService.php:62
+#: quickbook/lib/Service/BookingFlowService.php:66
+msgid "Invalid date"
+msgstr "日期无效"
+
+#: quickbook/lib/Service/BookingFlowService.php:95
+msgid "Please enter your name"
+msgstr "请输入您的姓名"
+
+#: quickbook/lib/Service/BookingFlowService.php:99
+msgid "Please enter your name without @, < or >"
+msgstr "请输入您的姓名，不要包含 @、< 或 >"
+
+#: quickbook/lib/Service/BookingFlowService.php:102
+msgid "Please enter a valid email address"
+msgstr "请输入有效的电子邮件地址"
+
+#: quickbook/lib/Service/BookingFlowService.php:105
+msgid "The comment is too long"
+msgstr "备注过长"
+
+#: quickbook/lib/Service/BookingFlowService.php:118
+msgid "Invalid time range"
+msgstr "时间范围无效"
+
+#: quickbook/lib/Service/Input.php:46
+msgid "Invalid timezone"
+msgstr "时区无效"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "One-page appointment booking for Calendar schedules, without the email confirmation step."
+msgstr "在一个页面内完成日历预约时间表的预约，无需电子邮件确认步骤。"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:4
+msgid ""
+"Quick Booking adds a public booking page for the appointment schedules you already have in the Calendar app. Requires the Calendar app.\n"
+"\n"
+"Visitors pick a date and time, enter their details, review and confirm on the same page. The appointment is booked immediately and the usual booking confirmation email (with .ics) is sent.\n"
+"\n"
+"* Share the usual Calendar booking link (\"Copy link\" in the Calendar app): it opens Quick Booking.\n"
+"* One-time appointment schedules: offer appointments on one or more chosen dates (e.g. parent-teacher conferences) instead of weekly. Create them in the Calendar app under \"One-time appointment schedules\".\n"
+"* Built-in rate limiting of bookings per visitor and per email address.\n"
+"* Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks."
+msgstr ""
+"Quick Booking 为您在日历应用中已有的预约时间表添加一个公开的预约页面。需要日历应用。\n"
+"\n"
+"访客在同一个页面上选择日期和时间、填写个人信息、核对并确认。预约会立即登记，并照常发送预约确认电子邮件（附带 .ics）。\n"
+"\n"
+"* 分享日历原有的预约链接（日历应用中的“复制链接”）：它会打开 Quick Booking。\n"
+"* 一次性预约时间表：在选定的一个或多个日期（例如家长会）提供预约，而不是每周重复。可在日历应用的“一次性预约时间表”下创建。\n"
+"* 内置按访客和按电子邮件地址的预约频率限制。\n"
+"* 自检：每次日历或 Nextcloud 更新后验证是否仍能正常工作，出现问题时让预约链接显示标准的日历预约页面。"
+
+#: quickbook/templates/booking.php:5
+msgid "Please enable JavaScript to book an appointment."
+msgstr "请启用 JavaScript 以进行预约。"
+
+#: quickbook/templates/settings-admin.php:10
+msgid "Quick Booking self-check"
+msgstr "Quick Booking 自检"
+
+#: quickbook/templates/settings-admin.php:12
+msgid "Quick Booking uses internal code of the Calendar app. It checks after every Calendar or Nextcloud update and once a day that this still works. If something breaks, visitors are sent to the standard Calendar booking page and admins get a notification. While switched off, the check repeats every 15 minutes and switches back on when it passes."
+msgstr "Quick Booking 使用日历应用的内部代码。每次日历或 Nextcloud 更新后以及每天一次，它都会检查这些代码是否仍能正常工作。如果出现问题，访客将被转到标准的日历预约页面，管理员会收到通知。关闭期间，检查每 15 分钟重复一次，通过后会重新开启。"
+
+#: quickbook/templates/settings-admin.php:17
+msgid "Off: visitors use the standard Calendar booking page."
+msgstr "已关闭：访客使用标准的日历预约页面。"
+
+#: quickbook/templates/settings-admin.php:21
+msgid "Bookings from several different networks failed while the self-check passed. Quick Booking switches back on after a Calendar update, or when you run the check below and it passes."
+msgstr "自检已通过，但来自多个不同网络的预约均失败。日历更新后，或者您运行下方的检查并通过后，Quick Booking 会重新开启。"
+
+#: quickbook/templates/settings-admin.php:24
+msgid "On: visitors book through Quick Booking."
+msgstr "已开启：访客通过 Quick Booking 预约。"
+
+#: quickbook/templates/settings-admin.php:28
+msgid "Calendar version"
+msgstr "日历版本"
+
+#: quickbook/templates/settings-admin.php:29
+msgid "Nextcloud version"
+msgstr "Nextcloud 版本"
+
+#: quickbook/templates/settings-admin.php:30
+msgid "Last full check"
+msgstr "上次完整检查"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Check"
+msgstr "检查项"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Result"
+msgstr "结果"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Detail"
+msgstr "详情"
+
+#: quickbook/templates/settings-admin.php:49
+msgid "Run self-check now"
+msgstr "立即运行自检"
+
+#: quickbook/templates/settings-admin.php:52
+msgid "Also available as: occ quickbook:check"
+msgstr "也可以通过以下命令运行：occ quickbook:check"
+
+#: quickbook/templates/settings-admin.php:53
+msgid "Visitor addresses (rate limit)"
+msgstr "访客地址（速度限制）"
+
+#: quickbook/templates/settings-admin.php:55
+#, php-format
+msgid "Nextcloud sees your address as: %s"
+msgstr "Nextcloud 识别到的您的地址为：%s"
+
+#: quickbook/templates/settings-admin.php:59
+msgid "This is a private address. That is fine if you are on the same network as the server. If you opened this page from outside (for example a phone on mobile data), Nextcloud does not know your reverse proxy: all visitors then share one address, and the booking limit applies to all of them together. Add the proxy to \"trusted_proxies\" in config.php."
+msgstr "这是一个私有地址。如果您与服务器位于同一网络，则没有问题。如果您是从外部（例如使用移动数据的手机）打开此页面的，则说明 Nextcloud 不知道您的反向代理：这样所有访客会共用一个地址，预约限制将对所有访客合并计算。请在 config.php 的“trusted_proxies”中添加该代理。"
+
+#: quickbook/templates/settings-admin.php:62
+msgid "This should be the public address of the device you are using right now. If it is the address of your server or proxy instead, add the proxy to \"trusted_proxies\" in config.php."
+msgstr "这应该是您当前所用设备的公网地址。如果显示的是您的服务器或代理的地址，请在 config.php 的“trusted_proxies”中添加该代理。"
+
+#: quickbook/templates/settings-admin.php:65
+msgid "Share the Calendar's own booking links (\"Copy link\" in the Calendar app). They open Quick Booking while it is on, and the Calendar booking page while it is off, disabled or removed. Links to /apps/quickbook/book/… only work while the app is installed."
+msgstr "请分享日历自身的预约链接（日历应用中的“复制链接”）。Quick Booking 开启时，这些链接会打开 Quick Booking；关闭、停用或移除时，则打开日历的预约页面。指向 /apps/quickbook/book/… 的链接仅在应用已安装时有效。"

@@ -1,0 +1,742 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Booking\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: quickbook/js/booking.js:126
+msgid "{minutes} min"
+msgstr "{minutes} mnt"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h"
+msgstr "{hours} j"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h {minutes} min"
+msgstr "{hours} j {minutes} mnt"
+
+#: quickbook/js/booking.js:153
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "Terlalu banyak permintaan. Mohon tunggu sebentar dan coba lagi."
+
+#: quickbook/js/booking.js:153 /work/quickbook/js/booking.js:157
+msgid "Could not load the free times."
+msgstr "Tidak dapat memuat waktu yang tersedia."
+
+#: quickbook/js/booking.js:196
+msgid "Sorry, this time was just taken. Please choose another time."
+msgstr "Maaf, waktu ini baru saja diambil. Silakan pilih waktu lain."
+
+#: quickbook/js/booking.js:202 /work/quickbook/js/calendar-onetime.js:755
+msgid "Please check your input."
+msgstr "Mohon periksa isian Anda."
+
+#: quickbook/js/booking.js:207
+msgid "This email address already has several bookings. Please try again tomorrow or contact the organizer."
+msgstr "Alamat email ini sudah memiliki beberapa pemesanan. Silakan coba lagi besok atau hubungi penyelenggara."
+
+#: quickbook/js/booking.js:208
+msgid "You made too many bookings in a short time. Please try again later."
+msgstr "Anda membuat terlalu banyak pemesanan dalam waktu singkat. Silakan coba lagi nanti."
+
+#: quickbook/js/booking.js:215
+msgid "Something went wrong while booking. Please try again."
+msgstr "Terjadi kesalahan saat memesan. Silakan coba lagi."
+
+#: quickbook/js/booking.js:217 /work/quickbook/js/calendar-onetime.js:764
+msgid "Could not reach the server. Please check your connection and try again."
+msgstr "Tidak dapat menghubungi server. Mohon periksa koneksi Anda dan coba lagi."
+
+#: quickbook/js/booking.js:247
+msgid "with {name}"
+msgstr "dengan {name}"
+
+#: quickbook/js/booking.js:254
+msgid "Date & time"
+msgstr "Tanggal & waktu"
+
+#: quickbook/js/booking.js:254
+msgid "Your details"
+msgstr "Data Anda"
+
+#: quickbook/js/booking.js:254
+msgid "Confirm"
+msgstr "Konfirmasi"
+
+#: quickbook/js/booking.js:257
+msgid "Booking steps"
+msgstr "Langkah pemesanan"
+
+#: quickbook/js/booking.js:272
+msgid "This appointment has no upcoming dates any more."
+msgstr "Janji temu ini tidak lagi memiliki tanggal mendatang."
+
+#: quickbook/js/booking.js:310
+msgid "Choose a date"
+msgstr "Pilih tanggal"
+
+#: quickbook/js/booking.js:312
+msgid "Previous month"
+msgstr "Bulan sebelumnya"
+
+#: quickbook/js/booking.js:314
+msgid "Next month"
+msgstr "Bulan berikutnya"
+
+#: quickbook/js/booking.js:321
+msgid "Choose a date to see the free times."
+msgstr "Pilih tanggal untuk melihat waktu yang tersedia."
+
+#: quickbook/js/booking.js:323
+msgid "Loading free times…"
+msgstr "Memuat waktu yang tersedia…"
+
+#: quickbook/js/booking.js:327
+msgid "No free times on this day. Please choose another date."
+msgstr "Tidak ada waktu yang tersedia pada hari ini. Silakan pilih tanggal lain."
+
+#: quickbook/js/booking.js:329 /work/quickbook/js/booking.js:344
+msgid "Free times"
+msgstr "Waktu yang tersedia"
+
+#: quickbook/js/booking.js:343
+msgid "Choose a time"
+msgstr "Pilih waktu"
+
+#: quickbook/js/booking.js:345
+msgid "Times are shown in {timezone}"
+msgstr "Waktu ditampilkan dalam {timezone}"
+
+#: quickbook/js/booking.js:353
+msgid "Continue"
+msgstr "Lanjutkan"
+
+#: quickbook/js/booking.js:361
+msgid "Change"
+msgstr "Ubah"
+
+#: quickbook/js/booking.js:382 /work/quickbook/js/booking.js:405
+msgid "Name"
+msgstr "Nama"
+
+#: quickbook/js/booking.js:383 /work/quickbook/js/booking.js:406
+msgid "Email"
+msgstr "Email"
+
+#: quickbook/js/booking.js:383
+msgid "Your booking confirmation is sent to this address."
+msgstr "Konfirmasi pemesanan Anda dikirim ke alamat ini."
+
+#: quickbook/js/booking.js:384
+msgid "Comment (optional)"
+msgstr "Komentar (opsional)"
+
+#: quickbook/js/booking.js:390 /work/quickbook/js/booking.js:418
+msgid "Back"
+msgstr "Kembali"
+
+#: quickbook/js/booking.js:391
+msgid "Review booking"
+msgstr "Tinjau pemesanan"
+
+#: quickbook/js/booking.js:400
+msgid "Appointment"
+msgstr "Janji temu"
+
+#: quickbook/js/booking.js:401
+msgid "With"
+msgstr "Dengan"
+
+#: quickbook/js/booking.js:402
+msgid "Date"
+msgstr "Tanggal"
+
+#: quickbook/js/booking.js:403
+msgid "Time"
+msgstr "Waktu"
+
+#: quickbook/js/booking.js:404 /work/quickbook/js/calendar-onetime.js:900
+msgid "Location"
+msgstr "Lokasi"
+
+#: quickbook/js/booking.js:407
+msgid "Comment"
+msgstr "Komentar"
+
+#: quickbook/js/booking.js:415
+msgid "Please check your booking."
+msgstr "Mohon periksa pemesanan Anda."
+
+#: quickbook/js/booking.js:424
+msgid "Booking…"
+msgstr "Memesan…"
+
+#: quickbook/js/booking.js:424
+msgid "Confirm booking"
+msgstr "Konfirmasi pemesanan"
+
+#: quickbook/js/booking.js:433
+msgid "Your appointment is booked"
+msgstr "Janji temu Anda telah dipesan"
+
+#: quickbook/js/booking.js:434
+msgid "A confirmation email is on its way to {email}."
+msgstr "Email konfirmasi sedang dikirim ke {email}."
+
+#: quickbook/js/booking.js:438
+msgid "Book another appointment"
+msgstr "Pesan janji temu lain"
+
+#: quickbook/js/booking.js:445
+msgid "Online booking on this page is temporarily unavailable."
+msgstr "Pemesanan daring di halaman ini untuk sementara tidak tersedia."
+
+#: quickbook/js/booking.js:447
+msgid "Continue on the standard booking page"
+msgstr "Lanjutkan di halaman pemesanan standar"
+
+#: quickbook/js/booking.js:448
+msgid "Please try again later."
+msgstr "Silakan coba lagi nanti."
+
+#: quickbook/js/calendar-onetime.js:148 quickbook/js/calendar-onetime.js:162
+msgid "{duration} minute"
+msgid_plural "{duration} minutes"
+msgstr[0] "{duration} menit"
+
+#: quickbook/js/calendar-onetime.js:152
+msgid "{duration} week"
+msgid_plural "{duration} weeks"
+msgstr[0] "{duration} minggu"
+
+#: quickbook/js/calendar-onetime.js:156
+msgid "{duration} day"
+msgid_plural "{duration} days"
+msgstr[0] "{duration} hari"
+
+#: quickbook/js/calendar-onetime.js:160
+msgid "{duration} hour"
+msgid_plural "{duration} hours"
+msgstr[0] "{duration} jam"
+
+#: quickbook/js/calendar-onetime.js:262 quickbook/lib/Health/HealthText.php:25
+msgid "One-time appointment schedules"
+msgstr "Jadwal janji temu sekali waktu"
+
+#: quickbook/js/calendar-onetime.js:305
+msgid "Actions"
+msgstr "Tindakan"
+
+#: quickbook/js/calendar-onetime.js:364 quickbook/js/calendar-onetime.js:985
+msgid "Preview"
+msgstr "Pratinjau"
+
+#: quickbook/js/calendar-onetime.js:365 quickbook/js/calendar-onetime.js:986
+msgid "Copy link"
+msgstr "Salin tautan"
+
+#: quickbook/js/calendar-onetime.js:366
+msgid "Duplicate"
+msgstr "Gandakan"
+
+#: quickbook/js/calendar-onetime.js:367
+msgid "Edit"
+msgstr "Edit"
+
+#: quickbook/js/calendar-onetime.js:368
+msgid "Delete"
+msgstr "Hapus"
+
+#: quickbook/js/calendar-onetime.js:412
+msgid "Appointment link was copied to clipboard"
+msgstr "Tautan janji temu disalin ke papan klip"
+
+#: quickbook/js/calendar-onetime.js:414
+msgid "Appointment link could not be copied to clipboard"
+msgstr "Tautan janji temu tidak dapat disalin ke papan klip"
+
+#: quickbook/js/calendar-onetime.js:427
+msgid "Could not delete the appointment schedule"
+msgstr "Tidak dapat menghapus jadwal janji temu"
+
+#: quickbook/js/calendar-onetime.js:533
+msgid "Remove {calendar}"
+msgstr "Hapus {calendar}"
+
+#: quickbook/js/calendar-onetime.js:662
+msgid "One-time appointment schedules could not be loaded. Please try again later."
+msgstr "Jadwal janji temu sekali waktu tidak dapat dimuat. Silakan coba lagi nanti."
+
+#: quickbook/js/calendar-onetime.js:759
+msgid "One-time appointment schedules are temporarily unavailable."
+msgstr "Jadwal janji temu sekali waktu untuk sementara tidak tersedia."
+
+#: quickbook/js/calendar-onetime.js:761
+msgid "Could not save. Please try again."
+msgstr "Tidak dapat menyimpan. Silakan coba lagi."
+
+#: quickbook/js/calendar-onetime.js:783
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} slot"
+
+#: quickbook/js/calendar-onetime.js:794
+msgid "Date {number}"
+msgstr "Tanggal {number}"
+
+#: quickbook/js/calendar-onetime.js:798
+msgid "{date}: from"
+msgstr "{date}: dari"
+
+#: quickbook/js/calendar-onetime.js:799
+msgid "to"
+msgstr "hingga"
+
+#: quickbook/js/calendar-onetime.js:800
+msgid "{date}: to"
+msgstr "{date}: hingga"
+
+#: quickbook/js/calendar-onetime.js:804
+msgid "Delete {date}"
+msgstr "Hapus {date}"
+
+#: quickbook/js/calendar-onetime.js:823
+msgid "Calendars to check for conflicts"
+msgstr "Kalender untuk diperiksa konfliknya"
+
+#: quickbook/js/calendar-onetime.js:838
+msgid "Booking calendar"
+msgstr "Kalender pemesanan"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Create one-time appointment schedule"
+msgstr "Buat jadwal janji temu sekali waktu"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Edit one-time appointment schedule"
+msgstr "Edit jadwal janji temu sekali waktu"
+
+#: quickbook/js/calendar-onetime.js:896
+msgid "You need a calendar you can write to, to take appointments."
+msgstr "Anda memerlukan kalender yang dapat Anda tulisi untuk menerima janji temu."
+
+#: quickbook/js/calendar-onetime.js:899
+msgid "Appointment name"
+msgstr "Nama janji temu"
+
+#: quickbook/js/calendar-onetime.js:905
+msgid "Create a Talk room"
+msgstr "Buat ruangan Talk"
+
+#: quickbook/js/calendar-onetime.js:914
+msgid "A unique link will be generated for every booked appointment and sent via the confirmation email"
+msgstr "Tautan unik akan dibuat untuk setiap janji temu yang dipesan dan dikirim melalui email konfirmasi"
+
+#: quickbook/js/calendar-onetime.js:918
+msgid "Description"
+msgstr "Deskripsi"
+
+#: quickbook/js/calendar-onetime.js:922
+msgid "Duration (minutes)"
+msgstr "Durasi (menit)"
+
+#: quickbook/js/calendar-onetime.js:923
+msgid "Increments"
+msgstr "Kenaikan"
+
+#: quickbook/js/calendar-onetime.js:927
+msgid "Visibility"
+msgstr "Visibilitas"
+
+#: quickbook/js/calendar-onetime.js:928
+msgid "Public – shown on profile page"
+msgstr "Publik – ditampilkan pada halaman profil"
+
+#: quickbook/js/calendar-onetime.js:929
+msgid "Private – only accessible via link"
+msgstr "Pribadi – hanya dapat diakses melalui tautan"
+
+#: quickbook/js/calendar-onetime.js:934
+msgid "Booking dates"
+msgstr "Tanggal pemesanan"
+
+#: quickbook/js/calendar-onetime.js:935
+msgid "Times are in {timezone}."
+msgstr "Waktu dalam {timezone}."
+
+#: quickbook/js/calendar-onetime.js:941
+msgid "Add date"
+msgstr "Tambah tanggal"
+
+#: quickbook/js/calendar-onetime.js:956
+msgid "Planning restrictions"
+msgstr "Pembatasan perencanaan"
+
+#: quickbook/js/calendar-onetime.js:958
+msgid "Buffer before the event"
+msgstr "Jeda sebelum acara"
+
+#: quickbook/js/calendar-onetime.js:959
+msgid "Buffer after the event"
+msgstr "Jeda setelah acara"
+
+#: quickbook/js/calendar-onetime.js:962
+msgid "Minimum time before next slot"
+msgstr "Waktu minimum sebelum slot berikutnya"
+
+#: quickbook/js/calendar-onetime.js:963
+msgid "Max slots per day"
+msgstr "Slot maksimal per hari"
+
+#: quickbook/js/calendar-onetime.js:967
+msgid "It seems a rate limit has been reached. Please try again later."
+msgstr "Sepertinya batas tingkat telah tercapai. Silakan coba lagi nanti."
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Save"
+msgstr "Simpan"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Update"
+msgstr "Perbarui"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully created"
+msgstr "Jadwal janji temu sekali waktu berhasil dibuat"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully updated"
+msgstr "Jadwal janji temu sekali waktu berhasil diperbarui"
+
+#: quickbook/js/calendar-onetime.js:995
+msgid "Close"
+msgstr "Tutup"
+
+#: quickbook/js/settings.js:15
+msgid "Checking…"
+msgstr "Memeriksa…"
+
+#: quickbook/js/settings.js:23
+msgid "The self-check could not run."
+msgstr "Pemeriksaan mandiri tidak dapat dijalankan."
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "Appointment not found"
+msgstr "Janji temu tidak ditemukan"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "This booking link does not exist (any more)."
+msgstr "Tautan pemesanan ini tidak ada (lagi)."
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Booking unavailable"
+msgstr "Pemesanan tidak tersedia"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Online booking is temporarily unavailable. Please try again later."
+msgstr "Pemesanan daring untuk sementara tidak tersedia. Silakan coba lagi nanti."
+
+#: quickbook/lib/Health/HealthText.php:22
+msgid "Quick Booking components"
+msgstr "Komponen Quick Booking"
+
+#: quickbook/lib/Health/HealthText.php:23
+msgid "Calendar app enabled"
+msgstr "Aplikasi Kalender diaktifkan"
+
+#: quickbook/lib/Health/HealthText.php:24
+msgid "Calendar code contract"
+msgstr "Kontrak kode Kalender"
+
+#: quickbook/lib/Health/HealthText.php:26
+msgid "Calendar services"
+msgstr "Layanan Kalender"
+
+#: quickbook/lib/Health/HealthText.php:27
+msgid "Standard booking page (fallback)"
+msgstr "Halaman pemesanan standar (cadangan)"
+
+#: quickbook/lib/Health/HealthText.php:28
+msgid "Slot lookup"
+msgstr "Pencarian waktu yang tersedia"
+
+#: quickbook/lib/Health/HealthText.php:29
+msgid "Booking storage"
+msgstr "Penyimpanan pemesanan"
+
+#: quickbook/lib/Health/HealthText.php:36
+msgid "Passed"
+msgstr "Lulus"
+
+#: quickbook/lib/Health/HealthText.php:37
+msgid "Failed"
+msgstr "Gagal"
+
+#: quickbook/lib/Health/HealthText.php:38
+msgid "Warning"
+msgstr "Peringatan"
+
+#: quickbook/lib/Health/HealthText.php:39
+msgid "Skipped"
+msgstr "Dilewati"
+
+#: quickbook/lib/Health/HealthText.php:50
+msgid "Booking page, booking API and Calendar link redirect load"
+msgstr "Halaman pemesanan, API pemesanan, dan pengalihan tautan Kalender dapat dimuat"
+
+#: quickbook/lib/Health/HealthText.php:51
+msgid "The Calendar app is not enabled"
+msgstr "Aplikasi Kalender tidak diaktifkan"
+
+#: quickbook/lib/Health/HealthText.php:52
+msgid "All classes, methods and fields found"
+msgstr "Semua kelas, metode, dan kolom ditemukan"
+
+#: quickbook/lib/Health/HealthText.php:53
+msgid "Can be created and edited"
+msgstr "Dapat dibuat dan diedit"
+
+#: quickbook/lib/Health/HealthText.php:54
+msgid "Booking service, schedule service and booking storage load"
+msgstr "Layanan pemesanan, layanan jadwal, dan penyimpanan pemesanan dapat dimuat"
+
+#: quickbook/lib/Health/HealthText.php:55
+msgid "No appointment schedule exists yet"
+msgstr "Belum ada jadwal janji temu"
+
+#: quickbook/lib/Health/HealthText.php:56
+#, php-format
+msgid "Schedule \"%1$s\", free slots in the next 7 days: %2$s"
+msgstr "Jadwal \"%1$s\", waktu yang tersedia dalam 7 hari ke depan: %2$s"
+
+#: quickbook/lib/Health/HealthText.php:57
+msgid "Test booking stored and removed"
+msgstr "Pemesanan uji disimpan dan dihapus"
+
+#: quickbook/lib/Notification/Notifier.php:29
+#: quickbook/lib/Settings/AdminSection.php:24
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Quick Booking"
+msgstr "Quick Booking"
+
+#: quickbook/lib/Notification/Notifier.php:41
+msgid "Quick Booking switched visitors to the standard Calendar booking page"
+msgstr "Quick Booking mengalihkan pengunjung ke halaman pemesanan standar Kalender"
+
+#: quickbook/lib/Notification/Notifier.php:42
+#, php-format
+msgid "Something in the Calendar app or Nextcloud no longer works as Quick Booking expects: %s"
+msgstr "Ada sesuatu di aplikasi Kalender atau Nextcloud yang tidak lagi berfungsi seperti yang diharapkan Quick Booking: %s"
+
+#: quickbook/lib/Notification/Notifier.php:45
+#, php-format
+msgid "Quick Booking works again (%s)"
+msgstr "Quick Booking berfungsi kembali (%s)"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:41
+msgid "Please add at least one date"
+msgstr "Mohon tambahkan setidaknya satu tanggal"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:44
+msgid "Too many dates"
+msgstr "Terlalu banyak tanggal"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:55
+msgid "Please enter a valid date"
+msgstr "Mohon masukkan tanggal yang valid"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:58
+msgid "Please enter valid times"
+msgstr "Mohon masukkan waktu yang valid"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:61
+msgid "The end time must be after the start time"
+msgstr "Waktu selesai harus setelah waktu mulai"
+
+#: quickbook/lib/OneTime/OneTimeService.php:252
+msgid "Please enter a name of at most 128 characters"
+msgstr "Mohon masukkan nama dengan panjang paling banyak 128 karakter"
+
+#: quickbook/lib/OneTime/OneTimeService.php:256
+msgid "The location is too long"
+msgstr "Lokasi terlalu panjang"
+
+#: quickbook/lib/OneTime/OneTimeService.php:260
+msgid "The description is too long"
+msgstr "Deskripsi terlalu panjang"
+
+#: quickbook/lib/OneTime/OneTimeService.php:265
+msgid "Please enter the duration in minutes"
+msgstr "Mohon masukkan durasi dalam menit"
+
+#: quickbook/lib/OneTime/OneTimeService.php:267
+msgid "Please choose the increments"
+msgstr "Mohon pilih kenaikan"
+
+#: quickbook/lib/OneTime/OneTimeService.php:268
+msgid "Please choose the buffer before the event"
+msgstr "Mohon pilih jeda sebelum acara"
+
+#: quickbook/lib/OneTime/OneTimeService.php:269
+msgid "Please choose the buffer after the event"
+msgstr "Mohon pilih jeda setelah acara"
+
+#: quickbook/lib/OneTime/OneTimeService.php:270
+msgid "Please choose the minimum time before the next slot"
+msgstr "Mohon pilih waktu minimum sebelum slot berikutnya"
+
+#: quickbook/lib/OneTime/OneTimeService.php:273
+msgid "Please enter the maximum number of slots per day, or leave it empty"
+msgstr "Mohon masukkan jumlah slot maksimal per hari, atau biarkan kosong"
+
+#: quickbook/lib/OneTime/OneTimeService.php:278
+msgid "Please choose the visibility"
+msgstr "Mohon pilih visibilitas"
+
+#: quickbook/lib/OneTime/OneTimeService.php:284
+msgid "Please choose a booking calendar"
+msgstr "Mohon pilih kalender pemesanan"
+
+#: quickbook/lib/OneTime/OneTimeService.php:288
+#: quickbook/lib/OneTime/OneTimeService.php:293
+msgid "Please choose the calendars to check for conflicts"
+msgstr "Mohon pilih kalender untuk diperiksa konfliknya"
+
+#: quickbook/lib/OneTime/OneTimeService.php:302
+msgid "Each time range must fit at least one appointment"
+msgstr "Setiap rentang waktu harus cukup untuk setidaknya satu janji temu"
+
+#: quickbook/lib/Service/BookingFlowService.php:62
+#: quickbook/lib/Service/BookingFlowService.php:66
+msgid "Invalid date"
+msgstr "Tanggal tidak valid"
+
+#: quickbook/lib/Service/BookingFlowService.php:95
+msgid "Please enter your name"
+msgstr "Mohon masukkan nama Anda"
+
+#: quickbook/lib/Service/BookingFlowService.php:99
+msgid "Please enter your name without @, < or >"
+msgstr "Mohon masukkan nama Anda tanpa @, < atau >"
+
+#: quickbook/lib/Service/BookingFlowService.php:102
+msgid "Please enter a valid email address"
+msgstr "Mohon masukkan alamat email yang valid"
+
+#: quickbook/lib/Service/BookingFlowService.php:105
+msgid "The comment is too long"
+msgstr "Komentar terlalu panjang"
+
+#: quickbook/lib/Service/BookingFlowService.php:118
+msgid "Invalid time range"
+msgstr "Rentang waktu tidak valid"
+
+#: quickbook/lib/Service/Input.php:46
+msgid "Invalid timezone"
+msgstr "Zona waktu tidak valid"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "One-page appointment booking for Calendar schedules, without the email confirmation step."
+msgstr "Pemesanan janji temu satu halaman untuk jadwal Kalender, tanpa langkah konfirmasi email."
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:4
+msgid ""
+"Quick Booking adds a public booking page for the appointment schedules you already have in the Calendar app. Requires the Calendar app.\n"
+"\n"
+"Visitors pick a date and time, enter their details, review and confirm on the same page. The appointment is booked immediately and the usual booking confirmation email (with .ics) is sent.\n"
+"\n"
+"* Share the usual Calendar booking link (\"Copy link\" in the Calendar app): it opens Quick Booking.\n"
+"* One-time appointment schedules: offer appointments on one or more chosen dates (e.g. parent-teacher conferences) instead of weekly. Create them in the Calendar app under \"One-time appointment schedules\".\n"
+"* Built-in rate limiting of bookings per visitor and per email address.\n"
+"* Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks."
+msgstr ""
+"Quick Booking menambahkan halaman pemesanan publik untuk jadwal janji temu yang sudah Anda miliki di aplikasi Kalender. Memerlukan aplikasi Kalender.\n"
+"\n"
+"Pengunjung memilih tanggal dan waktu, mengisi data mereka, meninjau, lalu mengonfirmasi di halaman yang sama. Janji temu langsung dipesan dan email konfirmasi pemesanan yang biasa (dengan .ics) dikirim.\n"
+"\n"
+"* Bagikan tautan pemesanan Kalender yang biasa (\"Salin tautan\" di aplikasi Kalender): tautan itu membuka Quick Booking.\n"
+"* Jadwal janji temu sekali waktu: tawarkan janji temu pada satu atau beberapa tanggal pilihan (misalnya pertemuan orang tua dan guru), bukan setiap minggu. Buat jadwal tersebut di aplikasi Kalender pada bagian \"Jadwal janji temu sekali waktu\".\n"
+"* Pembatasan bawaan atas jumlah pemesanan per pengunjung dan per alamat email.\n"
+"* Pemeriksaan mandiri: setelah setiap pembaruan Kalender atau Nextcloud, aplikasi memeriksa apakah semuanya masih berfungsi, dan membuat tautan pemesanan menampilkan halaman pemesanan standar Kalender bila ada yang rusak."
+
+#: quickbook/templates/booking.php:5
+msgid "Please enable JavaScript to book an appointment."
+msgstr "Mohon aktifkan JavaScript untuk memesan janji temu."
+
+#: quickbook/templates/settings-admin.php:10
+msgid "Quick Booking self-check"
+msgstr "Pemeriksaan mandiri Quick Booking"
+
+#: quickbook/templates/settings-admin.php:12
+msgid "Quick Booking uses internal code of the Calendar app. It checks after every Calendar or Nextcloud update and once a day that this still works. If something breaks, visitors are sent to the standard Calendar booking page and admins get a notification. While switched off, the check repeats every 15 minutes and switches back on when it passes."
+msgstr "Quick Booking menggunakan kode internal aplikasi Kalender. Setelah setiap pembaruan Kalender atau Nextcloud dan sekali sehari, aplikasi ini memeriksa apakah hal tersebut masih berfungsi. Jika ada yang rusak, pengunjung dialihkan ke halaman pemesanan standar Kalender dan admin menerima notifikasi. Selama nonaktif, pemeriksaan diulang setiap 15 menit dan Quick Booking aktif kembali setelah pemeriksaan lulus."
+
+#: quickbook/templates/settings-admin.php:17
+msgid "Off: visitors use the standard Calendar booking page."
+msgstr "Nonaktif: pengunjung menggunakan halaman pemesanan standar Kalender."
+
+#: quickbook/templates/settings-admin.php:21
+msgid "Bookings from several different networks failed while the self-check passed. Quick Booking switches back on after a Calendar update, or when you run the check below and it passes."
+msgstr "Pemesanan dari beberapa jaringan yang berbeda gagal meskipun pemeriksaan mandiri lulus. Quick Booking aktif kembali setelah pembaruan Kalender, atau ketika Anda menjalankan pemeriksaan di bawah ini dan hasilnya lulus."
+
+#: quickbook/templates/settings-admin.php:24
+msgid "On: visitors book through Quick Booking."
+msgstr "Aktif: pengunjung memesan melalui Quick Booking."
+
+#: quickbook/templates/settings-admin.php:28
+msgid "Calendar version"
+msgstr "Versi Kalender"
+
+#: quickbook/templates/settings-admin.php:29
+msgid "Nextcloud version"
+msgstr "Versi Nextcloud"
+
+#: quickbook/templates/settings-admin.php:30
+msgid "Last full check"
+msgstr "Pemeriksaan lengkap terakhir"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Check"
+msgstr "Pemeriksaan"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Result"
+msgstr "Hasil"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Detail"
+msgstr "Detail"
+
+#: quickbook/templates/settings-admin.php:49
+msgid "Run self-check now"
+msgstr "Jalankan pemeriksaan mandiri sekarang"
+
+#: quickbook/templates/settings-admin.php:52
+msgid "Also available as: occ quickbook:check"
+msgstr "Juga tersedia sebagai: occ quickbook:check"
+
+#: quickbook/templates/settings-admin.php:53
+msgid "Visitor addresses (rate limit)"
+msgstr "Alamat pengunjung (batas jumlah pemesanan)"
+
+#: quickbook/templates/settings-admin.php:55
+#, php-format
+msgid "Nextcloud sees your address as: %s"
+msgstr "Nextcloud melihat alamat Anda sebagai: %s"
+
+#: quickbook/templates/settings-admin.php:59
+msgid "This is a private address. That is fine if you are on the same network as the server. If you opened this page from outside (for example a phone on mobile data), Nextcloud does not know your reverse proxy: all visitors then share one address, and the booking limit applies to all of them together. Add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Ini adalah alamat privat. Hal itu tidak masalah jika Anda berada di jaringan yang sama dengan server. Jika Anda membuka halaman ini dari luar (misalnya dari ponsel dengan data seluler), Nextcloud tidak mengenali reverse proxy Anda: semua pengunjung akan berbagi satu alamat, dan batas pemesanan berlaku untuk mereka semua secara bersama-sama. Tambahkan proxy tersebut ke \"trusted_proxies\" di config.php."
+
+#: quickbook/templates/settings-admin.php:62
+msgid "This should be the public address of the device you are using right now. If it is the address of your server or proxy instead, add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Ini seharusnya alamat publik perangkat yang sedang Anda gunakan. Jika yang tampil justru alamat server atau proxy Anda, tambahkan proxy tersebut ke \"trusted_proxies\" di config.php."
+
+#: quickbook/templates/settings-admin.php:65
+msgid "Share the Calendar's own booking links (\"Copy link\" in the Calendar app). They open Quick Booking while it is on, and the Calendar booking page while it is off, disabled or removed. Links to /apps/quickbook/book/… only work while the app is installed."
+msgstr "Bagikan tautan pemesanan milik Kalender sendiri (\"Salin tautan\" di aplikasi Kalender). Tautan itu membuka Quick Booking selama aplikasi ini aktif, dan membuka halaman pemesanan Kalender selama aplikasi ini nonaktif, dinonaktifkan, atau dihapus. Tautan ke /apps/quickbook/book/… hanya berfungsi selama aplikasi ini terpasang."

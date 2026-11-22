@@ -1,0 +1,752 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Booking\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+
+#: quickbook/js/booking.js:126
+msgid "{minutes} min"
+msgstr "{minutes} min"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h"
+msgstr "{hours} h"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h {minutes} min"
+msgstr "{hours} h {minutes} min"
+
+#: quickbook/js/booking.js:153
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "Pārāk daudz pieprasījumu. Lūgums brīdi uzgaidīt un mēģināt vēlreiz."
+
+#: quickbook/js/booking.js:153 /work/quickbook/js/booking.js:157
+msgid "Could not load the free times."
+msgstr "Neizdevās ielādēt brīvos laikus."
+
+#: quickbook/js/booking.js:196
+msgid "Sorry, this time was just taken. Please choose another time."
+msgstr "Diemžēl šis laiks tikko tika aizņemts. Lūgums izvēlēties citu laiku."
+
+#: quickbook/js/booking.js:202 /work/quickbook/js/calendar-onetime.js:755
+msgid "Please check your input."
+msgstr "Lūgums pārbaudīt ievadīto."
+
+#: quickbook/js/booking.js:207
+msgid "This email address already has several bookings. Please try again tomorrow or contact the organizer."
+msgstr "Šai e-pasta adresei jau ir vairākas rezervācijas. Lūgums rīt mēģināt vēlreiz vai sazināties ar rīkotāju."
+
+#: quickbook/js/booking.js:208
+msgid "You made too many bookings in a short time. Please try again later."
+msgstr "Īsā laikā veikts pārāk daudz rezervāciju. Lūgums vēlāk mēģināt vēlreiz."
+
+#: quickbook/js/booking.js:215
+msgid "Something went wrong while booking. Please try again."
+msgstr "Rezervēšanas laikā kaut kas nogāja greizi. Lūgums mēģināt vēlreiz."
+
+#: quickbook/js/booking.js:217 /work/quickbook/js/calendar-onetime.js:764
+msgid "Could not reach the server. Please check your connection and try again."
+msgstr "Neizdevās sasniegt serveri. Lūgums pārbaudīt savienojumu un mēģināt vēlreiz."
+
+#: quickbook/js/booking.js:247
+msgid "with {name}"
+msgstr "ar {name}"
+
+#: quickbook/js/booking.js:254
+msgid "Date & time"
+msgstr "Datums un laiks"
+
+#: quickbook/js/booking.js:254
+msgid "Your details"
+msgstr "Kontaktinformācija"
+
+#: quickbook/js/booking.js:254
+msgid "Confirm"
+msgstr "Apstiprināt"
+
+#: quickbook/js/booking.js:257
+msgid "Booking steps"
+msgstr "Rezervēšanas soļi"
+
+#: quickbook/js/booking.js:272
+msgid "This appointment has no upcoming dates any more."
+msgstr "Vairs nav gaidāmu datumu, kuros pieteikt šo tikšanos."
+
+#: quickbook/js/booking.js:310
+msgid "Choose a date"
+msgstr "Izvēlēties datumu"
+
+#: quickbook/js/booking.js:312
+msgid "Previous month"
+msgstr "Iepriekšējais mēnesis"
+
+#: quickbook/js/booking.js:314
+msgid "Next month"
+msgstr "Nākamais mēnesis"
+
+#: quickbook/js/booking.js:321
+msgid "Choose a date to see the free times."
+msgstr "Jāizvēlas datums, lai redzētu brīvos laikus."
+
+#: quickbook/js/booking.js:323
+msgid "Loading free times…"
+msgstr "Ielādē brīvos laikus…"
+
+#: quickbook/js/booking.js:327
+msgid "No free times on this day. Please choose another date."
+msgstr "Šajā dienā nav brīvu laiku. Lūgums izvēlēties citu datumu."
+
+#: quickbook/js/booking.js:329 /work/quickbook/js/booking.js:344
+msgid "Free times"
+msgstr "Brīvie laiki"
+
+#: quickbook/js/booking.js:343
+msgid "Choose a time"
+msgstr "Izvēlēties laiku"
+
+#: quickbook/js/booking.js:345
+msgid "Times are shown in {timezone}"
+msgstr "Laiki ir norādīti laika joslā {timezone}"
+
+#: quickbook/js/booking.js:353
+msgid "Continue"
+msgstr "Turpināt"
+
+#: quickbook/js/booking.js:361
+msgid "Change"
+msgstr "Mainīt"
+
+#: quickbook/js/booking.js:382 /work/quickbook/js/booking.js:405
+msgid "Name"
+msgstr "Vārds"
+
+#: quickbook/js/booking.js:383 /work/quickbook/js/booking.js:406
+msgid "Email"
+msgstr "E-pasts"
+
+#: quickbook/js/booking.js:383
+msgid "Your booking confirmation is sent to this address."
+msgstr "Rezervācijas apstiprinājums tiks nosūtīts uz šo adresi."
+
+#: quickbook/js/booking.js:384
+msgid "Comment (optional)"
+msgstr "Piebilde (pēc izvēles)"
+
+#: quickbook/js/booking.js:390 /work/quickbook/js/booking.js:418
+msgid "Back"
+msgstr "Atpakaļ"
+
+#: quickbook/js/booking.js:391
+msgid "Review booking"
+msgstr "Pārskatīt rezervāciju"
+
+#: quickbook/js/booking.js:400
+msgid "Appointment"
+msgstr "Plānota tikšanās"
+
+#: quickbook/js/booking.js:401
+msgid "With"
+msgstr "Ar ko"
+
+#: quickbook/js/booking.js:402
+msgid "Date"
+msgstr "Datums"
+
+#: quickbook/js/booking.js:403
+msgid "Time"
+msgstr "Laiks"
+
+#: quickbook/js/booking.js:404 /work/quickbook/js/calendar-onetime.js:900
+msgid "Location"
+msgstr "Atrašanās vieta"
+
+#: quickbook/js/booking.js:407
+msgid "Comment"
+msgstr "Piebilde"
+
+#: quickbook/js/booking.js:415
+msgid "Please check your booking."
+msgstr "Lūgums pārbaudīt rezervāciju."
+
+#: quickbook/js/booking.js:424
+msgid "Booking…"
+msgstr "Rezervē…"
+
+#: quickbook/js/booking.js:424
+msgid "Confirm booking"
+msgstr "Apstiprināt rezervāciju"
+
+#: quickbook/js/booking.js:433
+msgid "Your appointment is booked"
+msgstr "Tikšanās ir rezervēta"
+
+#: quickbook/js/booking.js:434
+msgid "A confirmation email is on its way to {email}."
+msgstr "Apstiprinājuma e-pasta ziņojums ir ceļā uz {email}."
+
+#: quickbook/js/booking.js:438
+msgid "Book another appointment"
+msgstr "Rezervēt vēl vienu tikšanos"
+
+#: quickbook/js/booking.js:445
+msgid "Online booking on this page is temporarily unavailable."
+msgstr "Tiešsaistes rezervēšana šajā lapā īslaicīgi nav pieejama."
+
+#: quickbook/js/booking.js:447
+msgid "Continue on the standard booking page"
+msgstr "Turpināt parastajā rezervēšanas lapā"
+
+#: quickbook/js/booking.js:448
+msgid "Please try again later."
+msgstr "Lūgums vēlāk mēģināt vēlreiz."
+
+#: quickbook/js/calendar-onetime.js:148 quickbook/js/calendar-onetime.js:162
+msgid "{duration} minute"
+msgid_plural "{duration} minutes"
+msgstr[0] "{duration} minūte"
+msgstr[1] "{duration} minūtes"
+msgstr[2] "{duration} minūšu"
+
+#: quickbook/js/calendar-onetime.js:152
+msgid "{duration} week"
+msgid_plural "{duration} weeks"
+msgstr[0] "{duration} nedēļa"
+msgstr[1] "{duration} nedēļas"
+msgstr[2] "{duration} nedēļu"
+
+#: quickbook/js/calendar-onetime.js:156
+msgid "{duration} day"
+msgid_plural "{duration} days"
+msgstr[0] "{duration} diena"
+msgstr[1] "{duration} dienas"
+msgstr[2] "{duration} dienu"
+
+#: quickbook/js/calendar-onetime.js:160
+msgid "{duration} hour"
+msgid_plural "{duration} hours"
+msgstr[0] "{duration} stunda"
+msgstr[1] "{duration} stundas"
+msgstr[2] "{duration} stundu"
+
+#: quickbook/js/calendar-onetime.js:262 quickbook/lib/Health/HealthText.php:25
+msgid "One-time appointment schedules"
+msgstr "Vienreizēji tikšanos grafiki"
+
+#: quickbook/js/calendar-onetime.js:305
+msgid "Actions"
+msgstr "Darbības"
+
+#: quickbook/js/calendar-onetime.js:364 quickbook/js/calendar-onetime.js:985
+msgid "Preview"
+msgstr "Priekšskatīt"
+
+#: quickbook/js/calendar-onetime.js:365 quickbook/js/calendar-onetime.js:986
+msgid "Copy link"
+msgstr "Ievietot saiti starpliktuvē"
+
+#: quickbook/js/calendar-onetime.js:366
+msgid "Duplicate"
+msgstr "Pavairot"
+
+#: quickbook/js/calendar-onetime.js:367
+msgid "Edit"
+msgstr "Labot"
+
+#: quickbook/js/calendar-onetime.js:368
+msgid "Delete"
+msgstr "Izdzēst"
+
+#: quickbook/js/calendar-onetime.js:412
+msgid "Appointment link was copied to clipboard"
+msgstr "Plānotās tikšanās saite tika ievietota starpliktuvē."
+
+#: quickbook/js/calendar-onetime.js:414
+msgid "Appointment link could not be copied to clipboard"
+msgstr "Plānotās tikšanās saiti nevarēja ievietot starpliktuvē."
+
+#: quickbook/js/calendar-onetime.js:427
+msgid "Could not delete the appointment schedule"
+msgstr "Neizdevās izdzēst tikšanos grafiku"
+
+#: quickbook/js/calendar-onetime.js:533
+msgid "Remove {calendar}"
+msgstr "Noņemt {calendar}"
+
+#: quickbook/js/calendar-onetime.js:662
+msgid "One-time appointment schedules could not be loaded. Please try again later."
+msgstr "Neizdevās ielādēt vienreizējos tikšanos grafikus. Lūgums vēlāk mēģināt vēlreiz."
+
+#: quickbook/js/calendar-onetime.js:759
+msgid "One-time appointment schedules are temporarily unavailable."
+msgstr "Vienreizējie tikšanos grafiki īslaicīgi nav pieejami."
+
+#: quickbook/js/calendar-onetime.js:761
+msgid "Could not save. Please try again."
+msgstr "Neizdevās saglabāt. Lūgums mēģināt vēlreiz."
+
+#: quickbook/js/calendar-onetime.js:783
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} laiksprauga"
+msgstr[1] "{count} laikspraugas"
+msgstr[2] "{count} laikspraugu"
+
+#: quickbook/js/calendar-onetime.js:794
+msgid "Date {number}"
+msgstr "{number}. datums"
+
+#: quickbook/js/calendar-onetime.js:798
+msgid "{date}: from"
+msgstr "{date}: no"
+
+#: quickbook/js/calendar-onetime.js:799
+msgid "to"
+msgstr "līdz"
+
+#: quickbook/js/calendar-onetime.js:800
+msgid "{date}: to"
+msgstr "{date}: līdz"
+
+#: quickbook/js/calendar-onetime.js:804
+msgid "Delete {date}"
+msgstr "Izdzēst: {date}"
+
+#: quickbook/js/calendar-onetime.js:823
+msgid "Calendars to check for conflicts"
+msgstr "Kalendāri, kuros pārbaudīt pārklāšanos"
+
+#: quickbook/js/calendar-onetime.js:838
+msgid "Booking calendar"
+msgstr "Rezervāciju kalendārs"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Create one-time appointment schedule"
+msgstr "Izveidot vienreizēju tikšanos grafiku"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Edit one-time appointment schedule"
+msgstr "Labot vienreizēju tikšanos grafiku"
+
+#: quickbook/js/calendar-onetime.js:896
+msgid "You need a calendar you can write to, to take appointments."
+msgstr "Lai pieņemtu tikšanās pieteikumus, ir nepieciešams kalendārs, kurā var rakstīt."
+
+#: quickbook/js/calendar-onetime.js:899
+msgid "Appointment name"
+msgstr "Tikšanās nosaukums"
+
+#: quickbook/js/calendar-onetime.js:905
+msgid "Create a Talk room"
+msgstr "Izveidot tērzēšanas istabu"
+
+#: quickbook/js/calendar-onetime.js:914
+msgid "A unique link will be generated for every booked appointment and sent via the confirmation email"
+msgstr "Neatkārtojama saite tiks izveidota katram aizņemtajam tikšanās laikam un tiks nosūtīta ar apstiprinājuma e-pasta ziņojumu."
+
+#: quickbook/js/calendar-onetime.js:918
+msgid "Description"
+msgstr "Apraksts"
+
+#: quickbook/js/calendar-onetime.js:922
+msgid "Duration (minutes)"
+msgstr "Ilgums (minūtēs)"
+
+#: quickbook/js/calendar-onetime.js:923
+msgid "Increments"
+msgstr "Laika solis"
+
+#: quickbook/js/calendar-onetime.js:927
+msgid "Visibility"
+msgstr "Redzamība"
+
+#: quickbook/js/calendar-onetime.js:928
+msgid "Public – shown on profile page"
+msgstr "Publisks – redzams profila lapā"
+
+#: quickbook/js/calendar-onetime.js:929
+msgid "Private – only accessible via link"
+msgstr "Privāts – pieejams tikai ar saiti"
+
+#: quickbook/js/calendar-onetime.js:934
+msgid "Booking dates"
+msgstr "Rezervēšanas datumi"
+
+#: quickbook/js/calendar-onetime.js:935
+msgid "Times are in {timezone}."
+msgstr "Laiki ir norādīti laika joslā {timezone}."
+
+#: quickbook/js/calendar-onetime.js:941
+msgid "Add date"
+msgstr "Pievienot datumu"
+
+#: quickbook/js/calendar-onetime.js:956
+msgid "Planning restrictions"
+msgstr "Plānošanas ierobežojumi"
+
+#: quickbook/js/calendar-onetime.js:958
+msgid "Buffer before the event"
+msgstr "Starplaiks pirms notikuma"
+
+#: quickbook/js/calendar-onetime.js:959
+msgid "Buffer after the event"
+msgstr "Starplaiks pēc notikuma"
+
+#: quickbook/js/calendar-onetime.js:962
+msgid "Minimum time before next slot"
+msgstr "Mazākais laiks līdz nākamajai laikspraugai"
+
+#: quickbook/js/calendar-onetime.js:963
+msgid "Max slots per day"
+msgstr "Lielākais laikspraugu skaits dienā"
+
+#: quickbook/js/calendar-onetime.js:967
+msgid "It seems a rate limit has been reached. Please try again later."
+msgstr "Izskatās, ka ir sasniegts pieprasījumu ierobežojums. Lūgums vēlāk mēģināt vēlreiz."
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Save"
+msgstr "Saglabāt"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Update"
+msgstr "Atjaunināt"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully created"
+msgstr "Vienreizējais tikšanos grafiks ir sekmīgi izveidots"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully updated"
+msgstr "Vienreizējais tikšanos grafiks ir sekmīgi atjaunināts"
+
+#: quickbook/js/calendar-onetime.js:995
+msgid "Close"
+msgstr "Aizvērt"
+
+#: quickbook/js/settings.js:15
+msgid "Checking…"
+msgstr "Pārbauda…"
+
+#: quickbook/js/settings.js:23
+msgid "The self-check could not run."
+msgstr "Pašpārbaudi neizdevās izpildīt."
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "Appointment not found"
+msgstr "Tikšanās nav atrasta"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "This booking link does not exist (any more)."
+msgstr "Šī rezervēšanas saite (vairs) nepastāv."
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Booking unavailable"
+msgstr "Rezervēšana nav pieejama"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Online booking is temporarily unavailable. Please try again later."
+msgstr "Tiešsaistes rezervēšana īslaicīgi nav pieejama. Lūgums vēlāk mēģināt vēlreiz."
+
+#: quickbook/lib/Health/HealthText.php:22
+msgid "Quick Booking components"
+msgstr "Quick Booking komponentes"
+
+#: quickbook/lib/Health/HealthText.php:23
+msgid "Calendar app enabled"
+msgstr "Lietotne Kalendārs ir iespējota"
+
+#: quickbook/lib/Health/HealthText.php:24
+msgid "Calendar code contract"
+msgstr "Kalendāra koda līgums"
+
+#: quickbook/lib/Health/HealthText.php:26
+msgid "Calendar services"
+msgstr "Kalendāra pakalpojumi"
+
+#: quickbook/lib/Health/HealthText.php:27
+msgid "Standard booking page (fallback)"
+msgstr "Parastā rezervēšanas lapa (rezerves variants)"
+
+#: quickbook/lib/Health/HealthText.php:28
+msgid "Slot lookup"
+msgstr "Brīvo laiku uzmeklēšana"
+
+#: quickbook/lib/Health/HealthText.php:29
+msgid "Booking storage"
+msgstr "Rezervāciju glabāšana"
+
+#: quickbook/lib/Health/HealthText.php:36
+msgid "Passed"
+msgstr "Izturēts"
+
+#: quickbook/lib/Health/HealthText.php:37
+msgid "Failed"
+msgstr "Neizdevās"
+
+#: quickbook/lib/Health/HealthText.php:38
+msgid "Warning"
+msgstr "Brīdinājums"
+
+#: quickbook/lib/Health/HealthText.php:39
+msgid "Skipped"
+msgstr "Izlaists"
+
+#: quickbook/lib/Health/HealthText.php:50
+msgid "Booking page, booking API and Calendar link redirect load"
+msgstr "Rezervēšanas lapa, rezervēšanas API un Kalendāra saites pārvirzīšana ielādējas"
+
+#: quickbook/lib/Health/HealthText.php:51
+msgid "The Calendar app is not enabled"
+msgstr "Lietotne Kalendārs nav iespējota"
+
+#: quickbook/lib/Health/HealthText.php:52
+msgid "All classes, methods and fields found"
+msgstr "Atrastas visas klases, metodes un lauki"
+
+#: quickbook/lib/Health/HealthText.php:53
+msgid "Can be created and edited"
+msgstr "Var izveidot un labot"
+
+#: quickbook/lib/Health/HealthText.php:54
+msgid "Booking service, schedule service and booking storage load"
+msgstr "Rezervēšanas pakalpojums, grafiku pakalpojums un rezervāciju krātuve ielādējas"
+
+#: quickbook/lib/Health/HealthText.php:55
+msgid "No appointment schedule exists yet"
+msgstr "Vēl nav neviena tikšanos grafika"
+
+#: quickbook/lib/Health/HealthText.php:56
+#, php-format
+msgid "Schedule \"%1$s\", free slots in the next 7 days: %2$s"
+msgstr "Grafiks \"%1$s\", brīvie laiki nākamajās 7 dienās: %2$s"
+
+#: quickbook/lib/Health/HealthText.php:57
+msgid "Test booking stored and removed"
+msgstr "Testa rezervācija saglabāta un noņemta"
+
+#: quickbook/lib/Notification/Notifier.php:29
+#: quickbook/lib/Settings/AdminSection.php:24
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Quick Booking"
+msgstr "Quick Booking"
+
+#: quickbook/lib/Notification/Notifier.php:41
+msgid "Quick Booking switched visitors to the standard Calendar booking page"
+msgstr "Quick Booking pārslēdza apmeklētājus uz Kalendāra parasto rezervēšanas lapu"
+
+#: quickbook/lib/Notification/Notifier.php:42
+#, php-format
+msgid "Something in the Calendar app or Nextcloud no longer works as Quick Booking expects: %s"
+msgstr "Kaut kas lietotnē Kalendārs vai Nextcloud vairs nedarbojas tā, kā to sagaida Quick Booking: %s"
+
+#: quickbook/lib/Notification/Notifier.php:45
+#, php-format
+msgid "Quick Booking works again (%s)"
+msgstr "Quick Booking atkal darbojas (%s)"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:41
+msgid "Please add at least one date"
+msgstr "Lūgums pievienot vismaz vienu datumu"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:44
+msgid "Too many dates"
+msgstr "Pārāk daudz datumu"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:55
+msgid "Please enter a valid date"
+msgstr "Lūgums ievadīt derīgu datumu"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:58
+msgid "Please enter valid times"
+msgstr "Lūgums ievadīt derīgus laikus"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:61
+msgid "The end time must be after the start time"
+msgstr "Beigu laikam jābūt pēc sākuma laika"
+
+#: quickbook/lib/OneTime/OneTimeService.php:252
+msgid "Please enter a name of at most 128 characters"
+msgstr "Lūgums ievadīt nosaukumu, kas nav garāks par 128 rakstzīmēm"
+
+#: quickbook/lib/OneTime/OneTimeService.php:256
+msgid "The location is too long"
+msgstr "Atrašanās vieta ir pārāk gara"
+
+#: quickbook/lib/OneTime/OneTimeService.php:260
+msgid "The description is too long"
+msgstr "Apraksts ir pārāk garš"
+
+#: quickbook/lib/OneTime/OneTimeService.php:265
+msgid "Please enter the duration in minutes"
+msgstr "Lūgums ievadīt ilgumu minūtēs"
+
+#: quickbook/lib/OneTime/OneTimeService.php:267
+msgid "Please choose the increments"
+msgstr "Lūgums izvēlēties laika soli"
+
+#: quickbook/lib/OneTime/OneTimeService.php:268
+msgid "Please choose the buffer before the event"
+msgstr "Lūgums izvēlēties starplaiku pirms notikuma"
+
+#: quickbook/lib/OneTime/OneTimeService.php:269
+msgid "Please choose the buffer after the event"
+msgstr "Lūgums izvēlēties starplaiku pēc notikuma"
+
+#: quickbook/lib/OneTime/OneTimeService.php:270
+msgid "Please choose the minimum time before the next slot"
+msgstr "Lūgums izvēlēties mazāko laiku līdz nākamajai laikspraugai"
+
+#: quickbook/lib/OneTime/OneTimeService.php:273
+msgid "Please enter the maximum number of slots per day, or leave it empty"
+msgstr "Lūgums ievadīt lielāko laikspraugu skaitu dienā vai atstāt lauku tukšu"
+
+#: quickbook/lib/OneTime/OneTimeService.php:278
+msgid "Please choose the visibility"
+msgstr "Lūgums izvēlēties redzamību"
+
+#: quickbook/lib/OneTime/OneTimeService.php:284
+msgid "Please choose a booking calendar"
+msgstr "Lūgums izvēlēties rezervāciju kalendāru"
+
+#: quickbook/lib/OneTime/OneTimeService.php:288
+#: quickbook/lib/OneTime/OneTimeService.php:293
+msgid "Please choose the calendars to check for conflicts"
+msgstr "Lūgums izvēlēties kalendārus, kuros pārbaudīt pārklāšanos"
+
+#: quickbook/lib/OneTime/OneTimeService.php:302
+msgid "Each time range must fit at least one appointment"
+msgstr "Katrā laika posmā jāietilpst vismaz vienai tikšanās reizei"
+
+#: quickbook/lib/Service/BookingFlowService.php:62
+#: quickbook/lib/Service/BookingFlowService.php:66
+msgid "Invalid date"
+msgstr "Nederīgs datums"
+
+#: quickbook/lib/Service/BookingFlowService.php:95
+msgid "Please enter your name"
+msgstr "Lūgums ievadīt savu vārdu"
+
+#: quickbook/lib/Service/BookingFlowService.php:99
+msgid "Please enter your name without @, < or >"
+msgstr "Lūgums ievadīt savu vārdu bez @, < vai >"
+
+#: quickbook/lib/Service/BookingFlowService.php:102
+msgid "Please enter a valid email address"
+msgstr "Lūgums ievadīt derīgu e-pasta adresi"
+
+#: quickbook/lib/Service/BookingFlowService.php:105
+msgid "The comment is too long"
+msgstr "Piebilde ir pārāk gara"
+
+#: quickbook/lib/Service/BookingFlowService.php:118
+msgid "Invalid time range"
+msgstr "Nederīgs laika posms"
+
+#: quickbook/lib/Service/Input.php:46
+msgid "Invalid timezone"
+msgstr "Nederīga laika josla"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "One-page appointment booking for Calendar schedules, without the email confirmation step."
+msgstr "Tikšanās rezervēšana vienā lapā Kalendāra grafikiem, bez apstiprināšanas e-pastā."
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:4
+msgid ""
+"Quick Booking adds a public booking page for the appointment schedules you already have in the Calendar app. Requires the Calendar app.\n"
+"\n"
+"Visitors pick a date and time, enter their details, review and confirm on the same page. The appointment is booked immediately and the usual booking confirmation email (with .ics) is sent.\n"
+"\n"
+"* Share the usual Calendar booking link (\"Copy link\" in the Calendar app): it opens Quick Booking.\n"
+"* One-time appointment schedules: offer appointments on one or more chosen dates (e.g. parent-teacher conferences) instead of weekly. Create them in the Calendar app under \"One-time appointment schedules\".\n"
+"* Built-in rate limiting of bookings per visitor and per email address.\n"
+"* Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks."
+msgstr ""
+"Quick Booking pievieno publisku rezervēšanas lapu tikšanos grafikiem, kas jau ir izveidoti lietotnē Kalendārs. Nepieciešama lietotne Kalendārs.\n"
+"\n"
+"Apmeklētāji izvēlas datumu un laiku, ievada savus datus, pārskata un apstiprina tajā pašā lapā. Tikšanās tiek rezervēta uzreiz, un tiek nosūtīts parastais rezervācijas apstiprinājuma e-pasta ziņojums (ar .ics).\n"
+"\n"
+"* Jākopīgo parastā Kalendāra rezervēšanas saite (\"Ievietot saiti starpliktuvē\" lietotnē Kalendārs): tā atver Quick Booking.\n"
+"* Vienreizēji tikšanos grafiki: tikšanās var piedāvāt vienā vai vairākos izvēlētos datumos (piemēram, vecāku un skolotāju sarunas), nevis katru nedēļu. Tie ir izveidojami lietotnē Kalendārs sadaļā \"Vienreizēji tikšanos grafiki\".\n"
+"* Iebūvēts rezervāciju skaita ierobežojums katram apmeklētājam un katrai e-pasta adresei.\n"
+"* Pašpārbaude: pēc katra Kalendāra vai Nextcloud atjauninājuma pārbauda, vai lietotne joprojām darbojas, un ļauj rezervēšanas saitei rādīt Kalendāra parasto rezervēšanas lapu, ja kaut kas salūst."
+
+#: quickbook/templates/booking.php:5
+msgid "Please enable JavaScript to book an appointment."
+msgstr "Lai rezervētu tikšanos, lūgums iespējot JavaScript."
+
+#: quickbook/templates/settings-admin.php:10
+msgid "Quick Booking self-check"
+msgstr "Quick Booking pašpārbaude"
+
+#: quickbook/templates/settings-admin.php:12
+msgid "Quick Booking uses internal code of the Calendar app. It checks after every Calendar or Nextcloud update and once a day that this still works. If something breaks, visitors are sent to the standard Calendar booking page and admins get a notification. While switched off, the check repeats every 15 minutes and switches back on when it passes."
+msgstr "Quick Booking izmanto lietotnes Kalendārs iekšējo kodu. Pēc katra Kalendāra vai Nextcloud atjauninājuma un reizi dienā tiek pārbaudīts, vai tas joprojām darbojas. Ja kaut kas salūst, apmeklētāji tiek novirzīti uz Kalendāra parasto rezervēšanas lapu un pārvaldītāji saņem paziņojumu. Kamēr Quick Booking ir izslēgts, pārbaude tiek atkārtota ik pēc 15 minūtēm, un pēc sekmīgas pārbaudes tas atkal tiek ieslēgts."
+
+#: quickbook/templates/settings-admin.php:17
+msgid "Off: visitors use the standard Calendar booking page."
+msgstr "Izslēgts: apmeklētāji izmanto Kalendāra parasto rezervēšanas lapu."
+
+#: quickbook/templates/settings-admin.php:21
+msgid "Bookings from several different networks failed while the self-check passed. Quick Booking switches back on after a Calendar update, or when you run the check below and it passes."
+msgstr "Rezervācijas no vairākiem dažādiem tīkliem neizdevās, lai gan pašpārbaude bija sekmīga. Quick Booking atkal ieslēgsies pēc Kalendāra atjaunināšanas vai tad, kad zemāk tiks palaista pārbaude un tā būs sekmīga."
+
+#: quickbook/templates/settings-admin.php:24
+msgid "On: visitors book through Quick Booking."
+msgstr "Ieslēgts: apmeklētāji rezervē ar Quick Booking."
+
+#: quickbook/templates/settings-admin.php:28
+msgid "Calendar version"
+msgstr "Kalendāra versija"
+
+#: quickbook/templates/settings-admin.php:29
+msgid "Nextcloud version"
+msgstr "Nextcloud versija"
+
+#: quickbook/templates/settings-admin.php:30
+msgid "Last full check"
+msgstr "Pēdējā pilnā pārbaude"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Check"
+msgstr "Pārbaude"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Result"
+msgstr "Rezultāts"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Detail"
+msgstr "Sīkāka informācija"
+
+#: quickbook/templates/settings-admin.php:49
+msgid "Run self-check now"
+msgstr "Palaist pašpārbaudi tagad"
+
+#: quickbook/templates/settings-admin.php:52
+msgid "Also available as: occ quickbook:check"
+msgstr "Pieejams arī kā: occ quickbook:check"
+
+#: quickbook/templates/settings-admin.php:53
+msgid "Visitor addresses (rate limit)"
+msgstr "Apmeklētāju adreses (rezervāciju ierobežojums)"
+
+#: quickbook/templates/settings-admin.php:55
+#, php-format
+msgid "Nextcloud sees your address as: %s"
+msgstr "Nextcloud redz šīs ierīces adresi kā: %s"
+
+#: quickbook/templates/settings-admin.php:59
+msgid "This is a private address. That is fine if you are on the same network as the server. If you opened this page from outside (for example a phone on mobile data), Nextcloud does not know your reverse proxy: all visitors then share one address, and the booking limit applies to all of them together. Add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Šī ir privāta adrese. Tas ir pareizi, ja ierīce atrodas tajā pašā tīklā, kurā serveris. Ja šī lapa ir atvērta no ārpuses (piemēram, tālrunī ar mobilajiem datiem), Nextcloud nezina par apgriezto starpniekserveri: tad visiem apmeklētājiem ir viena kopīga adrese un rezervāciju ierobežojums attiecas uz visiem kopā. Starpniekserveris jāpievieno \"trusted_proxies\" datnē config.php."
+
+#: quickbook/templates/settings-admin.php:62
+msgid "This should be the public address of the device you are using right now. If it is the address of your server or proxy instead, add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Šai vajadzētu būt pašreiz izmantotās ierīces publiskajai adresei. Ja tā ir servera vai starpniekservera adrese, starpniekserveris jāpievieno \"trusted_proxies\" datnē config.php."
+
+#: quickbook/templates/settings-admin.php:65
+msgid "Share the Calendar's own booking links (\"Copy link\" in the Calendar app). They open Quick Booking while it is on, and the Calendar booking page while it is off, disabled or removed. Links to /apps/quickbook/book/… only work while the app is installed."
+msgstr "Jākopīgo paša Kalendāra rezervēšanas saites (\"Ievietot saiti starpliktuvē\" lietotnē Kalendārs). Tās atver Quick Booking, kamēr tas ir ieslēgts, un Kalendāra rezervēšanas lapu, kad tas ir izslēgts, atspējots vai noņemts. Saites uz /apps/quickbook/book/… darbojas tikai tad, kamēr lietotne ir uzstādīta."

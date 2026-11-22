@@ -1,0 +1,747 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Booking\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: quickbook/js/booking.js:126
+msgid "{minutes} min"
+msgstr "{minutes} min"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h"
+msgstr "{hours} t"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h {minutes} min"
+msgstr "{hours} t {minutes} min"
+
+#: quickbook/js/booking.js:153
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "For mange forespørsler. Vent litt og prøv igjen."
+
+#: quickbook/js/booking.js:153 /work/quickbook/js/booking.js:157
+msgid "Could not load the free times."
+msgstr "Kunne ikke laste inn de ledige tidene."
+
+#: quickbook/js/booking.js:196
+msgid "Sorry, this time was just taken. Please choose another time."
+msgstr "Beklager, dette tidspunktet ble nettopp opptatt. Velg et annet tidspunkt."
+
+#: quickbook/js/booking.js:202 /work/quickbook/js/calendar-onetime.js:755
+msgid "Please check your input."
+msgstr "Kontroller det du har fylt inn."
+
+#: quickbook/js/booking.js:207
+msgid "This email address already has several bookings. Please try again tomorrow or contact the organizer."
+msgstr "Denne e-postadressen har allerede flere bestillinger. Prøv igjen i morgen eller kontakt arrangøren."
+
+#: quickbook/js/booking.js:208
+msgid "You made too many bookings in a short time. Please try again later."
+msgstr "Du har gjort for mange bestillinger på kort tid. Prøv igjen senere."
+
+#: quickbook/js/booking.js:215
+msgid "Something went wrong while booking. Please try again."
+msgstr "Noe gikk galt under bestillingen. Prøv igjen."
+
+#: quickbook/js/booking.js:217 /work/quickbook/js/calendar-onetime.js:764
+msgid "Could not reach the server. Please check your connection and try again."
+msgstr "Kunne ikke nå serveren. Kontroller tilkoblingen din og prøv igjen."
+
+#: quickbook/js/booking.js:247
+msgid "with {name}"
+msgstr "med {name}"
+
+#: quickbook/js/booking.js:254
+msgid "Date & time"
+msgstr "Dato og klokkeslett"
+
+#: quickbook/js/booking.js:254
+msgid "Your details"
+msgstr "Dine opplysninger"
+
+#: quickbook/js/booking.js:254
+msgid "Confirm"
+msgstr "Bekreft"
+
+#: quickbook/js/booking.js:257
+msgid "Booking steps"
+msgstr "Bestillingstrinn"
+
+#: quickbook/js/booking.js:272
+msgid "This appointment has no upcoming dates any more."
+msgstr "Denne avtalen har ingen kommende datoer lenger."
+
+#: quickbook/js/booking.js:310
+msgid "Choose a date"
+msgstr "Velg en dato"
+
+#: quickbook/js/booking.js:312
+msgid "Previous month"
+msgstr "Forrige måned"
+
+#: quickbook/js/booking.js:314
+msgid "Next month"
+msgstr "Neste måned"
+
+#: quickbook/js/booking.js:321
+msgid "Choose a date to see the free times."
+msgstr "Velg en dato for å se de ledige tidene."
+
+#: quickbook/js/booking.js:323
+msgid "Loading free times…"
+msgstr "Laster inn ledige tider …"
+
+#: quickbook/js/booking.js:327
+msgid "No free times on this day. Please choose another date."
+msgstr "Ingen ledige tider denne dagen. Velg en annen dato."
+
+#: quickbook/js/booking.js:329 /work/quickbook/js/booking.js:344
+msgid "Free times"
+msgstr "Ledige tider"
+
+#: quickbook/js/booking.js:343
+msgid "Choose a time"
+msgstr "Velg et tidspunkt"
+
+#: quickbook/js/booking.js:345
+msgid "Times are shown in {timezone}"
+msgstr "Tidene vises i {timezone}"
+
+#: quickbook/js/booking.js:353
+msgid "Continue"
+msgstr "Fortsett"
+
+#: quickbook/js/booking.js:361
+msgid "Change"
+msgstr "Endre"
+
+#: quickbook/js/booking.js:382 /work/quickbook/js/booking.js:405
+msgid "Name"
+msgstr "Navn"
+
+#: quickbook/js/booking.js:383 /work/quickbook/js/booking.js:406
+msgid "Email"
+msgstr "E-post"
+
+#: quickbook/js/booking.js:383
+msgid "Your booking confirmation is sent to this address."
+msgstr "Bestillingsbekreftelsen sendes til denne adressen."
+
+#: quickbook/js/booking.js:384
+msgid "Comment (optional)"
+msgstr "Kommentar (valgfritt)"
+
+#: quickbook/js/booking.js:390 /work/quickbook/js/booking.js:418
+msgid "Back"
+msgstr "Tilbake"
+
+#: quickbook/js/booking.js:391
+msgid "Review booking"
+msgstr "Se over bestillingen"
+
+#: quickbook/js/booking.js:400
+msgid "Appointment"
+msgstr "Avtale"
+
+#: quickbook/js/booking.js:401
+msgid "With"
+msgstr "Med"
+
+#: quickbook/js/booking.js:402
+msgid "Date"
+msgstr "Dato"
+
+#: quickbook/js/booking.js:403
+msgid "Time"
+msgstr "Klokkeslett"
+
+#: quickbook/js/booking.js:404 /work/quickbook/js/calendar-onetime.js:900
+msgid "Location"
+msgstr "Sted"
+
+#: quickbook/js/booking.js:407
+msgid "Comment"
+msgstr "Kommentar"
+
+#: quickbook/js/booking.js:415
+msgid "Please check your booking."
+msgstr "Kontroller bestillingen din."
+
+#: quickbook/js/booking.js:424
+msgid "Booking…"
+msgstr "Bestiller …"
+
+#: quickbook/js/booking.js:424
+msgid "Confirm booking"
+msgstr "Bekreft bestillingen"
+
+#: quickbook/js/booking.js:433
+msgid "Your appointment is booked"
+msgstr "Avtalen din er bestilt"
+
+#: quickbook/js/booking.js:434
+msgid "A confirmation email is on its way to {email}."
+msgstr "En bekreftelses-e-post er på vei til {email}."
+
+#: quickbook/js/booking.js:438
+msgid "Book another appointment"
+msgstr "Bestill en ny avtale"
+
+#: quickbook/js/booking.js:445
+msgid "Online booking on this page is temporarily unavailable."
+msgstr "Nettbestilling på denne siden er midlertidig utilgjengelig."
+
+#: quickbook/js/booking.js:447
+msgid "Continue on the standard booking page"
+msgstr "Fortsett på standard bestillingsside"
+
+#: quickbook/js/booking.js:448
+msgid "Please try again later."
+msgstr "Prøv igjen senere."
+
+#: quickbook/js/calendar-onetime.js:148 quickbook/js/calendar-onetime.js:162
+msgid "{duration} minute"
+msgid_plural "{duration} minutes"
+msgstr[0] "{duration} minutt"
+msgstr[1] "{duration} minutter"
+
+#: quickbook/js/calendar-onetime.js:152
+msgid "{duration} week"
+msgid_plural "{duration} weeks"
+msgstr[0] "{duration} uke"
+msgstr[1] "{duration} uker"
+
+#: quickbook/js/calendar-onetime.js:156
+msgid "{duration} day"
+msgid_plural "{duration} days"
+msgstr[0] "{duration} dag"
+msgstr[1] "{duration} dager"
+
+#: quickbook/js/calendar-onetime.js:160
+msgid "{duration} hour"
+msgid_plural "{duration} hours"
+msgstr[0] "{duration} time"
+msgstr[1] "{duration} timer"
+
+#: quickbook/js/calendar-onetime.js:262 quickbook/lib/Health/HealthText.php:25
+msgid "One-time appointment schedules"
+msgstr "Avtaleplaner for enkeltdatoer"
+
+#: quickbook/js/calendar-onetime.js:305
+msgid "Actions"
+msgstr "Handlinger"
+
+#: quickbook/js/calendar-onetime.js:364 quickbook/js/calendar-onetime.js:985
+msgid "Preview"
+msgstr "Forhåndsvis"
+
+#: quickbook/js/calendar-onetime.js:365 quickbook/js/calendar-onetime.js:986
+msgid "Copy link"
+msgstr "Kopier lenke"
+
+#: quickbook/js/calendar-onetime.js:366
+msgid "Duplicate"
+msgstr "Dupliser"
+
+#: quickbook/js/calendar-onetime.js:367
+msgid "Edit"
+msgstr "Rediger"
+
+#: quickbook/js/calendar-onetime.js:368
+msgid "Delete"
+msgstr "Slett"
+
+#: quickbook/js/calendar-onetime.js:412
+msgid "Appointment link was copied to clipboard"
+msgstr "Avtalelenken ble kopiert til utklippstavlen"
+
+#: quickbook/js/calendar-onetime.js:414
+msgid "Appointment link could not be copied to clipboard"
+msgstr "Avtalelenken kunne ikke kopieres til utklippstavlen"
+
+#: quickbook/js/calendar-onetime.js:427
+msgid "Could not delete the appointment schedule"
+msgstr "Kunne ikke slette avtaleplanen"
+
+#: quickbook/js/calendar-onetime.js:533
+msgid "Remove {calendar}"
+msgstr "Fjern {calendar}"
+
+#: quickbook/js/calendar-onetime.js:662
+msgid "One-time appointment schedules could not be loaded. Please try again later."
+msgstr "Avtaleplaner for enkeltdatoer kunne ikke lastes inn. Prøv igjen senere."
+
+#: quickbook/js/calendar-onetime.js:759
+msgid "One-time appointment schedules are temporarily unavailable."
+msgstr "Avtaleplaner for enkeltdatoer er midlertidig utilgjengelige."
+
+#: quickbook/js/calendar-onetime.js:761
+msgid "Could not save. Please try again."
+msgstr "Kunne ikke lagre. Prøv igjen."
+
+#: quickbook/js/calendar-onetime.js:783
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} tidsrom"
+msgstr[1] "{count} tidsrom"
+
+#: quickbook/js/calendar-onetime.js:794
+msgid "Date {number}"
+msgstr "Dato {number}"
+
+#: quickbook/js/calendar-onetime.js:798
+msgid "{date}: from"
+msgstr "{date}: fra"
+
+#: quickbook/js/calendar-onetime.js:799
+msgid "to"
+msgstr "til"
+
+#: quickbook/js/calendar-onetime.js:800
+msgid "{date}: to"
+msgstr "{date}: til"
+
+#: quickbook/js/calendar-onetime.js:804
+msgid "Delete {date}"
+msgstr "Slett {date}"
+
+#: quickbook/js/calendar-onetime.js:823
+msgid "Calendars to check for conflicts"
+msgstr "Kalendere som skal sjekkes for konflikter"
+
+#: quickbook/js/calendar-onetime.js:838
+msgid "Booking calendar"
+msgstr "Bestillingskalender"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Create one-time appointment schedule"
+msgstr "Opprett avtaleplan for enkeltdatoer"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Edit one-time appointment schedule"
+msgstr "Rediger avtaleplan for enkeltdatoer"
+
+#: quickbook/js/calendar-onetime.js:896
+msgid "You need a calendar you can write to, to take appointments."
+msgstr "Du trenger en kalender du kan skrive til for å kunne ta imot avtaler."
+
+#: quickbook/js/calendar-onetime.js:899
+msgid "Appointment name"
+msgstr "Navn på avtale"
+
+#: quickbook/js/calendar-onetime.js:905
+msgid "Create a Talk room"
+msgstr "Opprett et Talk-rom"
+
+#: quickbook/js/calendar-onetime.js:914
+msgid "A unique link will be generated for every booked appointment and sent via the confirmation email"
+msgstr "En unik lenke vil bli generert for hver bestilt avtale og sendt via bekreftelses-e-posten"
+
+#: quickbook/js/calendar-onetime.js:918
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: quickbook/js/calendar-onetime.js:922
+msgid "Duration (minutes)"
+msgstr "Varighet (minutter)"
+
+#: quickbook/js/calendar-onetime.js:923
+msgid "Increments"
+msgstr "Intervall"
+
+#: quickbook/js/calendar-onetime.js:927
+msgid "Visibility"
+msgstr "Synlighet"
+
+#: quickbook/js/calendar-onetime.js:928
+msgid "Public – shown on profile page"
+msgstr "Offentlig – vises på profilsiden"
+
+#: quickbook/js/calendar-onetime.js:929
+msgid "Private – only accessible via link"
+msgstr "Privat – kun tilgjengelig via lenke"
+
+#: quickbook/js/calendar-onetime.js:934
+msgid "Booking dates"
+msgstr "Bestillingsdatoer"
+
+#: quickbook/js/calendar-onetime.js:935
+msgid "Times are in {timezone}."
+msgstr "Tidene er i {timezone}."
+
+#: quickbook/js/calendar-onetime.js:941
+msgid "Add date"
+msgstr "Legg til dato"
+
+#: quickbook/js/calendar-onetime.js:956
+msgid "Planning restrictions"
+msgstr "Planleggingsbegrensninger"
+
+#: quickbook/js/calendar-onetime.js:958
+msgid "Buffer before the event"
+msgstr "Buffer før avtalen"
+
+#: quickbook/js/calendar-onetime.js:959
+msgid "Buffer after the event"
+msgstr "Buffer etter avtalen"
+
+#: quickbook/js/calendar-onetime.js:962
+msgid "Minimum time before next slot"
+msgstr "Minste tid før neste tidsrom"
+
+#: quickbook/js/calendar-onetime.js:963
+msgid "Max slots per day"
+msgstr "Maks. antall tidsrom per dag"
+
+#: quickbook/js/calendar-onetime.js:967
+msgid "It seems a rate limit has been reached. Please try again later."
+msgstr "Det ser ut til at en grense er nådd. Prøv igjen senere."
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Save"
+msgstr "Lagre"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Update"
+msgstr "Oppdater"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully created"
+msgstr "Avtaleplanen for enkeltdatoer ble opprettet"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully updated"
+msgstr "Avtaleplanen for enkeltdatoer ble oppdatert"
+
+#: quickbook/js/calendar-onetime.js:995
+msgid "Close"
+msgstr "Lukk"
+
+#: quickbook/js/settings.js:15
+msgid "Checking…"
+msgstr "Kontrollerer …"
+
+#: quickbook/js/settings.js:23
+msgid "The self-check could not run."
+msgstr "Selvtesten kunne ikke kjøres."
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "Appointment not found"
+msgstr "Avtale ikke funnet"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "This booking link does not exist (any more)."
+msgstr "Denne bestillingslenken finnes ikke (lenger)."
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Booking unavailable"
+msgstr "Bestilling utilgjengelig"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Online booking is temporarily unavailable. Please try again later."
+msgstr "Nettbestilling er midlertidig utilgjengelig. Prøv igjen senere."
+
+#: quickbook/lib/Health/HealthText.php:22
+msgid "Quick Booking components"
+msgstr "Quick Booking-komponenter"
+
+#: quickbook/lib/Health/HealthText.php:23
+msgid "Calendar app enabled"
+msgstr "Kalender-appen aktivert"
+
+#: quickbook/lib/Health/HealthText.php:24
+msgid "Calendar code contract"
+msgstr "Kalenders kodekontrakt"
+
+#: quickbook/lib/Health/HealthText.php:26
+msgid "Calendar services"
+msgstr "Kalenders tjenester"
+
+#: quickbook/lib/Health/HealthText.php:27
+msgid "Standard booking page (fallback)"
+msgstr "Standard bestillingsside (reserve)"
+
+#: quickbook/lib/Health/HealthText.php:28
+msgid "Slot lookup"
+msgstr "Oppslag av ledige tider"
+
+#: quickbook/lib/Health/HealthText.php:29
+msgid "Booking storage"
+msgstr "Lagring av bestillinger"
+
+#: quickbook/lib/Health/HealthText.php:36
+msgid "Passed"
+msgstr "Bestått"
+
+#: quickbook/lib/Health/HealthText.php:37
+msgid "Failed"
+msgstr "Mislyktes"
+
+#: quickbook/lib/Health/HealthText.php:38
+msgid "Warning"
+msgstr "Advarsel"
+
+#: quickbook/lib/Health/HealthText.php:39
+msgid "Skipped"
+msgstr "Hoppet over"
+
+#: quickbook/lib/Health/HealthText.php:50
+msgid "Booking page, booking API and Calendar link redirect load"
+msgstr "Bestillingsside, bestillings-API og omdirigering av Kalender-lenken lastes"
+
+#: quickbook/lib/Health/HealthText.php:51
+msgid "The Calendar app is not enabled"
+msgstr "Kalender-appen er ikke aktivert"
+
+#: quickbook/lib/Health/HealthText.php:52
+msgid "All classes, methods and fields found"
+msgstr "Alle klasser, metoder og felt funnet"
+
+#: quickbook/lib/Health/HealthText.php:53
+msgid "Can be created and edited"
+msgstr "Kan opprettes og redigeres"
+
+#: quickbook/lib/Health/HealthText.php:54
+msgid "Booking service, schedule service and booking storage load"
+msgstr "Bestillingstjeneste, avtaleplantjeneste og bestillingslager lastes"
+
+#: quickbook/lib/Health/HealthText.php:55
+msgid "No appointment schedule exists yet"
+msgstr "Det finnes ingen avtaleplan ennå"
+
+#: quickbook/lib/Health/HealthText.php:56
+#, php-format
+msgid "Schedule \"%1$s\", free slots in the next 7 days: %2$s"
+msgstr "Avtaleplan \"%1$s\", ledige tider de neste 7 dagene: %2$s"
+
+#: quickbook/lib/Health/HealthText.php:57
+msgid "Test booking stored and removed"
+msgstr "Testbestilling lagret og fjernet"
+
+#: quickbook/lib/Notification/Notifier.php:29
+#: quickbook/lib/Settings/AdminSection.php:24
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Quick Booking"
+msgstr "Quick Booking"
+
+#: quickbook/lib/Notification/Notifier.php:41
+msgid "Quick Booking switched visitors to the standard Calendar booking page"
+msgstr "Quick Booking har sendt besøkende videre til standard bestillingsside i Kalender"
+
+#: quickbook/lib/Notification/Notifier.php:42
+#, php-format
+msgid "Something in the Calendar app or Nextcloud no longer works as Quick Booking expects: %s"
+msgstr "Noe i Kalender-appen eller Nextcloud fungerer ikke lenger slik Quick Booking forventer: %s"
+
+#: quickbook/lib/Notification/Notifier.php:45
+#, php-format
+msgid "Quick Booking works again (%s)"
+msgstr "Quick Booking fungerer igjen (%s)"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:41
+msgid "Please add at least one date"
+msgstr "Legg til minst én dato"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:44
+msgid "Too many dates"
+msgstr "For mange datoer"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:55
+msgid "Please enter a valid date"
+msgstr "Angi en gyldig dato"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:58
+msgid "Please enter valid times"
+msgstr "Angi gyldige klokkeslett"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:61
+msgid "The end time must be after the start time"
+msgstr "Sluttidspunktet må være etter starttidspunktet"
+
+#: quickbook/lib/OneTime/OneTimeService.php:252
+msgid "Please enter a name of at most 128 characters"
+msgstr "Angi et navn på høyst 128 tegn"
+
+#: quickbook/lib/OneTime/OneTimeService.php:256
+msgid "The location is too long"
+msgstr "Stedet er for langt"
+
+#: quickbook/lib/OneTime/OneTimeService.php:260
+msgid "The description is too long"
+msgstr "Beskrivelsen er for lang"
+
+#: quickbook/lib/OneTime/OneTimeService.php:265
+msgid "Please enter the duration in minutes"
+msgstr "Angi varigheten i minutter"
+
+#: quickbook/lib/OneTime/OneTimeService.php:267
+msgid "Please choose the increments"
+msgstr "Velg intervall"
+
+#: quickbook/lib/OneTime/OneTimeService.php:268
+msgid "Please choose the buffer before the event"
+msgstr "Velg buffer før avtalen"
+
+#: quickbook/lib/OneTime/OneTimeService.php:269
+msgid "Please choose the buffer after the event"
+msgstr "Velg buffer etter avtalen"
+
+#: quickbook/lib/OneTime/OneTimeService.php:270
+msgid "Please choose the minimum time before the next slot"
+msgstr "Velg minste tid før neste tidsrom"
+
+#: quickbook/lib/OneTime/OneTimeService.php:273
+msgid "Please enter the maximum number of slots per day, or leave it empty"
+msgstr "Angi maks. antall tidsrom per dag, eller la feltet stå tomt"
+
+#: quickbook/lib/OneTime/OneTimeService.php:278
+msgid "Please choose the visibility"
+msgstr "Velg synlighet"
+
+#: quickbook/lib/OneTime/OneTimeService.php:284
+msgid "Please choose a booking calendar"
+msgstr "Velg en bestillingskalender"
+
+#: quickbook/lib/OneTime/OneTimeService.php:288
+#: quickbook/lib/OneTime/OneTimeService.php:293
+msgid "Please choose the calendars to check for conflicts"
+msgstr "Velg kalenderne som skal sjekkes for konflikter"
+
+#: quickbook/lib/OneTime/OneTimeService.php:302
+msgid "Each time range must fit at least one appointment"
+msgstr "Hvert tidsrom må ha plass til minst én avtale"
+
+#: quickbook/lib/Service/BookingFlowService.php:62
+#: quickbook/lib/Service/BookingFlowService.php:66
+msgid "Invalid date"
+msgstr "Ugyldig dato"
+
+#: quickbook/lib/Service/BookingFlowService.php:95
+msgid "Please enter your name"
+msgstr "Skriv inn navnet ditt"
+
+#: quickbook/lib/Service/BookingFlowService.php:99
+msgid "Please enter your name without @, < or >"
+msgstr "Skriv inn navnet ditt uten @, < eller >"
+
+#: quickbook/lib/Service/BookingFlowService.php:102
+msgid "Please enter a valid email address"
+msgstr "Skriv inn en gyldig e-postadresse"
+
+#: quickbook/lib/Service/BookingFlowService.php:105
+msgid "The comment is too long"
+msgstr "Kommentaren er for lang"
+
+#: quickbook/lib/Service/BookingFlowService.php:118
+msgid "Invalid time range"
+msgstr "Ugyldig tidsrom"
+
+#: quickbook/lib/Service/Input.php:46
+msgid "Invalid timezone"
+msgstr "Ugyldig tidssone"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "One-page appointment booking for Calendar schedules, without the email confirmation step."
+msgstr "Bestilling av avtaler på én side for avtaleplanene i Kalender, uten bekreftelsestrinnet via e-post."
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:4
+msgid ""
+"Quick Booking adds a public booking page for the appointment schedules you already have in the Calendar app. Requires the Calendar app.\n"
+"\n"
+"Visitors pick a date and time, enter their details, review and confirm on the same page. The appointment is booked immediately and the usual booking confirmation email (with .ics) is sent.\n"
+"\n"
+"* Share the usual Calendar booking link (\"Copy link\" in the Calendar app): it opens Quick Booking.\n"
+"* One-time appointment schedules: offer appointments on one or more chosen dates (e.g. parent-teacher conferences) instead of weekly. Create them in the Calendar app under \"One-time appointment schedules\".\n"
+"* Built-in rate limiting of bookings per visitor and per email address.\n"
+"* Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks."
+msgstr ""
+"Quick Booking legger til en offentlig bestillingsside for avtaleplanene du allerede har i Kalender-appen. Krever Kalender-appen.\n"
+"\n"
+"Besøkende velger dato og klokkeslett, fyller inn opplysningene sine, ser over og bekrefter på samme side. Avtalen bestilles umiddelbart, og den vanlige bekreftelses-e-posten for bestillingen (med .ics) sendes.\n"
+"\n"
+"* Del den vanlige bestillingslenken fra Kalender (\"Kopier lenke\" i Kalender-appen): den åpner Quick Booking.\n"
+"* Avtaleplaner for enkeltdatoer: tilby avtaler på én eller flere valgte datoer (f.eks. foreldresamtaler) i stedet for ukentlig. Opprett dem i Kalender-appen under \"Avtaleplaner for enkeltdatoer\".\n"
+"* Innebygd begrensning av antall bestillinger per besøkende og per e-postadresse.\n"
+"* Selvtest: kontrollerer etter hver oppdatering av Kalender eller Nextcloud at alt fortsatt fungerer, og lar bestillingslenken vise standard bestillingsside i Kalender hvis noe slutter å fungere."
+
+#: quickbook/templates/booking.php:5
+msgid "Please enable JavaScript to book an appointment."
+msgstr "Aktiver JavaScript for å bestille en avtale."
+
+#: quickbook/templates/settings-admin.php:10
+msgid "Quick Booking self-check"
+msgstr "Selvtest av Quick Booking"
+
+#: quickbook/templates/settings-admin.php:12
+msgid "Quick Booking uses internal code of the Calendar app. It checks after every Calendar or Nextcloud update and once a day that this still works. If something breaks, visitors are sent to the standard Calendar booking page and admins get a notification. While switched off, the check repeats every 15 minutes and switches back on when it passes."
+msgstr "Quick Booking bruker intern kode fra Kalender-appen. Etter hver oppdatering av Kalender eller Nextcloud og én gang om dagen kontrolleres det at dette fortsatt fungerer. Hvis noe slutter å fungere, sendes besøkende til standard bestillingsside i Kalender, og administratorene får et varsel. Mens Quick Booking er slått av, gjentas kontrollen hvert 15. minutt, og Quick Booking slås på igjen når kontrollen er bestått."
+
+#: quickbook/templates/settings-admin.php:17
+msgid "Off: visitors use the standard Calendar booking page."
+msgstr "Av: besøkende bruker standard bestillingsside i Kalender."
+
+#: quickbook/templates/settings-admin.php:21
+msgid "Bookings from several different networks failed while the self-check passed. Quick Booking switches back on after a Calendar update, or when you run the check below and it passes."
+msgstr "Bestillinger fra flere ulike nettverk mislyktes selv om selvtesten ble bestått. Quick Booking slås på igjen etter en oppdatering av Kalender, eller når du kjører testen nedenfor og den blir bestått."
+
+#: quickbook/templates/settings-admin.php:24
+msgid "On: visitors book through Quick Booking."
+msgstr "På: besøkende bestiller via Quick Booking."
+
+#: quickbook/templates/settings-admin.php:28
+msgid "Calendar version"
+msgstr "Kalender-versjon"
+
+#: quickbook/templates/settings-admin.php:29
+msgid "Nextcloud version"
+msgstr "Nextcloud-versjon"
+
+#: quickbook/templates/settings-admin.php:30
+msgid "Last full check"
+msgstr "Siste fullstendige kontroll"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Check"
+msgstr "Kontroll"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Result"
+msgstr "Resultat"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Detail"
+msgstr "Detaljer"
+
+#: quickbook/templates/settings-admin.php:49
+msgid "Run self-check now"
+msgstr "Kjør selvtest nå"
+
+#: quickbook/templates/settings-admin.php:52
+msgid "Also available as: occ quickbook:check"
+msgstr "Også tilgjengelig som: occ quickbook:check"
+
+#: quickbook/templates/settings-admin.php:53
+msgid "Visitor addresses (rate limit)"
+msgstr "Besøkendes adresser (bestillingsgrense)"
+
+#: quickbook/templates/settings-admin.php:55
+#, php-format
+msgid "Nextcloud sees your address as: %s"
+msgstr "Nextcloud ser adressen din som: %s"
+
+#: quickbook/templates/settings-admin.php:59
+msgid "This is a private address. That is fine if you are on the same network as the server. If you opened this page from outside (for example a phone on mobile data), Nextcloud does not know your reverse proxy: all visitors then share one address, and the booking limit applies to all of them together. Add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Dette er en privat adresse. Det er greit hvis du er på samme nettverk som serveren. Hvis du åpnet denne siden utenfra (for eksempel fra en telefon på mobildata), kjenner ikke Nextcloud den omvendte proxyen din: alle besøkende deler da én adresse, og bestillingsgrensen gjelder for alle til sammen. Legg til proxyen i \"trusted_proxies\" i config.php."
+
+#: quickbook/templates/settings-admin.php:62
+msgid "This should be the public address of the device you are using right now. If it is the address of your server or proxy instead, add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Dette skal være den offentlige adressen til enheten du bruker akkurat nå. Hvis det i stedet er adressen til serveren eller proxyen din, legger du til proxyen i \"trusted_proxies\" i config.php."
+
+#: quickbook/templates/settings-admin.php:65
+msgid "Share the Calendar's own booking links (\"Copy link\" in the Calendar app). They open Quick Booking while it is on, and the Calendar booking page while it is off, disabled or removed. Links to /apps/quickbook/book/… only work while the app is installed."
+msgstr "Del Kalenders egne bestillingslenker (\"Kopier lenke\" i Kalender-appen). De åpner Quick Booking mens den er slått på, og bestillingssiden i Kalender mens den er slått av, deaktivert eller fjernet. Lenker til /apps/quickbook/book/… fungerer bare så lenge appen er installert."

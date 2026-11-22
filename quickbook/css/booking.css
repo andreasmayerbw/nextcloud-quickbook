@@ -379,7 +379,7 @@
 .quickbook__error {
 	margin: 0 0 16px;
 	padding: 12px;
-	border-left: 4px solid var(--color-error);
+	border-inline-start: 4px solid var(--color-error);
 	border-radius: var(--border-radius-element, 8px);
 	background: var(--color-background-hover);
 }
@@ -403,7 +403,7 @@
 	height: 56px;
 	border-radius: 50%;
 	background: var(--color-success-text, var(--color-success));
-	color: #fff;
+	color: var(--color-main-background);
 	font-size: 28px;
 	font-weight: bold;
 }

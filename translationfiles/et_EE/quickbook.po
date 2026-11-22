@@ -1,0 +1,747 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Booking\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"Language: et_EE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: quickbook/js/booking.js:126
+msgid "{minutes} min"
+msgstr "{minutes} min"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h"
+msgstr "{hours} t"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h {minutes} min"
+msgstr "{hours} t {minutes} min"
+
+#: quickbook/js/booking.js:153
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "Liiga palju päringuid. Palun oota hetk ja proovi uuesti."
+
+#: quickbook/js/booking.js:153 /work/quickbook/js/booking.js:157
+msgid "Could not load the free times."
+msgstr "Vabu aegu ei õnnestunud laadida."
+
+#: quickbook/js/booking.js:196
+msgid "Sorry, this time was just taken. Please choose another time."
+msgstr "Vabandust, see aeg broneeriti just ära. Palun vali mõni muu aeg."
+
+#: quickbook/js/booking.js:202 /work/quickbook/js/calendar-onetime.js:755
+msgid "Please check your input."
+msgstr "Palun kontrolli sisestatud andmeid."
+
+#: quickbook/js/booking.js:207
+msgid "This email address already has several bookings. Please try again tomorrow or contact the organizer."
+msgstr "Selle e-posti aadressiga on juba mitu broneeringut. Palun proovi homme uuesti või küsi korraldajalt nõu."
+
+#: quickbook/js/booking.js:208
+msgid "You made too many bookings in a short time. Please try again later."
+msgstr "Tegid lühikese aja jooksul liiga palju broneeringuid. Palun proovi hiljem uuesti."
+
+#: quickbook/js/booking.js:215
+msgid "Something went wrong while booking. Please try again."
+msgstr "Broneerimisel läks midagi valesti. Palun proovi uuesti."
+
+#: quickbook/js/booking.js:217 /work/quickbook/js/calendar-onetime.js:764
+msgid "Could not reach the server. Please check your connection and try again."
+msgstr "Serveriga ei õnnestunud ühendust saada. Palun kontrolli oma võrguühendust ja proovi uuesti."
+
+#: quickbook/js/booking.js:247
+msgid "with {name}"
+msgstr "Kellega: {name}"
+
+#: quickbook/js/booking.js:254
+msgid "Date & time"
+msgstr "Kuupäev ja kellaaeg"
+
+#: quickbook/js/booking.js:254
+msgid "Your details"
+msgstr "Sinu andmed"
+
+#: quickbook/js/booking.js:254
+msgid "Confirm"
+msgstr "Kinnita"
+
+#: quickbook/js/booking.js:257
+msgid "Booking steps"
+msgstr "Broneerimise sammud"
+
+#: quickbook/js/booking.js:272
+msgid "This appointment has no upcoming dates any more."
+msgstr "Sellel kohtumisel pole enam tulevasi kuupäevi."
+
+#: quickbook/js/booking.js:310
+msgid "Choose a date"
+msgstr "Vali kuupäev"
+
+#: quickbook/js/booking.js:312
+msgid "Previous month"
+msgstr "Eelmine kuu"
+
+#: quickbook/js/booking.js:314
+msgid "Next month"
+msgstr "Järgmine kuu"
+
+#: quickbook/js/booking.js:321
+msgid "Choose a date to see the free times."
+msgstr "Vabade aegade nägemiseks vali kuupäev."
+
+#: quickbook/js/booking.js:323
+msgid "Loading free times…"
+msgstr "Laadin vabu aegu…"
+
+#: quickbook/js/booking.js:327
+msgid "No free times on this day. Please choose another date."
+msgstr "Sellel päeval pole vabu aegu. Palun vali mõni muu kuupäev."
+
+#: quickbook/js/booking.js:329 /work/quickbook/js/booking.js:344
+msgid "Free times"
+msgstr "Vabad ajad"
+
+#: quickbook/js/booking.js:343
+msgid "Choose a time"
+msgstr "Vali kellaaeg"
+
+#: quickbook/js/booking.js:345
+msgid "Times are shown in {timezone}"
+msgstr "Kellaajad on ajavööndis {timezone}"
+
+#: quickbook/js/booking.js:353
+msgid "Continue"
+msgstr "Jätka"
+
+#: quickbook/js/booking.js:361
+msgid "Change"
+msgstr "Muuda"
+
+#: quickbook/js/booking.js:382 /work/quickbook/js/booking.js:405
+msgid "Name"
+msgstr "Nimi"
+
+#: quickbook/js/booking.js:383 /work/quickbook/js/booking.js:406
+msgid "Email"
+msgstr "E-post"
+
+#: quickbook/js/booking.js:383
+msgid "Your booking confirmation is sent to this address."
+msgstr "Broneeringu kinnitus saadetakse sellele aadressile."
+
+#: quickbook/js/booking.js:384
+msgid "Comment (optional)"
+msgstr "Kommentaar (valikuline)"
+
+#: quickbook/js/booking.js:390 /work/quickbook/js/booking.js:418
+msgid "Back"
+msgstr "Tagasi"
+
+#: quickbook/js/booking.js:391
+msgid "Review booking"
+msgstr "Vaata broneering üle"
+
+#: quickbook/js/booking.js:400
+msgid "Appointment"
+msgstr "Kohtumine"
+
+#: quickbook/js/booking.js:401
+msgid "With"
+msgstr "Kellega"
+
+#: quickbook/js/booking.js:402
+msgid "Date"
+msgstr "Kuupäev"
+
+#: quickbook/js/booking.js:403
+msgid "Time"
+msgstr "Aeg"
+
+#: quickbook/js/booking.js:404 /work/quickbook/js/calendar-onetime.js:900
+msgid "Location"
+msgstr "Asukoht"
+
+#: quickbook/js/booking.js:407
+msgid "Comment"
+msgstr "Kommentaar"
+
+#: quickbook/js/booking.js:415
+msgid "Please check your booking."
+msgstr "Palun kontrolli oma broneeringut."
+
+#: quickbook/js/booking.js:424
+msgid "Booking…"
+msgstr "Broneerin…"
+
+#: quickbook/js/booking.js:424
+msgid "Confirm booking"
+msgstr "Kinnita broneering"
+
+#: quickbook/js/booking.js:433
+msgid "Your appointment is booked"
+msgstr "Sinu kohtumine on broneeritud"
+
+#: quickbook/js/booking.js:434
+msgid "A confirmation email is on its way to {email}."
+msgstr "Kinnituskiri on teel aadressile {email}."
+
+#: quickbook/js/booking.js:438
+msgid "Book another appointment"
+msgstr "Broneeri veel üks kohtumine"
+
+#: quickbook/js/booking.js:445
+msgid "Online booking on this page is temporarily unavailable."
+msgstr "Veebis broneerimine pole sellel lehel ajutiselt saadaval."
+
+#: quickbook/js/booking.js:447
+msgid "Continue on the standard booking page"
+msgstr "Jätka tavapärasel broneerimislehel"
+
+#: quickbook/js/booking.js:448
+msgid "Please try again later."
+msgstr "Palun proovi hiljem uuesti."
+
+#: quickbook/js/calendar-onetime.js:148 quickbook/js/calendar-onetime.js:162
+msgid "{duration} minute"
+msgid_plural "{duration} minutes"
+msgstr[0] "{duration} minut"
+msgstr[1] "{duration} minutit"
+
+#: quickbook/js/calendar-onetime.js:152
+msgid "{duration} week"
+msgid_plural "{duration} weeks"
+msgstr[0] "{duration} nädal"
+msgstr[1] "{duration} nädalat"
+
+#: quickbook/js/calendar-onetime.js:156
+msgid "{duration} day"
+msgid_plural "{duration} days"
+msgstr[0] "{duration} päev"
+msgstr[1] "{duration} päeva"
+
+#: quickbook/js/calendar-onetime.js:160
+msgid "{duration} hour"
+msgid_plural "{duration} hours"
+msgstr[0] "{duration} tund"
+msgstr[1] "{duration} tundi"
+
+#: quickbook/js/calendar-onetime.js:262 quickbook/lib/Health/HealthText.php:25
+msgid "One-time appointment schedules"
+msgstr "Ühekordsed kokkulepitud kohtumiste ajakavad"
+
+#: quickbook/js/calendar-onetime.js:305
+msgid "Actions"
+msgstr "Tegevused"
+
+#: quickbook/js/calendar-onetime.js:364 quickbook/js/calendar-onetime.js:985
+msgid "Preview"
+msgstr "Eelvaade"
+
+#: quickbook/js/calendar-onetime.js:365 quickbook/js/calendar-onetime.js:986
+msgid "Copy link"
+msgstr "Kopeeri link"
+
+#: quickbook/js/calendar-onetime.js:366
+msgid "Duplicate"
+msgstr "Tee koopia"
+
+#: quickbook/js/calendar-onetime.js:367
+msgid "Edit"
+msgstr "Muuda"
+
+#: quickbook/js/calendar-onetime.js:368
+msgid "Delete"
+msgstr "Kustuta"
+
+#: quickbook/js/calendar-onetime.js:412
+msgid "Appointment link was copied to clipboard"
+msgstr "Kohtumise link on kopeeritud lõikelauale"
+
+#: quickbook/js/calendar-onetime.js:414
+msgid "Appointment link could not be copied to clipboard"
+msgstr "Kohtumise linki ei õnnestunud lõikelauale kopeerida"
+
+#: quickbook/js/calendar-onetime.js:427
+msgid "Could not delete the appointment schedule"
+msgstr "Kokkulepitud kohtumiste ajakava kustutamine ei õnnestunud"
+
+#: quickbook/js/calendar-onetime.js:533
+msgid "Remove {calendar}"
+msgstr "Eemalda {calendar}"
+
+#: quickbook/js/calendar-onetime.js:662
+msgid "One-time appointment schedules could not be loaded. Please try again later."
+msgstr "Ühekordsete kokkulepitud kohtumiste ajakavade laadimine ei õnnestunud. Palun proovi hiljem uuesti."
+
+#: quickbook/js/calendar-onetime.js:759
+msgid "One-time appointment schedules are temporarily unavailable."
+msgstr "Ühekordsed kokkulepitud kohtumiste ajakavad pole ajutiselt saadaval."
+
+#: quickbook/js/calendar-onetime.js:761
+msgid "Could not save. Please try again."
+msgstr "Salvestamine ei õnnestunud. Palun proovi uuesti."
+
+#: quickbook/js/calendar-onetime.js:783
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} ajavahemik"
+msgstr[1] "{count} ajavahemikku"
+
+#: quickbook/js/calendar-onetime.js:794
+msgid "Date {number}"
+msgstr "Kuupäev {number}"
+
+#: quickbook/js/calendar-onetime.js:798
+msgid "{date}: from"
+msgstr "{date}: algus"
+
+#: quickbook/js/calendar-onetime.js:799
+msgid "to"
+msgstr "kuni"
+
+#: quickbook/js/calendar-onetime.js:800
+msgid "{date}: to"
+msgstr "{date}: lõpp"
+
+#: quickbook/js/calendar-onetime.js:804
+msgid "Delete {date}"
+msgstr "Kustuta: {date}"
+
+#: quickbook/js/calendar-onetime.js:823
+msgid "Calendars to check for conflicts"
+msgstr "Kalendrid, kust peaksime ajastamise konflikte kontrollima"
+
+#: quickbook/js/calendar-onetime.js:838
+msgid "Booking calendar"
+msgstr "Broneeringute kalender"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Create one-time appointment schedule"
+msgstr "Loo ühekordne kokkulepitud kohtumiste ajakava"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Edit one-time appointment schedule"
+msgstr "Muuda ühekordset kokkulepitud kohtumiste ajakava"
+
+#: quickbook/js/calendar-onetime.js:896
+msgid "You need a calendar you can write to, to take appointments."
+msgstr "Kohtumiste vastuvõtmiseks on sul vaja kalendrit, kuhu saad kirjutada."
+
+#: quickbook/js/calendar-onetime.js:899
+msgid "Appointment name"
+msgstr "Kohtumise nimi"
+
+#: quickbook/js/calendar-onetime.js:905
+msgid "Create a Talk room"
+msgstr "Loo Kõnerakenduse jututuba"
+
+#: quickbook/js/calendar-onetime.js:914
+msgid "A unique link will be generated for every booked appointment and sent via the confirmation email"
+msgstr "Rakendus koostab iga broneeritud kohtumise jaoks unikaalse lingi ja lisab selle kinnituskirja"
+
+#: quickbook/js/calendar-onetime.js:918
+msgid "Description"
+msgstr "Kirjeldus"
+
+#: quickbook/js/calendar-onetime.js:922
+msgid "Duration (minutes)"
+msgstr "Kestus (minutites)"
+
+#: quickbook/js/calendar-onetime.js:923
+msgid "Increments"
+msgstr "Ajasammud"
+
+#: quickbook/js/calendar-onetime.js:927
+msgid "Visibility"
+msgstr "Nähtavus"
+
+#: quickbook/js/calendar-onetime.js:928
+msgid "Public – shown on profile page"
+msgstr "Avalik - näidatud profiili lehel"
+
+#: quickbook/js/calendar-onetime.js:929
+msgid "Private – only accessible via link"
+msgstr "Privaatne - ligipääsetav vaid lingi alusel"
+
+#: quickbook/js/calendar-onetime.js:934
+msgid "Booking dates"
+msgstr "Broneeritavad kuupäevad"
+
+#: quickbook/js/calendar-onetime.js:935
+msgid "Times are in {timezone}."
+msgstr "Kellaajad on ajavööndis {timezone}."
+
+#: quickbook/js/calendar-onetime.js:941
+msgid "Add date"
+msgstr "Lisa kuupäev"
+
+#: quickbook/js/calendar-onetime.js:956
+msgid "Planning restrictions"
+msgstr "Piirangud kavandamisel"
+
+#: quickbook/js/calendar-onetime.js:958
+msgid "Buffer before the event"
+msgstr "Ajavaru enne sündmust"
+
+#: quickbook/js/calendar-onetime.js:959
+msgid "Buffer after the event"
+msgstr "Ajavaru peale sündmust"
+
+#: quickbook/js/calendar-onetime.js:962
+msgid "Minimum time before next slot"
+msgstr "Minimaalne ajavaru enne järgmist broneerimisvõimalust"
+
+#: quickbook/js/calendar-onetime.js:963
+msgid "Max slots per day"
+msgstr "Ajavahemikke päevas"
+
+#: quickbook/js/calendar-onetime.js:967
+msgid "It seems a rate limit has been reached. Please try again later."
+msgstr "Tundub, et päringute arvu ülempiir on käes. Palun proovi hiljem uuesti."
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Save"
+msgstr "Salvesta"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Update"
+msgstr "Uuenda"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully created"
+msgstr "Ühekordse kokkulepitud kohtumiste ajakava loomine õnnestus"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully updated"
+msgstr "Ühekordse kokkulepitud kohtumiste ajakava uuendamine õnnestus"
+
+#: quickbook/js/calendar-onetime.js:995
+msgid "Close"
+msgstr "Sulge"
+
+#: quickbook/js/settings.js:15
+msgid "Checking…"
+msgstr "Kontrollin…"
+
+#: quickbook/js/settings.js:23
+msgid "The self-check could not run."
+msgstr "Enesekontrolli ei õnnestunud käivitada."
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "Appointment not found"
+msgstr "Kokkulepitud kohtumist ei leidu"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "This booking link does not exist (any more)."
+msgstr "Seda broneerimislinki pole (enam) olemas."
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Booking unavailable"
+msgstr "Broneerimine pole saadaval"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Online booking is temporarily unavailable. Please try again later."
+msgstr "Veebis broneerimine pole ajutiselt saadaval. Palun proovi hiljem uuesti."
+
+#: quickbook/lib/Health/HealthText.php:22
+msgid "Quick Booking components"
+msgstr "Quick Bookingu komponendid"
+
+#: quickbook/lib/Health/HealthText.php:23
+msgid "Calendar app enabled"
+msgstr "Kalendrirakendus on lubatud"
+
+#: quickbook/lib/Health/HealthText.php:24
+msgid "Calendar code contract"
+msgstr "Kalendri koodileping"
+
+#: quickbook/lib/Health/HealthText.php:26
+msgid "Calendar services"
+msgstr "Kalendri teenused"
+
+#: quickbook/lib/Health/HealthText.php:27
+msgid "Standard booking page (fallback)"
+msgstr "Tavapärane broneerimisleht (varuvariant)"
+
+#: quickbook/lib/Health/HealthText.php:28
+msgid "Slot lookup"
+msgstr "Vabade aegade päring"
+
+#: quickbook/lib/Health/HealthText.php:29
+msgid "Booking storage"
+msgstr "Broneeringute salvestamine"
+
+#: quickbook/lib/Health/HealthText.php:36
+msgid "Passed"
+msgstr "Läbitud"
+
+#: quickbook/lib/Health/HealthText.php:37
+msgid "Failed"
+msgstr "Ebaõnnestus"
+
+#: quickbook/lib/Health/HealthText.php:38
+msgid "Warning"
+msgstr "Hoiatus"
+
+#: quickbook/lib/Health/HealthText.php:39
+msgid "Skipped"
+msgstr "Vahele jäetud"
+
+#: quickbook/lib/Health/HealthText.php:50
+msgid "Booking page, booking API and Calendar link redirect load"
+msgstr "Broneerimisleht, broneerimise API ja Kalendri lingi ümbersuunamine laadivad"
+
+#: quickbook/lib/Health/HealthText.php:51
+msgid "The Calendar app is not enabled"
+msgstr "Kalendrirakendus pole lubatud"
+
+#: quickbook/lib/Health/HealthText.php:52
+msgid "All classes, methods and fields found"
+msgstr "Kõik klassid, meetodid ja väljad leiti"
+
+#: quickbook/lib/Health/HealthText.php:53
+msgid "Can be created and edited"
+msgstr "Saab luua ja muuta"
+
+#: quickbook/lib/Health/HealthText.php:54
+msgid "Booking service, schedule service and booking storage load"
+msgstr "Broneerimisteenus, ajakavade teenus ja broneeringute salvestus laadivad"
+
+#: quickbook/lib/Health/HealthText.php:55
+msgid "No appointment schedule exists yet"
+msgstr "Ühtegi kokkulepitud kohtumiste ajakava pole veel olemas"
+
+#: quickbook/lib/Health/HealthText.php:56
+#, php-format
+msgid "Schedule \"%1$s\", free slots in the next 7 days: %2$s"
+msgstr "Ajakava „%1$s“, vabu aegu järgmise 7 päeva jooksul: %2$s"
+
+#: quickbook/lib/Health/HealthText.php:57
+msgid "Test booking stored and removed"
+msgstr "Testbroneering salvestatud ja eemaldatud"
+
+#: quickbook/lib/Notification/Notifier.php:29
+#: quickbook/lib/Settings/AdminSection.php:24
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Quick Booking"
+msgstr "Quick Booking"
+
+#: quickbook/lib/Notification/Notifier.php:41
+msgid "Quick Booking switched visitors to the standard Calendar booking page"
+msgstr "Quick Booking suunas külastajad Kalendri tavapärasele broneerimislehele"
+
+#: quickbook/lib/Notification/Notifier.php:42
+#, php-format
+msgid "Something in the Calendar app or Nextcloud no longer works as Quick Booking expects: %s"
+msgstr "Miski Kalendrirakenduses või Nextcloudis ei toimi enam nii, nagu Quick Booking eeldab: %s"
+
+#: quickbook/lib/Notification/Notifier.php:45
+#, php-format
+msgid "Quick Booking works again (%s)"
+msgstr "Quick Booking toimib jälle (%s)"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:41
+msgid "Please add at least one date"
+msgstr "Palun lisa vähemalt üks kuupäev"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:44
+msgid "Too many dates"
+msgstr "Liiga palju kuupäevi"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:55
+msgid "Please enter a valid date"
+msgstr "Palun sisesta korrektne kuupäev"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:58
+msgid "Please enter valid times"
+msgstr "Palun sisesta korrektsed kellaajad"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:61
+msgid "The end time must be after the start time"
+msgstr "Lõpuaeg peab olema pärast algusaega"
+
+#: quickbook/lib/OneTime/OneTimeService.php:252
+msgid "Please enter a name of at most 128 characters"
+msgstr "Palun sisesta kuni 128 tähemärgi pikkune nimi"
+
+#: quickbook/lib/OneTime/OneTimeService.php:256
+msgid "The location is too long"
+msgstr "Asukoht on liiga pikk"
+
+#: quickbook/lib/OneTime/OneTimeService.php:260
+msgid "The description is too long"
+msgstr "Kirjeldus on liiga pikk"
+
+#: quickbook/lib/OneTime/OneTimeService.php:265
+msgid "Please enter the duration in minutes"
+msgstr "Palun sisesta kestus minutites"
+
+#: quickbook/lib/OneTime/OneTimeService.php:267
+msgid "Please choose the increments"
+msgstr "Palun vali ajasammud"
+
+#: quickbook/lib/OneTime/OneTimeService.php:268
+msgid "Please choose the buffer before the event"
+msgstr "Palun vali ajavaru enne sündmust"
+
+#: quickbook/lib/OneTime/OneTimeService.php:269
+msgid "Please choose the buffer after the event"
+msgstr "Palun vali ajavaru peale sündmust"
+
+#: quickbook/lib/OneTime/OneTimeService.php:270
+msgid "Please choose the minimum time before the next slot"
+msgstr "Palun vali minimaalne ajavaru enne järgmist broneerimisvõimalust"
+
+#: quickbook/lib/OneTime/OneTimeService.php:273
+msgid "Please enter the maximum number of slots per day, or leave it empty"
+msgstr "Palun sisesta suurim ajavahemike arv päevas või jäta väli tühjaks"
+
+#: quickbook/lib/OneTime/OneTimeService.php:278
+msgid "Please choose the visibility"
+msgstr "Palun vali nähtavus"
+
+#: quickbook/lib/OneTime/OneTimeService.php:284
+msgid "Please choose a booking calendar"
+msgstr "Palun vali broneeringute kalender"
+
+#: quickbook/lib/OneTime/OneTimeService.php:288
+#: quickbook/lib/OneTime/OneTimeService.php:293
+msgid "Please choose the calendars to check for conflicts"
+msgstr "Palun vali kalendrid, kust peaksime ajastamise konflikte kontrollima"
+
+#: quickbook/lib/OneTime/OneTimeService.php:302
+msgid "Each time range must fit at least one appointment"
+msgstr "Igasse ajaperioodi peab mahtuma vähemalt üks kohtumine"
+
+#: quickbook/lib/Service/BookingFlowService.php:62
+#: quickbook/lib/Service/BookingFlowService.php:66
+msgid "Invalid date"
+msgstr "Vigane kuupäev"
+
+#: quickbook/lib/Service/BookingFlowService.php:95
+msgid "Please enter your name"
+msgstr "Palun sisesta oma nimi"
+
+#: quickbook/lib/Service/BookingFlowService.php:99
+msgid "Please enter your name without @, < or >"
+msgstr "Palun sisesta oma nimi ilma märkideta @, < või >"
+
+#: quickbook/lib/Service/BookingFlowService.php:102
+msgid "Please enter a valid email address"
+msgstr "Palun sisesta korrektne e-posti aadress"
+
+#: quickbook/lib/Service/BookingFlowService.php:105
+msgid "The comment is too long"
+msgstr "Kommentaar on liiga pikk"
+
+#: quickbook/lib/Service/BookingFlowService.php:118
+msgid "Invalid time range"
+msgstr "Vigane ajaperiood"
+
+#: quickbook/lib/Service/Input.php:46
+msgid "Invalid timezone"
+msgstr "Vigane ajavöönd"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "One-page appointment booking for Calendar schedules, without the email confirmation step."
+msgstr "Kohtumiste broneerimine ühel lehel Kalendri ajakavade jaoks, ilma e-kirjaga kinnitamise sammuta."
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:4
+msgid ""
+"Quick Booking adds a public booking page for the appointment schedules you already have in the Calendar app. Requires the Calendar app.\n"
+"\n"
+"Visitors pick a date and time, enter their details, review and confirm on the same page. The appointment is booked immediately and the usual booking confirmation email (with .ics) is sent.\n"
+"\n"
+"* Share the usual Calendar booking link (\"Copy link\" in the Calendar app): it opens Quick Booking.\n"
+"* One-time appointment schedules: offer appointments on one or more chosen dates (e.g. parent-teacher conferences) instead of weekly. Create them in the Calendar app under \"One-time appointment schedules\".\n"
+"* Built-in rate limiting of bookings per visitor and per email address.\n"
+"* Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks."
+msgstr ""
+"Quick Booking lisab avaliku broneerimislehe kokkulepitud kohtumiste ajakavadele, mis sul Kalendrirakenduses juba olemas on. Eeldab Kalendrirakenduse olemasolu.\n"
+"\n"
+"Külastajad valivad kuupäeva ja kellaaja, sisestavad oma andmed, vaatavad need üle ja kinnitavad broneeringu samal lehel. Kohtumine broneeritakse kohe ning saadetakse tavapärane broneeringu kinnituskiri (koos .ics-failiga).\n"
+"\n"
+"* Jaga Kalendri tavapärast broneerimislinki („Kopeeri link“ Kalendrirakenduses): see avab Quick Bookingu.\n"
+"* Ühekordsed kokkulepitud kohtumiste ajakavad: paku kohtumisi ühel või mitmel valitud kuupäeval (nt arenguvestlused), mitte iganädalaselt. Loo need Kalendrirakenduses jaotises „Ühekordsed kokkulepitud kohtumiste ajakavad“.\n"
+"* Sisseehitatud broneeringute arvu piirang külastaja ja e-posti aadressi kohta.\n"
+"* Enesekontroll: kontrollib pärast iga Kalendri või Nextcloudi uuendust, kas rakendus ikka veel toimib, ja laseb broneerimislingil avada Kalendri tavapärase broneerimislehe, kui miski läheb katki."
+
+#: quickbook/templates/booking.php:5
+msgid "Please enable JavaScript to book an appointment."
+msgstr "Kohtumise broneerimiseks palun luba JavaScript."
+
+#: quickbook/templates/settings-admin.php:10
+msgid "Quick Booking self-check"
+msgstr "Quick Bookingu enesekontroll"
+
+#: quickbook/templates/settings-admin.php:12
+msgid "Quick Booking uses internal code of the Calendar app. It checks after every Calendar or Nextcloud update and once a day that this still works. If something breaks, visitors are sent to the standard Calendar booking page and admins get a notification. While switched off, the check repeats every 15 minutes and switches back on when it passes."
+msgstr "Quick Booking kasutab Kalendrirakenduse sisemist koodi. Pärast iga Kalendri või Nextcloudi uuendust ja kord päevas kontrollib ta, kas see ikka veel toimib. Kui miski läheb katki, suunatakse külastajad Kalendri tavapärasele broneerimislehele ja peakasutajad saavad teavituse. Väljalülitatud olekus kordub kontroll iga 15 minuti järel ning kui see õnnestub, lülitub Quick Booking uuesti sisse."
+
+#: quickbook/templates/settings-admin.php:17
+msgid "Off: visitors use the standard Calendar booking page."
+msgstr "Väljas: külastajad kasutavad Kalendri tavapärast broneerimislehte."
+
+#: quickbook/templates/settings-admin.php:21
+msgid "Bookings from several different networks failed while the self-check passed. Quick Booking switches back on after a Calendar update, or when you run the check below and it passes."
+msgstr "Mitmest erinevast võrgust tehtud broneeringud ebaõnnestusid, kuigi enesekontroll õnnestus. Quick Booking lülitub uuesti sisse pärast Kalendri uuendust või siis, kui käivitad allpool oleva kontrolli ja see õnnestub."
+
+#: quickbook/templates/settings-admin.php:24
+msgid "On: visitors book through Quick Booking."
+msgstr "Sees: külastajad broneerivad Quick Bookingu kaudu."
+
+#: quickbook/templates/settings-admin.php:28
+msgid "Calendar version"
+msgstr "Kalendri versioon"
+
+#: quickbook/templates/settings-admin.php:29
+msgid "Nextcloud version"
+msgstr "Nextcloudi versioon"
+
+#: quickbook/templates/settings-admin.php:30
+msgid "Last full check"
+msgstr "Viimane täielik kontroll"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Check"
+msgstr "Kontroll"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Result"
+msgstr "Tulemus"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Detail"
+msgstr "Üksikasjad"
+
+#: quickbook/templates/settings-admin.php:49
+msgid "Run self-check now"
+msgstr "Käivita enesekontroll kohe"
+
+#: quickbook/templates/settings-admin.php:52
+msgid "Also available as: occ quickbook:check"
+msgstr "Saadaval ka käsuna: occ quickbook:check"
+
+#: quickbook/templates/settings-admin.php:53
+msgid "Visitor addresses (rate limit)"
+msgstr "Külastajate aadressid (broneeringute piirang)"
+
+#: quickbook/templates/settings-admin.php:55
+#, php-format
+msgid "Nextcloud sees your address as: %s"
+msgstr "Nextcloud näeb sinu aadressina: %s"
+
+#: quickbook/templates/settings-admin.php:59
+msgid "This is a private address. That is fine if you are on the same network as the server. If you opened this page from outside (for example a phone on mobile data), Nextcloud does not know your reverse proxy: all visitors then share one address, and the booking limit applies to all of them together. Add the proxy to \"trusted_proxies\" in config.php."
+msgstr "See on privaatne aadress. See sobib, kui oled serveriga samas võrgus. Kui avasid selle lehe väljastpoolt (näiteks mobiilse andmesidega telefonist), siis Nextcloud ei tunne sinu pöördproksit: kõigil külastajatel on siis üks ja sama aadress ning broneeringute piirang kehtib neile kõigile ühiselt. Lisa proksi config.php failis väärtusele „trusted_proxies“."
+
+#: quickbook/templates/settings-admin.php:62
+msgid "This should be the public address of the device you are using right now. If it is the address of your server or proxy instead, add the proxy to \"trusted_proxies\" in config.php."
+msgstr "See peaks olema selle seadme avalik aadress, mida sa praegu kasutad. Kui see on hoopis sinu serveri või proksi aadress, lisa proksi config.php failis väärtusele „trusted_proxies“."
+
+#: quickbook/templates/settings-admin.php:65
+msgid "Share the Calendar's own booking links (\"Copy link\" in the Calendar app). They open Quick Booking while it is on, and the Calendar booking page while it is off, disabled or removed. Links to /apps/quickbook/book/… only work while the app is installed."
+msgstr "Jaga Kalendri enda broneerimislinke („Kopeeri link“ Kalendrirakenduses). Need avavad Quick Bookingu, kui see on sisse lülitatud, ja Kalendri broneerimislehe, kui see on välja lülitatud, keelatud või eemaldatud. Lingid kujul /apps/quickbook/book/… toimivad vaid siis, kui rakendus on paigaldatud."

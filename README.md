@@ -12,4 +12,5 @@ shared with a normal Calendar booking link.
 
 - App and full documentation: [`quickbook/`](quickbook/README.md)
 - Dev environment (Docker): [`dev/`](dev/)
+- Translations: `translationfiles/` (sources) → `make l10n` → `quickbook/l10n/`, see [Translations](quickbook/README.md#translations)
 - Build the installable archive: `make package` → `dist/quickbook-<version>.tar.gz` + `.sha256`

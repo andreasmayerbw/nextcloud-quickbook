@@ -1,0 +1,747 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Booking\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"Language: ast\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: quickbook/js/booking.js:126
+msgid "{minutes} min"
+msgstr "{minutes} min"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h"
+msgstr "{hours} h"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h {minutes} min"
+msgstr "{hours} h {minutes} min"
+
+#: quickbook/js/booking.js:153
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "Demasiaes solicitúes. Espera un momentu y volvi tentalo."
+
+#: quickbook/js/booking.js:153 /work/quickbook/js/booking.js:157
+msgid "Could not load the free times."
+msgstr "Nun se pudieron cargar les hores llibres."
+
+#: quickbook/js/booking.js:196
+msgid "Sorry, this time was just taken. Please choose another time."
+msgstr "Sentímoslo, esta hora acaben de reservala. Escueyi otra hora."
+
+#: quickbook/js/booking.js:202 /work/quickbook/js/calendar-onetime.js:755
+msgid "Please check your input."
+msgstr "Revisa los datos qu'introduxesti."
+
+#: quickbook/js/booking.js:207
+msgid "This email address already has several bookings. Please try again tomorrow or contact the organizer."
+msgstr "Esta direición de corréu electrónicu yá tien delles reserves. Volvi tentalo mañana o ponte en contautu col organizador."
+
+#: quickbook/js/booking.js:208
+msgid "You made too many bookings in a short time. Please try again later."
+msgstr "Fixesti demasiaes reserves en poco tiempu. Volvi tentalo dempués."
+
+#: quickbook/js/booking.js:215
+msgid "Something went wrong while booking. Please try again."
+msgstr "Prodúxose un error al reservar. Volvi tentalo."
+
+#: quickbook/js/booking.js:217 /work/quickbook/js/calendar-onetime.js:764
+msgid "Could not reach the server. Please check your connection and try again."
+msgstr "Nun se pudo conectar col sirvidor. Comprueba la conexón y volvi tentalo."
+
+#: quickbook/js/booking.js:247
+msgid "with {name}"
+msgstr "con {name}"
+
+#: quickbook/js/booking.js:254
+msgid "Date & time"
+msgstr "Data y hora"
+
+#: quickbook/js/booking.js:254
+msgid "Your details"
+msgstr "Los tos datos"
+
+#: quickbook/js/booking.js:254
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: quickbook/js/booking.js:257
+msgid "Booking steps"
+msgstr "Pasos de la reserva"
+
+#: quickbook/js/booking.js:272
+msgid "This appointment has no upcoming dates any more."
+msgstr "Esta cita yá nun tien dates próximes."
+
+#: quickbook/js/booking.js:310
+msgid "Choose a date"
+msgstr "Escueyi una data"
+
+#: quickbook/js/booking.js:312
+msgid "Previous month"
+msgstr "Mes anterior"
+
+#: quickbook/js/booking.js:314
+msgid "Next month"
+msgstr "Mes siguiente"
+
+#: quickbook/js/booking.js:321
+msgid "Choose a date to see the free times."
+msgstr "Escueyi una data pa ver les hores llibres."
+
+#: quickbook/js/booking.js:323
+msgid "Loading free times…"
+msgstr "Cargando les hores llibres…"
+
+#: quickbook/js/booking.js:327
+msgid "No free times on this day. Please choose another date."
+msgstr "Nun hai hores llibres esti día. Escueyi otra data."
+
+#: quickbook/js/booking.js:329 /work/quickbook/js/booking.js:344
+msgid "Free times"
+msgstr "Hores llibres"
+
+#: quickbook/js/booking.js:343
+msgid "Choose a time"
+msgstr "Escueyi una hora"
+
+#: quickbook/js/booking.js:345
+msgid "Times are shown in {timezone}"
+msgstr "Les hores amuésense nel fusu horariu {timezone}"
+
+#: quickbook/js/booking.js:353
+msgid "Continue"
+msgstr "Siguir"
+
+#: quickbook/js/booking.js:361
+msgid "Change"
+msgstr "Camudar"
+
+#: quickbook/js/booking.js:382 /work/quickbook/js/booking.js:405
+msgid "Name"
+msgstr "Nome"
+
+#: quickbook/js/booking.js:383 /work/quickbook/js/booking.js:406
+msgid "Email"
+msgstr "Corréu electrónicu"
+
+#: quickbook/js/booking.js:383
+msgid "Your booking confirmation is sent to this address."
+msgstr "La confirmación de la reserva únviase a esta direición."
+
+#: quickbook/js/booking.js:384
+msgid "Comment (optional)"
+msgstr "Comentariu (opcional)"
+
+#: quickbook/js/booking.js:390 /work/quickbook/js/booking.js:418
+msgid "Back"
+msgstr "Atrás"
+
+#: quickbook/js/booking.js:391
+msgid "Review booking"
+msgstr "Revisar la reserva"
+
+#: quickbook/js/booking.js:400
+msgid "Appointment"
+msgstr "Cita"
+
+#: quickbook/js/booking.js:401
+msgid "With"
+msgstr "Con"
+
+#: quickbook/js/booking.js:402
+msgid "Date"
+msgstr "Data"
+
+#: quickbook/js/booking.js:403
+msgid "Time"
+msgstr "Hora"
+
+#: quickbook/js/booking.js:404 /work/quickbook/js/calendar-onetime.js:900
+msgid "Location"
+msgstr "Llocalización"
+
+#: quickbook/js/booking.js:407
+msgid "Comment"
+msgstr "Comentariu"
+
+#: quickbook/js/booking.js:415
+msgid "Please check your booking."
+msgstr "Revisa la reserva."
+
+#: quickbook/js/booking.js:424
+msgid "Booking…"
+msgstr "Reservando…"
+
+#: quickbook/js/booking.js:424
+msgid "Confirm booking"
+msgstr "Confirmar la reserva"
+
+#: quickbook/js/booking.js:433
+msgid "Your appointment is booked"
+msgstr "La cita ta reservada"
+
+#: quickbook/js/booking.js:434
+msgid "A confirmation email is on its way to {email}."
+msgstr "Hai un mensaxe de confirmación de camín a {email}."
+
+#: quickbook/js/booking.js:438
+msgid "Book another appointment"
+msgstr "Reservar otra cita"
+
+#: quickbook/js/booking.js:445
+msgid "Online booking on this page is temporarily unavailable."
+msgstr "La reserva en llinia d'esta páxina nun ta disponible temporalmente."
+
+#: quickbook/js/booking.js:447
+msgid "Continue on the standard booking page"
+msgstr "Siguir na páxina de reserves estándar"
+
+#: quickbook/js/booking.js:448
+msgid "Please try again later."
+msgstr "Volvi tentalo dempués."
+
+#: quickbook/js/calendar-onetime.js:148 quickbook/js/calendar-onetime.js:162
+msgid "{duration} minute"
+msgid_plural "{duration} minutes"
+msgstr[0] "{duration} minutu"
+msgstr[1] "{duration} minutos"
+
+#: quickbook/js/calendar-onetime.js:152
+msgid "{duration} week"
+msgid_plural "{duration} weeks"
+msgstr[0] "{duration} selmana"
+msgstr[1] "{duration} selmanes"
+
+#: quickbook/js/calendar-onetime.js:156
+msgid "{duration} day"
+msgid_plural "{duration} days"
+msgstr[0] "{duration} día"
+msgstr[1] "{duration} díes"
+
+#: quickbook/js/calendar-onetime.js:160
+msgid "{duration} hour"
+msgid_plural "{duration} hours"
+msgstr[0] "{duration} hora"
+msgstr[1] "{duration} hores"
+
+#: quickbook/js/calendar-onetime.js:262 quickbook/lib/Health/HealthText.php:25
+msgid "One-time appointment schedules"
+msgstr "Horarios de cites puntuales"
+
+#: quickbook/js/calendar-onetime.js:305
+msgid "Actions"
+msgstr "Aiciones"
+
+#: quickbook/js/calendar-onetime.js:364 quickbook/js/calendar-onetime.js:985
+msgid "Preview"
+msgstr "Previsualizar"
+
+#: quickbook/js/calendar-onetime.js:365 quickbook/js/calendar-onetime.js:986
+msgid "Copy link"
+msgstr "Copiar l'enllaz"
+
+#: quickbook/js/calendar-onetime.js:366
+msgid "Duplicate"
+msgstr "Duplicar"
+
+#: quickbook/js/calendar-onetime.js:367
+msgid "Edit"
+msgstr "Editar"
+
+#: quickbook/js/calendar-onetime.js:368
+msgid "Delete"
+msgstr "Desaniciar"
+
+#: quickbook/js/calendar-onetime.js:412
+msgid "Appointment link was copied to clipboard"
+msgstr "L'enllaz de la cita copióse nel cartafueyu"
+
+#: quickbook/js/calendar-onetime.js:414
+msgid "Appointment link could not be copied to clipboard"
+msgstr "L'enllaz de la cita nun se pudo copiar nel cartafueyu"
+
+#: quickbook/js/calendar-onetime.js:427
+msgid "Could not delete the appointment schedule"
+msgstr "Nun se pudo desaniciar l'horariu de cites"
+
+#: quickbook/js/calendar-onetime.js:533
+msgid "Remove {calendar}"
+msgstr "Quitar «{calendar}»"
+
+#: quickbook/js/calendar-onetime.js:662
+msgid "One-time appointment schedules could not be loaded. Please try again later."
+msgstr "Nun se pudieron cargar los horarios de cites puntuales. Volvi tentalo dempués."
+
+#: quickbook/js/calendar-onetime.js:759
+msgid "One-time appointment schedules are temporarily unavailable."
+msgstr "Los horarios de cites puntuales nun tán disponibles temporalmente."
+
+#: quickbook/js/calendar-onetime.js:761
+msgid "Could not save. Please try again."
+msgstr "Nun se pudo guardar. Volvi tentalo."
+
+#: quickbook/js/calendar-onetime.js:783
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} ralura"
+msgstr[1] "{count} ralures"
+
+#: quickbook/js/calendar-onetime.js:794
+msgid "Date {number}"
+msgstr "Data {number}"
+
+#: quickbook/js/calendar-onetime.js:798
+msgid "{date}: from"
+msgstr "{date}: dende"
+
+#: quickbook/js/calendar-onetime.js:799
+msgid "to"
+msgstr "a"
+
+#: quickbook/js/calendar-onetime.js:800
+msgid "{date}: to"
+msgstr "{date}: hasta"
+
+#: quickbook/js/calendar-onetime.js:804
+msgid "Delete {date}"
+msgstr "Desaniciar «{date}»"
+
+#: quickbook/js/calendar-onetime.js:823
+msgid "Calendars to check for conflicts"
+msgstr "Calendarios nos que comprobar los conflictos"
+
+#: quickbook/js/calendar-onetime.js:838
+msgid "Booking calendar"
+msgstr "Calendariu de reserves"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Create one-time appointment schedule"
+msgstr "Crear un horariu de cites puntual"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Edit one-time appointment schedule"
+msgstr "Editar l'horariu de cites puntual"
+
+#: quickbook/js/calendar-onetime.js:896
+msgid "You need a calendar you can write to, to take appointments."
+msgstr "Pa recibir cites, precises un calendariu nel que puedas escribir."
+
+#: quickbook/js/calendar-onetime.js:899
+msgid "Appointment name"
+msgstr "Nome de la cita"
+
+#: quickbook/js/calendar-onetime.js:905
+msgid "Create a Talk room"
+msgstr "Crear una sala de Talk"
+
+#: quickbook/js/calendar-onetime.js:914
+msgid "A unique link will be generated for every booked appointment and sent via the confirmation email"
+msgstr "Va xenerase un enllaz únicu pa cada cita reservada y va unviase col mensaxe de confirmación"
+
+#: quickbook/js/calendar-onetime.js:918
+msgid "Description"
+msgstr "Descripción"
+
+#: quickbook/js/calendar-onetime.js:922
+msgid "Duration (minutes)"
+msgstr "Duración (minutos)"
+
+#: quickbook/js/calendar-onetime.js:923
+msgid "Increments"
+msgstr "Incrementos"
+
+#: quickbook/js/calendar-onetime.js:927
+msgid "Visibility"
+msgstr "Visibilidá"
+
+#: quickbook/js/calendar-onetime.js:928
+msgid "Public – shown on profile page"
+msgstr "Públicu – amuésase na páxina del perfil"
+
+#: quickbook/js/calendar-onetime.js:929
+msgid "Private – only accessible via link"
+msgstr "Priváu – namás accesible per enllaz"
+
+#: quickbook/js/calendar-onetime.js:934
+msgid "Booking dates"
+msgstr "Dates de reserva"
+
+#: quickbook/js/calendar-onetime.js:935
+msgid "Times are in {timezone}."
+msgstr "Les hores tán nel fusu horariu {timezone}."
+
+#: quickbook/js/calendar-onetime.js:941
+msgid "Add date"
+msgstr "Amestar una data"
+
+#: quickbook/js/calendar-onetime.js:956
+msgid "Planning restrictions"
+msgstr "Restricciones de planificación"
+
+#: quickbook/js/calendar-onetime.js:958
+msgid "Buffer before the event"
+msgstr "Marxe enantes del eventu"
+
+#: quickbook/js/calendar-onetime.js:959
+msgid "Buffer after the event"
+msgstr "Marxe dempués del eventu"
+
+#: quickbook/js/calendar-onetime.js:962
+msgid "Minimum time before next slot"
+msgstr "Tiempu mínimu enantes de la ralura siguiente"
+
+#: quickbook/js/calendar-onetime.js:963
+msgid "Max slots per day"
+msgstr "Máximu de ralures per día"
+
+#: quickbook/js/calendar-onetime.js:967
+msgid "It seems a rate limit has been reached. Please try again later."
+msgstr "Paez que s'algamó la llende de solicitúes. Volvi tentalo dempués."
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Save"
+msgstr "Guardar"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Update"
+msgstr "Anovar"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully created"
+msgstr "L'horariu de cites puntual creóse correutamente"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully updated"
+msgstr "L'horariu de cites puntual anovóse correutamente"
+
+#: quickbook/js/calendar-onetime.js:995
+msgid "Close"
+msgstr "Zarrar"
+
+#: quickbook/js/settings.js:15
+msgid "Checking…"
+msgstr "Comprobando…"
+
+#: quickbook/js/settings.js:23
+msgid "The self-check could not run."
+msgstr "Nun se pudo executar l'autocomprobación."
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "Appointment not found"
+msgstr "Nun s'atopó la cita"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "This booking link does not exist (any more)."
+msgstr "Esti enllaz de reserva (yá) nun esiste."
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Booking unavailable"
+msgstr "La reserva nun ta disponible"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Online booking is temporarily unavailable. Please try again later."
+msgstr "La reserva en llinia nun ta disponible temporalmente. Volvi tentalo dempués."
+
+#: quickbook/lib/Health/HealthText.php:22
+msgid "Quick Booking components"
+msgstr "Componentes de Quick Booking"
+
+#: quickbook/lib/Health/HealthText.php:23
+msgid "Calendar app enabled"
+msgstr "Aplicación Calendariu activada"
+
+#: quickbook/lib/Health/HealthText.php:24
+msgid "Calendar code contract"
+msgstr "Contratu de códigu de Calendariu"
+
+#: quickbook/lib/Health/HealthText.php:26
+msgid "Calendar services"
+msgstr "Servicios de Calendariu"
+
+#: quickbook/lib/Health/HealthText.php:27
+msgid "Standard booking page (fallback)"
+msgstr "Páxina de reserves estándar (alternativa)"
+
+#: quickbook/lib/Health/HealthText.php:28
+msgid "Slot lookup"
+msgstr "Consulta d'hores llibres"
+
+#: quickbook/lib/Health/HealthText.php:29
+msgid "Booking storage"
+msgstr "Almacenamientu de reserves"
+
+#: quickbook/lib/Health/HealthText.php:36
+msgid "Passed"
+msgstr "Superada"
+
+#: quickbook/lib/Health/HealthText.php:37
+msgid "Failed"
+msgstr "Fallida"
+
+#: quickbook/lib/Health/HealthText.php:38
+msgid "Warning"
+msgstr "Avisu"
+
+#: quickbook/lib/Health/HealthText.php:39
+msgid "Skipped"
+msgstr "Omitida"
+
+#: quickbook/lib/Health/HealthText.php:50
+msgid "Booking page, booking API and Calendar link redirect load"
+msgstr "La páxina de reserves, la API de reserves y la redireición del enllaz de Calendariu cárguense"
+
+#: quickbook/lib/Health/HealthText.php:51
+msgid "The Calendar app is not enabled"
+msgstr "L'aplicación Calendariu nun ta activada"
+
+#: quickbook/lib/Health/HealthText.php:52
+msgid "All classes, methods and fields found"
+msgstr "Atopáronse toles clases, métodos y campos"
+
+#: quickbook/lib/Health/HealthText.php:53
+msgid "Can be created and edited"
+msgstr "Puen crease y editase"
+
+#: quickbook/lib/Health/HealthText.php:54
+msgid "Booking service, schedule service and booking storage load"
+msgstr "El serviciu de reserves, el serviciu d'horarios y l'almacenamientu de reserves cárguense"
+
+#: quickbook/lib/Health/HealthText.php:55
+msgid "No appointment schedule exists yet"
+msgstr "Entá nun esiste nengún horariu de cites"
+
+#: quickbook/lib/Health/HealthText.php:56
+#, php-format
+msgid "Schedule \"%1$s\", free slots in the next 7 days: %2$s"
+msgstr "Horariu «%1$s», hores llibres nos próximos 7 díes: %2$s"
+
+#: quickbook/lib/Health/HealthText.php:57
+msgid "Test booking stored and removed"
+msgstr "Reserva de prueba guardada y desaniciada"
+
+#: quickbook/lib/Notification/Notifier.php:29
+#: quickbook/lib/Settings/AdminSection.php:24
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Quick Booking"
+msgstr "Quick Booking"
+
+#: quickbook/lib/Notification/Notifier.php:41
+msgid "Quick Booking switched visitors to the standard Calendar booking page"
+msgstr "Quick Booking unvió a los visitantes a la páxina de reserves estándar de Calendariu"
+
+#: quickbook/lib/Notification/Notifier.php:42
+#, php-format
+msgid "Something in the Calendar app or Nextcloud no longer works as Quick Booking expects: %s"
+msgstr "Daqué de l'aplicación Calendariu o de Nextcloud yá nun funciona como espera Quick Booking: %s"
+
+#: quickbook/lib/Notification/Notifier.php:45
+#, php-format
+msgid "Quick Booking works again (%s)"
+msgstr "Quick Booking vuelve funcionar (%s)"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:41
+msgid "Please add at least one date"
+msgstr "Amiesta, polo menos, una data"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:44
+msgid "Too many dates"
+msgstr "Demasiaes dates"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:55
+msgid "Please enter a valid date"
+msgstr "Introduz una data válida"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:58
+msgid "Please enter valid times"
+msgstr "Introduz hores válides"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:61
+msgid "The end time must be after the start time"
+msgstr "La hora de fin ha ser posterior a la hora d'aniciu"
+
+#: quickbook/lib/OneTime/OneTimeService.php:252
+msgid "Please enter a name of at most 128 characters"
+msgstr "Introduz un nome de 128 caráuteres como máximu"
+
+#: quickbook/lib/OneTime/OneTimeService.php:256
+msgid "The location is too long"
+msgstr "La llocalización ye mui llonga"
+
+#: quickbook/lib/OneTime/OneTimeService.php:260
+msgid "The description is too long"
+msgstr "La descripción ye mui llonga"
+
+#: quickbook/lib/OneTime/OneTimeService.php:265
+msgid "Please enter the duration in minutes"
+msgstr "Introduz la duración en minutos"
+
+#: quickbook/lib/OneTime/OneTimeService.php:267
+msgid "Please choose the increments"
+msgstr "Escueyi los incrementos"
+
+#: quickbook/lib/OneTime/OneTimeService.php:268
+msgid "Please choose the buffer before the event"
+msgstr "Escueyi'l marxe enantes del eventu"
+
+#: quickbook/lib/OneTime/OneTimeService.php:269
+msgid "Please choose the buffer after the event"
+msgstr "Escueyi'l marxe dempués del eventu"
+
+#: quickbook/lib/OneTime/OneTimeService.php:270
+msgid "Please choose the minimum time before the next slot"
+msgstr "Escueyi'l tiempu mínimu enantes de la ralura siguiente"
+
+#: quickbook/lib/OneTime/OneTimeService.php:273
+msgid "Please enter the maximum number of slots per day, or leave it empty"
+msgstr "Introduz el númberu máximu de ralures per día o dexa'l campu baleru"
+
+#: quickbook/lib/OneTime/OneTimeService.php:278
+msgid "Please choose the visibility"
+msgstr "Escueyi la visibilidá"
+
+#: quickbook/lib/OneTime/OneTimeService.php:284
+msgid "Please choose a booking calendar"
+msgstr "Escueyi un calendariu de reserves"
+
+#: quickbook/lib/OneTime/OneTimeService.php:288
+#: quickbook/lib/OneTime/OneTimeService.php:293
+msgid "Please choose the calendars to check for conflicts"
+msgstr "Escueyi los calendarios nos que comprobar los conflictos"
+
+#: quickbook/lib/OneTime/OneTimeService.php:302
+msgid "Each time range must fit at least one appointment"
+msgstr "En cada intervalu de tiempu ha caber, polo menos, una cita"
+
+#: quickbook/lib/Service/BookingFlowService.php:62
+#: quickbook/lib/Service/BookingFlowService.php:66
+msgid "Invalid date"
+msgstr "La data ye inválida"
+
+#: quickbook/lib/Service/BookingFlowService.php:95
+msgid "Please enter your name"
+msgstr "Introduz el to nome"
+
+#: quickbook/lib/Service/BookingFlowService.php:99
+msgid "Please enter your name without @, < or >"
+msgstr "Introduz el to nome ensin @, < o >"
+
+#: quickbook/lib/Service/BookingFlowService.php:102
+msgid "Please enter a valid email address"
+msgstr "Introduz una direición de corréu electrónicu válida"
+
+#: quickbook/lib/Service/BookingFlowService.php:105
+msgid "The comment is too long"
+msgstr "El comentariu ye mui llongu"
+
+#: quickbook/lib/Service/BookingFlowService.php:118
+msgid "Invalid time range"
+msgstr "L'intervalu de tiempu ye inválidu"
+
+#: quickbook/lib/Service/Input.php:46
+msgid "Invalid timezone"
+msgstr "El fusu horariu ye inválidu"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "One-page appointment booking for Calendar schedules, without the email confirmation step."
+msgstr "Reserva de cites nuna sola páxina pa los horarios de Calendariu, ensin el pasu de confirmación per corréu electrónicu."
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:4
+msgid ""
+"Quick Booking adds a public booking page for the appointment schedules you already have in the Calendar app. Requires the Calendar app.\n"
+"\n"
+"Visitors pick a date and time, enter their details, review and confirm on the same page. The appointment is booked immediately and the usual booking confirmation email (with .ics) is sent.\n"
+"\n"
+"* Share the usual Calendar booking link (\"Copy link\" in the Calendar app): it opens Quick Booking.\n"
+"* One-time appointment schedules: offer appointments on one or more chosen dates (e.g. parent-teacher conferences) instead of weekly. Create them in the Calendar app under \"One-time appointment schedules\".\n"
+"* Built-in rate limiting of bookings per visitor and per email address.\n"
+"* Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks."
+msgstr ""
+"Quick Booking amiesta una páxina pública de reserves pa los horarios de cites que yá tienes na aplicación Calendariu. Rique l'aplicación Calendariu.\n"
+"\n"
+"Los visitantes escueyen una data y una hora, introducen los sos datos, revisen y confirmen na mesma páxina. La cita resérvase nel intre y únviase'l mensaxe de confirmación de reserva avezáu (con .ics).\n"
+"\n"
+"* Comparti l'enllaz de reserva avezáu de Calendariu («Copiar l'enllaz» na aplicación Calendariu): abre Quick Booking.\n"
+"* Horarios de cites puntuales: ufri cites nuna o más dates escoyíes (p. ex., reuniones ente families y profesoráu) en cuenta de selmanalmente. Créalos na aplicación Calendariu, en «Horarios de cites puntuales».\n"
+"* Llende integrada de reserves per visitante y per direición de corréu electrónicu.\n"
+"* Autocomprobación: verifica dempués de cada anovamientu de Calendariu o de Nextcloud que sigue funcionando, y fai que l'enllaz de reserva amuese la páxina de reserves estándar de Calendariu cuando daqué falla."
+
+#: quickbook/templates/booking.php:5
+msgid "Please enable JavaScript to book an appointment."
+msgstr "Activa JavaScript pa reservar una cita."
+
+#: quickbook/templates/settings-admin.php:10
+msgid "Quick Booking self-check"
+msgstr "Autocomprobación de Quick Booking"
+
+#: quickbook/templates/settings-admin.php:12
+msgid "Quick Booking uses internal code of the Calendar app. It checks after every Calendar or Nextcloud update and once a day that this still works. If something breaks, visitors are sent to the standard Calendar booking page and admins get a notification. While switched off, the check repeats every 15 minutes and switches back on when it passes."
+msgstr "Quick Booking usa códigu internu de l'aplicación Calendariu. Dempués de cada anovamientu de Calendariu o de Nextcloud y una vegada al día, comprueba qu'esto sigue funcionando. Si daqué falla, únviase a los visitantes a la páxina de reserves estándar de Calendariu y l'alministración recibe un avisu. Mentanto ta inactivu, la comprobación repítese cada 15 minutos y Quick Booking vuelve activase cuando se supera."
+
+#: quickbook/templates/settings-admin.php:17
+msgid "Off: visitors use the standard Calendar booking page."
+msgstr "Inactivu: los visitantes usen la páxina de reserves estándar de Calendariu."
+
+#: quickbook/templates/settings-admin.php:21
+msgid "Bookings from several different networks failed while the self-check passed. Quick Booking switches back on after a Calendar update, or when you run the check below and it passes."
+msgstr "Fallaron reserves dende delles redes distintes magar que l'autocomprobación se superó. Quick Booking vuelve activase dempués d'un anovamientu de Calendariu o cuando executes la comprobación d'abaxo y se supere."
+
+#: quickbook/templates/settings-admin.php:24
+msgid "On: visitors book through Quick Booking."
+msgstr "Activu: los visitantes reserven per Quick Booking."
+
+#: quickbook/templates/settings-admin.php:28
+msgid "Calendar version"
+msgstr "Versión de Calendariu"
+
+#: quickbook/templates/settings-admin.php:29
+msgid "Nextcloud version"
+msgstr "Versión de Nextcloud"
+
+#: quickbook/templates/settings-admin.php:30
+msgid "Last full check"
+msgstr "Última comprobación completa"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Check"
+msgstr "Comprobación"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Result"
+msgstr "Resultáu"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Detail"
+msgstr "Detalle"
+
+#: quickbook/templates/settings-admin.php:49
+msgid "Run self-check now"
+msgstr "Executar l'autocomprobación agora"
+
+#: quickbook/templates/settings-admin.php:52
+msgid "Also available as: occ quickbook:check"
+msgstr "Tamién disponible como: occ quickbook:check"
+
+#: quickbook/templates/settings-admin.php:53
+msgid "Visitor addresses (rate limit)"
+msgstr "Direiciones de los visitantes (llende de solicitúes)"
+
+#: quickbook/templates/settings-admin.php:55
+#, php-format
+msgid "Nextcloud sees your address as: %s"
+msgstr "Nextcloud ve la to direición como: %s"
+
+#: quickbook/templates/settings-admin.php:59
+msgid "This is a private address. That is fine if you are on the same network as the server. If you opened this page from outside (for example a phone on mobile data), Nextcloud does not know your reverse proxy: all visitors then share one address, and the booking limit applies to all of them together. Add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Esta ye una direición privada. Ta bien si tas na mesma rede que'l sirvidor. Si abriesti esta páxina dende fuera (por exemplu, dende un teléfonu con datos móviles), Nextcloud nun conoz el to proxy inversu: entós tolos visitantes comparten una direición y la llende de reserves aplícase a toos xuntos. Amiesta'l proxy a «trusted_proxies» en config.php."
+
+#: quickbook/templates/settings-admin.php:62
+msgid "This should be the public address of the device you are using right now. If it is the address of your server or proxy instead, add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Esta habría ser la direición pública del preséu que tas usando agora mesmo. Si en cuenta d'ello ye la direición del to sirvidor o proxy, amiesta'l proxy a «trusted_proxies» en config.php."
+
+#: quickbook/templates/settings-admin.php:65
+msgid "Share the Calendar's own booking links (\"Copy link\" in the Calendar app). They open Quick Booking while it is on, and the Calendar booking page while it is off, disabled or removed. Links to /apps/quickbook/book/… only work while the app is installed."
+msgstr "Comparti los enllaces de reserva propios de Calendariu («Copiar l'enllaz» na aplicación Calendariu). Abren Quick Booking mentanto ta activu, y la páxina de reserves de Calendariu mentanto ta inactivu, desactiváu o desinstaláu. Los enllaces a /apps/quickbook/book/… namás funcionen mentanto l'aplicación ta instalada."

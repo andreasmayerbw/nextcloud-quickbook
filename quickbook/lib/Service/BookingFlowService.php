@@ -17,6 +17,7 @@ use OCA\QuickBook\Exception\ValidationException;
 use OCA\QuickBook\OneTime\OneTimeService;
 use OCP\AppFramework\Utility\ITimeFactory;
 use OCP\IAppConfig;
+use OCP\IL10N;
 use OCP\Lock\ILockingProvider;
 use OCP\Lock\LockedException;
 use OCP\Mail\IMailer;
@@ -45,6 +46,7 @@ class BookingFlowService {
 		private ILimiter $limiter,
 		private IAppConfig $appConfig,
 		private OneTimeService $oneTime,
+		private IL10N $l,
 	) {
 	}
 
@@ -55,13 +57,13 @@ class BookingFlowService {
 	 * @throws ValidationException|ScheduleNotFoundException|CalendarUnavailableException|TemporaryFailureException
 	 */
 	public function getSlotsForDay(string $token, string $date, string $timeZone): array {
-		$tz = Input::timezone($timeZone);
+		$tz = Input::timezone($timeZone, $this->l);
 		if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $date) !== 1) {
-			throw new ValidationException('date', 'Invalid date');
+			throw new ValidationException('date', $this->l->t('Invalid date'));
 		}
 		$dayStart = DateTimeImmutable::createFromFormat('!Y-m-d', $date, $tz);
 		if ($dayStart === false || $dayStart->format('Y-m-d') !== $date) {
-			throw new ValidationException('date', 'Invalid date');
+			throw new ValidationException('date', $this->l->t('Invalid date'));
 		}
 		$from = $dayStart->getTimestamp();
 		$until = $dayStart->modify('+1 day')->getTimestamp();
@@ -90,19 +92,19 @@ class BookingFlowService {
 		$description = Input::multiLine($description);
 
 		if ($displayName === '' || mb_strlen($displayName) > self::MAX_NAME_LENGTH) {
-			throw new ValidationException('displayName', 'Please enter your name');
+			throw new ValidationException('displayName', $this->l->t('Please enter your name'));
 		}
 		// The name is shown next to the email address in the organizer's mail: no look-alike addresses
 		if (preg_match('/[@<>]/', $displayName) === 1) {
-			throw new ValidationException('displayName', 'Please enter your name without @, < or >');
+			throw new ValidationException('displayName', $this->l->t('Please enter your name without @, < or >'));
 		}
 		if (strlen($email) > self::MAX_EMAIL_LENGTH || !$this->mailer->validateMailAddress($email)) {
-			throw new ValidationException('email', 'Please enter a valid email address');
+			throw new ValidationException('email', $this->l->t('Please enter a valid email address'));
 		}
 		if (mb_strlen($description) > self::MAX_DESCRIPTION_LENGTH) {
-			throw new ValidationException('description', 'The comment is too long');
+			throw new ValidationException('description', $this->l->t('The comment is too long'));
 		}
-		$tz = Input::timezone($timeZone);
+		$tz = Input::timezone($timeZone, $this->l);
 
 		$schedule = $this->calendar->findSchedule($token);
 
@@ -113,10 +115,19 @@ class BookingFlowService {
 			throw new SlotUnavailableException('Slot is outside the bookable period');
 		}
 		if ($end - $start !== $schedule->lengthSeconds) {
-			throw new ValidationException('start', 'Invalid time range');
+			throw new ValidationException('start', $this->l->t('Invalid time range'));
 		}
 		if (!$this->oneTime->allowsBooking($schedule->token, $start, $end)) {
 			throw new SlotUnavailableException('Slot is not on one of the dates');
+		}
+
+		// The limiter counts and checks in one step, so a slot that is already taken is refused
+		// before it: it must not use up one of the bookings of this email address. Looked up for
+		// the visitor's whole day, the same lookup that offered the slot on the page.
+		$day = (new DateTimeImmutable('@' . $start))->setTimezone($tz)->setTime(0, 0);
+		$free = $this->calendar->getAvailableSlots($schedule, $day->getTimestamp(), $day->modify('+1 day')->getTimestamp());
+		if (!in_array(['start' => $start, 'end' => $end], $free, true)) {
+			throw new SlotUnavailableException('Slot is not available any more');
 		}
 
 		$this->registerEmailBooking($email);

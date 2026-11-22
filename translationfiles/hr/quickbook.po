@@ -1,0 +1,752 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Booking\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: quickbook/js/booking.js:126
+msgid "{minutes} min"
+msgstr "{minutes} min"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h"
+msgstr "{hours} h"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h {minutes} min"
+msgstr "{hours} h {minutes} min"
+
+#: quickbook/js/booking.js:153
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "Previše zahtjeva. Pričekajte trenutak i pokušajte ponovno."
+
+#: quickbook/js/booking.js:153 /work/quickbook/js/booking.js:157
+msgid "Could not load the free times."
+msgstr "Nije moguće učitati slobodne termine."
+
+#: quickbook/js/booking.js:196
+msgid "Sorry, this time was just taken. Please choose another time."
+msgstr "Nažalost, ovaj je termin upravo zauzet. Odaberite drugi termin."
+
+#: quickbook/js/booking.js:202 /work/quickbook/js/calendar-onetime.js:755
+msgid "Please check your input."
+msgstr "Provjerite unesene podatke."
+
+#: quickbook/js/booking.js:207
+msgid "This email address already has several bookings. Please try again tomorrow or contact the organizer."
+msgstr "Za ovu adresu e-pošte već postoji nekoliko rezervacija. Pokušajte ponovno sutra ili kontaktirajte organizatora."
+
+#: quickbook/js/booking.js:208
+msgid "You made too many bookings in a short time. Please try again later."
+msgstr "Napravili ste previše rezervacija u kratkom vremenu. Pokušajte ponovno kasnije."
+
+#: quickbook/js/booking.js:215
+msgid "Something went wrong while booking. Please try again."
+msgstr "Nešto je pošlo po zlu tijekom rezervacije. Pokušajte ponovno."
+
+#: quickbook/js/booking.js:217 /work/quickbook/js/calendar-onetime.js:764
+msgid "Could not reach the server. Please check your connection and try again."
+msgstr "Nije moguće povezati se s poslužiteljem. Provjerite vezu i pokušajte ponovno."
+
+#: quickbook/js/booking.js:247
+msgid "with {name}"
+msgstr "s {name}"
+
+#: quickbook/js/booking.js:254
+msgid "Date & time"
+msgstr "Datum i vrijeme"
+
+#: quickbook/js/booking.js:254
+msgid "Your details"
+msgstr "Vaši podaci"
+
+#: quickbook/js/booking.js:254
+msgid "Confirm"
+msgstr "Potvrdi"
+
+#: quickbook/js/booking.js:257
+msgid "Booking steps"
+msgstr "Koraci rezervacije"
+
+#: quickbook/js/booking.js:272
+msgid "This appointment has no upcoming dates any more."
+msgstr "Ovaj termin više nema nadolazećih datuma."
+
+#: quickbook/js/booking.js:310
+msgid "Choose a date"
+msgstr "Odaberite datum"
+
+#: quickbook/js/booking.js:312
+msgid "Previous month"
+msgstr "Prethodni mjesec"
+
+#: quickbook/js/booking.js:314
+msgid "Next month"
+msgstr "Sljedeći mjesec"
+
+#: quickbook/js/booking.js:321
+msgid "Choose a date to see the free times."
+msgstr "Odaberite datum da biste vidjeli slobodne termine."
+
+#: quickbook/js/booking.js:323
+msgid "Loading free times…"
+msgstr "Učitavanje slobodnih termina…"
+
+#: quickbook/js/booking.js:327
+msgid "No free times on this day. Please choose another date."
+msgstr "Nema slobodnih termina na ovaj dan. Odaberite drugi datum."
+
+#: quickbook/js/booking.js:329 /work/quickbook/js/booking.js:344
+msgid "Free times"
+msgstr "Slobodni termini"
+
+#: quickbook/js/booking.js:343
+msgid "Choose a time"
+msgstr "Odaberite vrijeme"
+
+#: quickbook/js/booking.js:345
+msgid "Times are shown in {timezone}"
+msgstr "Vremena su prikazana u vremenskoj zoni {timezone}"
+
+#: quickbook/js/booking.js:353
+msgid "Continue"
+msgstr "Nastavi"
+
+#: quickbook/js/booking.js:361
+msgid "Change"
+msgstr "Promijeni"
+
+#: quickbook/js/booking.js:382 /work/quickbook/js/booking.js:405
+msgid "Name"
+msgstr "Ime"
+
+#: quickbook/js/booking.js:383 /work/quickbook/js/booking.js:406
+msgid "Email"
+msgstr "E-pošta"
+
+#: quickbook/js/booking.js:383
+msgid "Your booking confirmation is sent to this address."
+msgstr "Potvrda rezervacije šalje se na ovu adresu."
+
+#: quickbook/js/booking.js:384
+msgid "Comment (optional)"
+msgstr "Napomena (neobavezno)"
+
+#: quickbook/js/booking.js:390 /work/quickbook/js/booking.js:418
+msgid "Back"
+msgstr "Natrag"
+
+#: quickbook/js/booking.js:391
+msgid "Review booking"
+msgstr "Pregledaj rezervaciju"
+
+#: quickbook/js/booking.js:400
+msgid "Appointment"
+msgstr "Termin"
+
+#: quickbook/js/booking.js:401
+msgid "With"
+msgstr "S kim"
+
+#: quickbook/js/booking.js:402
+msgid "Date"
+msgstr "Datum"
+
+#: quickbook/js/booking.js:403
+msgid "Time"
+msgstr "Vrijeme"
+
+#: quickbook/js/booking.js:404 /work/quickbook/js/calendar-onetime.js:900
+msgid "Location"
+msgstr "Lokacija"
+
+#: quickbook/js/booking.js:407
+msgid "Comment"
+msgstr "Napomena"
+
+#: quickbook/js/booking.js:415
+msgid "Please check your booking."
+msgstr "Provjerite svoju rezervaciju."
+
+#: quickbook/js/booking.js:424
+msgid "Booking…"
+msgstr "Rezerviranje…"
+
+#: quickbook/js/booking.js:424
+msgid "Confirm booking"
+msgstr "Potvrdi rezervaciju"
+
+#: quickbook/js/booking.js:433
+msgid "Your appointment is booked"
+msgstr "Vaš je termin rezerviran"
+
+#: quickbook/js/booking.js:434
+msgid "A confirmation email is on its way to {email}."
+msgstr "E-poruka s potvrdom na putu je na adresu {email}."
+
+#: quickbook/js/booking.js:438
+msgid "Book another appointment"
+msgstr "Rezerviraj još jedan termin"
+
+#: quickbook/js/booking.js:445
+msgid "Online booking on this page is temporarily unavailable."
+msgstr "Online rezervacija na ovoj stranici privremeno nije dostupna."
+
+#: quickbook/js/booking.js:447
+msgid "Continue on the standard booking page"
+msgstr "Nastavi na standardnoj stranici za rezervacije"
+
+#: quickbook/js/booking.js:448
+msgid "Please try again later."
+msgstr "Pokušajte ponovno kasnije."
+
+#: quickbook/js/calendar-onetime.js:148 quickbook/js/calendar-onetime.js:162
+msgid "{duration} minute"
+msgid_plural "{duration} minutes"
+msgstr[0] "{duration} minuta"
+msgstr[1] "{duration} minute"
+msgstr[2] "{duration} minuta"
+
+#: quickbook/js/calendar-onetime.js:152
+msgid "{duration} week"
+msgid_plural "{duration} weeks"
+msgstr[0] "{duration} tjedan"
+msgstr[1] "{duration} tjedna"
+msgstr[2] "{duration} tjedana"
+
+#: quickbook/js/calendar-onetime.js:156
+msgid "{duration} day"
+msgid_plural "{duration} days"
+msgstr[0] "{duration} dan"
+msgstr[1] "{duration} dana"
+msgstr[2] "{duration} dana"
+
+#: quickbook/js/calendar-onetime.js:160
+msgid "{duration} hour"
+msgid_plural "{duration} hours"
+msgstr[0] "{duration} sat"
+msgstr[1] "{duration} sata"
+msgstr[2] "{duration} sati"
+
+#: quickbook/js/calendar-onetime.js:262 quickbook/lib/Health/HealthText.php:25
+msgid "One-time appointment schedules"
+msgstr "Jednokratni rasporedi termina"
+
+#: quickbook/js/calendar-onetime.js:305
+msgid "Actions"
+msgstr "Radnje"
+
+#: quickbook/js/calendar-onetime.js:364 quickbook/js/calendar-onetime.js:985
+msgid "Preview"
+msgstr "Pretpregled"
+
+#: quickbook/js/calendar-onetime.js:365 quickbook/js/calendar-onetime.js:986
+msgid "Copy link"
+msgstr "Kopiraj poveznicu"
+
+#: quickbook/js/calendar-onetime.js:366
+msgid "Duplicate"
+msgstr "Dupliciraj"
+
+#: quickbook/js/calendar-onetime.js:367
+msgid "Edit"
+msgstr "Uredi"
+
+#: quickbook/js/calendar-onetime.js:368
+msgid "Delete"
+msgstr "Izbriši"
+
+#: quickbook/js/calendar-onetime.js:412
+msgid "Appointment link was copied to clipboard"
+msgstr "Poveznica termina kopirana je u međuspremnik"
+
+#: quickbook/js/calendar-onetime.js:414
+msgid "Appointment link could not be copied to clipboard"
+msgstr "Poveznicu termina nije moguće kopirati u međuspremnik"
+
+#: quickbook/js/calendar-onetime.js:427
+msgid "Could not delete the appointment schedule"
+msgstr "Nije moguće izbrisati raspored termina"
+
+#: quickbook/js/calendar-onetime.js:533
+msgid "Remove {calendar}"
+msgstr "Ukloni {calendar}"
+
+#: quickbook/js/calendar-onetime.js:662
+msgid "One-time appointment schedules could not be loaded. Please try again later."
+msgstr "Nije moguće učitati jednokratne rasporede termina. Pokušajte ponovno kasnije."
+
+#: quickbook/js/calendar-onetime.js:759
+msgid "One-time appointment schedules are temporarily unavailable."
+msgstr "Jednokratni rasporedi termina privremeno nisu dostupni."
+
+#: quickbook/js/calendar-onetime.js:761
+msgid "Could not save. Please try again."
+msgstr "Spremanje nije uspjelo. Pokušajte ponovno."
+
+#: quickbook/js/calendar-onetime.js:783
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} termin"
+msgstr[1] "{count} termina"
+msgstr[2] "{count} termina"
+
+#: quickbook/js/calendar-onetime.js:794
+msgid "Date {number}"
+msgstr "Datum {number}"
+
+#: quickbook/js/calendar-onetime.js:798
+msgid "{date}: from"
+msgstr "{date}: od"
+
+#: quickbook/js/calendar-onetime.js:799
+msgid "to"
+msgstr "do"
+
+#: quickbook/js/calendar-onetime.js:800
+msgid "{date}: to"
+msgstr "{date}: do"
+
+#: quickbook/js/calendar-onetime.js:804
+msgid "Delete {date}"
+msgstr "Izbriši: {date}"
+
+#: quickbook/js/calendar-onetime.js:823
+msgid "Calendars to check for conflicts"
+msgstr "Kalendari u kojima se provjeravaju sukobi"
+
+#: quickbook/js/calendar-onetime.js:838
+msgid "Booking calendar"
+msgstr "Kalendar rezervacija"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Create one-time appointment schedule"
+msgstr "Stvori jednokratni raspored termina"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Edit one-time appointment schedule"
+msgstr "Uredi jednokratni raspored termina"
+
+#: quickbook/js/calendar-onetime.js:896
+msgid "You need a calendar you can write to, to take appointments."
+msgstr "Za primanje rezervacija termina potreban vam je kalendar u koji možete pisati."
+
+#: quickbook/js/calendar-onetime.js:899
+msgid "Appointment name"
+msgstr "Naziv termina"
+
+#: quickbook/js/calendar-onetime.js:905
+msgid "Create a Talk room"
+msgstr "Stvori Talk sobu"
+
+#: quickbook/js/calendar-onetime.js:914
+msgid "A unique link will be generated for every booked appointment and sent via the confirmation email"
+msgstr "Za svaki rezervirani termin generirat će se jedinstvena poveznica i poslati u e-poruci s potvrdom"
+
+#: quickbook/js/calendar-onetime.js:918
+msgid "Description"
+msgstr "Opis"
+
+#: quickbook/js/calendar-onetime.js:922
+msgid "Duration (minutes)"
+msgstr "Trajanje (minute)"
+
+#: quickbook/js/calendar-onetime.js:923
+msgid "Increments"
+msgstr "Koraci"
+
+#: quickbook/js/calendar-onetime.js:927
+msgid "Visibility"
+msgstr "Vidljivost"
+
+#: quickbook/js/calendar-onetime.js:928
+msgid "Public – shown on profile page"
+msgstr "Javno – prikazano na stranici profila"
+
+#: quickbook/js/calendar-onetime.js:929
+msgid "Private – only accessible via link"
+msgstr "Privatno – dostupno samo putem poveznice"
+
+#: quickbook/js/calendar-onetime.js:934
+msgid "Booking dates"
+msgstr "Datumi za rezervaciju"
+
+#: quickbook/js/calendar-onetime.js:935
+msgid "Times are in {timezone}."
+msgstr "Vremena su u vremenskoj zoni {timezone}."
+
+#: quickbook/js/calendar-onetime.js:941
+msgid "Add date"
+msgstr "Dodaj datum"
+
+#: quickbook/js/calendar-onetime.js:956
+msgid "Planning restrictions"
+msgstr "Ograničenja planiranja"
+
+#: quickbook/js/calendar-onetime.js:958
+msgid "Buffer before the event"
+msgstr "Vremenski razmak prije događaja"
+
+#: quickbook/js/calendar-onetime.js:959
+msgid "Buffer after the event"
+msgstr "Vremenski razmak nakon događaja"
+
+#: quickbook/js/calendar-onetime.js:962
+msgid "Minimum time before next slot"
+msgstr "Minimalno vrijeme prije sljedećeg termina"
+
+#: quickbook/js/calendar-onetime.js:963
+msgid "Max slots per day"
+msgstr "Maksimalan broj termina dnevno"
+
+#: quickbook/js/calendar-onetime.js:967
+msgid "It seems a rate limit has been reached. Please try again later."
+msgstr "Čini se da je dosegnuto ograničenje učestalosti. Pokušajte ponovno kasnije."
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Save"
+msgstr "Spremi"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Update"
+msgstr "Ažuriraj"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully created"
+msgstr "Jednokratni raspored termina uspješno je stvoren"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully updated"
+msgstr "Jednokratni raspored termina uspješno je ažuriran"
+
+#: quickbook/js/calendar-onetime.js:995
+msgid "Close"
+msgstr "Zatvori"
+
+#: quickbook/js/settings.js:15
+msgid "Checking…"
+msgstr "Provjera u tijeku…"
+
+#: quickbook/js/settings.js:23
+msgid "The self-check could not run."
+msgstr "Samoprovjeru nije bilo moguće pokrenuti."
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "Appointment not found"
+msgstr "Termin nije pronađen"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "This booking link does not exist (any more)."
+msgstr "Ova poveznica za rezervaciju (više) ne postoji."
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Booking unavailable"
+msgstr "Rezervacija nije dostupna"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Online booking is temporarily unavailable. Please try again later."
+msgstr "Online rezervacija privremeno nije dostupna. Pokušajte ponovno kasnije."
+
+#: quickbook/lib/Health/HealthText.php:22
+msgid "Quick Booking components"
+msgstr "Komponente aplikacije Quick Booking"
+
+#: quickbook/lib/Health/HealthText.php:23
+msgid "Calendar app enabled"
+msgstr "Aplikacija Kalendar omogućena"
+
+#: quickbook/lib/Health/HealthText.php:24
+msgid "Calendar code contract"
+msgstr "Ugovor koda Kalendara"
+
+#: quickbook/lib/Health/HealthText.php:26
+msgid "Calendar services"
+msgstr "Usluge Kalendara"
+
+#: quickbook/lib/Health/HealthText.php:27
+msgid "Standard booking page (fallback)"
+msgstr "Standardna stranica za rezervacije (rezervno rješenje)"
+
+#: quickbook/lib/Health/HealthText.php:28
+msgid "Slot lookup"
+msgstr "Pretraga slobodnih termina"
+
+#: quickbook/lib/Health/HealthText.php:29
+msgid "Booking storage"
+msgstr "Pohrana rezervacija"
+
+#: quickbook/lib/Health/HealthText.php:36
+msgid "Passed"
+msgstr "Uspješno"
+
+#: quickbook/lib/Health/HealthText.php:37
+msgid "Failed"
+msgstr "Neuspješno"
+
+#: quickbook/lib/Health/HealthText.php:38
+msgid "Warning"
+msgstr "Upozorenje"
+
+#: quickbook/lib/Health/HealthText.php:39
+msgid "Skipped"
+msgstr "Preskočeno"
+
+#: quickbook/lib/Health/HealthText.php:50
+msgid "Booking page, booking API and Calendar link redirect load"
+msgstr "Stranica za rezervacije, API za rezervacije i preusmjeravanje poveznice Kalendara učitavaju se"
+
+#: quickbook/lib/Health/HealthText.php:51
+msgid "The Calendar app is not enabled"
+msgstr "Aplikacija Kalendar nije omogućena"
+
+#: quickbook/lib/Health/HealthText.php:52
+msgid "All classes, methods and fields found"
+msgstr "Pronađene su sve klase, metode i polja"
+
+#: quickbook/lib/Health/HealthText.php:53
+msgid "Can be created and edited"
+msgstr "Mogu se stvarati i uređivati"
+
+#: quickbook/lib/Health/HealthText.php:54
+msgid "Booking service, schedule service and booking storage load"
+msgstr "Usluga rezervacija, usluga rasporeda i pohrana rezervacija učitavaju se"
+
+#: quickbook/lib/Health/HealthText.php:55
+msgid "No appointment schedule exists yet"
+msgstr "Još ne postoji nijedan raspored termina"
+
+#: quickbook/lib/Health/HealthText.php:56
+#, php-format
+msgid "Schedule \"%1$s\", free slots in the next 7 days: %2$s"
+msgstr "Raspored „%1$s“, slobodni termini u sljedećih 7 dana: %2$s"
+
+#: quickbook/lib/Health/HealthText.php:57
+msgid "Test booking stored and removed"
+msgstr "Probna rezervacija spremljena i uklonjena"
+
+#: quickbook/lib/Notification/Notifier.php:29
+#: quickbook/lib/Settings/AdminSection.php:24
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Quick Booking"
+msgstr "Quick Booking"
+
+#: quickbook/lib/Notification/Notifier.php:41
+msgid "Quick Booking switched visitors to the standard Calendar booking page"
+msgstr "Quick Booking prebacio je posjetitelje na standardnu stranicu za rezervacije Kalendara"
+
+#: quickbook/lib/Notification/Notifier.php:42
+#, php-format
+msgid "Something in the Calendar app or Nextcloud no longer works as Quick Booking expects: %s"
+msgstr "Nešto u aplikaciji Kalendar ili u sustavu Nextcloud više ne radi onako kako Quick Booking očekuje: %s"
+
+#: quickbook/lib/Notification/Notifier.php:45
+#, php-format
+msgid "Quick Booking works again (%s)"
+msgstr "Quick Booking ponovno radi (%s)"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:41
+msgid "Please add at least one date"
+msgstr "Dodajte barem jedan datum"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:44
+msgid "Too many dates"
+msgstr "Previše datuma"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:55
+msgid "Please enter a valid date"
+msgstr "Unesite valjani datum"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:58
+msgid "Please enter valid times"
+msgstr "Unesite valjana vremena"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:61
+msgid "The end time must be after the start time"
+msgstr "Vrijeme završetka mora biti nakon vremena početka"
+
+#: quickbook/lib/OneTime/OneTimeService.php:252
+msgid "Please enter a name of at most 128 characters"
+msgstr "Unesite naziv od najviše 128 znakova"
+
+#: quickbook/lib/OneTime/OneTimeService.php:256
+msgid "The location is too long"
+msgstr "Lokacija je predugačka"
+
+#: quickbook/lib/OneTime/OneTimeService.php:260
+msgid "The description is too long"
+msgstr "Opis je predugačak"
+
+#: quickbook/lib/OneTime/OneTimeService.php:265
+msgid "Please enter the duration in minutes"
+msgstr "Unesite trajanje u minutama"
+
+#: quickbook/lib/OneTime/OneTimeService.php:267
+msgid "Please choose the increments"
+msgstr "Odaberite korake"
+
+#: quickbook/lib/OneTime/OneTimeService.php:268
+msgid "Please choose the buffer before the event"
+msgstr "Odaberite vremenski razmak prije događaja"
+
+#: quickbook/lib/OneTime/OneTimeService.php:269
+msgid "Please choose the buffer after the event"
+msgstr "Odaberite vremenski razmak nakon događaja"
+
+#: quickbook/lib/OneTime/OneTimeService.php:270
+msgid "Please choose the minimum time before the next slot"
+msgstr "Odaberite minimalno vrijeme prije sljedećeg termina"
+
+#: quickbook/lib/OneTime/OneTimeService.php:273
+msgid "Please enter the maximum number of slots per day, or leave it empty"
+msgstr "Unesite maksimalan broj termina dnevno ili ostavite polje prazno"
+
+#: quickbook/lib/OneTime/OneTimeService.php:278
+msgid "Please choose the visibility"
+msgstr "Odaberite vidljivost"
+
+#: quickbook/lib/OneTime/OneTimeService.php:284
+msgid "Please choose a booking calendar"
+msgstr "Odaberite kalendar rezervacija"
+
+#: quickbook/lib/OneTime/OneTimeService.php:288
+#: quickbook/lib/OneTime/OneTimeService.php:293
+msgid "Please choose the calendars to check for conflicts"
+msgstr "Odaberite kalendare u kojima se provjeravaju sukobi"
+
+#: quickbook/lib/OneTime/OneTimeService.php:302
+msgid "Each time range must fit at least one appointment"
+msgstr "U svaki vremenski raspon mora stati barem jedan termin"
+
+#: quickbook/lib/Service/BookingFlowService.php:62
+#: quickbook/lib/Service/BookingFlowService.php:66
+msgid "Invalid date"
+msgstr "Nevažeći datum"
+
+#: quickbook/lib/Service/BookingFlowService.php:95
+msgid "Please enter your name"
+msgstr "Unesite svoje ime"
+
+#: quickbook/lib/Service/BookingFlowService.php:99
+msgid "Please enter your name without @, < or >"
+msgstr "Unesite svoje ime bez znakova @, < ili >"
+
+#: quickbook/lib/Service/BookingFlowService.php:102
+msgid "Please enter a valid email address"
+msgstr "Unesite valjanu adresu e-pošte"
+
+#: quickbook/lib/Service/BookingFlowService.php:105
+msgid "The comment is too long"
+msgstr "Napomena je predugačka"
+
+#: quickbook/lib/Service/BookingFlowService.php:118
+msgid "Invalid time range"
+msgstr "Nevažeći vremenski raspon"
+
+#: quickbook/lib/Service/Input.php:46
+msgid "Invalid timezone"
+msgstr "Nevažeća vremenska zona"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "One-page appointment booking for Calendar schedules, without the email confirmation step."
+msgstr "Rezervacija termina na jednoj stranici za rasporede iz Kalendara, bez koraka potvrde e-poštom."
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:4
+msgid ""
+"Quick Booking adds a public booking page for the appointment schedules you already have in the Calendar app. Requires the Calendar app.\n"
+"\n"
+"Visitors pick a date and time, enter their details, review and confirm on the same page. The appointment is booked immediately and the usual booking confirmation email (with .ics) is sent.\n"
+"\n"
+"* Share the usual Calendar booking link (\"Copy link\" in the Calendar app): it opens Quick Booking.\n"
+"* One-time appointment schedules: offer appointments on one or more chosen dates (e.g. parent-teacher conferences) instead of weekly. Create them in the Calendar app under \"One-time appointment schedules\".\n"
+"* Built-in rate limiting of bookings per visitor and per email address.\n"
+"* Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks."
+msgstr ""
+"Quick Booking dodaje javnu stranicu za rezervacije za rasporede termina koje već imate u aplikaciji Kalendar. Zahtijeva aplikaciju Kalendar.\n"
+"\n"
+"Posjetitelji odabiru datum i vrijeme, unose svoje podatke, pregledavaju ih i potvrđuju – sve na istoj stranici. Termin se rezervira odmah i šalje se uobičajena e-poruka s potvrdom rezervacije (s datotekom .ics).\n"
+"\n"
+"* Podijelite uobičajenu poveznicu za rezervaciju iz Kalendara (\"Kopiraj poveznicu\" u aplikaciji Kalendar): ona otvara Quick Booking.\n"
+"* Jednokratni rasporedi termina: ponudite termine na jedan ili više odabranih datuma (npr. roditeljski sastanci) umjesto svakog tjedna. Stvorite ih u aplikaciji Kalendar pod \"Jednokratni rasporedi termina\".\n"
+"* Ugrađeno ograničenje broja rezervacija po posjetitelju i po adresi e-pošte.\n"
+"* Samoprovjera: nakon svakog ažuriranja Kalendara ili sustava Nextcloud provjerava radi li sve i dalje, a kad se nešto pokvari, poveznica za rezervaciju prikazuje standardnu stranicu za rezervacije Kalendara."
+
+#: quickbook/templates/booking.php:5
+msgid "Please enable JavaScript to book an appointment."
+msgstr "Omogućite JavaScript da biste rezervirali termin."
+
+#: quickbook/templates/settings-admin.php:10
+msgid "Quick Booking self-check"
+msgstr "Samoprovjera aplikacije Quick Booking"
+
+#: quickbook/templates/settings-admin.php:12
+msgid "Quick Booking uses internal code of the Calendar app. It checks after every Calendar or Nextcloud update and once a day that this still works. If something breaks, visitors are sent to the standard Calendar booking page and admins get a notification. While switched off, the check repeats every 15 minutes and switches back on when it passes."
+msgstr "Quick Booking koristi interni kod aplikacije Kalendar. Nakon svakog ažuriranja Kalendara ili sustava Nextcloud te jednom dnevno provjerava radi li to i dalje. Ako se nešto pokvari, posjetitelji se preusmjeravaju na standardnu stranicu za rezervacije Kalendara, a administratori dobivaju obavijest. Dok je Quick Booking isključen, provjera se ponavlja svakih 15 minuta, a kad uspije, Quick Booking se ponovno uključuje."
+
+#: quickbook/templates/settings-admin.php:17
+msgid "Off: visitors use the standard Calendar booking page."
+msgstr "Isključeno: posjetitelji koriste standardnu stranicu za rezervacije Kalendara."
+
+#: quickbook/templates/settings-admin.php:21
+msgid "Bookings from several different networks failed while the self-check passed. Quick Booking switches back on after a Calendar update, or when you run the check below and it passes."
+msgstr "Rezervacije s nekoliko različitih mreža nisu uspjele iako je samoprovjera prošla. Quick Booking ponovno se uključuje nakon ažuriranja Kalendara ili kada pokrenete provjeru u nastavku i ona prođe."
+
+#: quickbook/templates/settings-admin.php:24
+msgid "On: visitors book through Quick Booking."
+msgstr "Uključeno: posjetitelji rezerviraju putem aplikacije Quick Booking."
+
+#: quickbook/templates/settings-admin.php:28
+msgid "Calendar version"
+msgstr "Verzija Kalendara"
+
+#: quickbook/templates/settings-admin.php:29
+msgid "Nextcloud version"
+msgstr "Verzija sustava Nextcloud"
+
+#: quickbook/templates/settings-admin.php:30
+msgid "Last full check"
+msgstr "Posljednja potpuna provjera"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Check"
+msgstr "Provjera"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Result"
+msgstr "Rezultat"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Detail"
+msgstr "Pojedinosti"
+
+#: quickbook/templates/settings-admin.php:49
+msgid "Run self-check now"
+msgstr "Pokreni samoprovjeru sada"
+
+#: quickbook/templates/settings-admin.php:52
+msgid "Also available as: occ quickbook:check"
+msgstr "Dostupno i kao: occ quickbook:check"
+
+#: quickbook/templates/settings-admin.php:53
+msgid "Visitor addresses (rate limit)"
+msgstr "Adrese posjetitelja (ograničenje broja rezervacija)"
+
+#: quickbook/templates/settings-admin.php:55
+#, php-format
+msgid "Nextcloud sees your address as: %s"
+msgstr "Nextcloud vidi vašu adresu kao: %s"
+
+#: quickbook/templates/settings-admin.php:59
+msgid "This is a private address. That is fine if you are on the same network as the server. If you opened this page from outside (for example a phone on mobile data), Nextcloud does not know your reverse proxy: all visitors then share one address, and the booking limit applies to all of them together. Add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Ovo je privatna adresa. To je u redu ako ste na istoj mreži kao poslužitelj. Ako ste ovu stranicu otvorili izvana (na primjer s mobitela putem mobilnih podataka), Nextcloud ne poznaje vaš reverse proxy: svi posjetitelji tada dijele jednu adresu, a ograničenje rezervacija vrijedi za sve njih zajedno. Dodajte proxy u \"trusted_proxies\" u config.php."
+
+#: quickbook/templates/settings-admin.php:62
+msgid "This should be the public address of the device you are using right now. If it is the address of your server or proxy instead, add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Ovo bi trebala biti javna adresa uređaja koji upravo koristite. Ako je umjesto toga prikazana adresa vašeg poslužitelja ili proxyja, dodajte proxy u \"trusted_proxies\" u config.php."
+
+#: quickbook/templates/settings-admin.php:65
+msgid "Share the Calendar's own booking links (\"Copy link\" in the Calendar app). They open Quick Booking while it is on, and the Calendar booking page while it is off, disabled or removed. Links to /apps/quickbook/book/… only work while the app is installed."
+msgstr "Dijelite vlastite poveznice za rezervaciju iz Kalendara (\"Kopiraj poveznicu\" u aplikaciji Kalendar). One otvaraju Quick Booking dok je uključen, a stranicu za rezervacije Kalendara dok je isključen, onemogućen ili uklonjen. Poveznice na /apps/quickbook/book/… rade samo dok je aplikacija instalirana."

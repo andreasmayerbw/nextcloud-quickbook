@@ -1,0 +1,747 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Booking\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: quickbook/js/booking.js:126
+msgid "{minutes} min"
+msgstr "{minutes} dk"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h"
+msgstr "{hours} sa"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h {minutes} min"
+msgstr "{hours} sa {minutes} dk"
+
+#: quickbook/js/booking.js:153
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "Çok fazla istek yapıldı. Lütfen biraz bekleyip yeniden deneyin."
+
+#: quickbook/js/booking.js:153 /work/quickbook/js/booking.js:157
+msgid "Could not load the free times."
+msgstr "Uygun saatler yüklenemedi."
+
+#: quickbook/js/booking.js:196
+msgid "Sorry, this time was just taken. Please choose another time."
+msgstr "Üzgünüz, bu saat az önce alındı. Lütfen başka bir saat seçin."
+
+#: quickbook/js/booking.js:202 /work/quickbook/js/calendar-onetime.js:755
+msgid "Please check your input."
+msgstr "Lütfen yazdığınız bilgileri denetleyin."
+
+#: quickbook/js/booking.js:207
+msgid "This email address already has several bookings. Please try again tomorrow or contact the organizer."
+msgstr "Bu e-posta adresi ile zaten birkaç randevu alınmış. Lütfen yarın yeniden deneyin ya da düzenleyici ile görüşün."
+
+#: quickbook/js/booking.js:208
+msgid "You made too many bookings in a short time. Please try again later."
+msgstr "Kısa sürede çok fazla randevu aldınız. Lütfen bir süre sonra yeniden deneyin."
+
+#: quickbook/js/booking.js:215
+msgid "Something went wrong while booking. Please try again."
+msgstr "Randevu alınırken bir sorun çıktı. Lütfen yeniden deneyin."
+
+#: quickbook/js/booking.js:217 /work/quickbook/js/calendar-onetime.js:764
+msgid "Could not reach the server. Please check your connection and try again."
+msgstr "Sunucuya ulaşılamadı. Lütfen bağlantınızı denetleyip yeniden deneyin."
+
+#: quickbook/js/booking.js:247
+msgid "with {name}"
+msgstr "{name} ile"
+
+#: quickbook/js/booking.js:254
+msgid "Date & time"
+msgstr "Tarih ve saat"
+
+#: quickbook/js/booking.js:254
+msgid "Your details"
+msgstr "Bilgileriniz"
+
+#: quickbook/js/booking.js:254
+msgid "Confirm"
+msgstr "Onayla"
+
+#: quickbook/js/booking.js:257
+msgid "Booking steps"
+msgstr "Randevu alma adımları"
+
+#: quickbook/js/booking.js:272
+msgid "This appointment has no upcoming dates any more."
+msgstr "Bu randevu için artık ileri tarihli bir gün yok."
+
+#: quickbook/js/booking.js:310
+msgid "Choose a date"
+msgstr "Bir tarih seçin"
+
+#: quickbook/js/booking.js:312
+msgid "Previous month"
+msgstr "Önceki ay"
+
+#: quickbook/js/booking.js:314
+msgid "Next month"
+msgstr "Sonraki ay"
+
+#: quickbook/js/booking.js:321
+msgid "Choose a date to see the free times."
+msgstr "Uygun saatleri görmek için bir tarih seçin."
+
+#: quickbook/js/booking.js:323
+msgid "Loading free times…"
+msgstr "Uygun saatler yükleniyor…"
+
+#: quickbook/js/booking.js:327
+msgid "No free times on this day. Please choose another date."
+msgstr "Bu gün için uygun saat yok. Lütfen başka bir tarih seçin."
+
+#: quickbook/js/booking.js:329 /work/quickbook/js/booking.js:344
+msgid "Free times"
+msgstr "Uygun saatler"
+
+#: quickbook/js/booking.js:343
+msgid "Choose a time"
+msgstr "Bir saat seçin"
+
+#: quickbook/js/booking.js:345
+msgid "Times are shown in {timezone}"
+msgstr "Saatler {timezone} saat dilimine göre görüntülenir"
+
+#: quickbook/js/booking.js:353
+msgid "Continue"
+msgstr "İlerle"
+
+#: quickbook/js/booking.js:361
+msgid "Change"
+msgstr "Değiştir"
+
+#: quickbook/js/booking.js:382 /work/quickbook/js/booking.js:405
+msgid "Name"
+msgstr "Ad"
+
+#: quickbook/js/booking.js:383 /work/quickbook/js/booking.js:406
+msgid "Email"
+msgstr "E-posta"
+
+#: quickbook/js/booking.js:383
+msgid "Your booking confirmation is sent to this address."
+msgstr "Randevu onayınız bu adrese gönderilir."
+
+#: quickbook/js/booking.js:384
+msgid "Comment (optional)"
+msgstr "Not (isteğe bağlı)"
+
+#: quickbook/js/booking.js:390 /work/quickbook/js/booking.js:418
+msgid "Back"
+msgstr "Geri"
+
+#: quickbook/js/booking.js:391
+msgid "Review booking"
+msgstr "Randevuyu gözden geçir"
+
+#: quickbook/js/booking.js:400
+msgid "Appointment"
+msgstr "Randevu"
+
+#: quickbook/js/booking.js:401
+msgid "With"
+msgstr "Kiminle"
+
+#: quickbook/js/booking.js:402
+msgid "Date"
+msgstr "Tarih"
+
+#: quickbook/js/booking.js:403
+msgid "Time"
+msgstr "Saat"
+
+#: quickbook/js/booking.js:404 /work/quickbook/js/calendar-onetime.js:900
+msgid "Location"
+msgstr "Konum"
+
+#: quickbook/js/booking.js:407
+msgid "Comment"
+msgstr "Not"
+
+#: quickbook/js/booking.js:415
+msgid "Please check your booking."
+msgstr "Lütfen randevunuzu gözden geçirin."
+
+#: quickbook/js/booking.js:424
+msgid "Booking…"
+msgstr "Randevu alınıyor…"
+
+#: quickbook/js/booking.js:424
+msgid "Confirm booking"
+msgstr "Randevuyu onayla"
+
+#: quickbook/js/booking.js:433
+msgid "Your appointment is booked"
+msgstr "Randevunuz alındı"
+
+#: quickbook/js/booking.js:434
+msgid "A confirmation email is on its way to {email}."
+msgstr "{email} adresine bir onay e-postası gönderiliyor."
+
+#: quickbook/js/booking.js:438
+msgid "Book another appointment"
+msgstr "Başka bir randevu daha al"
+
+#: quickbook/js/booking.js:445
+msgid "Online booking on this page is temporarily unavailable."
+msgstr "Bu sayfadan çevrim içi randevu alma özelliği geçici olarak kullanılamıyor."
+
+#: quickbook/js/booking.js:447
+msgid "Continue on the standard booking page"
+msgstr "Standart rezervasyon sayfasından ilerle"
+
+#: quickbook/js/booking.js:448
+msgid "Please try again later."
+msgstr "Lütfen bir süre sonra yeniden deneyin."
+
+#: quickbook/js/calendar-onetime.js:148 quickbook/js/calendar-onetime.js:162
+msgid "{duration} minute"
+msgid_plural "{duration} minutes"
+msgstr[0] "{duration} dakika"
+msgstr[1] "{duration} dakika"
+
+#: quickbook/js/calendar-onetime.js:152
+msgid "{duration} week"
+msgid_plural "{duration} weeks"
+msgstr[0] "{duration} hafta"
+msgstr[1] "{duration} hafta"
+
+#: quickbook/js/calendar-onetime.js:156
+msgid "{duration} day"
+msgid_plural "{duration} days"
+msgstr[0] "{duration} gün"
+msgstr[1] "{duration} gün"
+
+#: quickbook/js/calendar-onetime.js:160
+msgid "{duration} hour"
+msgid_plural "{duration} hours"
+msgstr[0] "{duration} saat"
+msgstr[1] "{duration} saat"
+
+#: quickbook/js/calendar-onetime.js:262 quickbook/lib/Health/HealthText.php:25
+msgid "One-time appointment schedules"
+msgstr "Tek seferlik randevu zamanları"
+
+#: quickbook/js/calendar-onetime.js:305
+msgid "Actions"
+msgstr "İşlemler"
+
+#: quickbook/js/calendar-onetime.js:364 quickbook/js/calendar-onetime.js:985
+msgid "Preview"
+msgstr "Ön izleme"
+
+#: quickbook/js/calendar-onetime.js:365 quickbook/js/calendar-onetime.js:986
+msgid "Copy link"
+msgstr "Bağlantıyı kopyala"
+
+#: quickbook/js/calendar-onetime.js:366
+msgid "Duplicate"
+msgstr "Çoğalt"
+
+#: quickbook/js/calendar-onetime.js:367
+msgid "Edit"
+msgstr "Düzenle"
+
+#: quickbook/js/calendar-onetime.js:368
+msgid "Delete"
+msgstr "Sil"
+
+#: quickbook/js/calendar-onetime.js:412
+msgid "Appointment link was copied to clipboard"
+msgstr "Randevu bağlantısı panoya kopyalandı"
+
+#: quickbook/js/calendar-onetime.js:414
+msgid "Appointment link could not be copied to clipboard"
+msgstr "Randevu bağlantısı panoya kopyalanamadı"
+
+#: quickbook/js/calendar-onetime.js:427
+msgid "Could not delete the appointment schedule"
+msgstr "Randevu zamanı silinemedi"
+
+#: quickbook/js/calendar-onetime.js:533
+msgid "Remove {calendar}"
+msgstr "{calendar} takvimini kaldır"
+
+#: quickbook/js/calendar-onetime.js:662
+msgid "One-time appointment schedules could not be loaded. Please try again later."
+msgstr "Tek seferlik randevu zamanları yüklenemedi. Lütfen bir süre sonra yeniden deneyin."
+
+#: quickbook/js/calendar-onetime.js:759
+msgid "One-time appointment schedules are temporarily unavailable."
+msgstr "Tek seferlik randevu zamanları geçici olarak kullanılamıyor."
+
+#: quickbook/js/calendar-onetime.js:761
+msgid "Could not save. Please try again."
+msgstr "Kaydedilemedi. Lütfen yeniden deneyin."
+
+#: quickbook/js/calendar-onetime.js:783
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} aralık"
+msgstr[1] "{count} aralık"
+
+#: quickbook/js/calendar-onetime.js:794
+msgid "Date {number}"
+msgstr "{number}. tarih"
+
+#: quickbook/js/calendar-onetime.js:798
+msgid "{date}: from"
+msgstr "{date}: başlangıç"
+
+#: quickbook/js/calendar-onetime.js:799
+msgid "to"
+msgstr "ile"
+
+#: quickbook/js/calendar-onetime.js:800
+msgid "{date}: to"
+msgstr "{date}: bitiş"
+
+#: quickbook/js/calendar-onetime.js:804
+msgid "Delete {date}"
+msgstr "{date} satırını sil"
+
+#: quickbook/js/calendar-onetime.js:823
+msgid "Calendars to check for conflicts"
+msgstr "Çakışmaların denetleneceği takvimler"
+
+#: quickbook/js/calendar-onetime.js:838
+msgid "Booking calendar"
+msgstr "Rezervasyon takvimi"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Create one-time appointment schedule"
+msgstr "Tek seferlik randevu zamanı oluştur"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Edit one-time appointment schedule"
+msgstr "Tek seferlik randevu zamanını düzenle"
+
+#: quickbook/js/calendar-onetime.js:896
+msgid "You need a calendar you can write to, to take appointments."
+msgstr "Randevu kabul edebilmek için yazma izniniz olan bir takvim gerekir."
+
+#: quickbook/js/calendar-onetime.js:899
+msgid "Appointment name"
+msgstr "Randevu adı"
+
+#: quickbook/js/calendar-onetime.js:905
+msgid "Create a Talk room"
+msgstr "Bir Konuş odası oluştur"
+
+#: quickbook/js/calendar-onetime.js:914
+msgid "A unique link will be generated for every booked appointment and sent via the confirmation email"
+msgstr "Alınan her randevu için benzersiz bir bağlantı oluşturularak onay e-postası ile gönderilecek."
+
+#: quickbook/js/calendar-onetime.js:918
+msgid "Description"
+msgstr "Açıklama"
+
+#: quickbook/js/calendar-onetime.js:922
+msgid "Duration (minutes)"
+msgstr "Süre (dakika)"
+
+#: quickbook/js/calendar-onetime.js:923
+msgid "Increments"
+msgstr "Artımlar"
+
+#: quickbook/js/calendar-onetime.js:927
+msgid "Visibility"
+msgstr "Görünürlük"
+
+#: quickbook/js/calendar-onetime.js:928
+msgid "Public – shown on profile page"
+msgstr "Herkese açık - Profil sayfasında görüntülenir"
+
+#: quickbook/js/calendar-onetime.js:929
+msgid "Private – only accessible via link"
+msgstr "Kişisel - Yalnızca bağlantı ile erişilebilir"
+
+#: quickbook/js/calendar-onetime.js:934
+msgid "Booking dates"
+msgstr "Rezervasyon tarihleri"
+
+#: quickbook/js/calendar-onetime.js:935
+msgid "Times are in {timezone}."
+msgstr "Saatler {timezone} saat dilimine göredir."
+
+#: quickbook/js/calendar-onetime.js:941
+msgid "Add date"
+msgstr "Tarih ekle"
+
+#: quickbook/js/calendar-onetime.js:956
+msgid "Planning restrictions"
+msgstr "Planlama kısıtlamaları"
+
+#: quickbook/js/calendar-onetime.js:958
+msgid "Buffer before the event"
+msgstr "Etkinlik öncesi süre"
+
+#: quickbook/js/calendar-onetime.js:959
+msgid "Buffer after the event"
+msgstr "Etkinlik sonrası süre"
+
+#: quickbook/js/calendar-onetime.js:962
+msgid "Minimum time before next slot"
+msgstr "Sonraki aralıktan önceki en az süre"
+
+#: quickbook/js/calendar-onetime.js:963
+msgid "Max slots per day"
+msgstr "Bir gündeki en fazla aralık"
+
+#: quickbook/js/calendar-onetime.js:967
+msgid "It seems a rate limit has been reached. Please try again later."
+msgstr "Sınıra ulaşıldı. Lütfen bir süre sonra yeniden deneyin."
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Save"
+msgstr "Kaydet"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Update"
+msgstr "Güncelle"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully created"
+msgstr "Tek seferlik randevu zamanı oluşturuldu"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully updated"
+msgstr "Tek seferlik randevu zamanı güncellendi"
+
+#: quickbook/js/calendar-onetime.js:995
+msgid "Close"
+msgstr "Kapat"
+
+#: quickbook/js/settings.js:15
+msgid "Checking…"
+msgstr "Denetleniyor…"
+
+#: quickbook/js/settings.js:23
+msgid "The self-check could not run."
+msgstr "Öz denetim çalıştırılamadı."
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "Appointment not found"
+msgstr "Randevu bulunamadı"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "This booking link does not exist (any more)."
+msgstr "Bu rezervasyon bağlantısı (artık) yok."
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Booking unavailable"
+msgstr "Randevu alınamıyor"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Online booking is temporarily unavailable. Please try again later."
+msgstr "Çevrim içi randevu alma özelliği geçici olarak kullanılamıyor. Lütfen bir süre sonra yeniden deneyin."
+
+#: quickbook/lib/Health/HealthText.php:22
+msgid "Quick Booking components"
+msgstr "Quick Booking bileşenleri"
+
+#: quickbook/lib/Health/HealthText.php:23
+msgid "Calendar app enabled"
+msgstr "Takvim uygulaması etkin"
+
+#: quickbook/lib/Health/HealthText.php:24
+msgid "Calendar code contract"
+msgstr "Takvim kod sözleşmesi"
+
+#: quickbook/lib/Health/HealthText.php:26
+msgid "Calendar services"
+msgstr "Takvim hizmetleri"
+
+#: quickbook/lib/Health/HealthText.php:27
+msgid "Standard booking page (fallback)"
+msgstr "Standart rezervasyon sayfası (yedek)"
+
+#: quickbook/lib/Health/HealthText.php:28
+msgid "Slot lookup"
+msgstr "Uygun saat sorgusu"
+
+#: quickbook/lib/Health/HealthText.php:29
+msgid "Booking storage"
+msgstr "Rezervasyon depolama"
+
+#: quickbook/lib/Health/HealthText.php:36
+msgid "Passed"
+msgstr "Başarılı"
+
+#: quickbook/lib/Health/HealthText.php:37
+msgid "Failed"
+msgstr "Başarısız"
+
+#: quickbook/lib/Health/HealthText.php:38
+msgid "Warning"
+msgstr "Uyarı"
+
+#: quickbook/lib/Health/HealthText.php:39
+msgid "Skipped"
+msgstr "Atlandı"
+
+#: quickbook/lib/Health/HealthText.php:50
+msgid "Booking page, booking API and Calendar link redirect load"
+msgstr "Rezervasyon sayfası, rezervasyon API'si ve Takvim bağlantısı yönlendirmesi yükleniyor"
+
+#: quickbook/lib/Health/HealthText.php:51
+msgid "The Calendar app is not enabled"
+msgstr "Takvim uygulaması etkin değil"
+
+#: quickbook/lib/Health/HealthText.php:52
+msgid "All classes, methods and fields found"
+msgstr "Tüm sınıflar, yöntemler ve alanlar bulundu"
+
+#: quickbook/lib/Health/HealthText.php:53
+msgid "Can be created and edited"
+msgstr "Oluşturulabilir ve düzenlenebilir"
+
+#: quickbook/lib/Health/HealthText.php:54
+msgid "Booking service, schedule service and booking storage load"
+msgstr "Rezervasyon hizmeti, randevu zamanları hizmeti ve rezervasyon deposu yükleniyor"
+
+#: quickbook/lib/Health/HealthText.php:55
+msgid "No appointment schedule exists yet"
+msgstr "Henüz bir randevu zamanı yok"
+
+#: quickbook/lib/Health/HealthText.php:56
+#, php-format
+msgid "Schedule \"%1$s\", free slots in the next 7 days: %2$s"
+msgstr "\"%1$s\" randevu zamanı, önümüzdeki 7 gündeki uygun saatler: %2$s"
+
+#: quickbook/lib/Health/HealthText.php:57
+msgid "Test booking stored and removed"
+msgstr "Deneme rezervasyonu kaydedildi ve kaldırıldı"
+
+#: quickbook/lib/Notification/Notifier.php:29
+#: quickbook/lib/Settings/AdminSection.php:24
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Quick Booking"
+msgstr "Quick Booking"
+
+#: quickbook/lib/Notification/Notifier.php:41
+msgid "Quick Booking switched visitors to the standard Calendar booking page"
+msgstr "Quick Booking, ziyaretçileri standart Takvim rezervasyon sayfasına yönlendirdi"
+
+#: quickbook/lib/Notification/Notifier.php:42
+#, php-format
+msgid "Something in the Calendar app or Nextcloud no longer works as Quick Booking expects: %s"
+msgstr "Takvim uygulamasında ya da Nextcloud üzerinde bir şey artık Quick Booking uygulamasının beklediği gibi çalışmıyor: %s"
+
+#: quickbook/lib/Notification/Notifier.php:45
+#, php-format
+msgid "Quick Booking works again (%s)"
+msgstr "Quick Booking yeniden çalışıyor (%s)"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:41
+msgid "Please add at least one date"
+msgstr "Lütfen en az bir tarih ekleyin"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:44
+msgid "Too many dates"
+msgstr "Çok fazla tarih var"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:55
+msgid "Please enter a valid date"
+msgstr "Lütfen geçerli bir tarih yazın"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:58
+msgid "Please enter valid times"
+msgstr "Lütfen geçerli saatler yazın"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:61
+msgid "The end time must be after the start time"
+msgstr "Bitiş saati başlangıç saatinden sonra olmalıdır"
+
+#: quickbook/lib/OneTime/OneTimeService.php:252
+msgid "Please enter a name of at most 128 characters"
+msgstr "Lütfen en fazla 128 karakter uzunluğunda bir ad yazın"
+
+#: quickbook/lib/OneTime/OneTimeService.php:256
+msgid "The location is too long"
+msgstr "Konum çok uzun"
+
+#: quickbook/lib/OneTime/OneTimeService.php:260
+msgid "The description is too long"
+msgstr "Açıklama çok uzun"
+
+#: quickbook/lib/OneTime/OneTimeService.php:265
+msgid "Please enter the duration in minutes"
+msgstr "Lütfen süreyi dakika olarak yazın"
+
+#: quickbook/lib/OneTime/OneTimeService.php:267
+msgid "Please choose the increments"
+msgstr "Lütfen artımları seçin"
+
+#: quickbook/lib/OneTime/OneTimeService.php:268
+msgid "Please choose the buffer before the event"
+msgstr "Lütfen etkinlik öncesi süreyi seçin"
+
+#: quickbook/lib/OneTime/OneTimeService.php:269
+msgid "Please choose the buffer after the event"
+msgstr "Lütfen etkinlik sonrası süreyi seçin"
+
+#: quickbook/lib/OneTime/OneTimeService.php:270
+msgid "Please choose the minimum time before the next slot"
+msgstr "Lütfen sonraki aralıktan önceki en az süreyi seçin"
+
+#: quickbook/lib/OneTime/OneTimeService.php:273
+msgid "Please enter the maximum number of slots per day, or leave it empty"
+msgstr "Lütfen bir gündeki en fazla aralık sayısını yazın ya da boş bırakın"
+
+#: quickbook/lib/OneTime/OneTimeService.php:278
+msgid "Please choose the visibility"
+msgstr "Lütfen görünürlüğü seçin"
+
+#: quickbook/lib/OneTime/OneTimeService.php:284
+msgid "Please choose a booking calendar"
+msgstr "Lütfen bir rezervasyon takvimi seçin"
+
+#: quickbook/lib/OneTime/OneTimeService.php:288
+#: quickbook/lib/OneTime/OneTimeService.php:293
+msgid "Please choose the calendars to check for conflicts"
+msgstr "Lütfen çakışmaların denetleneceği takvimleri seçin"
+
+#: quickbook/lib/OneTime/OneTimeService.php:302
+msgid "Each time range must fit at least one appointment"
+msgstr "Her saat aralığına en az bir randevu sığmalıdır"
+
+#: quickbook/lib/Service/BookingFlowService.php:62
+#: quickbook/lib/Service/BookingFlowService.php:66
+msgid "Invalid date"
+msgstr "Tarih geçersiz"
+
+#: quickbook/lib/Service/BookingFlowService.php:95
+msgid "Please enter your name"
+msgstr "Lütfen adınızı yazın"
+
+#: quickbook/lib/Service/BookingFlowService.php:99
+msgid "Please enter your name without @, < or >"
+msgstr "Lütfen adınızı @, < ya da > kullanmadan yazın"
+
+#: quickbook/lib/Service/BookingFlowService.php:102
+msgid "Please enter a valid email address"
+msgstr "Lütfen geçerli bir e-posta adresi yazın"
+
+#: quickbook/lib/Service/BookingFlowService.php:105
+msgid "The comment is too long"
+msgstr "Not çok uzun"
+
+#: quickbook/lib/Service/BookingFlowService.php:118
+msgid "Invalid time range"
+msgstr "Saat aralığı geçersiz"
+
+#: quickbook/lib/Service/Input.php:46
+msgid "Invalid timezone"
+msgstr "Saat dilimi geçersiz"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "One-page appointment booking for Calendar schedules, without the email confirmation step."
+msgstr "Takvim randevu zamanları için e-posta ile onaylama adımı olmadan tek sayfada randevu alma."
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:4
+msgid ""
+"Quick Booking adds a public booking page for the appointment schedules you already have in the Calendar app. Requires the Calendar app.\n"
+"\n"
+"Visitors pick a date and time, enter their details, review and confirm on the same page. The appointment is booked immediately and the usual booking confirmation email (with .ics) is sent.\n"
+"\n"
+"* Share the usual Calendar booking link (\"Copy link\" in the Calendar app): it opens Quick Booking.\n"
+"* One-time appointment schedules: offer appointments on one or more chosen dates (e.g. parent-teacher conferences) instead of weekly. Create them in the Calendar app under \"One-time appointment schedules\".\n"
+"* Built-in rate limiting of bookings per visitor and per email address.\n"
+"* Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks."
+msgstr ""
+"Quick Booking, Takvim uygulamasında zaten bulunan randevu zamanlarınız için herkese açık bir rezervasyon sayfası ekler. Takvim uygulaması gereklidir.\n"
+"\n"
+"Ziyaretçiler aynı sayfada tarih ve saat seçer, bilgilerini yazar, randevuyu gözden geçirir ve onaylar. Randevu hemen alınır ve her zamanki randevu onayı e-postası (.ics ile) gönderilir.\n"
+"\n"
+"* Her zamanki Takvim rezervasyon bağlantısını paylaşın (Takvim uygulamasında \"Bağlantıyı kopyala\"): Bağlantı Quick Booking sayfasını açar.\n"
+"* Tek seferlik randevu zamanları: Haftalık yerine, seçtiğiniz bir ya da birkaç tarihte randevu sunun (örneğin veli-öğretmen görüşmeleri). Bunları Takvim uygulamasında \"Tek seferlik randevu zamanları\" bölümünden oluşturabilirsiniz.\n"
+"* Ziyaretçi ve e-posta adresi başına alınabilecek randevu sayısı için iç sınırlama.\n"
+"* Öz denetim: Her Takvim ya da Nextcloud güncellemesinden sonra uygulamanın hâlâ çalıştığını doğrular ve bir şey bozulduğunda rezervasyon bağlantısının standart Takvim rezervasyon sayfasını açmasını sağlar."
+
+#: quickbook/templates/booking.php:5
+msgid "Please enable JavaScript to book an appointment."
+msgstr "Randevu almak için lütfen JavaScript desteğini açın."
+
+#: quickbook/templates/settings-admin.php:10
+msgid "Quick Booking self-check"
+msgstr "Quick Booking öz denetimi"
+
+#: quickbook/templates/settings-admin.php:12
+msgid "Quick Booking uses internal code of the Calendar app. It checks after every Calendar or Nextcloud update and once a day that this still works. If something breaks, visitors are sent to the standard Calendar booking page and admins get a notification. While switched off, the check repeats every 15 minutes and switches back on when it passes."
+msgstr "Quick Booking, Takvim uygulamasının iç kodunu kullanır. Her Takvim ya da Nextcloud güncellemesinden sonra ve günde bir kez bunun hâlâ çalıştığını denetler. Bir şey bozulursa ziyaretçiler standart Takvim rezervasyon sayfasına yönlendirilir ve yöneticilere bir bildirim gönderilir. Kapalıyken denetim 15 dakikada bir yinelenir ve denetim başarılı olduğunda Quick Booking yeniden açılır."
+
+#: quickbook/templates/settings-admin.php:17
+msgid "Off: visitors use the standard Calendar booking page."
+msgstr "Kapalı: Ziyaretçiler standart Takvim rezervasyon sayfasını kullanıyor."
+
+#: quickbook/templates/settings-admin.php:21
+msgid "Bookings from several different networks failed while the self-check passed. Quick Booking switches back on after a Calendar update, or when you run the check below and it passes."
+msgstr "Öz denetim başarılı olduğu hâlde birkaç farklı ağdan randevu alınamadı. Quick Booking, bir Takvim güncellemesinden sonra ya da aşağıdaki denetimi çalıştırdığınızda denetim başarılı olursa yeniden açılır."
+
+#: quickbook/templates/settings-admin.php:24
+msgid "On: visitors book through Quick Booking."
+msgstr "Açık: Ziyaretçiler Quick Booking üzerinden randevu alıyor."
+
+#: quickbook/templates/settings-admin.php:28
+msgid "Calendar version"
+msgstr "Takvim sürümü"
+
+#: quickbook/templates/settings-admin.php:29
+msgid "Nextcloud version"
+msgstr "Nextcloud sürümü"
+
+#: quickbook/templates/settings-admin.php:30
+msgid "Last full check"
+msgstr "Son tam denetim"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Check"
+msgstr "Denetim"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Result"
+msgstr "Sonuç"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Detail"
+msgstr "Ayrıntı"
+
+#: quickbook/templates/settings-admin.php:49
+msgid "Run self-check now"
+msgstr "Öz denetimi şimdi çalıştır"
+
+#: quickbook/templates/settings-admin.php:52
+msgid "Also available as: occ quickbook:check"
+msgstr "Şu komutla da çalıştırılabilir: occ quickbook:check"
+
+#: quickbook/templates/settings-admin.php:53
+msgid "Visitor addresses (rate limit)"
+msgstr "Ziyaretçi adresleri (hız sınırı)"
+
+#: quickbook/templates/settings-admin.php:55
+#, php-format
+msgid "Nextcloud sees your address as: %s"
+msgstr "Nextcloud adresinizi şöyle görüyor: %s"
+
+#: quickbook/templates/settings-admin.php:59
+msgid "This is a private address. That is fine if you are on the same network as the server. If you opened this page from outside (for example a phone on mobile data), Nextcloud does not know your reverse proxy: all visitors then share one address, and the booking limit applies to all of them together. Add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Bu özel bir adres. Sunucu ile aynı ağdaysanız sorun yok. Bu sayfayı dışarıdan açtıysanız (örneğin mobil veri kullanan bir telefondan), Nextcloud ters vekil sunucunuzu tanımıyor demektir: Bu durumda tüm ziyaretçiler tek bir adresi paylaşır ve randevu sınırı hepsine birlikte uygulanır. Vekil sunucuyu config.php dosyasındaki \"trusted_proxies\" ayarına ekleyin."
+
+#: quickbook/templates/settings-admin.php:62
+msgid "This should be the public address of the device you are using right now. If it is the address of your server or proxy instead, add the proxy to \"trusted_proxies\" in config.php."
+msgstr "Bu, şu anda kullandığınız aygıtın herkese açık adresi olmalıdır. Bunun yerine sunucunuzun ya da vekil sunucunuzun adresi görünüyorsa, vekil sunucuyu config.php dosyasındaki \"trusted_proxies\" ayarına ekleyin."
+
+#: quickbook/templates/settings-admin.php:65
+msgid "Share the Calendar's own booking links (\"Copy link\" in the Calendar app). They open Quick Booking while it is on, and the Calendar booking page while it is off, disabled or removed. Links to /apps/quickbook/book/… only work while the app is installed."
+msgstr "Takvim uygulamasının kendi rezervasyon bağlantılarını paylaşın (Takvim uygulamasında \"Bağlantıyı kopyala\"). Bu bağlantılar Quick Booking açıkken Quick Booking sayfasını; kapalıyken, devre dışı bırakıldığında ya da kaldırıldığında Takvim rezervasyon sayfasını açar. /apps/quickbook/book/… bağlantıları yalnızca uygulama kuruluyken çalışır."

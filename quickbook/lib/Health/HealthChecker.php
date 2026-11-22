@@ -85,11 +85,11 @@ class HealthChecker {
 			if (!str_contains($url, '/selftest')) {
 				throw new \RuntimeException('booking page route not found');
 			}
-			$result = ['status' => 'pass', 'detail' => 'booking page, booking API and Calendar link redirect load'];
+			$result = ['status' => 'pass', 'detail' => 'booking page, booking API and Calendar link redirect load', 'detailId' => 'components_load'];
 		} catch (\Throwable $e) {
-			$result = ['status' => 'fail', 'detail' => get_class($e) . ': ' . $e->getMessage()];
+			$result = ['status' => 'fail', 'detail' => get_class($e) . ': ' . $e->getMessage(), 'detailId' => ''];
 		}
-		return [['name' => 'Quick Booking components', ...$result]];
+		return [['id' => 'components', 'name' => 'Quick Booking components', ...$result, 'detailArgs' => []]];
 	}
 
 	/**

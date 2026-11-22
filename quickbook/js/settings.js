@@ -4,7 +4,7 @@
 (function () {
 	'use strict'
 
-	const t = (text) => window.t('quickbook', text)
+	const t = window.t
 
 	function init() {
 		const check = document.getElementById('quickbook-run-check')
@@ -12,7 +12,7 @@
 			const status = document.getElementById('quickbook-check-status')
 			check.addEventListener('click', async () => {
 				check.disabled = true
-				status.textContent = t('Checking…')
+				status.textContent = t('quickbook', 'Checking…')
 				try {
 					const response = await fetch(check.dataset.checkUrl, {
 						method: 'POST',
@@ -20,7 +20,7 @@
 						headers: { Accept: 'application/json', requesttoken: document.head.dataset.requesttoken || '' },
 					})
 					if (!response.ok) {
-						throw new Error(t('The self-check could not run.'))
+						throw new Error(t('quickbook', 'The self-check could not run.'))
 					}
 					window.location.reload()
 				} catch (e) {

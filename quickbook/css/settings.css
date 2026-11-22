@@ -1,13 +1,13 @@
 .quickbook-settings__warning,
 .quickbook-settings__state--off {
 	padding: 8px 12px;
-	border-left: 4px solid var(--color-error);
+	border-inline-start: 4px solid var(--color-error);
 	background: var(--color-background-hover);
 }
 
 .quickbook-settings__state--on {
 	padding: 8px 12px;
-	border-left: 4px solid var(--color-success);
+	border-inline-start: 4px solid var(--color-success);
 	background: var(--color-background-hover);
 }
 
@@ -39,7 +39,7 @@
 .quickbook-settings__report td {
 	padding: 6px 12px;
 	border-bottom: 1px solid var(--color-border);
-	text-align: left;
+	text-align: start;
 	vertical-align: top;
 }
 

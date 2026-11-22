@@ -1,4 +1,7 @@
 <?php
+
+use OCA\QuickBook\Health\HealthText;
+
 /** @var \OCP\IL10N $l */
 /** @var array $_ */
 $status = $_['status'];
@@ -33,9 +36,9 @@ $status = $_['status'];
 			<tbody>
 				<?php foreach ($status['report'] as $row): ?>
 					<tr class="quickbook-settings__result--<?php p($row['status']); ?>">
-						<td><?php p($row['name']); ?></td>
-						<td><?php p(strtoupper($row['status'])); ?></td>
-						<td><?php p($row['detail']); ?></td>
+						<td><?php p(HealthText::name($l, $row)); ?></td>
+						<td><?php p(HealthText::status($l, (string)$row['status'])); ?></td>
+						<td><?php p(HealthText::detail($l, $row)); ?></td>
 					</tr>
 				<?php endforeach; ?>
 			</tbody>

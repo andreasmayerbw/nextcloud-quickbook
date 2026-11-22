@@ -20,8 +20,7 @@ use OCP\App\IAppManager;
 use OCP\Calendar\ICalendarIsWritable;
 use OCP\Calendar\ICreateFromString;
 use OCP\Calendar\IManager;
-use OCP\IAppConfig;
-use OCP\IGroupManager;
+use OCP\IL10N;
 use OCP\IURLGenerator;
 use OCP\IUserManager;
 use OCP\Talk\IBroker;
@@ -53,10 +52,9 @@ class OneTimeService {
 		private IManager $calendarManager,
 		private IURLGenerator $urlGenerator,
 		private IAppManager $appManager,
-		private IAppConfig $appConfig,
 		private IUserManager $userManager,
-		private IGroupManager $groupManager,
 		private IBroker $talkBroker,
+		private IL10N $l,
 		private LoggerInterface $logger,
 	) {
 	}
@@ -70,7 +68,7 @@ class OneTimeService {
 		if (!array_key_exists($token, $this->datesByToken)) {
 			try {
 				$row = $this->mapper->findByToken($token);
-				$this->datesByToken[$token] = $row === null ? null : OneTimeDates::fromStored($row->getTimezone(), $row->getDates());
+				$this->datesByToken[$token] = $row === null ? null : OneTimeDates::fromStored($this->l, $row->getTimezone(), $row->getDates());
 			} catch (\Throwable $e) {
 				$this->logger->error('Quick Booking could not read the dates of a one-time schedule', ['app' => Application::APP_ID, 'exception' => $e]);
 				throw new TemporaryFailureException('Could not read one-time dates', 0, $e);
@@ -133,7 +131,7 @@ class OneTimeService {
 				continue;
 			}
 			try {
-				$dates = OneTimeDates::fromStored($row->getTimezone(), $row->getDates());
+				$dates = OneTimeDates::fromStored($this->l, $row->getTimezone(), $row->getDates());
 			} catch (\UnexpectedValueException $e) {
 				$this->logger->error('Quick Booking found invalid dates for one-time schedule ' . $schedule->id, ['app' => Application::APP_ID, 'exception' => $e]);
 				continue;
@@ -149,7 +147,7 @@ class OneTimeService {
 			'schedules' => $oneTime,
 			'otherNames' => $otherNames,
 			'calendars' => $this->calendars($userId),
-			'talk' => $this->canCreateTalkRooms($userId),
+			'talk' => $this->hasTalk($userId),
 			'choices' => [
 				'increments' => self::MINUTE_STEPS,
 				'buffers' => [0, ...self::MINUTE_STEPS],
@@ -251,62 +249,63 @@ class OneTimeService {
 
 		$name = Input::singleLine($text('name'));
 		if ($name === '' || mb_strlen($name) > self::MAX_NAME_LENGTH) {
-			throw new ValidationException('name', 'Please enter a name of at most 128 characters');
+			throw new ValidationException('name', $this->l->t('Please enter a name of at most 128 characters'));
 		}
 		$location = Input::singleLine($text('location'));
 		if (mb_strlen($location) > self::MAX_LOCATION_LENGTH) {
-			throw new ValidationException('location', 'The location is too long');
+			throw new ValidationException('location', $this->l->t('The location is too long'));
 		}
 		$description = Input::multiLine($text('description'));
 		if (mb_strlen($description) > self::MAX_DESCRIPTION_LENGTH) {
-			throw new ValidationException('description', 'The description is too long');
+			throw new ValidationException('description', $this->l->t('The description is too long'));
 		}
 
 		$length = $input['lengthMinutes'] ?? null;
 		if (!is_int($length) || $length < 1 || $length > self::MAX_LENGTH_MINUTES) {
-			throw new ValidationException('lengthMinutes', 'Please enter the duration in minutes');
+			throw new ValidationException('lengthMinutes', $this->l->t('Please enter the duration in minutes'));
 		}
-		$increment = $choice('incrementMinutes', self::MINUTE_STEPS, 'Please choose the increments');
-		$preparation = $choice('preparationMinutes', [0, ...self::MINUTE_STEPS], 'Please choose the buffer before the event');
-		$followup = $choice('followupMinutes', [0, ...self::MINUTE_STEPS], 'Please choose the buffer after the event');
-		$notice = $choice('timeBeforeNextSlotMinutes', [0, ...self::MINUTE_STEPS, ...self::NOTICE_EXTRA], 'Please choose the minimum time before the next slot');
+		$increment = $choice('incrementMinutes', self::MINUTE_STEPS, $this->l->t('Please choose the increments'));
+		$preparation = $choice('preparationMinutes', [0, ...self::MINUTE_STEPS], $this->l->t('Please choose the buffer before the event'));
+		$followup = $choice('followupMinutes', [0, ...self::MINUTE_STEPS], $this->l->t('Please choose the buffer after the event'));
+		$notice = $choice('timeBeforeNextSlotMinutes', [0, ...self::MINUTE_STEPS, ...self::NOTICE_EXTRA], $this->l->t('Please choose the minimum time before the next slot'));
 		$dailyMax = $input['dailyMax'] ?? null;
 		if ($dailyMax !== null && (!is_int($dailyMax) || $dailyMax < 1 || $dailyMax > self::MAX_DAILY)) {
-			throw new ValidationException('dailyMax', 'Please enter the maximum number of slots per day, or leave it empty');
+			throw new ValidationException('dailyMax', $this->l->t('Please enter the maximum number of slots per day, or leave it empty'));
 		}
 
 		$visibility = $text('visibility');
 		if (!in_array($visibility, self::VISIBILITIES, true)) {
-			throw new ValidationException('visibility', 'Please choose the visibility');
+			throw new ValidationException('visibility', $this->l->t('Please choose the visibility'));
 		}
 		$calendars = $this->calendars($userId);
 		$calendarUri = $text('calendarUri');
 		$writable = array_column(array_filter($calendars, static fn (array $c): bool => $c['writable']), 'uri');
 		if (!in_array($calendarUri, $writable, true)) {
-			throw new ValidationException('calendarUri', 'Please choose a booking calendar');
+			throw new ValidationException('calendarUri', $this->l->t('Please choose a booking calendar'));
 		}
 		$conflicts = $input['conflictCalendarUris'] ?? [];
 		if (!is_array($conflicts) || !array_is_list($conflicts)) {
-			throw new ValidationException('conflictCalendarUris', 'Please choose the calendars to check for conflicts');
+			throw new ValidationException('conflictCalendarUris', $this->l->t('Please choose the calendars to check for conflicts'));
 		}
 		$known = array_column($calendars, 'uri');
 		foreach ($conflicts as $uri) {
 			if (!is_string($uri) || !in_array($uri, $known, true)) {
-				throw new ValidationException('conflictCalendarUris', 'Please choose the calendars to check for conflicts');
+				throw new ValidationException('conflictCalendarUris', $this->l->t('Please choose the calendars to check for conflicts'));
 			}
 		}
 		// The booking calendar is always checked
 		$conflicts = array_values(array_diff(array_unique($conflicts), [$calendarUri]));
 
-		$dates = OneTimeDates::fromInput($text('timezone'), $input['days'] ?? null);
+		$dates = OneTimeDates::fromInput($this->l, $text('timezone'), $input['days'] ?? null);
 		foreach ($dates->ranges() as $range) {
 			if ($range['end'] - $range['start'] < $length * 60) {
-				throw new ValidationException('days', 'Each time range must fit at least one appointment');
+				throw new ValidationException('days', $this->l->t('Each time range must fit at least one appointment'));
 			}
 		}
 
-		// Without Talk the form has no checkbox: keep what was set before
-		$createTalkRoom = $this->canCreateTalkRooms($userId)
+		// Without Talk the form has no checkbox: keep what was set before (the form does the
+		// same for users who may not start Talk conversations)
+		$createTalkRoom = $this->hasTalk($userId)
 			? ($input['createTalkRoom'] ?? null) === true
 			: ($current?->createTalkRoom ?? false);
 
@@ -334,29 +333,19 @@ class OneTimeService {
 	}
 
 	/**
-	 * Same rule as the Calendar's "Create a Talk room" option: Talk is installed and enabled
-	 * for the user, and Talk's settings let them use it and start conversations.
+	 * Whether Talk can make rooms for this user's appointments: installed and enabled for them.
+	 * Whether they may start conversations is Talk's own rule; the form reads it from the
+	 * capability Talk publishes for that ("can-create") and leaves the option out without it.
 	 */
-	private function canCreateTalkRooms(string $userId): bool {
+	private function hasTalk(string $userId): bool {
 		try {
 			$user = $this->userManager->get($userId);
-			if ($user === null || !$this->talkBroker->hasBackend() || !$this->appManager->isEnabledForUser('spreed', $user)) {
-				return false;
-			}
-			$groups = $this->groupManager->getUserGroupIds($user);
-			foreach (['start_conversations', 'allowed_groups'] as $key) {
-				$allowed = json_decode($this->appConfig->getValueString('spreed', $key, '[]'), true);
-				if (is_array($allowed) && $allowed !== [] && array_intersect($allowed, $groups) === []) {
-					return false;
-				}
-			}
-			return true;
+			return $user !== null && $this->talkBroker->hasBackend() && $this->appManager->isEnabledForUser('spreed', $user);
 		} catch (\Throwable $e) {
-			$this->logger->info('Quick Booking could not find out whether Talk rooms can be created', ['app' => Application::APP_ID, 'exception' => $e]);
+			$this->logger->warning('Quick Booking could not find out whether Talk is available', ['app' => Application::APP_ID, 'exception' => $e]);
 			return false;
 		}
 	}
-
 	/**
 	 * The user's calendars, as the Calendar's editor offers them: writable ones (own or shared
 	 * with them) to book into, all of them to check for conflicts.

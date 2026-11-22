@@ -1,0 +1,742 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Booking\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: quickbook/js/booking.js:126
+msgid "{minutes} min"
+msgstr "{minutes} นาที"
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h"
+msgstr "{hours} ชม."
+
+#: quickbook/js/booking.js:130
+msgid "{hours} h {minutes} min"
+msgstr "{hours} ชม. {minutes} นาที"
+
+#: quickbook/js/booking.js:153
+msgid "Too many requests. Please wait a moment and try again."
+msgstr "มีคำขอมากเกินไป โปรดรอสักครู่แล้วลองอีกครั้ง"
+
+#: quickbook/js/booking.js:153 /work/quickbook/js/booking.js:157
+msgid "Could not load the free times."
+msgstr "ไม่สามารถโหลดเวลาว่างได้"
+
+#: quickbook/js/booking.js:196
+msgid "Sorry, this time was just taken. Please choose another time."
+msgstr "ขออภัย เวลานี้เพิ่งถูกจองไป โปรดเลือกเวลาอื่น"
+
+#: quickbook/js/booking.js:202 /work/quickbook/js/calendar-onetime.js:755
+msgid "Please check your input."
+msgstr "โปรดตรวจสอบข้อมูลที่คุณกรอก"
+
+#: quickbook/js/booking.js:207
+msgid "This email address already has several bookings. Please try again tomorrow or contact the organizer."
+msgstr "ที่อยู่อีเมลนี้มีการจองอยู่หลายรายการแล้ว โปรดลองอีกครั้งในวันพรุ่งนี้หรือติดต่อผู้จัด"
+
+#: quickbook/js/booking.js:208
+msgid "You made too many bookings in a short time. Please try again later."
+msgstr "คุณทำการจองมากเกินไปในช่วงเวลาสั้น ๆ โปรดลองอีกครั้งในภายหลัง"
+
+#: quickbook/js/booking.js:215
+msgid "Something went wrong while booking. Please try again."
+msgstr "เกิดข้อผิดพลาดระหว่างการจอง โปรดลองอีกครั้ง"
+
+#: quickbook/js/booking.js:217 /work/quickbook/js/calendar-onetime.js:764
+msgid "Could not reach the server. Please check your connection and try again."
+msgstr "ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ได้ โปรดตรวจสอบการเชื่อมต่อของคุณแล้วลองอีกครั้ง"
+
+#: quickbook/js/booking.js:247
+msgid "with {name}"
+msgstr "กับ {name}"
+
+#: quickbook/js/booking.js:254
+msgid "Date & time"
+msgstr "วันที่และเวลา"
+
+#: quickbook/js/booking.js:254
+msgid "Your details"
+msgstr "ข้อมูลของคุณ"
+
+#: quickbook/js/booking.js:254
+msgid "Confirm"
+msgstr "ยืนยัน"
+
+#: quickbook/js/booking.js:257
+msgid "Booking steps"
+msgstr "ขั้นตอนการจอง"
+
+#: quickbook/js/booking.js:272
+msgid "This appointment has no upcoming dates any more."
+msgstr "การนัดหมายนี้ไม่มีวันที่เปิดให้จองอีกแล้ว"
+
+#: quickbook/js/booking.js:310
+msgid "Choose a date"
+msgstr "เลือกวันที่"
+
+#: quickbook/js/booking.js:312
+msgid "Previous month"
+msgstr "เดือนก่อนหน้า"
+
+#: quickbook/js/booking.js:314
+msgid "Next month"
+msgstr "เดือนถัดไป"
+
+#: quickbook/js/booking.js:321
+msgid "Choose a date to see the free times."
+msgstr "เลือกวันที่เพื่อดูเวลาว่าง"
+
+#: quickbook/js/booking.js:323
+msgid "Loading free times…"
+msgstr "กำลังโหลดเวลาว่าง…"
+
+#: quickbook/js/booking.js:327
+msgid "No free times on this day. Please choose another date."
+msgstr "วันที่เลือกไม่มีเวลาว่าง โปรดเลือกวันอื่น"
+
+#: quickbook/js/booking.js:329 /work/quickbook/js/booking.js:344
+msgid "Free times"
+msgstr "เวลาว่าง"
+
+#: quickbook/js/booking.js:343
+msgid "Choose a time"
+msgstr "เลือกเวลา"
+
+#: quickbook/js/booking.js:345
+msgid "Times are shown in {timezone}"
+msgstr "เวลาแสดงตามเขตเวลา {timezone}"
+
+#: quickbook/js/booking.js:353
+msgid "Continue"
+msgstr "ดำเนินการต่อ"
+
+#: quickbook/js/booking.js:361
+msgid "Change"
+msgstr "เปลี่ยน"
+
+#: quickbook/js/booking.js:382 /work/quickbook/js/booking.js:405
+msgid "Name"
+msgstr "ชื่อ"
+
+#: quickbook/js/booking.js:383 /work/quickbook/js/booking.js:406
+msgid "Email"
+msgstr "อีเมล"
+
+#: quickbook/js/booking.js:383
+msgid "Your booking confirmation is sent to this address."
+msgstr "ระบบจะส่งการยืนยันการจองไปยังที่อยู่นี้"
+
+#: quickbook/js/booking.js:384
+msgid "Comment (optional)"
+msgstr "หมายเหตุ (ไม่บังคับ)"
+
+#: quickbook/js/booking.js:390 /work/quickbook/js/booking.js:418
+msgid "Back"
+msgstr "ย้อนกลับ"
+
+#: quickbook/js/booking.js:391
+msgid "Review booking"
+msgstr "ตรวจสอบการจอง"
+
+#: quickbook/js/booking.js:400
+msgid "Appointment"
+msgstr "การนัดหมาย"
+
+#: quickbook/js/booking.js:401
+msgid "With"
+msgstr "นัดหมายกับ"
+
+#: quickbook/js/booking.js:402
+msgid "Date"
+msgstr "วันที่"
+
+#: quickbook/js/booking.js:403
+msgid "Time"
+msgstr "เวลา"
+
+#: quickbook/js/booking.js:404 /work/quickbook/js/calendar-onetime.js:900
+msgid "Location"
+msgstr "สถานที่"
+
+#: quickbook/js/booking.js:407
+msgid "Comment"
+msgstr "หมายเหตุ"
+
+#: quickbook/js/booking.js:415
+msgid "Please check your booking."
+msgstr "โปรดตรวจสอบการจองของคุณ"
+
+#: quickbook/js/booking.js:424
+msgid "Booking…"
+msgstr "กำลังจอง…"
+
+#: quickbook/js/booking.js:424
+msgid "Confirm booking"
+msgstr "ยืนยันการจอง"
+
+#: quickbook/js/booking.js:433
+msgid "Your appointment is booked"
+msgstr "จองการนัดหมายของคุณแล้ว"
+
+#: quickbook/js/booking.js:434
+msgid "A confirmation email is on its way to {email}."
+msgstr "อีเมลยืนยันกำลังถูกส่งไปยัง {email}"
+
+#: quickbook/js/booking.js:438
+msgid "Book another appointment"
+msgstr "จองการนัดหมายอื่น"
+
+#: quickbook/js/booking.js:445
+msgid "Online booking on this page is temporarily unavailable."
+msgstr "การจองออนไลน์ในหน้านี้ไม่พร้อมใช้งานชั่วคราว"
+
+#: quickbook/js/booking.js:447
+msgid "Continue on the standard booking page"
+msgstr "ดำเนินการต่อในหน้าจองมาตรฐาน"
+
+#: quickbook/js/booking.js:448
+msgid "Please try again later."
+msgstr "โปรดลองอีกครั้งในภายหลัง"
+
+#: quickbook/js/calendar-onetime.js:148 quickbook/js/calendar-onetime.js:162
+msgid "{duration} minute"
+msgid_plural "{duration} minutes"
+msgstr[0] "{duration} นาที"
+
+#: quickbook/js/calendar-onetime.js:152
+msgid "{duration} week"
+msgid_plural "{duration} weeks"
+msgstr[0] "{duration} สัปดาห์"
+
+#: quickbook/js/calendar-onetime.js:156
+msgid "{duration} day"
+msgid_plural "{duration} days"
+msgstr[0] "{duration} วัน"
+
+#: quickbook/js/calendar-onetime.js:160
+msgid "{duration} hour"
+msgid_plural "{duration} hours"
+msgstr[0] "{duration} ชั่วโมง"
+
+#: quickbook/js/calendar-onetime.js:262 quickbook/lib/Health/HealthText.php:25
+msgid "One-time appointment schedules"
+msgstr "ตารางนัดหมายแบบครั้งเดียว"
+
+#: quickbook/js/calendar-onetime.js:305
+msgid "Actions"
+msgstr "การกระทำ"
+
+#: quickbook/js/calendar-onetime.js:364 quickbook/js/calendar-onetime.js:985
+msgid "Preview"
+msgstr "ตัวอย่าง"
+
+#: quickbook/js/calendar-onetime.js:365 quickbook/js/calendar-onetime.js:986
+msgid "Copy link"
+msgstr "คัดลอกลิงก์"
+
+#: quickbook/js/calendar-onetime.js:366
+msgid "Duplicate"
+msgstr "ทำสำเนา"
+
+#: quickbook/js/calendar-onetime.js:367
+msgid "Edit"
+msgstr "แก้ไข"
+
+#: quickbook/js/calendar-onetime.js:368
+msgid "Delete"
+msgstr "ลบ"
+
+#: quickbook/js/calendar-onetime.js:412
+msgid "Appointment link was copied to clipboard"
+msgstr "คัดลอกลิงก์การนัดหมายไปยังคลิปบอร์ดแล้ว"
+
+#: quickbook/js/calendar-onetime.js:414
+msgid "Appointment link could not be copied to clipboard"
+msgstr "ไม่สามารถคัดลอกลิงก์การนัดหมายไปยังคลิปบอร์ดได้"
+
+#: quickbook/js/calendar-onetime.js:427
+msgid "Could not delete the appointment schedule"
+msgstr "ไม่สามารถลบตารางนัดหมายได้"
+
+#: quickbook/js/calendar-onetime.js:533
+msgid "Remove {calendar}"
+msgstr "นำ {calendar} ออก"
+
+#: quickbook/js/calendar-onetime.js:662
+msgid "One-time appointment schedules could not be loaded. Please try again later."
+msgstr "ไม่สามารถโหลดตารางนัดหมายแบบครั้งเดียวได้ โปรดลองอีกครั้งในภายหลัง"
+
+#: quickbook/js/calendar-onetime.js:759
+msgid "One-time appointment schedules are temporarily unavailable."
+msgstr "ตารางนัดหมายแบบครั้งเดียวไม่พร้อมใช้งานชั่วคราว"
+
+#: quickbook/js/calendar-onetime.js:761
+msgid "Could not save. Please try again."
+msgstr "ไม่สามารถบันทึกได้ โปรดลองอีกครั้ง"
+
+#: quickbook/js/calendar-onetime.js:783
+msgid "{count} slot"
+msgid_plural "{count} slots"
+msgstr[0] "{count} ช่วงเวลา"
+
+#: quickbook/js/calendar-onetime.js:794
+msgid "Date {number}"
+msgstr "วันที่ {number}"
+
+#: quickbook/js/calendar-onetime.js:798
+msgid "{date}: from"
+msgstr "{date}: ตั้งแต่"
+
+#: quickbook/js/calendar-onetime.js:799
+msgid "to"
+msgstr "ถึง"
+
+#: quickbook/js/calendar-onetime.js:800
+msgid "{date}: to"
+msgstr "{date}: ถึง"
+
+#: quickbook/js/calendar-onetime.js:804
+msgid "Delete {date}"
+msgstr "ลบ {date}"
+
+#: quickbook/js/calendar-onetime.js:823
+msgid "Calendars to check for conflicts"
+msgstr "ปฏิทินที่ใช้ตรวจสอบเวลาที่ชนกัน"
+
+#: quickbook/js/calendar-onetime.js:838
+msgid "Booking calendar"
+msgstr "ปฏิทินสำหรับการจอง"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Create one-time appointment schedule"
+msgstr "สร้างตารางนัดหมายแบบครั้งเดียว"
+
+#: quickbook/js/calendar-onetime.js:894
+msgid "Edit one-time appointment schedule"
+msgstr "แก้ไขตารางนัดหมายแบบครั้งเดียว"
+
+#: quickbook/js/calendar-onetime.js:896
+msgid "You need a calendar you can write to, to take appointments."
+msgstr "คุณต้องมีปฏิทินที่คุณมีสิทธิ์เขียนเพื่อรับการนัดหมาย"
+
+#: quickbook/js/calendar-onetime.js:899
+msgid "Appointment name"
+msgstr "ชื่อการนัดหมาย"
+
+#: quickbook/js/calendar-onetime.js:905
+msgid "Create a Talk room"
+msgstr "สร้างห้อง Talk"
+
+#: quickbook/js/calendar-onetime.js:914
+msgid "A unique link will be generated for every booked appointment and sent via the confirmation email"
+msgstr "ระบบจะสร้างลิงก์เฉพาะสำหรับการนัดหมายที่จองแต่ละรายการ และส่งไปทางอีเมลยืนยัน"
+
+#: quickbook/js/calendar-onetime.js:918
+msgid "Description"
+msgstr "คำอธิบาย"
+
+#: quickbook/js/calendar-onetime.js:922
+msgid "Duration (minutes)"
+msgstr "ระยะเวลา (นาที)"
+
+#: quickbook/js/calendar-onetime.js:923
+msgid "Increments"
+msgstr "ช่วงห่างของเวลาเริ่ม"
+
+#: quickbook/js/calendar-onetime.js:927
+msgid "Visibility"
+msgstr "การมองเห็น"
+
+#: quickbook/js/calendar-onetime.js:928
+msgid "Public – shown on profile page"
+msgstr "สาธารณะ – แสดงในหน้าโปรไฟล์"
+
+#: quickbook/js/calendar-onetime.js:929
+msgid "Private – only accessible via link"
+msgstr "ส่วนตัว – เข้าถึงได้ผ่านลิงก์เท่านั้น"
+
+#: quickbook/js/calendar-onetime.js:934
+msgid "Booking dates"
+msgstr "วันที่เปิดให้จอง"
+
+#: quickbook/js/calendar-onetime.js:935
+msgid "Times are in {timezone}."
+msgstr "เวลาเป็นไปตามเขตเวลา {timezone}"
+
+#: quickbook/js/calendar-onetime.js:941
+msgid "Add date"
+msgstr "เพิ่มวันที่"
+
+#: quickbook/js/calendar-onetime.js:956
+msgid "Planning restrictions"
+msgstr "ข้อจำกัดในการวางแผน"
+
+#: quickbook/js/calendar-onetime.js:958
+msgid "Buffer before the event"
+msgstr "เวลาเผื่อก่อนกิจกรรม"
+
+#: quickbook/js/calendar-onetime.js:959
+msgid "Buffer after the event"
+msgstr "เวลาเผื่อหลังกิจกรรม"
+
+#: quickbook/js/calendar-onetime.js:962
+msgid "Minimum time before next slot"
+msgstr "เวลาขั้นต่ำก่อนช่วงเวลาถัดไป"
+
+#: quickbook/js/calendar-onetime.js:963
+msgid "Max slots per day"
+msgstr "จำนวนช่วงเวลาสูงสุดต่อวัน"
+
+#: quickbook/js/calendar-onetime.js:967
+msgid "It seems a rate limit has been reached. Please try again later."
+msgstr "ดูเหมือนว่าจะถึงขีดจำกัดจำนวนคำขอแล้ว โปรดลองอีกครั้งในภายหลัง"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Save"
+msgstr "บันทึก"
+
+#: quickbook/js/calendar-onetime.js:972
+msgid "Update"
+msgstr "อัปเดต"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully created"
+msgstr "สร้างตารางนัดหมายแบบครั้งเดียวสำเร็จแล้ว"
+
+#: quickbook/js/calendar-onetime.js:983
+msgid "One-time appointment schedule successfully updated"
+msgstr "อัปเดตตารางนัดหมายแบบครั้งเดียวสำเร็จแล้ว"
+
+#: quickbook/js/calendar-onetime.js:995
+msgid "Close"
+msgstr "ปิด"
+
+#: quickbook/js/settings.js:15
+msgid "Checking…"
+msgstr "กำลังตรวจสอบ…"
+
+#: quickbook/js/settings.js:23
+msgid "The self-check could not run."
+msgstr "ไม่สามารถเรียกใช้การตรวจสอบตัวเองได้"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "Appointment not found"
+msgstr "ไม่พบการนัดหมาย"
+
+#: quickbook/lib/Controller/PageController.php:69
+msgid "This booking link does not exist (any more)."
+msgstr "ลิงก์การจองนี้ไม่มีอยู่ (อีกต่อไป)"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Booking unavailable"
+msgstr "ไม่สามารถจองได้"
+
+#: quickbook/lib/Controller/PageController.php:75
+msgid "Online booking is temporarily unavailable. Please try again later."
+msgstr "การจองออนไลน์ไม่พร้อมใช้งานชั่วคราว โปรดลองอีกครั้งในภายหลัง"
+
+#: quickbook/lib/Health/HealthText.php:22
+msgid "Quick Booking components"
+msgstr "ส่วนประกอบของ Quick Booking"
+
+#: quickbook/lib/Health/HealthText.php:23
+msgid "Calendar app enabled"
+msgstr "แอปปฏิทินเปิดใช้งานอยู่"
+
+#: quickbook/lib/Health/HealthText.php:24
+msgid "Calendar code contract"
+msgstr "สัญญาโค้ดของปฏิทิน"
+
+#: quickbook/lib/Health/HealthText.php:26
+msgid "Calendar services"
+msgstr "บริการของปฏิทิน"
+
+#: quickbook/lib/Health/HealthText.php:27
+msgid "Standard booking page (fallback)"
+msgstr "หน้าจองมาตรฐาน (สำรอง)"
+
+#: quickbook/lib/Health/HealthText.php:28
+msgid "Slot lookup"
+msgstr "การค้นหาเวลาว่าง"
+
+#: quickbook/lib/Health/HealthText.php:29
+msgid "Booking storage"
+msgstr "การจัดเก็บการจอง"
+
+#: quickbook/lib/Health/HealthText.php:36
+msgid "Passed"
+msgstr "ผ่าน"
+
+#: quickbook/lib/Health/HealthText.php:37
+msgid "Failed"
+msgstr "ล้มเหลว"
+
+#: quickbook/lib/Health/HealthText.php:38
+msgid "Warning"
+msgstr "คำเตือน"
+
+#: quickbook/lib/Health/HealthText.php:39
+msgid "Skipped"
+msgstr "ข้าม"
+
+#: quickbook/lib/Health/HealthText.php:50
+msgid "Booking page, booking API and Calendar link redirect load"
+msgstr "หน้าจอง, API การจอง และการเปลี่ยนเส้นทางลิงก์ของปฏิทินโหลดได้"
+
+#: quickbook/lib/Health/HealthText.php:51
+msgid "The Calendar app is not enabled"
+msgstr "แอปปฏิทินไม่ได้เปิดใช้งาน"
+
+#: quickbook/lib/Health/HealthText.php:52
+msgid "All classes, methods and fields found"
+msgstr "พบคลาส เมธอด และฟิลด์ทั้งหมด"
+
+#: quickbook/lib/Health/HealthText.php:53
+msgid "Can be created and edited"
+msgstr "สามารถสร้างและแก้ไขได้"
+
+#: quickbook/lib/Health/HealthText.php:54
+msgid "Booking service, schedule service and booking storage load"
+msgstr "บริการจอง บริการตารางนัดหมาย และที่จัดเก็บการจองโหลดได้"
+
+#: quickbook/lib/Health/HealthText.php:55
+msgid "No appointment schedule exists yet"
+msgstr "ยังไม่มีตารางนัดหมาย"
+
+#: quickbook/lib/Health/HealthText.php:56
+#, php-format
+msgid "Schedule \"%1$s\", free slots in the next 7 days: %2$s"
+msgstr "ตารางนัดหมาย \"%1$s\" เวลาว่างใน 7 วันข้างหน้า: %2$s"
+
+#: quickbook/lib/Health/HealthText.php:57
+msgid "Test booking stored and removed"
+msgstr "บันทึกและลบการจองทดสอบแล้ว"
+
+#: quickbook/lib/Notification/Notifier.php:29
+#: quickbook/lib/Settings/AdminSection.php:24
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Quick Booking"
+msgstr "Quick Booking"
+
+#: quickbook/lib/Notification/Notifier.php:41
+msgid "Quick Booking switched visitors to the standard Calendar booking page"
+msgstr "Quick Booking เปลี่ยนให้ผู้เข้าชมไปใช้หน้าจองมาตรฐานของปฏิทิน"
+
+#: quickbook/lib/Notification/Notifier.php:42
+#, php-format
+msgid "Something in the Calendar app or Nextcloud no longer works as Quick Booking expects: %s"
+msgstr "บางอย่างในแอปปฏิทินหรือ Nextcloud ไม่ทำงานตามที่ Quick Booking คาดไว้อีกต่อไป: %s"
+
+#: quickbook/lib/Notification/Notifier.php:45
+#, php-format
+msgid "Quick Booking works again (%s)"
+msgstr "Quick Booking กลับมาทำงานได้อีกครั้ง (%s)"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:41
+msgid "Please add at least one date"
+msgstr "โปรดเพิ่มวันที่อย่างน้อยหนึ่งวัน"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:44
+msgid "Too many dates"
+msgstr "มีวันที่มากเกินไป"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:55
+msgid "Please enter a valid date"
+msgstr "โปรดป้อนวันที่ที่ถูกต้อง"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:58
+msgid "Please enter valid times"
+msgstr "โปรดป้อนเวลาที่ถูกต้อง"
+
+#: quickbook/lib/OneTime/OneTimeDates.php:61
+msgid "The end time must be after the start time"
+msgstr "เวลาสิ้นสุดต้องอยู่หลังเวลาเริ่มต้น"
+
+#: quickbook/lib/OneTime/OneTimeService.php:252
+msgid "Please enter a name of at most 128 characters"
+msgstr "โปรดป้อนชื่อที่ยาวไม่เกิน 128 อักขระ"
+
+#: quickbook/lib/OneTime/OneTimeService.php:256
+msgid "The location is too long"
+msgstr "สถานที่ยาวเกินไป"
+
+#: quickbook/lib/OneTime/OneTimeService.php:260
+msgid "The description is too long"
+msgstr "คำอธิบายยาวเกินไป"
+
+#: quickbook/lib/OneTime/OneTimeService.php:265
+msgid "Please enter the duration in minutes"
+msgstr "โปรดป้อนระยะเวลาเป็นนาที"
+
+#: quickbook/lib/OneTime/OneTimeService.php:267
+msgid "Please choose the increments"
+msgstr "โปรดเลือกช่วงห่างของเวลาเริ่ม"
+
+#: quickbook/lib/OneTime/OneTimeService.php:268
+msgid "Please choose the buffer before the event"
+msgstr "โปรดเลือกเวลาเผื่อก่อนกิจกรรม"
+
+#: quickbook/lib/OneTime/OneTimeService.php:269
+msgid "Please choose the buffer after the event"
+msgstr "โปรดเลือกเวลาเผื่อหลังกิจกรรม"
+
+#: quickbook/lib/OneTime/OneTimeService.php:270
+msgid "Please choose the minimum time before the next slot"
+msgstr "โปรดเลือกเวลาขั้นต่ำก่อนช่วงเวลาถัดไป"
+
+#: quickbook/lib/OneTime/OneTimeService.php:273
+msgid "Please enter the maximum number of slots per day, or leave it empty"
+msgstr "โปรดป้อนจำนวนช่วงเวลาสูงสุดต่อวัน หรือเว้นว่างไว้"
+
+#: quickbook/lib/OneTime/OneTimeService.php:278
+msgid "Please choose the visibility"
+msgstr "โปรดเลือกการมองเห็น"
+
+#: quickbook/lib/OneTime/OneTimeService.php:284
+msgid "Please choose a booking calendar"
+msgstr "โปรดเลือกปฏิทินสำหรับการจอง"
+
+#: quickbook/lib/OneTime/OneTimeService.php:288
+#: quickbook/lib/OneTime/OneTimeService.php:293
+msgid "Please choose the calendars to check for conflicts"
+msgstr "โปรดเลือกปฏิทินที่ใช้ตรวจสอบเวลาที่ชนกัน"
+
+#: quickbook/lib/OneTime/OneTimeService.php:302
+msgid "Each time range must fit at least one appointment"
+msgstr "แต่ละช่วงเวลาต้องยาวพอสำหรับการนัดหมายอย่างน้อยหนึ่งรายการ"
+
+#: quickbook/lib/Service/BookingFlowService.php:62
+#: quickbook/lib/Service/BookingFlowService.php:66
+msgid "Invalid date"
+msgstr "วันที่ไม่ถูกต้อง"
+
+#: quickbook/lib/Service/BookingFlowService.php:95
+msgid "Please enter your name"
+msgstr "โปรดป้อนชื่อของคุณ"
+
+#: quickbook/lib/Service/BookingFlowService.php:99
+msgid "Please enter your name without @, < or >"
+msgstr "โปรดป้อนชื่อของคุณโดยไม่มี @, < หรือ >"
+
+#: quickbook/lib/Service/BookingFlowService.php:102
+msgid "Please enter a valid email address"
+msgstr "โปรดป้อนที่อยู่อีเมลที่ถูกต้อง"
+
+#: quickbook/lib/Service/BookingFlowService.php:105
+msgid "The comment is too long"
+msgstr "หมายเหตุยาวเกินไป"
+
+#: quickbook/lib/Service/BookingFlowService.php:118
+msgid "Invalid time range"
+msgstr "ช่วงเวลาไม่ถูกต้อง"
+
+#: quickbook/lib/Service/Input.php:46
+msgid "Invalid timezone"
+msgstr "เขตเวลาไม่ถูกต้อง"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "One-page appointment booking for Calendar schedules, without the email confirmation step."
+msgstr "การจองนัดหมายในหน้าเดียวสำหรับตารางนัดหมายของปฏิทิน โดยไม่มีขั้นตอนยืนยันทางอีเมล"
+
+#: quickbook/specialAppInfoFakeDummyForL10nScript.php:4
+msgid ""
+"Quick Booking adds a public booking page for the appointment schedules you already have in the Calendar app. Requires the Calendar app.\n"
+"\n"
+"Visitors pick a date and time, enter their details, review and confirm on the same page. The appointment is booked immediately and the usual booking confirmation email (with .ics) is sent.\n"
+"\n"
+"* Share the usual Calendar booking link (\"Copy link\" in the Calendar app): it opens Quick Booking.\n"
+"* One-time appointment schedules: offer appointments on one or more chosen dates (e.g. parent-teacher conferences) instead of weekly. Create them in the Calendar app under \"One-time appointment schedules\".\n"
+"* Built-in rate limiting of bookings per visitor and per email address.\n"
+"* Self-check: verifies after every Calendar or Nextcloud update that it still works, and lets the booking link show the standard Calendar booking page when something breaks."
+msgstr ""
+"Quick Booking เพิ่มหน้าจองสาธารณะสำหรับตารางนัดหมายที่คุณมีอยู่แล้วในแอปปฏิทิน จำเป็นต้องมีแอปปฏิทิน\n"
+"\n"
+"ผู้เข้าชมเลือกวันที่และเวลา กรอกข้อมูล ตรวจสอบ และยืนยันได้ในหน้าเดียวกัน การนัดหมายจะถูกจองทันที และระบบจะส่งอีเมลยืนยันการจองตามปกติ (พร้อมไฟล์ .ics)\n"
+"\n"
+"* แชร์ลิงก์การจองตามปกติของปฏิทิน (\"คัดลอกลิงก์\" ในแอปปฏิทิน): ลิงก์นี้จะเปิด Quick Booking\n"
+"* ตารางนัดหมายแบบครั้งเดียว: เปิดให้นัดหมายในวันที่ที่เลือกไว้หนึ่งวันหรือหลายวัน (เช่น การประชุมผู้ปกครองกับครู) แทนการเปิดเป็นรายสัปดาห์ สร้างได้ในแอปปฏิทินที่ \"ตารางนัดหมายแบบครั้งเดียว\"\n"
+"* มีการจำกัดจำนวนการจองต่อผู้เข้าชมและต่อที่อยู่อีเมลในตัว\n"
+"* การตรวจสอบตัวเอง: ตรวจสอบหลังการอัปเดตปฏิทินหรือ Nextcloud ทุกครั้งว่ายังทำงานได้อยู่ และให้ลิงก์การจองแสดงหน้าจองมาตรฐานของปฏิทินเมื่อมีบางอย่างขัดข้อง"
+
+#: quickbook/templates/booking.php:5
+msgid "Please enable JavaScript to book an appointment."
+msgstr "โปรดเปิดใช้งาน JavaScript เพื่อจองการนัดหมาย"
+
+#: quickbook/templates/settings-admin.php:10
+msgid "Quick Booking self-check"
+msgstr "การตรวจสอบตัวเองของ Quick Booking"
+
+#: quickbook/templates/settings-admin.php:12
+msgid "Quick Booking uses internal code of the Calendar app. It checks after every Calendar or Nextcloud update and once a day that this still works. If something breaks, visitors are sent to the standard Calendar booking page and admins get a notification. While switched off, the check repeats every 15 minutes and switches back on when it passes."
+msgstr "Quick Booking ใช้โค้ดภายในของแอปปฏิทิน โดยจะตรวจสอบหลังการอัปเดตปฏิทินหรือ Nextcloud ทุกครั้ง และวันละหนึ่งครั้ง ว่าโค้ดดังกล่าวยังทำงานได้อยู่ หากมีบางอย่างขัดข้อง ผู้เข้าชมจะถูกส่งไปยังหน้าจองมาตรฐานของปฏิทิน และผู้ดูแลระบบจะได้รับการแจ้งเตือน ระหว่างที่ปิดอยู่ การตรวจสอบจะทำซ้ำทุก 15 นาที และจะเปิดกลับมาอีกครั้งเมื่อการตรวจสอบผ่าน"
+
+#: quickbook/templates/settings-admin.php:17
+msgid "Off: visitors use the standard Calendar booking page."
+msgstr "ปิดอยู่: ผู้เข้าชมใช้หน้าจองมาตรฐานของปฏิทิน"
+
+#: quickbook/templates/settings-admin.php:21
+msgid "Bookings from several different networks failed while the self-check passed. Quick Booking switches back on after a Calendar update, or when you run the check below and it passes."
+msgstr "การจองจากหลายเครือข่ายที่แตกต่างกันล้มเหลว ทั้งที่การตรวจสอบตัวเองผ่าน Quick Booking จะเปิดกลับมาอีกครั้งหลังการอัปเดตปฏิทิน หรือเมื่อคุณเรียกใช้การตรวจสอบด้านล่างแล้วผ่าน"
+
+#: quickbook/templates/settings-admin.php:24
+msgid "On: visitors book through Quick Booking."
+msgstr "เปิดอยู่: ผู้เข้าชมจองผ่าน Quick Booking"
+
+#: quickbook/templates/settings-admin.php:28
+msgid "Calendar version"
+msgstr "เวอร์ชันของปฏิทิน"
+
+#: quickbook/templates/settings-admin.php:29
+msgid "Nextcloud version"
+msgstr "เวอร์ชันของ Nextcloud"
+
+#: quickbook/templates/settings-admin.php:30
+msgid "Last full check"
+msgstr "การตรวจสอบแบบเต็มครั้งล่าสุด"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Check"
+msgstr "รายการตรวจสอบ"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Result"
+msgstr "ผลลัพธ์"
+
+#: quickbook/templates/settings-admin.php:35
+msgid "Detail"
+msgstr "รายละเอียด"
+
+#: quickbook/templates/settings-admin.php:49
+msgid "Run self-check now"
+msgstr "เรียกใช้การตรวจสอบตัวเองทันที"
+
+#: quickbook/templates/settings-admin.php:52
+msgid "Also available as: occ quickbook:check"
+msgstr "เรียกใช้ผ่านคำสั่งนี้ได้เช่นกัน: occ quickbook:check"
+
+#: quickbook/templates/settings-admin.php:53
+msgid "Visitor addresses (rate limit)"
+msgstr "ที่อยู่ของผู้เข้าชม (ขีดจำกัดจำนวนคำขอ)"
+
+#: quickbook/templates/settings-admin.php:55
+#, php-format
+msgid "Nextcloud sees your address as: %s"
+msgstr "Nextcloud เห็นที่อยู่ของคุณเป็น: %s"
+
+#: quickbook/templates/settings-admin.php:59
+msgid "This is a private address. That is fine if you are on the same network as the server. If you opened this page from outside (for example a phone on mobile data), Nextcloud does not know your reverse proxy: all visitors then share one address, and the booking limit applies to all of them together. Add the proxy to \"trusted_proxies\" in config.php."
+msgstr "นี่คือที่อยู่ส่วนตัว ซึ่งไม่เป็นปัญหาหากคุณอยู่ในเครือข่ายเดียวกับเซิร์ฟเวอร์ แต่หากคุณเปิดหน้านี้จากภายนอก (เช่น โทรศัพท์ที่ใช้อินเทอร์เน็ตมือถือ) แสดงว่า Nextcloud ไม่รู้จักรีเวิร์สพร็อกซีของคุณ ผู้เข้าชมทุกคนจึงใช้ที่อยู่เดียวกัน และขีดจำกัดการจองจะนับรวมกันทุกคน ให้เพิ่มพร็อกซีลงใน \"trusted_proxies\" ใน config.php"
+
+#: quickbook/templates/settings-admin.php:62
+msgid "This should be the public address of the device you are using right now. If it is the address of your server or proxy instead, add the proxy to \"trusted_proxies\" in config.php."
+msgstr "ที่อยู่นี้ควรเป็นที่อยู่สาธารณะของอุปกรณ์ที่คุณกำลังใช้อยู่ในขณะนี้ หากกลายเป็นที่อยู่ของเซิร์ฟเวอร์หรือพร็อกซีของคุณ ให้เพิ่มพร็อกซีลงใน \"trusted_proxies\" ใน config.php"
+
+#: quickbook/templates/settings-admin.php:65
+msgid "Share the Calendar's own booking links (\"Copy link\" in the Calendar app). They open Quick Booking while it is on, and the Calendar booking page while it is off, disabled or removed. Links to /apps/quickbook/book/… only work while the app is installed."
+msgstr "แชร์ลิงก์การจองของปฏิทินเอง (\"คัดลอกลิงก์\" ในแอปปฏิทิน) ลิงก์เหล่านี้จะเปิด Quick Booking ขณะที่เปิดอยู่ และเปิดหน้าจองของปฏิทินขณะที่ Quick Booking ปิดอยู่ ถูกปิดใช้งาน หรือถูกนำออก ลิงก์ไปยัง /apps/quickbook/book/… ใช้งานได้เฉพาะขณะที่ติดตั้งแอปอยู่เท่านั้น"
